@@ -100,6 +100,10 @@ hr
     background: none;
   }
 
+  .bg {
+    background-image: linear-gradient(to bottom right, #0099CC, #669900);
+  }
+
   .content {
     top:18%;
     width: 90%;
