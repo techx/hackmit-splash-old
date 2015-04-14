@@ -21,7 +21,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: linear-gradient(to bottom right, #0099CC, #669900);
+  background-image: linear-gradient(to bottom right, rgb(31, 150, 254), rgb(77, 242, 75));
   opacity: .8;
 }
 
