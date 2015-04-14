@@ -1,4 +1,13 @@
-# hackmit-splash
-This is the (Temporary) HackMIT Splash Page.
+hackmit-splash
+==============
+This is the HackMIT Splash Page.
 
-Since this Github pages, the public-facing branch is `gh-pages`. Therefore, `gh-pages` is a sacred branch, do not commit there unless you are 100% certain it is deploy-ready.
+This is deployed using Amazon CodeDeploy - meaning anything deployed on `master` will be public facing.
+
+This means you have to follow the number one rule:
+
+1. Never commit to `master`, only merge in `develop`.
+
+We'll do most or all of our work in develop.
+
+That is all :)
