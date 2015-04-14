@@ -4,52 +4,85 @@ html, body {
   margin: 0;
 }
 
-.bg {
-  z-index: -1;
-  position: absolute;
-  width: 100%;
-  min-height: 100%;
-  background-image: linear-gradient(to bottom right, rgba(32,150,254,0.8), rgba(78,241,75,0.8)), url(../../assets/img/bw-bg.jpg);
+body {
+  background: url(../../assets/img/bw-bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  background-attachment: fixed;
+  color: white;
+  font-size: 16px;
+}
+
+.bg {
+  content:'';
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom right, #0099CC, #669900);
+  opacity: .8;
+}
+
+::selection {
+  color:rgba(255,255,255,1);
+  background:rgba(57,61,66,.7);
+}
+
+::-moz-selection {
+  color:rgba(255,255,255,1);
+  background:rgba(57,61,66,.7);
 }
 
 .content {
+  position:absolute;
+  width:84%;
+  height:50%;
+  top:25%;
+  padding: 0 8%;
   text-align: center;
-  padding: 1em 50px 0px 50px;
   font-family: "Lato", sans-serif;
   color: white;
   font-size: 2em;
 }
 
 .logo {
-  padding: 5px;
-  width: 150px;
-  border: 4px solid white;
-  margin: 30px;
+  height: 2.5em;
+  width: 2.5em;
+  outline: solid white 3px;
+  outline-offset: 6px;
 }
 
 .title {
   font-family: "Montserrat", sans-serif;
+  margin-top: 30px;
+  font-weight: 700;
   font-size: 2em;
+  letter-spacing: 8px;
 }
 
 .tagline {
-  margin: 0.5em;
-  font-weight: 00;
+  margin-top: 0;
+  text-transform: uppercase;
+  font-size: .75em;
+  letter-spacing: 1.7px;
 }
 
-.date {
-  margin: 0.5em;
-}
-
+.date,
 .location {
-  margin: 0.5em;
+  font-size: .75em;
+  letter-spacing: 1.7px;
+  margin-top: 2px;
+  text-transform: uppercase;
+  display: inline-block;
 }
 
 .description {
-  font-size: 0.7em;
-  margin: 0.5em;
+  margin-top: 35px;
+  font-size: .75em;
+  letter-spacing: 1.7px;
+  text-transform: uppercase;
 }
 
 hr
@@ -59,19 +92,27 @@ hr
   max-width: 300px;
 }
 
-@media only screen and (max-width: 400px) {
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  body {
+    background: none;
+  }
+
   .content {
-    padding: 0.25em 20px 0 20px;
+    top:18%;
+    width: 90%;
+    padding: 0 5%;
   }
+
   .title {
-    font-size: 1.25em;
+    font-size: 1em;
   }
-  .tagline, 
+
+  .tagline,
   .date,
-  .location {
-    font-size: 75%;
-  }
+  .location,
   .description {
-    font-size: 60%;
+    font-weight: 700;
+    font-size: .45em;
   }
 }
