@@ -87,12 +87,18 @@ body {
   text-transform: uppercase;
 }
 
-hr
-{
-  border-top: 1px solid white;
-  border-bottom: 0;
-  max-width: 300px;
+.sponsorship {
+  margin-top: 35px;
+  font-weight: 400;
+  font-size: .3em;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
 }
+
+.sponsorship a {
+  color: white;
+}
+
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
@@ -105,7 +111,7 @@ hr
   }
 
   .content {
-    top:18%;
+    top:13%;
     width: 90%;
     padding: 0 5%;
   }
@@ -120,5 +126,9 @@ hr
   .description {
     font-weight: 400;
     font-size: .45em;
+  }
+
+  .sponsorship {
+    font-size: 0.3em;
   }
 }
