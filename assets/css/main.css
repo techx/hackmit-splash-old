@@ -88,10 +88,10 @@ body {
 }
 
 .sponsorship {
-  margin-top: 35px;
+  margin-top: 50px;
   font-weight: 400;
-  font-size: .3em;
-  letter-spacing: 1.2px;
+  font-size: .4em;
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
 
@@ -130,5 +130,6 @@ body {
 
   .sponsorship {
     font-size: 0.3em;
+    margin-top: 35px;
   }
 }
