@@ -1,0 +1,95 @@
+body,
+input,
+.ui.input input,
+button,
+textarea {
+  font-family: 'Lato', 'Helvetica Neue', 'Helvetica', sans-serif;
+}
+
+.montserrat,
+.montserrat.bold {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.montserrat.bold{
+  font-weight: 700;
+}
+
+.lato {
+  font-family: 'Lato', 'Helvetica Neue Light', 'Helvetica', sans-serif !important;
+}
+
+.ui.message ul.list li:before {
+  content: "" !important;
+}
+
+.ui.menu .logo.item {
+  float: left;
+}
+
+.hacksquare {
+  outline: 2px solid black;
+  outline-offset: 2px;
+  float: left;
+  display: inline-block !important;
+  margin-right: .5em !important ;
+  height: 1em;
+  width: 1em;
+}
+
+#header{
+  background: url(../assets/images/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 120px;
+  margin-top: 8px;
+  text-align: center;
+  background-position: 0px -314px;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+}
+
+  #header .title{
+    color: white;
+    font-size: 3em;
+    padding-top: 30px;
+  }
+
+.ui.hack.button {
+  box-shadow: none;
+  border: 2px solid rgb(35,177,150);
+  color: rgb(35,177,150);
+  background: none;
+  min-width: 288px;
+  width: 30%;
+}
+
+.ui.hack.button.completed {
+  background: rgb(35, 177, 150);
+  color: white;
+}
+
+.ui.hack.button:hover {
+  background: rgb(35, 177, 150);
+  color: white;
+}
+
+.invisible {
+  display: none;
+}
+
+@media only screen and (max-width : 480px) {
+
+  .ui.button {
+    min-width: 0 !important;
+    width: 100% !important;
+  }
+  .ui.page.grid {
+    min-width: 300px !important;
+  }
+}
+
