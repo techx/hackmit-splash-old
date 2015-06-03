@@ -1,38 +1,41 @@
+@import '_constants';
+
 html, body {
   width: 100%;
-  height: 100%;
+  height: auto;
   margin: 0;
+
+  section {
+    width: 100%;
+  }
 }
 
 body {
-  background: url(../../assets/img/bw-bg.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  color: white;
-  font-size: 16px;
+  // background: url(../assets/images/bw-bg.jpg) no-repeat center center fixed;
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // -o-background-size: cover;
+  // background-size: cover;
+  color: $grey;
+  // font-size: 16px;
 }
 
 .bg {
-  content:'';
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: linear-gradient(to bottom right, rgb(31, 150, 254), rgb(77, 242, 75));
-  opacity: .8;
+  // position: fixed;
+  // top: 0;
+  // right: 0;
+  // bottom: 0;
+  // left: 0;
+  // background-image: linear-gradient(to bottom right, rgb(31, 150, 254), rgb(77, 242, 75));
+  // opacity: .8;
 }
 
 ::selection {
-  color:rgba(255,255,255,1);
-  background:rgba(57,61,66,.7);
+  background: $blue;
 }
 
 ::-moz-selection {
-  color:rgba(255,255,255,1);
-  background:rgba(57,61,66,.7);
+  background: $blue;
 }
 
 .content {
@@ -42,12 +45,12 @@ body {
   top:23%;
   padding: 0 8%;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: $montserrat;
   color: white;
   font-size: 2em;
 }
 
-.logo {
+.hacksquare {
   height: 2.5em;
   width: 2.5em;
   outline: solid white 3px;
