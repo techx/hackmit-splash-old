@@ -1,12 +1,11 @@
 html, body {
+  height: 100%;
   width: 100%;
-  height: auto;
+  padding: 0;
   margin: 0; }
   html section, body section {
-    width: 100%; }
-
-body {
-  color: rgba(0, 0, 0, 0.9); }
+    width: 100%;
+    position: relative; }
 
 ::selection {
   background: #6bc7f1; }
@@ -14,57 +13,136 @@ body {
 ::-moz-selection {
   background: #6bc7f1; }
 
-.content {
-  position: absolute;
-  width: 84%;
-  height: 77%;
-  top: 23%;
-  padding: 0 8%;
-  text-align: center;
-  font-family: "Montserrat" sans-serif;
-  color: white;
-  font-size: 2em; }
+.montserrat, .montserrat-bold {
+  font-family: "Montserrat" sans-serif; }
+
+.lato {
+  font-family: "Lato" sans-serif;
+  font-weight: 300; }
+
+body {
+  background: #6bc7f1;
+  color: #141414; }
 
 .hacksquare {
-  height: 2.5em;
-  width: 2.5em;
+  height: 5em;
+  width: 5em;
   outline: solid white 3px;
   outline-offset: 6px; }
 
 .title {
   margin-top: 30px;
-  font-weight: 700;
-  font-size: 2em;
+  font-size: 4em;
   letter-spacing: 8px; }
 
-.tagline,
-.information {
+#bold {
+  font-weight: 700; }
+
+.tagline, .information {
   margin-top: 5px;
   text-transform: uppercase;
-  font-weight: 400;
-  font-size: .6em;
+  font-size: 1.2em;
   letter-spacing: 1.7px; }
 
-.description {
-  margin-top: 40px;
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: .6em;
-  letter-spacing: 1.7px; }
+section#main {
+  min-height: 100vh; }
+  section#main .content {
+    position: absolute;
+    width: 84%;
+    height: 77%;
+    top: 23%;
+    padding: 0 8%;
+    text-align: center;
+    color: #141414; }
+    section#main .content .information {
+      margin-top: 5px;
+      text-transform: uppercase;
+      font-size: 1.2em;
+      letter-spacing: 1.7px; }
+    section#main .content .description {
+      margin-top: 40px;
+      text-transform: uppercase;
+      font-size: 1.2em;
+      letter-spacing: 1.7px; }
+    section#main .content .sponsorship {
+      margin-top: 45px;
+      font-size: .8em;
+      letter-spacing: 1px;
+      text-transform: uppercase; }
+    section#main .content .sponsorship a {
+      color: #141414; }
+    section#main .content .techx {
+      margin-top: 10%;
+      height: 6%; }
 
-.sponsorship {
-  margin-top: 45px;
-  font-weight: 400;
-  font-size: .4em;
-  letter-spacing: 1px;
-  text-transform: uppercase; }
+section#blurb {
+  background: #f1645d;
+  min-height: 240px;
+  text-align: center;
+  color: white;
+  padding: 100px 0; }
+  section#blurb .blurb-title {
+    font-family: "Montserrat" sans-serif;
+    font-size: 4em;
+    margin: 30px 0;
+    font-weight: 700;
+    letter-spacing: 1.7px; }
+  section#blurb .blurb-description {
+    width: 70%;
+    margin: 30px auto;
+    font-size: 1.3em;
+    line-height: 1.5em; }
 
-.sponsorship a {
+section#faq {
+  width: 70%;
+  text-align: left;
+  color: #141414;
+  padding: 50px 100px; }
+  section#faq .faq-title {
+    font-family: "Montserrat" sans-serif;
+    font-size: 4em;
+    margin: 30px 0;
+    font-weight: 700;
+    letter-spacing: 1.7px; }
+  section#faq .row {
+    padding: 10px 0; }
+    section#faq .row .question {
+      font-family: "Montserrat" sans-serif;
+      font-weight: 400;
+      font-size: 1.2em; }
+    section#faq .row .answer {
+      font-size: 1em; }
+    section#faq .row a, section#faq .row a:visited {
+      color: #141414; }
+
+section#register {
+  min-height: 80vh;
+  background: #f1645d; }
+  section#register .content {
+    position: absolute;
+    width: 84%;
+    height: 77%;
+    top: 23%;
+    padding: 0 8%;
+    text-align: center;
+    color: #141414; }
+
+section#footer {
+  width: 100%;
+  padding: 24px 0;
+  background: rgba(0, 0, 0, 0.7);
+  min-height: 3em;
+  height: 60px;
+  text-align: center;
+  margin-top: -108px;
   color: white; }
-
-.techx {
-  margin-top: 10%;
-  height: 6%; }
+  section#footer a.social {
+    text-decoration: none;
+    color: white;
+    margin: 0 8px; }
+  section#footer .icon:hover {
+    text-shadow: 0 0 3px white;
+    cursor: pointer; }
 
 /* Mobile */
 @media only screen and (max-width: 480px) {

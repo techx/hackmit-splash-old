@@ -7,8 +7,12 @@
   <link rel="icon" type="image/png" href="/assets/images/hack-logo-favicon.png">
   <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Lato:300" rel="stylesheet" type="text/css">
-  <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <link href="stylesheets/main.css" rel="stylesheet" type="text/css">
+
+  <!-- Include Semantic-UI -->
+  <script src="bower_components/semantic-ui/build/packaged/javascript/semantic.min.js"></script>
+  <link href="bower_components/semantic-ui/build/packaged/css/semantic.min.css" rel="stylesheet" type="text/css">
 
   <!-- for Facebook -->
   <meta property="og:title" content="HackMIT 2015"/>
@@ -33,12 +37,12 @@
   <div class="bg">
   </div>
 
-  <section id="main">
+  <section id="main" class="montserrat">
     <div class="content">
       <img src="/assets/images/hack-logo-white.svg"
            onerror="this.onerror=null; this.src='/assets/images/hack-logo-white.png'" class="hacksquare">
       <div class="title">
-        HACKMIT 2015
+        <span id="bold">HACKMIT</span> 2015
       </div>
       <div class="tagline">
         Coming Soon.
@@ -59,7 +63,7 @@
     </div>
   </section>  
 
-  <section id="blurb">
+  <section id="blurb" class="lato">
     <div class="blurb-container">
       <div class="blurb-title">
         WHAT IS HACKMIT?
@@ -70,7 +74,7 @@
     </div>
   </section>
 
-  <section id="faq">
+  <section id="faq" class="lato">
     <div class="faq-title">
       FAQ
     </div>
@@ -176,5 +180,35 @@
       </div>
     </div>
   </section>
+
+  <section id="register" class="montserrat">
+    <div class="content">
+      <img src="/assets/images/hack-logo-white.svg"
+           onerror="this.onerror=null; this.src='/assets/images/hack-logo-white.png'" class="hacksquare">
+      <div class="title">
+        <span id="bold">HACKMIT</span> 2015
+      </div>
+      <div class="tagline">
+        What are you waiting for?
+      </div>
+    </div>
+  </section>
+
+  <section id="footer" class="lato">
+    <div class="content">
+      Built with <i class="ui red heart icon"></i> by the HackMIT 2015 Team
+    </div>
+    <br>
+    <a href="mailto:team@hackmit.org" class="social">
+      <i class="ui icon mail"></i>
+    </a>
+    <a href="https://twitter.com/hackmit" class="social">
+      <i class="ui icon twitter"></i>
+    </a>
+    <a href="https://www.facebook.com/HackMIT" class="social">
+      <i class="ui icon facebook"></i>
+    </a>
+  </section>
+
 </body>
 </html>

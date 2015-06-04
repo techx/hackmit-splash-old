@@ -1,33 +1,15 @@
 @import '_constants';
 
 html, body {
+  height: 100%;
   width: 100%;
-  height: auto;
+  padding: 0;
   margin: 0;
 
   section {
     width: 100%;
+    position: relative;
   }
-}
-
-body {
-  // background: url(../assets/images/bw-bg.jpg) no-repeat center center fixed;
-  // -webkit-background-size: cover;
-  // -moz-background-size: cover;
-  // -o-background-size: cover;
-  // background-size: cover;
-  color: $grey;
-  // font-size: 16px;
-}
-
-.bg {
-  // position: fixed;
-  // top: 0;
-  // right: 0;
-  // bottom: 0;
-  // left: 0;
-  // background-image: linear-gradient(to bottom right, rgb(31, 150, 254), rgb(77, 242, 75));
-  // opacity: .8;
 }
 
 ::selection {
@@ -38,65 +20,185 @@ body {
   background: $blue;
 }
 
-.content {
-  position:absolute;
-  width:84%;
-  height:77%;
-  top:23%;
-  padding: 0 8%;
-  text-align: center;
+.montserrat, .montserrat-bold {
   font-family: $montserrat;
-  color: white;
-  font-size: 2em;
+}
+
+.lato {
+  font-family: $lato;
+  font-weight: 300;
+}
+
+body {
+  background: $blue;
+  color: $grey;
+}
+
+.bg {
 }
 
 .hacksquare {
-  height: 2.5em;
-  width: 2.5em;
+  height: 5em;
+  width: 5em;
   outline: solid white 3px;
   outline-offset: 6px;
 }
 
 .title {
   margin-top: 30px;
-  font-weight: 700;
-  font-size: 2em;
+  font-size: 4em;
   letter-spacing: 8px;
 }
 
-.tagline,
-.information {
+#bold {
+  font-weight: 700;
+}
+
+.tagline, .information {
   margin-top: 5px;
   text-transform: uppercase;
-  font-weight: 400;
-  font-size: .6em;
+  font-size: 1.2em;
   letter-spacing: 1.7px;
 }
 
-.description {
-  margin-top: 40px;
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: .6em;
-  letter-spacing: 1.7px;
+section#main {
+  min-height: 100vh;
+
+  .content {
+    position: absolute;
+    width: 84%;
+    height: 77%;
+    top: 23%;
+    padding: 0 8%;
+    text-align: center;
+    color: $grey;
+
+    .information {
+      margin-top: 5px;
+      text-transform: uppercase;
+      font-size: 1.2em;
+      letter-spacing: 1.7px;
+    }
+
+    .description {
+      margin-top: 40px;
+      text-transform: uppercase;
+      font-size: 1.2em;
+      letter-spacing: 1.7px;
+    }
+
+    .sponsorship {
+      margin-top: 45px;
+      font-size: .8em;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .sponsorship a {
+      color: $grey;
+    }
+
+    .techx {
+      margin-top: 10%;
+      height: 6%;
+    }
+  }
 }
 
-.sponsorship {
-  margin-top: 45px;
-  font-weight: 400;
-  font-size: .4em;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+section#blurb {
+  background: $red;
+  min-height: 240px;
+  text-align: center;
+  color: $white;
+  padding: 100px 0;
+
+  .blurb-title {
+    font-family: $montserrat;
+    font-size: 4em;
+    margin: 30px 0;
+    font-weight: 700;
+    letter-spacing: 1.7px;
+  }
+
+  .blurb-description {
+    width: 70%;
+    margin: 30px auto;
+    font-size: 1.3em;
+    line-height: 1.5em;
+  }
 }
 
-.sponsorship a {
-  color: white;
+section#faq {
+  width: 70%;
+  text-align: left;
+  color: $grey;
+  padding: 50px 100px;
+
+  .faq-title {
+    font-family: $montserrat;
+    font-size: 4em;
+    margin: 30px 0;
+    font-weight: 700;
+    letter-spacing: 1.7px;
+  }
+
+  .row {
+    padding: 10px 0;
+
+    .question {
+      font-family: $montserrat;
+      font-weight: 400;
+      font-size: 1.2em;
+    }
+
+    .answer {
+      font-size: 1em;
+    }
+
+    a, a:visited {
+      color: $grey;
+    }
+  }
 }
 
-.techx {
-  margin-top: 10%;
-  height: 6%;
+section#register {
+  min-height: 80vh;
+  background: $red;
+
+  .content {
+    position: absolute;
+    width: 84%;
+    height: 77%;
+    top: 23%;
+    padding: 0 8%;
+    text-align: center;
+    color: $grey;
+  }
 }
+
+section#footer {
+  width: 100%;
+  padding: 24px 0;
+  background: rgba(0,0,0,.7);
+  min-height: 3em;
+  height: 60px;
+  text-align: center;
+  margin-top: -108px;
+  color: $white;
+
+  a.social {
+    text-decoration: none;
+    color: $white;
+    margin: 0 8px;
+  }
+
+  .icon:hover {
+    text-shadow: 0 0 3px white;
+    cursor: pointer;
+  }
+}
+
+
 
 /* Mobile */
 @media only screen and (max-width : 480px) {
