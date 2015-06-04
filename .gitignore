@@ -1,4 +1,3 @@
 *.sass-cache
 *.css.map
-bower_components/
 .DS_Store
