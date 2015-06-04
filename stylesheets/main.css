@@ -97,7 +97,7 @@ section#faq {
   width: 70%;
   text-align: left;
   color: #141414;
-  padding: 50px 100px; }
+  padding: 50px 5%; }
   section#faq .faq-title {
     font-family: "Montserrat" sans-serif;
     font-size: 4em;
