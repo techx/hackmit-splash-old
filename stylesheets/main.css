@@ -45,7 +45,8 @@ body {
   letter-spacing: 1.7px; }
 
 section#main {
-  min-height: 100vh; }
+  min-height: 100vh;
+  background: url(../assets/images/background-squares.png) no-repeat center center cover; }
   section#main .content {
     position: absolute;
     width: 84%;
