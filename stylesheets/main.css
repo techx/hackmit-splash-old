@@ -8,10 +8,10 @@ html, body {
     position: relative; }
 
 ::selection {
-  background: #4aaae0; }
+  background: #fdfdfd; }
 
 ::-moz-selection {
-  background: #4aaae0; }
+  background: #fdfdfd; }
 
 .montserrat, .montserrat-bold {
   font-family: "Montserrat" sans-serif; }
@@ -21,7 +21,7 @@ html, body {
   font-weight: 300; }
 
 body {
-  background: #4aaae0;
+  background: #fdfdfd;
   color: #3a3a3a; }
 
 .hacksquare {
@@ -99,10 +99,15 @@ section#blurb {
     line-height: 1.5em; }
 
 section#faq {
-  width: 60%;
+  width: 80%;
   text-align: left;
   color: #3a3a3a;
-  padding: 80px 10%; }
+  padding: 80px 10%;
+  background: url(../assets/images/background-faq.svg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
   section#faq .faq-title {
     font-family: "Montserrat" sans-serif;
     font-size: 2.8em;
@@ -121,7 +126,8 @@ section#faq {
     section#faq .row .answer {
       font-size: 1em;
       line-height: 1.4em;
-      margin-top: 6px; }
+      margin-top: 6px;
+      width: 70%; }
     section#faq .row a, section#faq .row a:visited {
       color: #3a3a3a; }
 
@@ -135,7 +141,7 @@ section#register {
     top: 23%;
     padding: 0 8%;
     text-align: center;
-    color: #3a3a3a; }
+    color: #ffffff; }
 
 section#footer {
   width: 100%;
