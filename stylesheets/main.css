@@ -8,10 +8,10 @@ html, body {
     position: relative; }
 
 ::selection {
-  background: #6bc7f1; }
+  background: #4aaae0; }
 
 ::-moz-selection {
-  background: #6bc7f1; }
+  background: #4aaae0; }
 
 .montserrat, .montserrat-bold {
   font-family: "Montserrat" sans-serif; }
@@ -21,8 +21,8 @@ html, body {
   font-weight: 300; }
 
 body {
-  background: #6bc7f1;
-  color: #141414; }
+  background: #4aaae0;
+  color: #3a3a3a; }
 
 .hacksquare {
   height: 5em;
@@ -32,7 +32,7 @@ body {
 
 .title {
   margin-top: 30px;
-  font-size: 4em;
+  font-size: 2.8em;
   letter-spacing: 8px; }
 
 #bold {
@@ -46,7 +46,11 @@ body {
 
 section#main {
   min-height: 100vh;
-  background: url(../assets/images/background-squares.png) no-repeat center center cover; }
+  background: url(../assets/images/background-squares.svg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
   section#main .content {
     position: absolute;
     width: 84%;
@@ -54,7 +58,7 @@ section#main {
     top: 23%;
     padding: 0 8%;
     text-align: center;
-    color: #141414; }
+    color: #3a3a3a; }
     section#main .content .information {
       margin-top: 5px;
       text-transform: uppercase;
@@ -71,54 +75,59 @@ section#main {
       letter-spacing: 1px;
       text-transform: uppercase; }
     section#main .content .sponsorship a {
-      color: #141414; }
+      color: #f3645c; }
     section#main .content .techx {
       margin-top: 10%;
       height: 6%; }
 
 section#blurb {
-  background: #f1645d;
+  background: #f3645c;
   min-height: 240px;
   text-align: center;
   color: white;
-  padding: 100px 0; }
+  padding: 80px 0; }
   section#blurb .blurb-title {
     font-family: "Montserrat" sans-serif;
-    font-size: 4em;
-    margin: 30px 0;
+    font-size: 2.8em;
+    margin-bottom: 40px;
     font-weight: 700;
-    letter-spacing: 1.7px; }
+    letter-spacing: 4px; }
   section#blurb .blurb-description {
     width: 70%;
-    margin: 30px auto;
-    font-size: 1.3em;
+    margin: 0px auto;
+    font-size: 1.5em;
     line-height: 1.5em; }
 
 section#faq {
-  width: 70%;
+  width: 60%;
   text-align: left;
-  color: #141414;
-  padding: 50px 5%; }
+  color: #3a3a3a;
+  padding: 80px 10%; }
   section#faq .faq-title {
     font-family: "Montserrat" sans-serif;
-    font-size: 4em;
+    font-size: 2.8em;
     margin: 30px 0;
     font-weight: 700;
-    letter-spacing: 1.7px; }
+    letter-spacing: 4px; }
   section#faq .row {
     padding: 10px 0; }
     section#faq .row .question {
       font-family: "Montserrat" sans-serif;
+      text-transform: uppercase;
       font-weight: 400;
-      font-size: 1.2em; }
+      font-size: 1.2em;
+      color: #f3645c;
+      letter-spacing: 2px }
     section#faq .row .answer {
-      font-size: 1em; }
+      font-size: 1em;
+      line-height: 1.4em;
+      margin-top: 6px; }
     section#faq .row a, section#faq .row a:visited {
-      color: #141414; }
+      color: #3a3a3a; }
 
 section#register {
   min-height: 80vh;
-  background: #f1645d; }
+  background: #f3645c; }
   section#register .content {
     position: absolute;
     width: 84%;
@@ -126,7 +135,7 @@ section#register {
     top: 23%;
     padding: 0 8%;
     text-align: center;
-    color: #141414; }
+    color: #3a3a3a; }
 
 section#footer {
   width: 100%;
