@@ -30,22 +30,19 @@ html, body {
 }
 
 body {
-  background: $blue;
   color: $grey;
 }
 
-.bg {
-}
-
 .hacksquare {
-  height: 5em;
-  width: 5em;
-  outline: solid white 3px;
-  outline-offset: 6px;
+  height: 7em;
+  width: 7em;
+  background: $red;
+  padding: 7px;
 }
 
 .title {
   margin-top: 30px;
+  font-family: $montserrat;
   font-size: 4em;
   letter-spacing: 8px;
 }
@@ -54,41 +51,53 @@ body {
   font-weight: 700;
 }
 
-.tagline, .information {
-  margin-top: 5px;
+.navbar {
+  background-color: $red !important;
+  font-family: $montserrat;
   text-transform: uppercase;
-  font-size: 1.2em;
-  letter-spacing: 1.7px;
+  font-size: 1em;
+  text-align: center !important;
+  padding: 4px 0 !important;
 }
 
 section#main {
   min-height: 100vh;
+  
+  .bg {
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+  }
 
   .content {
     position: absolute;
     width: 84%;
     height: 77%;
-    top: 23%;
+    top: 22%;
     padding: 0 8%;
     text-align: center;
     color: $grey;
 
-    .information {
+    .title {
+      font-size: 3.4em;
+    }
+
+    .tagline, .information {
       margin-top: 5px;
       text-transform: uppercase;
       font-size: 1.2em;
       letter-spacing: 1.7px;
     }
 
-    .description {
-      margin-top: 40px;
-      text-transform: uppercase;
-      font-size: 1.2em;
-      letter-spacing: 1.7px;
-    }
+    // .description {
+    //   margin-top: 10%;
+    //   text-transform: uppercase;
+    //   font-size: 1.2em;
+    //   letter-spacing: 1.7px;
+    // }
 
     .sponsorship {
-      margin-top: 45px;
+      margin-top: 20%;
       font-size: .8em;
       letter-spacing: 1px;
       text-transform: uppercase;
@@ -110,53 +119,64 @@ section#blurb {
   min-height: 240px;
   text-align: center;
   color: $white;
-  padding: 100px 0;
+  padding: 80px 0;
 
-  .blurb-title {
-    font-family: $montserrat;
-    font-size: 4em;
-    margin: 30px 0;
+  .title {
     font-weight: 700;
-    letter-spacing: 1.7px;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
   }
 
   .blurb-description {
     width: 70%;
     margin: 30px auto;
-    font-size: 1.3em;
+    font-size: 1.4em;
     line-height: 1.5em;
   }
 }
 
 section#faq {
-  width: 70%;
-  text-align: left;
-  color: $grey;
-  padding: 50px 5%;
 
-  .faq-title {
-    font-family: $montserrat;
-    font-size: 4em;
-    margin: 30px 0;
-    font-weight: 700;
-    letter-spacing: 1.7px;
+  .bg {
+    position: absolute;
+    // width: 100%;
+    height: 100%;
+    right: 0;
+    z-index: -1;
   }
 
-  .row {
-    padding: 10px 0;
+  .container {
+    width: 60%;
+    text-align: left;
+    color: $grey;
+    padding: 80px 10%;
 
-    .question {
-      font-family: $montserrat;
-      font-weight: 400;
-      font-size: 1.2em;
+    .title {
+      font-weight: 700;
+      letter-spacing: 4px;
+      margin-bottom: 30px;
     }
 
-    .answer {
-      font-size: 1em;
-    }
+    .row {
+      padding: 10px 0;
 
-    a, a:visited {
-      color: $grey;
+      .question {
+        font-family: $montserrat;
+        font-weight: 400;
+        font-size: 1.4em;
+        color: $red;
+        letter-spacing: 1px;
+      }
+
+      .answer {
+        font-size: 1.2em;
+        line-height: 1.5em;
+        margin-top: 6px;
+      }
+
+      a, a:visited {
+        color: $grey;
+      }
     }
   }
 }
@@ -172,29 +192,43 @@ section#register {
     top: 23%;
     padding: 0 8%;
     text-align: center;
-    color: $grey;
+    color: $white;
+
+    .hacksquare {
+      border: 4px solid white;
+    }
+
+    .tagline {
+      margin-top: 5px;
+      text-transform: uppercase;
+      font-size: 1.2em;
+      letter-spacing: 1.7px;
+    }
   }
 }
 
 section#footer {
   width: 100%;
-  padding: 24px 0;
-  background: rgba(0,0,0,.7);
+  padding: 20px 0;
+  border-top: 4px solid white;
   min-height: 3em;
   height: 60px;
   text-align: center;
   margin-top: -108px;
   color: $white;
 
-  a.social {
-    text-decoration: none;
+  i {
     color: $white;
-    margin: 0 8px;
   }
 
-  .icon:hover {
-    text-shadow: 0 0 3px white;
-    cursor: pointer;
+  a.social {
+    text-decoration: none;
+    margin: 0 8px;
+
+    .icon:hover {
+      text-shadow: 0 0 3px white;
+      cursor: pointer;
+    }
   }
 }
 

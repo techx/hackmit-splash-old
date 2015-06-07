@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
-  <meta charset="UTF-8">
   <title>HACKMIT 2015</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
 
   <link rel="icon" type="image/png" href="/assets/images/hack-logo-favicon.png">
   <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Lato:300" rel="stylesheet" type="text/css">
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <link href="stylesheets/main.css" rel="stylesheet" type="text/css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="/js/main.js"></script>
 
   <!-- Include Semantic-UI -->
-  <script src="bower_components/semantic-ui/build/packaged/javascript/semantic.min.js"></script>
   <link href="bower_components/semantic-ui/build/packaged/css/semantic.min.css" rel="stylesheet" type="text/css">
+  <script src="bower_components/semantic-ui/build/packaged/javascript/semantic.min.js"></script>
 
   <!-- for Facebook -->
   <meta property="og:title" content="HackMIT 2015"/>
@@ -27,57 +29,40 @@
   <meta name="twitter:title" content="HackMIT 2015">
   <meta name="twitter:description" content="Coming Soon. Sept 19 - 20, MIT.">
   <meta name="twitter:image:src" content="/assets/images/hack-logo-fb.png">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
-
-  <script src="/js/main.js"></script>
-
 </head>
 
 <body>
-
-
-
-    <div class="ui grid">
-        <div class="computer tablet only row">
-            <div class="ui inverted fixed menu navbar page grid">
-                <a href="#main" class="active item">Home</a>
-                <a href="#blurb" class="item">About</a>
-                <a href="#faq" class="item">FAQ</a>
-            </div>
-        </div>
-        <!--<div class="mobile only row">
-            <div class="ui fixed inverted navbar menu">
-                <div class="right menu open">
-                    <a href="" class="menu item">
-                        <i class="reorder icon"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="ui vertical navbar menu">
-                <a href="" class="active item">Home</a>
-                <a href="" class="item">About</a>
-                <a href="" class="item">FAQ</a>
-            </div>
-        </div>-->
+  <div class="ui grid">
+    <div class="computer tablet only row">
+      <div class="ui inverted fixed menu navbar page grid">
+        <a href="#main" class="item">Home</a>
+        <a href="#blurb" class="item">About</a>
+        <a href="#faq" class="item">FAQ</a>
+      </div>
     </div>
-
-    <!-- build:js scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.13.0/javascript/semantic.min.js"></script>
-    <script src="main.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
-
-
-
-  <div class="bg">
+    <!-- <div class="mobile only row">
+      <div class="ui fixed inverted navbar menu">
+        <div class="right menu open">
+          <a href="" class="menu item">
+            <i class="reorder icon"></i>
+          </a>
+        </div>
+      </div>
+      <div class="ui vertical navbar menu">
+        <a href="#main" class="item">Home</a>
+        <a href="#blurb" class="item">About</a>
+        <a href="#faq" class="item">FAQ</a>
+      </div>
+    </div> -->
   </div>
 
   <section id="main" class="montserrat">
+    <div class="bg">
+      <img src="/assets/images/background-squares.svg"
+           onerror="this.onerror=null; this.src='/assets/images/background-squares.png'" class="bg">
+    </div>
     <div class="content">
-      <img src="/assets/images/hack-logo-red.svg"
+      <img src="/assets/images/hack-logo-white.svg"
            onerror="this.onerror=null; this.src='/assets/images/hack-logo-white.png'" class="hacksquare">
       <div class="title">
         <span id="bold">HACKMIT</span> 2015
@@ -88,22 +73,18 @@
       <div class="information">
         Sept 19 - 20, 2015, MIT Campus
       </div>
-      <div class="description">
+      <!-- <div class="description">
         Open to all undergraduates from all universities.
-      </div>
+      </div> -->
       <div class="sponsorship">
         For sponsorship inquiries, please email <a href="mailto:sponsor@hackmit.org">sponsor@hackmit.org</a>.
       </div>
-      <a href="http://techx.mit.edu">
-        <img src="/assets/images/techx-logo.svg"
-           onerror="this.onerror=null; this.src='/assets/images/techx-logo.png'" class="techx">
-      </a>
     </div>
   </section>  
 
   <section id="blurb" class="lato">
     <div class="blurb-container">
-      <div class="blurb-title">
+      <div class="title">
         WHAT IS HACKMIT?
       </div>
       <div class="blurb-description">
@@ -112,109 +93,114 @@
     </div>
   </section>
 
-
   <section id="faq" class="lato">
-    <div class="faq-title">
-      FAQ
+    <div class="bg">
+      <img src="/assets/images/background-faq.svg"
+           onerror="this.onerror=null; this.src='/assets/images/background-faq.png'" class="bg">
     </div>
-    <div class="table">
-      <div class="row">
-        <div class="question">
-          Who can attend?
-        </div>
-        <div class="answer">
-          All undergraduate students from any university are welcome. Non-MIT students must be 18 or older. Unfortunately, high school students and graduate students cannot attend.
-        </div>
+    <div class="container">
+      <div class="title">
+        FAQ
       </div>
-      <div class="row">
-        <div class="question">
-          How can I register?
+      <div class="table">
+        <div class="row">
+          <div class="question">
+            Who can attend?
+          </div>
+          <div class="answer">
+            All undergraduate students from any university are welcome. Non-MIT students must be 18 or older. Unfortunately, high school students and graduate students cannot attend.
+          </div>
         </div>
-        <div class="answer">
-          This year we're holding a registration lottery. You must submit a lottery application by July 28th at 11:59PM EDT, after which we will randomly select hackers to admit. Once you are chosen, you may finish your registration profile. The HackMIT admissions lottery will operate on a rolling basis; you will have a week to accept your spot once you are lotteried in.
+        <div class="row">
+          <div class="question">
+            How can I register?
+          </div>
+          <div class="answer">
+            This year we're holding a registration lottery. You must submit a lottery application by July 28th at 11:59PM EDT, after which we will randomly select hackers to admit. Once you are chosen, you may finish your registration profile. The HackMIT admissions lottery will operate on a rolling basis; you will have a week to accept your spot once you are lotteried in.
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="question">
-          How much does attending cost?
+        <div class="row">
+          <div class="question">
+            How much does attending cost?
+          </div>
+          <div class="answer">
+            Admission is free, and includes food, drinks, and miscellaneous swag for the entire hackathon!
+          </div>
         </div>
-        <div class="answer">
-          Admission is free, and includes food, drinks, and miscellaneous swag for the entire hackathon!
+        <div class="row">
+          <div class="question">
+            What food will you provide?
+          </div>
+          <div class="answer">
+            We'll keep you fed throughout the weekend. All meals from breakfast on Saturday to breakfast on Sunday, as well as snacks in between, are covered by us. Just imagine yummy mediterranean dinner, late night waffle snacks, and an endless supply of fruit. We'll try to accommodate dietary restrictions as best we can!
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="question">
-          What food will you provide?
+        <div class="row">
+          <div class="question">
+            Can I get reimbursed for travel?
+          </div>
+          <div class="answer">
+            We are providing buses to Yale, Brown, Waterloo, Toronto, Columbia, NYU, and Princeton. If you do not attend one of these schools, you can receive travel reimbursement by uploading a travel receipt by the registration confirmation deadline. Hackers from Massachusetts can receive up to $100, but those coming from within 30 miles of MIT will not be reimbursed. Any other U.S. students can receive up to $200, and international students can receive up to $500.
+          </div>
         </div>
-        <div class="answer">
-          We'll keep you fed throughout the weekend. All meals from breakfast on Saturday to breakfast on Sunday, as well as snacks in between, are covered by us. Just imagine yummy mediterranean dinner, late night waffle snacks, and an endless supply of fruit. We'll try to accommodate dietary restrictions as best we can!
+        <div class="row">
+          <div class="question">
+            How big should teams be? Can I do it alone?
+          </div>
+          <div class="answer">
+            Teams should be at most 4 people. You can do it alone,
+            but it'll be less fun! Once you submit a lottery application,
+            you can create a team or join someone else's. Even if your team
+            doesn't make it, your team might be let in on a rolling basis as spots open up. MIT students - you're in for sure!
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="question">
-          Can I get reimbursed for travel?
+        <div class="row">
+          <div class="question">
+            What should I bring?
+          </div>
+          <div class="answer">
+            All attendees are required to bring their valid student ID for admission (name must match registration) and a laptop for hacking. If you want to do a hardware hack, don't forget to bring the devices you plan on working with. We will have some hardware for you to hack on, and a complete list will be posted closer to the event date.
+          </div>
         </div>
-        <div class="answer">
-          We are providing buses to Yale, Brown, Waterloo, Toronto, Columbia, NYU, and Princeton. If you do not attend one of these schools, you can receive travel reimbursement by uploading a travel receipt by the registration confirmation deadline. Hackers from Massachusetts can receive up to $100, but those coming from within 30 miles of MIT will not be reimbursed. Any other U.S. students can receive up to $200, and international students can receive up to $500.
+        <div class="row">
+          <div class="question">
+            What should I not bring?
+          </div>
+          <div class="answer">
+            Firearms, knives, and weapons of any kind are banned. If you can't bring it on an airplane, don't bring it here!
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="question">
-          How big should teams be? Can I do it alone?
+        <div class="row">
+          <div class="question">
+            Is there a puzzle?
+          </div>
+          <div class="answer">
+            Yes. Full fight club rules apply. If you're quick enough, solving the puzzle successfully guarantees admission for you and your team!
+          </div>
         </div>
-        <div class="answer">
-          Teams should be at most 4 people. You can do it alone,
-          but it'll be less fun! Once you submit a lottery application,
-          you can create a team or join someone else's. Even if your team
-          doesn't make it, your team might be let in on a rolling basis as spots open up. MIT students - you're in for sure!
+        <div class="row">
+          <div class="question">
+            Will you have hardware prototyping equipment?
+          </div>
+          <div class="answer">
+            We'll stock a limited supply of hardware hack tools and prototyping materials, similar to what we had last year. We'll be back with a complete list soon.
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="question">
-          What should I bring?
+        <div class="row">
+          <div class="question">
+            Where's the schedule?
+          </div>
+          <div class="answer">
+            Check-in for HackMIT will be from 9AM-11AM on Saturday morning; the opening ceremony will start at 11AM. HackMIT will end around 1:45PM on Sunday. Scroll down for a more detailed schedule, and check back soon for a full list of events.
+          </div>
         </div>
-        <div class="answer">
-          All attendees are required to bring their valid student ID for admission (name must match registration) and a laptop for hacking. If you want to do a hardware hack, don't forget to bring the devices you plan on working with. We will have some hardware for you to hack on, and a complete list will be posted closer to the event date.
-        </div>
-      </div>
-      <div class="row">
-        <div class="question">
-          What should I not bring?
-        </div>
-        <div class="answer">
-          Firearms, knives, and weapons of any kind are banned. If you can't bring it on an airplane, don't bring it here!
-        </div>
-      </div>
-      <div class="row">
-        <div class="question">
-          Is there a puzzle?
-        </div>
-        <div class="answer">
-          Yes. Full fight club rules apply. If you're quick enough, solving the puzzle successfully guarantees admission for you and your team!
-        </div>
-      </div>
-      <div class="row">
-        <div class="question">
-          Will you have hardware prototyping equipment?
-        </div>
-        <div class="answer">
-          We'll stock a limited supply of hardware hack tools and prototyping materials, similar to what we had last year. We'll be back with a complete list soon.
-        </div>
-      </div>
-      <div class="row">
-        <div class="question">
-          Where's the schedule?
-        </div>
-        <div class="answer">
-          Check-in for HackMIT will be from 9AM-11AM on Saturday morning; the opening ceremony will start at 11AM. HackMIT will end around 1:45PM on Sunday. Scroll down for a more detailed schedule, and check back soon for a full list of events.
-        </div>
-      </div>
-      <div class="row">
-        <div class="question">
-          I have a question that's not listed here. Who should I ask?
-        </div>
-        <div class="answer">
-          You can get in touch with us at <a href="mailto:team@hackmit.org">team@hackmit.org</a> or via <a href="http://twitter.com/hackmit">Twitter</a>, or <a href="https://www.facebook.com/HackMIT">Facebook</a>.
+        <div class="row">
+          <div class="question">
+            I have a question that's not listed here. Who should I ask?
+          </div>
+          <div class="answer">
+            You can get in touch with us at <a href="mailto:team@hackmit.org">team@hackmit.org</a> or via <a href="http://twitter.com/hackmit">Twitter</a>, or <a href="https://www.facebook.com/HackMIT">Facebook</a>.
+          </div>
         </div>
       </div>
     </div>
@@ -228,14 +214,14 @@
         <span id="bold">HACKMIT</span> 2015
       </div>
       <div class="tagline">
-        What are you waiting for?
+        Coming Soon.
       </div>
     </div>
   </section>
 
   <section id="footer" class="lato">
     <div class="content">
-      Built with <i class="ui red heart icon"></i> by the HackMIT 2015 Team
+      Built with <i class="ui heart icon"></i> by the HackMIT 2015 Team
     </div>
     <br>
     <a href="mailto:team@hackmit.org" class="social">
