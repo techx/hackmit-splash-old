@@ -44,13 +44,19 @@ body {
   font-size: 1.2em;
   letter-spacing: 1.7px; }
 
-.navbar {
-  background-color: #f1645d !important;
+.ui.inverted.fixed.menu.navbar.page.grid {
+  background-color: #f1645d;
   font-family: "Montserrat" sans-serif;
   text-transform: uppercase;
   font-size: 1em;
-  text-align: center !important;
-  padding: 4px 0 !important; }
+  text-align: center;
+  padding-top: 5px; }
+  .ui.inverted.fixed.menu.navbar.page.grid .item {
+    width: 100px;
+    border-bottom: 4px solid transparent; }
+  .ui.inverted.fixed.menu.navbar.page.grid .item:hover {
+    background: #f1645d;
+    border-bottom: 3px solid #6bc7f1; }
 
 section#main {
   min-height: 100vh; }
@@ -116,13 +122,22 @@ section#faq .container {
       font-weight: 400;
       font-size: 1.4em;
       color: #f1645d;
-      letter-spacing: 1px; }
-    section#faq .container .row .answer {
-      font-size: 1.2em;
-      line-height: 1.5em;
-      margin-top: 6px; }
-    section#faq .container .row a, section#faq .container .row a:visited {
-      color: #141414; }
+      letter-spacing: 1px;
+      cursor: pointer; }
+      section#faq .container .row .question .answer {
+        font-family: "Lato" sans-serif;
+        font-size: .8em;
+        line-height: 1.5em;
+        color: #141414;
+        letter-spacing: 0;
+        margin-top: 6px;
+        cursor: auto; }
+      section#faq .container .row .question .hidden {
+        display: none; }
+      section#faq .container .row .question a, section#faq .container .row .question a:visited {
+        color: #141414; }
+    section#faq .container .row .question:hover {
+      color: #6bc7f1; }
 
 section#register {
   min-height: 80vh;
@@ -143,17 +158,14 @@ section#register {
 section#footer {
   width: 100%;
   padding: 20px 0;
-  border-top: 4px solid white;
-  min-height: 3em;
-  height: 60px;
+  height: 20px;
   text-align: center;
-  margin-top: -108px;
+  margin-top: -60px;
   color: white; }
-  section#footer i {
-    color: white; }
   section#footer a.social {
     text-decoration: none;
-    margin: 0 8px; }
+    margin: 0 8px;
+    color: white; }
     section#footer a.social .icon:hover {
       text-shadow: 0 0 3px white;
       cursor: pointer; }

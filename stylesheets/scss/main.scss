@@ -58,13 +58,23 @@ body {
   letter-spacing: 1.7px;
 }
 
-.navbar {
-  background-color: $red !important;
+.ui.inverted.fixed.menu.navbar.page.grid {
+  background-color: $red;
   font-family: $montserrat;
   text-transform: uppercase;
   font-size: 1em;
-  text-align: center !important;
-  padding: 4px 0 !important;
+  text-align: center;
+  padding-top: 5px;
+  
+  .item {
+    width: 100px;
+    border-bottom: 4px solid transparent;
+  }
+
+  .item:hover {
+    background: $red;
+    border-bottom: 3px solid $blue
+  }
 }
 
 section#main {
@@ -166,16 +176,29 @@ section#faq {
         font-size: 1.4em;
         color: $red;
         letter-spacing: 1px;
+        cursor: pointer;
+
+        .answer {
+          font-family: $lato;
+          font-size: .8em;
+          line-height: 1.5em;
+          color: $grey;
+          letter-spacing: 0;
+          margin-top: 6px;
+          cursor: auto;
+        }
+
+        .hidden {
+          display: none;
+        }
+
+        a, a:visited {
+          color: $grey;
+        }
       }
 
-      .answer {
-        font-size: 1.2em;
-        line-height: 1.5em;
-        margin-top: 6px;
-      }
-
-      a, a:visited {
-        color: $grey;
+      .question:hover {
+        color: $blue;
       }
     }
   }
@@ -207,20 +230,15 @@ section#register {
 section#footer {
   width: 100%;
   padding: 20px 0;
-  border-top: 4px solid white;
-  min-height: 3em;
-  height: 60px;
+  height: 20px;
   text-align: center;
-  margin-top: -108px;
+  margin-top: -60px;
   color: $white;
-
-  i {
-    color: $white;
-  }
 
   a.social {
     text-decoration: none;
     margin: 0 8px;
+    color: $white;
 
     .icon:hover {
       text-shadow: 0 0 3px white;

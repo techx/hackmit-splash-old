@@ -1,10 +1,10 @@
 $(document).ready(function() {
 
   $('#main')
-    .transition('fade in', 1000);
+    .transition('fade in', 1500);
 
   $('#navbar')
-    .transition('fade in', 1000);
+    .transition('fade in', 1500);
 
   $('#goto-home').click(function() {
     $('html, body').animate({
@@ -24,5 +24,11 @@ $(document).ready(function() {
     }, 1000);
   });
 
-  // $('.question').click
+  $('.question').click(function() {
+    if ($(this).find('.answer').hasClass('hidden')) {
+      $(this).find('.answer').removeClass('hidden')
+    } else {
+      $(this).find('.answer').addClass('hidden')
+    }
+  });
 });
