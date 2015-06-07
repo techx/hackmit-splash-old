@@ -32,11 +32,17 @@ body {
 .title {
   margin-top: 30px;
   font-family: "Montserrat" sans-serif;
-  font-size: 4em;
+  font-size: 3.8em;
   letter-spacing: 8px; }
 
 #bold {
   font-weight: 700; }
+
+.tagline, .information {
+  margin-top: 5px;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  letter-spacing: 1.7px; }
 
 .navbar {
   background-color: #f1645d !important;
@@ -62,11 +68,6 @@ section#main {
     color: #141414; }
     section#main .content .title {
       font-size: 3.4em; }
-    section#main .content .tagline, section#main .content .information {
-      margin-top: 5px;
-      text-transform: uppercase;
-      font-size: 1.2em;
-      letter-spacing: 1.7px; }
     section#main .content .sponsorship {
       margin-top: 20%;
       font-size: .8em;
@@ -136,11 +137,8 @@ section#register {
     color: white; }
     section#register .content .hacksquare {
       border: 4px solid white; }
-    section#register .content .tagline {
-      margin-top: 5px;
-      text-transform: uppercase;
-      font-size: 1.2em;
-      letter-spacing: 1.7px; }
+    section#register .content .title {
+      font-size: 3.4em; }
 
 section#footer {
   width: 100%;
@@ -164,9 +162,6 @@ section#footer {
 @media only screen and (max-width: 480px) {
   body {
     background: none; }
-
-  .bg {
-    background-image: linear-gradient(to bottom right, #0099CC, #669900); }
 
   .content {
     top: 13%;
