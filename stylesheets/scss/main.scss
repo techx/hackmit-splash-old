@@ -25,6 +25,10 @@ html, body {
   font-weight: 300;
 }
 
+.hidden {
+  display: none;
+}
+
 body {
   color: $grey;
 }
@@ -58,7 +62,7 @@ body {
   font-size: 1em;
   text-align: center;
   padding-top: 5px;
-  
+
   .item {
     width: 100px;
     border-bottom: 4px solid transparent;
@@ -72,7 +76,7 @@ body {
 
 section#main {
   min-height: 100vh;
-  
+
   .bg {
     width: 100%;
     height: 100vh;
@@ -175,9 +179,6 @@ section#faq {
         margin-top: 6px;
       }
 
-      .hidden {
-        display: none;
-      }
 
       a, a:visited {
         color: $grey;
@@ -234,7 +235,7 @@ section#footer {
   }
 
   .bg {
-    
+
   }
 
   .content {
@@ -251,7 +252,7 @@ section#footer {
   .information {
     font-size: .45em;
   }
-  
+
   .description {
     font-size: .45em;
     margin-top: 35px;
@@ -290,7 +291,7 @@ section#footer {
   .information {
     font-size: .4em;
   }
-  
+
   .description {
     font-size: .4em;
     margin-top: 25px;

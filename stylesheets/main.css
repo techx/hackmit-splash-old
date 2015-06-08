@@ -17,6 +17,9 @@ html, body {
   font-family: "Lato" sans-serif;
   font-weight: 300; }
 
+.hidden {
+  display: none; }
+
 body {
   color: #141414; }
 
@@ -121,8 +124,6 @@ section#faq .container {
       font-size: 1.2em;
       line-height: 1.5em;
       margin-top: 6px; }
-    section#faq .container .row .hidden {
-      display: none; }
     section#faq .container .row a, section#faq .container .row a:visited {
       color: #141414; }
 
