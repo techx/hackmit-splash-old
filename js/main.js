@@ -24,11 +24,11 @@ $(document).ready(function() {
     }, 1000);
   });
 
-  $('.question').click(function() {
+  $('.row').click(function() {
     if ($(this).find('.answer').hasClass('hidden')) {
-      $(this).find('.answer').removeClass('hidden')
+      $(this).find('.answer').transition('fade down in', 300);
     } else {
-      $(this).find('.answer').addClass('hidden')
+      $(this).find('.answer').transition('fade down out', 300);
     }
   });
 });

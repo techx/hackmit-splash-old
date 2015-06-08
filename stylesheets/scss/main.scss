@@ -12,16 +12,12 @@ html, body {
   }
 }
 
-::selection {
-  background: $blue;
-}
-
-::-moz-selection {
-  background: $blue;
-}
-
 .montserrat, .montserrat-bold {
   font-family: $montserrat;
+}
+
+.montserrat-bold {
+  font-weight: 700;
 }
 
 .lato {
@@ -43,12 +39,9 @@ body {
 .title {
   margin-top: 30px;
   font-family: $montserrat;
-  font-size: 3.8em;
-  letter-spacing: 8px;
-}
-
-#bold {
   font-weight: 700;
+  font-size: 4em;
+  letter-spacing: 8px;
 }
 
 .tagline, .information {
@@ -95,10 +88,6 @@ section#main {
     text-align: center;
     color: $grey;
 
-    .title {
-      font-size: 3.4em;
-    }
-
     // .description {
     //   margin-top: 10%;
     //   text-transform: uppercase;
@@ -132,7 +121,6 @@ section#blurb {
   padding: 80px 0;
 
   .title {
-    font-weight: 700;
     letter-spacing: 4px;
     margin-bottom: 30px;
   }
@@ -149,7 +137,6 @@ section#faq {
 
   .bg {
     position: absolute;
-    // width: 100%;
     height: 100%;
     right: 0;
     z-index: -1;
@@ -162,7 +149,6 @@ section#faq {
     padding: 80px 10%;
 
     .title {
-      font-weight: 700;
       letter-spacing: 4px;
       margin-bottom: 30px;
     }
@@ -177,28 +163,24 @@ section#faq {
         color: $red;
         letter-spacing: 1px;
         cursor: pointer;
-
-        .answer {
-          font-family: $lato;
-          font-size: .8em;
-          line-height: 1.5em;
-          color: $grey;
-          letter-spacing: 0;
-          margin-top: 6px;
-          cursor: auto;
-        }
-
-        .hidden {
-          display: none;
-        }
-
-        a, a:visited {
-          color: $grey;
-        }
       }
 
       .question:hover {
         color: $blue;
+      }
+
+      .answer {
+        font-size: 1.2em;
+        line-height: 1.5em;
+        margin-top: 6px;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      a, a:visited {
+        color: $grey;
       }
     }
   }
@@ -219,10 +201,6 @@ section#register {
 
     .hacksquare {
       border: 4px solid white;
-    }
-
-    .title {
-      font-size: 3.4em;
     }
   }
 }

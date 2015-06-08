@@ -7,14 +7,11 @@ html, body {
     width: 100%;
     position: relative; }
 
-::selection {
-  background: #6bc7f1; }
-
-::-moz-selection {
-  background: #6bc7f1; }
-
 .montserrat, .montserrat-bold {
   font-family: "Montserrat" sans-serif; }
+
+.montserrat-bold {
+  font-weight: 700; }
 
 .lato {
   font-family: "Lato" sans-serif;
@@ -32,11 +29,9 @@ body {
 .title {
   margin-top: 30px;
   font-family: "Montserrat" sans-serif;
-  font-size: 3.8em;
+  font-weight: 700;
+  font-size: 4em;
   letter-spacing: 8px; }
-
-#bold {
-  font-weight: 700; }
 
 .tagline, .information {
   margin-top: 5px;
@@ -72,8 +67,6 @@ section#main {
     padding: 0 8%;
     text-align: center;
     color: #141414; }
-    section#main .content .title {
-      font-size: 3.4em; }
     section#main .content .sponsorship {
       margin-top: 20%;
       font-size: .8em;
@@ -92,7 +85,6 @@ section#blurb {
   color: white;
   padding: 80px 0; }
   section#blurb .title {
-    font-weight: 700;
     letter-spacing: 4px;
     margin-bottom: 30px; }
   section#blurb .blurb-description {
@@ -112,7 +104,6 @@ section#faq .container {
   color: #141414;
   padding: 80px 10%; }
   section#faq .container .title {
-    font-weight: 700;
     letter-spacing: 4px;
     margin-bottom: 30px; }
   section#faq .container .row {
@@ -124,20 +115,16 @@ section#faq .container {
       color: #f1645d;
       letter-spacing: 1px;
       cursor: pointer; }
-      section#faq .container .row .question .answer {
-        font-family: "Lato" sans-serif;
-        font-size: .8em;
-        line-height: 1.5em;
-        color: #141414;
-        letter-spacing: 0;
-        margin-top: 6px;
-        cursor: auto; }
-      section#faq .container .row .question .hidden {
-        display: none; }
-      section#faq .container .row .question a, section#faq .container .row .question a:visited {
-        color: #141414; }
     section#faq .container .row .question:hover {
       color: #6bc7f1; }
+    section#faq .container .row .answer {
+      font-size: 1.2em;
+      line-height: 1.5em;
+      margin-top: 6px; }
+    section#faq .container .row .hidden {
+      display: none; }
+    section#faq .container .row a, section#faq .container .row a:visited {
+      color: #141414; }
 
 section#register {
   min-height: 80vh;
@@ -152,8 +139,6 @@ section#register {
     color: white; }
     section#register .content .hacksquare {
       border: 4px solid white; }
-    section#register .content .title {
-      font-size: 3.4em; }
 
 section#footer {
   width: 100%;
