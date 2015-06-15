@@ -5,12 +5,48 @@ html, body {
   width: 100%;
   padding: 0;
   margin: 0;
+  background-color: $white;
 
   section {
     width: 100%;
     position: relative;
   }
+
+  div {
+    position: relative;
+  }
 }
+
+/* Ben's stuff 
+ * temporarily
+ */
+
+section#splash {
+  div#splash-banner {
+    img {
+      max-width: 100%;
+    }
+    img#logo {
+      position: absolute;
+      width: 13vw;
+      height: 13vw;
+      margin: auto;
+      top: 0; left: 0; bottom: 0; right: 0;
+    }
+    h1.title {
+      position: absolute;
+      margin: 0;
+      left: 1vw; right: 0;
+      bottom: 0;
+      font-size: 4em;  // need fallback TODO
+      line-height: 1.1em;
+      font-size: 7.0vw;
+      color: $white;
+    }
+  }
+}
+
+/** Other stuff **/
 
 .montserrat, .montserrat-bold {
   font-family: $montserrat;
