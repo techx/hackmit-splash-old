@@ -8,7 +8,7 @@ $(document).ready(function() {
 
   $('#goto-home').click(function() {
     $('html, body').animate({
-      scrollTop: $('#main').offset().top
+      scrollTop: $('#splash').offset().top
     }, 1000);
   });
 
@@ -24,13 +24,6 @@ $(document).ready(function() {
     }, 1000);
   });
 
-  $('.row').click(function() {
-    if ($(this).find('.answer').hasClass('hidden')) {
-      $(this).find('.answer').transition('fade down in', 300);
-    } else {
-      $(this).find('.answer').transition('fade down out', 300);
-    }
-  });
   $("#interest-form").on('submit', function(){
     var is_valid_email = function(email) { return (/^.+@.+\..+$/).test(email); };
     // ^^ Yes, this is easy to break. If you're reading this you're probably smart enough to find a way around it

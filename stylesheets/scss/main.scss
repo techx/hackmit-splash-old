@@ -17,16 +17,58 @@ html, body {
   }
 }
 
+/*
+ * shared classes
+ */
+
+.montserrat, .montserrat-bold {
+  font-family: $montserrat;
+}
+
+.montserrat-bold {
+  font-weight: 700;
+}
+
+.lato {
+  font-family: $lato;
+  font-weight: 400;
+}
+
+.hidden {
+  display: none;
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+a {
+  color:$gold;
+}
+
 /* Ben's stuff 
  * temporarily
  */
 
-section#splash {
-  div#splash-banner {
+section#splash,
+section#register {
+  min-height: 100%;
+
+  div.splash-container {
+    height: 100%;
+    padding-bottom: 100px;
+    padding-top: 10vh;
+    margin: 0;
+  }
+
+  div.splash-banner {
+    font-size: 1em;
+    margin-bottom: 0;
+
     img {
       max-width: 100%;
     }
-    img#logo {
+    img.logo {
       position: absolute;
       width: 13vw;
       height: 13vw;
@@ -39,224 +81,178 @@ section#splash {
       left: 1vw; right: 0;
       bottom: 0;
       font-size: 4em;  // need fallback TODO
+      letter-spacing: 8px;
       line-height: 1.1em;
-      font-size: 7.0vw;
+      font-size: 6.5vw;
       color: $white;
     }
   }
+  div.splash-text {
+    margin: 0 0 5px 0 !important;
+    padding: 0 !important;
+
+    h2.title {
+      line-height: 1.1em;
+      font-size: 6.5vw;
+      margin: 0;
+      margin-left: 1vw;
+      letter-spacing: 8px;
+      color: $deeppurple;
+    }
+    h2.title:focus {
+      outline: 0px solid transparent;
+    }
+  }
+}
+
+#navbar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  .menu {
+    background-color: $gold;
+    font-family: $montserrat;
+    text-transform: uppercase;
+    font-size: 1em;
+    text-align: center;
+    border: 0;
+
+    .item {
+      width: 8em;
+      padding-top: 1.2em;
+      border-bottom: 4px solid transparent;
+      color: $deeppurple;
+      font-weight: bold;
+    }
+
+    .item:hover {
+      background: $magenta;
+      border-bottom: 3px solid $blue
+    }
+  }
+}
+
+div.divider {
+  height: 3em;
+  background-image: url("/assets/images/hack-logo-tile.svg");
+  background-position: center;
+  background-repeat: repeat-x;
+  background-color: $magenta;
+}
+
+.divider.blue {
+  background-color: $blue;
+}
+
+.divider.deeppurple {
+  background-color: $deeppurple;
+  background-image: url("/assets/images/hack-logo-tile-magenta.svg");
+}
+
+.divider.yellow {
+  background-color: $magenta;
+  background-image: url("/assets/images/hack-logo-tile-yellow.svg");
+}
+
+section {
+  h2 {
+    font-size: 3em;
+    letter-spacing: 5px;
+    line-height: 1.2em;
+    margin:0;
+  }
+
+  p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin: 0;
+  }
+
+  .row {
+    margin-top: 0;
+  }
+}
+
+section.ui.page.grid.padded {
+  padding-top: 5%;
+  padding-bottom: 7%;
+}
+
+section#blurb {
+  background: $magenta;
+  min-height: 240px;
+  color: $white;
+}
+
+section#schedule {
+  background: $deeppurple;
+  min-height: 80px;
+  color: $white;
+}
+
+section#faq {  
+  background: $blue;
+  .column {
+    text-align: left;
+    margin-bottom: 1.5em;
+  }
+  .row {
+    margin: 0 auto;
+  }
+  h2 {
+    color:$white;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .question {
+    color:$gold;
+    font-size: 1.5em;
+  }
+  p.answer {
+    color:$white;
+  }
+}
+
+section#sponsor {
+  background: $magenta;
+  min-height: 80px;
+  color: $white;
 }
 
 /** Other stuff **/
 
-.montserrat, .montserrat-bold {
-  font-family: $montserrat;
-}
-
-.montserrat-bold {
-  font-weight: 700;
-}
-
-.lato {
-  font-family: $lato;
-  font-weight: 300;
-}
-
-.hidden {
-  display: none;
-}
-
-body {
-  color: $grey;
-}
-
-.hacksquare {
-  height: 7em;
-  width: 7em;
-  background: $red;
-  padding: 7px;
-}
-
-.title {
-  margin-top: 30px;
-  font-family: $montserrat;
-  font-weight: 700;
-  font-size: 4em;
-  letter-spacing: 8px;
-}
-
-.tagline, .information {
-  margin-top: 5px;
-  text-transform: uppercase;
-  font-size: 1.2em;
-  letter-spacing: 1.7px;
-}
-
-.ui.inverted.fixed.menu.navbar.page.grid {
-  background-color: $red;
-  font-family: $montserrat;
-  text-transform: uppercase;
-  font-size: 1em;
-  text-align: center;
-  padding-top: 5px;
-
-  .item {
-    width: 100px;
-    border-bottom: 4px solid transparent;
-  }
-
-  .item:hover {
-    background: $red;
-    border-bottom: 3px solid $blue
-  }
-}
-
-section#main {
-  min-height: 100vh;
-
-  .bg {
-    width: 100%;
-    height: 100vh;
-    z-index: -1;
-  }
-
-  .content {
-    position: absolute;
-    width: 84%;
-    height: 77%;
-    top: 22%;
-    padding: 0 8%;
-    text-align: center;
-    color: $grey;
-
-    // .description {
-    //   margin-top: 10%;
-    //   text-transform: uppercase;
-    //   font-size: 1.2em;
-    //   letter-spacing: 1.7px;
-    // }
-
-    .sponsorship {
-      margin-top: 20%;
-      font-size: .8em;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-    }
-
-    .sponsorship a {
-      color: $grey;
-    }
-
-    .techx {
-      margin-top: 10%;
-      height: 6%;
-    }
-  }
-}
-
-section#blurb {
-  background: $red;
-  min-height: 240px;
-  text-align: center;
-  color: $white;
-  padding: 80px 0;
-
-  .title {
-    letter-spacing: 4px;
-    margin-bottom: 30px;
-  }
-
-  .blurb-description {
-    width: 70%;
-    margin: 30px auto;
-    font-size: 1.4em;
-    line-height: 1.5em;
-  }
-}
-
-section#faq {
-
-  .bg {
-    position: absolute;
-    height: 100%;
-    right: 0;
-    z-index: -1;
-  }
-
-  .container {
-    width: 60%;
-    text-align: left;
-    color: $grey;
-    padding: 80px 10%;
-
-    .title {
-      letter-spacing: 4px;
-      margin-bottom: 30px;
-    }
-
-    .row {
-      padding: 10px 0;
-
-      .question {
-        font-family: $montserrat;
-        font-weight: 400;
-        font-size: 1.4em;
-        color: $red;
-        letter-spacing: 1px;
-        cursor: pointer;
-      }
-
-      .question:hover {
-        color: $blue;
-      }
-
-      .answer {
-        font-size: 1.2em;
-        line-height: 1.5em;
-        margin-top: 6px;
-      }
-
-
-      a, a:visited {
-        color: $grey;
-      }
-    }
-  }
-}
-
 section#register {
-  min-height: 80vh;
-  background: $red;
+  div.splash-container {
+    padding-top: 100px;
+  }
 
-  .content {
-    position: absolute;
-    width: 84%;
-    height: 77%;
-    top: 23%;
-    padding: 0 8%;
-    text-align: center;
-    color: $white;
-
-    .hacksquare {
-      border: 4px solid white;
+  div.splash-banner {
+    margin-top: 0;
+    h1.title {
+      top: 0;
+      bottom: auto;
     }
+  }
+  div.splash-text {
+    margin: 5px 0 0 0 !important;
   }
 }
 
 section#footer {
   width: 100%;
-  padding: 20px 0;
-  height: 20px;
+  padding: 40px 0;
+  height: 40px;
   text-align: center;
   margin-top: -60px;
-  color: $white;
+  color: $deeppurple;
 
   a.social {
     text-decoration: none;
     margin: 0 8px;
-    color: $white;
+    color: $deeppurple;
 
     .icon:hover {
-      text-shadow: 0 0 3px white;
+      text-shadow: 0 0 3px deeppurple;
       cursor: pointer;
     }
   }

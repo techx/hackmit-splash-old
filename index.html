@@ -40,14 +40,7 @@
 </head>
 
 <body>
-  <!--<div id="navbar" class="ui grid">
-    <div class="computer tablet only row">
-      <div class="ui inverted fixed menu navbar page grid">
-        <a id="goto-home" class="item">Home</a>
-        <a id="goto-about" class="item">About</a>
-        <a id="goto-faq" class="item">FAQ</a>
-      </div>
-    </div>
+  <!--
     <div class="mobile only row">
       <div class="ui fixed inverted navbar menu">
         <div class="right menu open">
@@ -64,37 +57,33 @@
     </div>
   </div>-->
   <section id="splash">
-    <div class="ui page center aligned grid stackable">
-      <div id="splash-banner" class="eight wide column">
+    <div class="splash-container ui center aligned grid stackable">
+      <div class="splash-banner six wide column">
         <img src="/assets/images/hack-bg-square.jpg"/>
-        <img id="logo" src="/assets/images/hack-logo.svg"
+        <img class="logo" src="/assets/images/hack-logo.svg"
            onerror="this.onerror=null; this.src='/assets/images/hack-logo-white.png'"/>
         <h1 class="montserrat-bold title">HACKMIT</h1>        
       </div>
+      <div class="splash-text sixteen wide column">
+        <h2 class="montserrat-bold title" contenteditable="true">SEPT.19.20</h1>  
+      </div>
+    </div>
+
+    <div id="navbar" class="ui computer only">
+      <div class="ui menu borderless inverted">
+        <a id="goto-home" class="item">HackMIT</a>
+        <a id="goto-about" class="item">What</a>
+        <a id="goto-faq" class="item">Schedule</a>
+        <a id="goto-faq" class="item">FAQ</a>
+        <a id="goto-faq" class="item">Sponsor</a>
+        <a id="goto-faq" class="item">Register</a>
+        </div>
     </div>
   </section>
 
-  <section id="main" class="montserrat">
-    <div class="bg">
-      <img src="/assets/images/background-squares.svg"
-           onerror="this.onerror=null; this.src='/assets/images/background-squares.png'" class="bg">
-    </div>
-    <div class="content">
-      <img src="/assets/images/hack-logo-white.svg"
-           onerror="this.onerror=null; this.src='/assets/images/hack-logo-white.png'" class="hacksquare">
-      <div class="title">
-        HACKMIT
-      </div>
-      <div class="tagline">
-        Coming Soon.
-      </div>
-      <div class="information">
-        Sept 19 - 20, 2015, MIT Campus
-      </div>
-      <!-- <div class="description">
-        Open to all undergraduates from all universities.
-      </div> -->
-      <div class="interest">
+
+
+      <!--<div class="interest">
         <form id="interest-form" onsubmit="">
           <label for="email">Enter your email below and we'll let you know when registration opens!</label><br />
           <input type="text" placeholder="Email" name="email" id="interest-form-email" />
@@ -103,146 +92,169 @@
       </div>
       <div class="sponsorship">
         For sponsorship inquiries, please email <a href="mailto:sponsor@hackmit.org">sponsor@hackmit.org</a>.
-      </div>
+      </div>-->
+
+  <section id="blurb" class="lato ui page grid center aligned padded stackable">
+    <div class="montserrat-bold title ten wide column">
+      <h2>WHAT IS HACKMIT?</h2>
+    </div>
+    <div class="ten wide column">
+    <p class="lato">
+      HackMIT is MIT's premier hackathon. On September 19 - 20, over 1,000 students will converge at MIT to create, innovate, and build software and hardware projects over a 24-hour period. Our focus on cutting-edge technologies—including Bitcoin, emerging hardware interfaces, and new software languages—makes HackMIT truly unique.
+    </p>
     </div>
   </section>
 
-  <section id="blurb" class="lato">
-    <div class="blurb-container">
-      <div class="title">
-        WHAT IS HACKMIT?
-      </div>
-      <div class="blurb-description">
-        HackMIT is MIT's premier hackathon. On September 19 - 20, over 1,000 students will converge at MIT to create, innovate, and build software and hardware projects over a 24-hour period. Our focus on cutting-edge technologies—including Bitcoin, emerging hardware interfaces, and new software languages—makes HackMIT truly unique.
-      </div>
+  <div class="divider"></div>
+
+  <section id="schedule" class="lato ui page grid center aligned padded stackable">
+    <div class="montserrat-bold title ten wide column">
+      <h2>Schedule</h2>
+    </div>
+    <div class="ten wide column">
+    <p class="lato">
+      HackMIT will take place on Saturday to Sunday, September 19 – 20, 2015. Check back soon for a detailed schedule.
+    </p>
     </div>
   </section>
 
-  <section id="faq" class="lato">
-    <div class="bg">
-      <img src="/assets/images/background-faq.svg"
-           onerror="this.onerror=null; this.src='/assets/images/background-faq.png'" class="bg">
-    </div>
-    <div class="container">
-      <div class="title">
-        FAQ
+  <div class="divider deeppurple"></div>
+
+  <section id="faq" class="lato ui page grid center aligned padded stackable">
+      <div class="montserrat-bold title ten wide column">
+        <h2>Frequently Asked Questions</h2>
       </div>
-      <div class="table">
-        <div class="row">
-          <div class="question">
+      <div class="row">
+        <div class="five wide column">
+          <h4 class="question">
             Who can attend?
-          </div>
-          <div class="answer hidden">
+          </h4>
+          <p class="answer">
             All undergraduate students from any university are welcome. Non-MIT students must be 18 or older. Unfortunately, high school students and graduate students cannot attend.
-          </div>
+          </p>
         </div>
-        <div class="row">
-          <div class="question">
+        <div class="five wide column">
+          <h4 class="question">
             How can I register?
-          </div>
-          <div class="answer hidden">
+          </h4>
+          <p class="answer">
             This year we're holding a registration lottery. You must submit a lottery application by July 28th at 11:59PM EDT, after which we will randomly select hackers to admit. Once you are chosen, you may finish your registration profile. The HackMIT admissions lottery will operate on a rolling basis; you will have a week to accept your spot once you are lotteried in.
-          </div>
+          </p>
         </div>
-        <div class="row">
-          <div class="question">
-            How much does attending cost?
-          </div>
-          <div class="answer hidden">
-            Admission is free, and includes food, drinks, and miscellaneous swag for the entire hackathon!
-          </div>
-        </div>
-        <div class="row">
-          <div class="question">
+        <div class="five wide column">
+          <h4 class="question">
             What food will you provide?
-          </div>
-          <div class="answer hidden">
+          </h4>
+          <p class="answer">
             We'll keep you fed throughout the weekend. All meals from breakfast on Saturday to breakfast on Sunday, as well as snacks in between, are covered by us. Just imagine yummy mediterranean dinner, late night waffle snacks, and an endless supply of fruit. We'll try to accommodate dietary restrictions as best we can!
-          </div>
+          </p>
         </div>
-        <div class="row">
-          <div class="question">
+        <div class="five wide column">
+          <h4 class="question">
+            How much does attending cost?
+          </h4>
+          <p class="answer">
+            Admission is free, and includes food, drinks, and miscellaneous swag for the entire hackathon!
+          </p>
+        </div>
+        <div class="column ten wide">
+          <h4 class="question">
             Can I get reimbursed for travel?
-          </div>
-          <div class="answer hidden">
+          </h4>
+          <p class="answer">
             We are providing buses to Yale, Brown, Waterloo, Toronto, Columbia, NYU, and Princeton. If you do not attend one of these schools, you can receive travel reimbursement by uploading a travel receipt by the registration confirmation deadline. Hackers from Massachusetts can receive up to $100, but those coming from within 30 miles of MIT will not be reimbursed. Any other U.S. students can receive up to $200, and international students can receive up to $500.
-          </div>
+          </p>
         </div>
-        <div class="row">
-          <div class="question">
+        <div class="five wide column">
+          <h4 class="question">
             How big should teams be? Can I do it alone?
-          </div>
-          <div class="answer hidden">
+          </h4>
+          <p class="answer">
             Teams should be at most 4 people. You can do it alone,
             but it'll be less fun! Once you submit a lottery application,
             you can create a team or join someone else's. Even if your team
             doesn't make it, your team might be let in on a rolling basis as spots open up. MIT students - you're in for sure!
-          </div>
+          </p>
         </div>
-        <div class="row">
-          <div class="question">
+        <div class="five wide column">
+          <h4 class="question">
             What should I bring?
-          </div>
-          <div class="answer hidden">
+          </h4>
+          <p class="answer">
             All attendees are required to bring their valid student ID for admission (name must match registration) and a laptop for hacking. If you want to do a hardware hack, don't forget to bring the devices you plan on working with. We will have some hardware for you to hack on, and a complete list will be posted closer to the event date.
-          </div>
+          </p>
         </div>
-        <div class="row">
-          <div class="question">
+        <div class="five wide column">
+          <h4 class="question">
             What should I not bring?
-          </div>
-          <div class="answer hidden">
+          </h4>
+          <p class="answer">
             Firearms, knives, and weapons of any kind are banned. If you can't bring it on an airplane, don't bring it here!
-          </div>
+          </p>
         </div>
-        <div class="row">
-          <div class="question">
+        <div class="five wide column">
+          <h4 class="question">
             Is there a puzzle?
-          </div>
-          <div class="answer hidden">
+          </h4>
+          <p class="answer">
             Yes. Full fight club rules apply. If you're quick enough, solving the puzzle successfully guarantees admission for you and your team!
-          </div>
+          </p>
         </div>
-        <div class="row">
-          <div class="question">
+        <div class="five wide column">
+          <h4 class="question">
             Will you have hardware prototyping equipment?
-          </div>
-          <div class="answer hidden">
+          </h4>
+          <p class="answer">
             We'll stock a limited supply of hardware hack tools and prototyping materials, similar to what we had last year. We'll be back with a complete list soon.
-          </div>
+          </p>
         </div>
-        <div class="row">
-          <div class="question">
+        <div class="five wide column">
+          <h4 class="question">
             Where's the schedule?
-          </div>
-          <div class="answer hidden">
+          </h4>
+          <p class="answer">
             Check-in for HackMIT will be from 9AM-11AM on Saturday morning; the opening ceremony will start at 11AM. HackMIT will end around 1:45PM on Sunday. Scroll down for a more detailed schedule, and check back soon for a full list of events.
-          </div>
+          </p>
         </div>
-        <div class="row">
-          <div class="question">
+        <div class="five wide column">
+          <h4 class="question">
             I have a question that's not listed here. Who should I ask?
-          </div>
-          <div class="answer hidden">
+          </h4>
+          <p class="answer">
             You can get in touch with us at <a href="mailto:team@hackmit.org">team@hackmit.org</a> or via <a href="http://twitter.com/hackmit">Twitter</a>, or <a href="https://www.facebook.com/HackMIT">Facebook</a>.
-          </div>
+          </p>
         </div>
-      </div>
     </div>
   </section>
 
-  <section id="register" class="montserrat">
-    <div class="content">
-      <img src="/assets/images/hack-logo-white.svg"
-           onerror="this.onerror=null; this.src='/assets/images/hack-logo-white.png'" class="hacksquare">
-      <div class="title">
-        HACKMIT
-      </div>
-      <div class="tagline">
-        Coming Soon.
-      </div>
+  <div class="divider blue"></div>
+
+  <section id="sponsor" class="lato ui page grid center aligned padded stackable">
+    <div class="montserrat-bold title ten wide column">
+      <h2>Sponsors</h2>
+    </div>
+    <div class="ten wide column">
+    <p class="lato">
+      For sponsorship opportunities, please get in touch with a HackMIT Organizer at <a href="mailto:sponsor@hackmit.org">sponsor@hackmit.org</a>.
+    </p>
     </div>
   </section>
+
+  <div class="divider yellow"></div>
+
+  <section id="register">
+    <div class="splash-container ui center aligned grid stackable">
+      <div class="splash-text sixteen wide column">
+        <h2 class="montserrat-bold title" contenteditable="true">SignupNow</h1>  
+      </div>
+      <div class="splash-banner six wide column">
+        <img src="/assets/images/hack-bg-square.jpg"/>
+        <img class="logo" src="/assets/images/hack-logo.svg"
+           onerror="this.onerror=null; this.src='/assets/images/hack-logo-white.png'"/>
+        <h1 class="montserrat-bold title">HACKMIT</h1>        
+      </div>
+    </div>
+  </div>
 
   <section id="footer" class="lato">
     <a href="mailto:team@hackmit.org" class="social">
