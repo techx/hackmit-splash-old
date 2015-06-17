@@ -61,7 +61,8 @@ section#register {
     height: 100%;
     font-size: 1em;
     padding-bottom: 7.7em;
-    padding-top: 10vh;
+    padding-top: 5%;
+    //padding-top: 10vh;
     margin: 0;
   }
 
@@ -266,7 +267,15 @@ section#footer {
 
 
 /* Mobile */
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 992px) {
+  html,body {
+    font-size: 1em;
+  }
+  #navbar .menu .item {
+    width: 7em;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+  }
   section#splash {
     div.splash-container {
       padding-top: 0;
