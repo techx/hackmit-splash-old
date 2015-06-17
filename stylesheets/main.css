@@ -3,7 +3,8 @@ html, body {
   width: 100%;
   padding: 0;
   margin: 0;
-  background-color: #fafafa; }
+  background-color: #fafafa;
+  font-size: 0.85em; }
   html section, body section {
     width: 100%;
     position: relative; }
@@ -27,7 +28,8 @@ html, body {
   display: none; }
 
 .title {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-align: center; }
 
 a {
   color: #ffe552; }
@@ -41,12 +43,12 @@ section#register {
   section#splash div.splash-container,
   section#register div.splash-container {
     height: 100%;
-    padding-bottom: 100px;
-    padding-top: 10vh;
+    font-size: 1em;
+    padding-bottom: 7.7em;
+    padding-top: 5%;
     margin: 0; }
   section#splash div.splash-banner,
   section#register div.splash-banner {
-    font-size: 1em;
     margin-bottom: 0; }
     section#splash div.splash-banner img,
     section#register div.splash-banner img {
@@ -65,13 +67,14 @@ section#register {
     section#register div.splash-banner h1.title {
       position: absolute;
       margin: 0;
-      left: 1vw;
+      left: 0;
       right: 0;
       bottom: 0;
-      font-size: 4em;
       letter-spacing: 8px;
       line-height: 1.1em;
-      font-size: 6.5vw;
+      font-size: 3em;
+      font-size: 5.5vw;
+      padding-left: 5px;
       color: #fafafa; }
   section#splash div.splash-text,
   section#register div.splash-text {
@@ -80,10 +83,11 @@ section#register {
     section#splash div.splash-text h2.title,
     section#register div.splash-text h2.title {
       line-height: 1.1em;
-      font-size: 6.5vw;
+      font-size: 3em;
+      font-size: 5.5vw;
       margin: 0;
-      margin-left: 1vw;
       letter-spacing: 8px;
+      padding-left: 5px;
       color: #473899; }
     section#splash div.splash-text h2.title:focus,
     section#register div.splash-text h2.title:focus {
@@ -134,7 +138,7 @@ section h2 {
   line-height: 1.2em;
   margin: 0; }
 section p {
-  font-size: 1.2em;
+  font-size: 1.1em;
   line-height: 1.5em;
   margin: 0; }
 section .row {
@@ -203,60 +207,20 @@ section#footer {
       cursor: pointer; }
 
 /* Mobile */
-@media only screen and (max-width: 480px) {
-  body {
-    background: none; }
-
-  .content {
-    top: 13%;
-    width: 90%;
-    padding: 0 5%; }
-
-  .title {
+@media only screen and (max-width: 992px) {
+  html, body {
     font-size: 1em; }
 
-  .tagline,
-  .information {
-    font-size: .45em; }
+  #navbar .menu .item {
+    width: 7em;
+    padding-left: 0.4em;
+    padding-right: 0.4em; }
 
-  .description {
-    font-size: .45em;
-    margin-top: 35px; }
+  section#splash div.splash-container {
+    padding-top: 0; }
 
-  .sponsorship {
-    font-size: 0.3em;
-    margin-top: 40px; }
-
-  .techx {
-    margin-top: 25%; } }
-@media only screen and (max-width: 320px) {
-  body {
-    background: none; }
-
-  .bg {
-    background-image: linear-gradient(to bottom right, #0099CC, #669900); }
-
-  .content {
-    top: 8%;
-    width: 90%;
-    padding: 0 5%; }
-
-  .title {
-    font-size: .75em; }
-
-  .tagline,
-  .information {
-    font-size: .4em; }
-
-  .description {
-    font-size: .4em;
-    margin-top: 25px; }
-
-  .sponsorship {
-    font-size: 0.3em;
-    margin-top: 30px; }
-
-  .techx {
-    margin-top: 25%; } }
+  section.ui.page.grid.padded {
+    padding-top: 10%;
+    padding-bottom: 10%; } }
 
 /*# sourceMappingURL=main.css.map */
