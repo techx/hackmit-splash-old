@@ -53,45 +53,129 @@ a {
  * temporarily
  */
 
-section#splash,
-section#register {
-  min-height: 100%;
 
-  div.splash-container {
-    height: 100%;
-    font-size: 1em;
-    padding-bottom: 7.7em;
-    padding-top: 5%;
-    //padding-top: 10vh;
+div.divider {
+  height: 3.3em;
+  background-image: url("/assets/images/hack-logo-tile-purple.svg");
+  background-position: center;
+  background-repeat: repeat-x;
+  background-color: $magenta;
+  background-size: auto 3em;
+}
+
+.divider.deeppurple {
+  background-image: url("/assets/images/hack-logo-tile-purple.svg");
+}
+
+.divider.blue {
+  background-image: url("/assets/images/hack-logo-tile-blue.svg");
+}
+
+.divider.magenta {
+  background-image: url("/assets/images/hack-logo-tile-magenta.svg");
+}
+
+.divider.yellow {
+  background-image: url("/assets/images/hack-logo-tile-yellow.svg");
+}
+
+.divider.deeppurplebg {
+  background-color: $deeppurple;
+}
+
+.divider.bluebg {
+  background-color: $blue;
+}
+
+.divider.magentabg {
+  background-color: $magenta;
+}
+
+.divider.yellowbg {
+  background-color: $gold;
+}
+
+
+section {
+  h2 {
+    font-size: 3em;
+    letter-spacing: 5px;
+    line-height: 1.3em;
+    margin:0;
+  }
+
+  p {
+    font-size: 1.1em;
+    line-height: 1.5em;
     margin: 0;
   }
 
-  div.splash-banner {
-    margin-bottom: 0;
+  .row {
+    margin-top: 0;
+  }
+}
 
-    img {
-      max-width: 100%;
+section.ui.page.grid.padded {
+  padding-top: 5%;
+  padding-bottom: 7%;
+}
+
+
+section#splash {
+  // workaround to simulate min-height: 100%
+  // see http://stackoverflow.com/questions/8468066/child-inside-parent-with-min-height-100-not-inheriting-height
+  display: table;
+  height: inherit;
+
+  div.splash-container {
+    font-size: 1em;
+    display: table-cell;
+    height: 100%;
+    // add space to account for nav bar
+    padding-bottom: 3.5em;
+
+    // VERTICAL CENTERING. These two classes
+    // exist solely to vertically center in a display:table-cell
+    .splash-relative {
+      height: 100%;
+      position: relative;
     }
-    img.logo {
-      position: absolute;
-      width: 13vw;
-      height: 13vw;
-      margin: auto;
-      top: 0; left: 0; bottom: 0; right: 0;
+    .splash-centerer { 
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
     }
-    h1.title {
-      position: absolute;
-      margin: 0;
-      left: 0; right: 0;
-      bottom: 0;
-      letter-spacing: 8px;
-      line-height: 1.1em;
-      font-size: 3em;  // fallback
-      font-size: 5.5vw;
-      padding-left: 5px;
-      color: $white;
+
+    div.splash-banner {
+      width: 37.5%;
+      margin: 0 auto;
+
+      img {
+        max-width: 100%;
+      }
+      img.logo {
+        position: absolute;
+        width: 13vw;
+        height: 13vw;
+        margin: auto;
+        top: 0; left: 0; bottom: 0; right: 0;
+      }
+      h1.title {
+        position: absolute;
+        margin: 0;
+        left: 0; right: 0;
+        bottom: 0;
+        letter-spacing: 8px;
+        line-height: 1.1em;
+        font-size: 3em;  // fallback
+        font-size: 5.5vw;
+        padding-left: 5px;
+        color: $white;
+      }
     }
   }
+
   div.splash-text {
     margin: 0 0 5px 0 !important;
     padding: 0 !important;
@@ -114,6 +198,7 @@ section#register {
 #navbar {
   position: absolute;
   bottom: 0;
+  left: 0;
   width: 100%;
   .menu {
     background-color: $gold;
@@ -131,57 +216,15 @@ section#register {
       font-weight: bold;
     }
 
+    .item.important {
+      color: red;
+    }
+
     .item:hover {
       background: $magenta;
       border-bottom: 3px solid $blue
     }
   }
-}
-
-div.divider {
-  height: 3em;
-  background-image: url("/assets/images/hack-logo-tile.svg");
-  background-position: center;
-  background-repeat: repeat-x;
-  background-color: $magenta;
-}
-
-.divider.blue {
-  background-color: $blue;
-}
-
-.divider.deeppurple {
-  background-color: $deeppurple;
-  background-image: url("/assets/images/hack-logo-tile-magenta.svg");
-}
-
-.divider.yellow {
-  background-color: $magenta;
-  background-image: url("/assets/images/hack-logo-tile-yellow.svg");
-}
-
-section {
-  h2 {
-    font-size: 3em;
-    letter-spacing: 5px;
-    line-height: 1.2em;
-    margin:0;
-  }
-
-  p {
-    font-size: 1.1em;
-    line-height: 1.5em;
-    margin: 0;
-  }
-
-  .row {
-    margin-top: 0;
-  }
-}
-
-section.ui.page.grid.padded {
-  padding-top: 5%;
-  padding-bottom: 7%;
 }
 
 section#blurb {
@@ -219,7 +262,7 @@ section#faq {
   }
 }
 
-section#sponsor {
+section#register {
   background: $magenta;
   min-height: 80px;
   color: $white;
@@ -227,7 +270,7 @@ section#sponsor {
 
 /** Other stuff **/
 
-section#register {
+section#sponsor {
   div.splash-container {
     padding-top: 100px;
   }
@@ -264,10 +307,9 @@ section#footer {
   }
 }
 
+/* Responsive */
 
-
-/* Mobile */
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width: 786px) {
   html,body {
     font-size: 1em;
   }
@@ -277,16 +319,43 @@ section#footer {
     padding-right: 0.4em;
   }
   section#splash {
+    display: relative;
     div.splash-container {
-      padding-top: 0;
+      display: relative;
+      .splash-centerer {
+        top: 0;
+        transform: none;
+        -webkit-transform: none;
+        -ms-transform: none;
+      }
+      div.splash-banner {
+        width: 100%;
+      }
     }
   }
   section.ui.page.grid.padded {
     padding-top: 10%;
     padding-bottom: 10%;
   }
+  div.divider {
+    height: 30px;
+    background-size: auto 26px;
+  }
 }
 
 @media only screen and (max-width : 320px) {
- 
+  section.ui.page.grid.padded {
+    padding-top: 20%;
+    padding-bottom: 20%;
+  }
+  div.divider {
+    height: 24px;
+    background-size: auto 18px;
+  }
+  section {
+    h2 {
+      font-size: 2em;
+      line-height: 1.4em;
+    }
+  }
 }

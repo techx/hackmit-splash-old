@@ -15,13 +15,13 @@ html, body {
  * shared classes
  */
 .montserrat, .montserrat-bold {
-  font-family: "Montserrat" sans-serif; }
+  font-family: "Montserrat", sans-serif; }
 
 .montserrat-bold {
   font-weight: 700; }
 
 .lato {
-  font-family: "Lato" sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 400; }
 
 .hidden {
@@ -37,105 +37,42 @@ a {
 /* Ben's stuff 
  * temporarily
  */
-section#splash,
-section#register {
-  min-height: 100%; }
-  section#splash div.splash-container,
-  section#register div.splash-container {
-    height: 100%;
-    font-size: 1em;
-    padding-bottom: 7.7em;
-    padding-top: 5%;
-    margin: 0; }
-  section#splash div.splash-banner,
-  section#register div.splash-banner {
-    margin-bottom: 0; }
-    section#splash div.splash-banner img,
-    section#register div.splash-banner img {
-      max-width: 100%; }
-    section#splash div.splash-banner img.logo,
-    section#register div.splash-banner img.logo {
-      position: absolute;
-      width: 13vw;
-      height: 13vw;
-      margin: auto;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0; }
-    section#splash div.splash-banner h1.title,
-    section#register div.splash-banner h1.title {
-      position: absolute;
-      margin: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      letter-spacing: 8px;
-      line-height: 1.1em;
-      font-size: 3em;
-      font-size: 5.5vw;
-      padding-left: 5px;
-      color: #fafafa; }
-  section#splash div.splash-text,
-  section#register div.splash-text {
-    margin: 0 0 5px 0 !important;
-    padding: 0 !important; }
-    section#splash div.splash-text h2.title,
-    section#register div.splash-text h2.title {
-      line-height: 1.1em;
-      font-size: 3em;
-      font-size: 5.5vw;
-      margin: 0;
-      letter-spacing: 8px;
-      padding-left: 5px;
-      color: #473899; }
-    section#splash div.splash-text h2.title:focus,
-    section#register div.splash-text h2.title:focus {
-      outline: 0px solid transparent; }
-
-#navbar {
-  position: absolute;
-  bottom: 0;
-  width: 100%; }
-  #navbar .menu {
-    background-color: #ffe552;
-    font-family: "Montserrat" sans-serif;
-    text-transform: uppercase;
-    font-size: 1em;
-    text-align: center;
-    border: 0; }
-    #navbar .menu .item {
-      width: 8em;
-      padding-top: 1.2em;
-      border-bottom: 4px solid transparent;
-      color: #473899;
-      font-weight: bold; }
-    #navbar .menu .item:hover {
-      background: #e76482;
-      border-bottom: 3px solid #4c82cc; }
-
 div.divider {
-  height: 3em;
-  background-image: url("/assets/images/hack-logo-tile.svg");
+  height: 3.3em;
+  background-image: url("/assets/images/hack-logo-tile-purple.svg");
   background-position: center;
   background-repeat: repeat-x;
-  background-color: #e76482; }
-
-.divider.blue {
-  background-color: #4c82cc; }
+  background-color: #e76482;
+  background-size: auto 3em; }
 
 .divider.deeppurple {
-  background-color: #473899;
+  background-image: url("/assets/images/hack-logo-tile-purple.svg"); }
+
+.divider.blue {
+  background-image: url("/assets/images/hack-logo-tile-blue.svg"); }
+
+.divider.magenta {
   background-image: url("/assets/images/hack-logo-tile-magenta.svg"); }
 
 .divider.yellow {
-  background-color: #e76482;
   background-image: url("/assets/images/hack-logo-tile-yellow.svg"); }
+
+.divider.deeppurplebg {
+  background-color: #473899; }
+
+.divider.bluebg {
+  background-color: #4c82cc; }
+
+.divider.magentabg {
+  background-color: #e76482; }
+
+.divider.yellowbg {
+  background-color: #ffe552; }
 
 section h2 {
   font-size: 3em;
   letter-spacing: 5px;
-  line-height: 1.2em;
+  line-height: 1.3em;
   margin: 0; }
 section p {
   font-size: 1.1em;
@@ -147,6 +84,86 @@ section .row {
 section.ui.page.grid.padded {
   padding-top: 5%;
   padding-bottom: 7%; }
+
+section#splash {
+  display: table;
+  height: inherit; }
+  section#splash div.splash-container {
+    font-size: 1em;
+    display: table-cell;
+    height: 100%;
+    padding-bottom: 3.5em; }
+    section#splash div.splash-container .splash-relative {
+      height: 100%;
+      position: relative; }
+    section#splash div.splash-container .splash-centerer {
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%); }
+    section#splash div.splash-container div.splash-banner {
+      width: 37.5%;
+      margin: 0 auto; }
+      section#splash div.splash-container div.splash-banner img {
+        max-width: 100%; }
+      section#splash div.splash-container div.splash-banner img.logo {
+        position: absolute;
+        width: 13vw;
+        height: 13vw;
+        margin: auto;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0; }
+      section#splash div.splash-container div.splash-banner h1.title {
+        position: absolute;
+        margin: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        letter-spacing: 8px;
+        line-height: 1.1em;
+        font-size: 3em;
+        font-size: 5.5vw;
+        padding-left: 5px;
+        color: #fafafa; }
+  section#splash div.splash-text {
+    margin: 0 0 5px 0 !important;
+    padding: 0 !important; }
+    section#splash div.splash-text h2.title {
+      line-height: 1.1em;
+      font-size: 3em;
+      font-size: 5.5vw;
+      margin: 0;
+      letter-spacing: 8px;
+      padding-left: 5px;
+      color: #473899; }
+    section#splash div.splash-text h2.title:focus {
+      outline: 0px solid transparent; }
+
+#navbar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; }
+  #navbar .menu {
+    background-color: #ffe552;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-size: 1em;
+    text-align: center;
+    border: 0; }
+    #navbar .menu .item {
+      width: 8em;
+      padding-top: 1.2em;
+      border-bottom: 4px solid transparent;
+      color: #473899;
+      font-weight: bold; }
+    #navbar .menu .item.important {
+      color: red; }
+    #navbar .menu .item:hover {
+      background: #e76482;
+      border-bottom: 3px solid #4c82cc; }
 
 section#blurb {
   background: #e76482;
@@ -175,20 +192,20 @@ section#faq {
   section#faq p.answer {
     color: #fafafa; }
 
-section#sponsor {
+section#register {
   background: #e76482;
   min-height: 80px;
   color: #fafafa; }
 
 /** Other stuff **/
-section#register div.splash-container {
+section#sponsor div.splash-container {
   padding-top: 100px; }
-section#register div.splash-banner {
+section#sponsor div.splash-banner {
   margin-top: 0; }
-  section#register div.splash-banner h1.title {
+  section#sponsor div.splash-banner h1.title {
     top: 0;
     bottom: auto; }
-section#register div.splash-text {
+section#sponsor div.splash-text {
   margin: 5px 0 0 0 !important; }
 
 section#footer {
@@ -206,8 +223,8 @@ section#footer {
       text-shadow: 0 0 3px deeppurple;
       cursor: pointer; }
 
-/* Mobile */
-@media only screen and (max-width: 992px) {
+/* Responsive */
+@media only screen and (max-width: 786px) {
   html, body {
     font-size: 1em; }
 
@@ -216,11 +233,36 @@ section#footer {
     padding-left: 0.4em;
     padding-right: 0.4em; }
 
-  section#splash div.splash-container {
-    padding-top: 0; }
+  section#splash {
+    display: relative; }
+    section#splash div.splash-container {
+      display: relative; }
+      section#splash div.splash-container .splash-centerer {
+        top: 0;
+        transform: none;
+        -webkit-transform: none;
+        -ms-transform: none; }
+      section#splash div.splash-container div.splash-banner {
+        width: 100%; }
 
   section.ui.page.grid.padded {
     padding-top: 10%;
-    padding-bottom: 10%; } }
+    padding-bottom: 10%; }
+
+  div.divider {
+    height: 30px;
+    background-size: auto 26px; } }
+@media only screen and (max-width: 320px) {
+  section.ui.page.grid.padded {
+    padding-top: 20%;
+    padding-bottom: 20%; }
+
+  div.divider {
+    height: 24px;
+    background-size: auto 18px; }
+
+  section h2 {
+    font-size: 2em;
+    line-height: 1.4em; } }
 
 /*# sourceMappingURL=main.css.map */
