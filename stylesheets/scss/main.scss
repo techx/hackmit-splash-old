@@ -113,6 +113,10 @@ section {
   .row {
     margin-top: 0;
   }
+
+  img {
+    max-width: 100%;
+  }
 }
 
 section.ui.page.grid.padded {
@@ -126,10 +130,12 @@ section#splash {
   // see http://stackoverflow.com/questions/8468066/child-inside-parent-with-min-height-100-not-inheriting-height
   display: table;
   height: inherit;
+  width: 100%; // there's a one pixel width bug here
 
   div.splash-container {
     font-size: 1em;
     display: table-cell;
+    width: 100%;
     height: 100%;
     // add space to account for nav bar
     padding-bottom: 3.5em;
@@ -137,10 +143,12 @@ section#splash {
     // VERTICAL CENTERING. These two classes
     // exist solely to vertically center in a display:table-cell
     .splash-relative {
+      width: 100%;
       height: 100%;
       position: relative;
     }
     .splash-centerer { 
+      width: 100%;
       top: 50%;
       -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
@@ -165,9 +173,9 @@ section#splash {
         position: absolute;
         margin: 0;
         left: 0; right: 0;
-        bottom: 0;
+        bottom: 2px;
         letter-spacing: 8px;
-        line-height: 1.1em;
+        line-height: 1.2em;
         font-size: 3em;  // fallback
         font-size: 5.5vw;
         padding-left: 5px;
@@ -225,6 +233,11 @@ section#splash {
       border-bottom: 3px solid $blue
     }
   }
+}
+
+img#techx {
+  margin-top: 100px;
+  width: 100px;
 }
 
 section#blurb {
@@ -322,6 +335,8 @@ section#footer {
     display: relative;
     div.splash-container {
       display: relative;
+      // add space to account for nav bar
+      padding-bottom: 7em;
       .splash-centerer {
         top: 0;
         transform: none;
@@ -356,6 +371,12 @@ section#footer {
     h2 {
       font-size: 2em;
       line-height: 1.4em;
+    }
+  }
+  section#splash {
+    div.splash-container {
+      // add space to account for nav bar
+      padding-bottom: 10em;
     }
   }
 }

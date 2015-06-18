@@ -7,3 +7,14 @@ Testing
 -------
 
 To view the splash page on your own computer, simply run `python -m SimpleHTTPServer` in this directory. Then, go to `http://localhost:8000` to view your version.
+
+
+Todo
+----
+PNG fallbacks for SVGs
+nav bar that follows
+collapse FAQ on mobile
+interactive component
+more decorations
+more pictures
+firefox resizing broken

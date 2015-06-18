@@ -80,6 +80,8 @@ section p {
   margin: 0; }
 section .row {
   margin-top: 0; }
+section img {
+  max-width: 100%; }
 
 section.ui.page.grid.padded {
   padding-top: 5%;
@@ -87,16 +89,20 @@ section.ui.page.grid.padded {
 
 section#splash {
   display: table;
-  height: inherit; }
+  height: inherit;
+  width: 100%; }
   section#splash div.splash-container {
     font-size: 1em;
     display: table-cell;
+    width: 100%;
     height: 100%;
     padding-bottom: 3.5em; }
     section#splash div.splash-container .splash-relative {
+      width: 100%;
       height: 100%;
       position: relative; }
     section#splash div.splash-container .splash-centerer {
+      width: 100%;
       top: 50%;
       -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
@@ -120,9 +126,9 @@ section#splash {
         margin: 0;
         left: 0;
         right: 0;
-        bottom: 0;
+        bottom: 2px;
         letter-spacing: 8px;
-        line-height: 1.1em;
+        line-height: 1.2em;
         font-size: 3em;
         font-size: 5.5vw;
         padding-left: 5px;
@@ -164,6 +170,10 @@ section#splash {
     #navbar .menu .item:hover {
       background: #e76482;
       border-bottom: 3px solid #4c82cc; }
+
+img#techx {
+  margin-top: 100px;
+  width: 100px; }
 
 section#blurb {
   background: #e76482;
@@ -236,7 +246,8 @@ section#footer {
   section#splash {
     display: relative; }
     section#splash div.splash-container {
-      display: relative; }
+      display: relative;
+      padding-bottom: 7em; }
       section#splash div.splash-container .splash-centerer {
         top: 0;
         transform: none;
@@ -263,6 +274,9 @@ section#footer {
 
   section h2 {
     font-size: 2em;
-    line-height: 1.4em; } }
+    line-height: 1.4em; }
+
+  section#splash div.splash-container {
+    padding-bottom: 10em; } }
 
 /*# sourceMappingURL=main.css.map */
