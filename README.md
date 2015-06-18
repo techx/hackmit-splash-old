@@ -11,10 +11,13 @@ To view the splash page on your own computer, simply run `python -m SimpleHTTPSe
 
 Todo
 ----
-PNG fallbacks for SVGs
-nav bar that follows
+nav bar that follows and is hooked up
 collapse FAQ on mobile
+add a final logo at the end
+hook up form
+firefox resizing broken
+
 interactive component
 more decorations
 more pictures
-firefox resizing broken
+PNG fallbacks for SVGs

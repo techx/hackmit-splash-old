@@ -104,10 +104,13 @@ section {
     margin:0;
   }
 
-  p {
+  p,
+  label,
+  input {
     font-size: 1.1em;
     line-height: 1.5em;
-    margin: 0;
+    margin: 0 auto;
+    display: block;
   }
 
   .row {
@@ -116,6 +119,15 @@ section {
 
   img {
     max-width: 100%;
+  }
+
+  input {
+    padding: 10px 2%;
+    width: 80%;
+  }
+
+  input:focus {
+    outline: 0;
   }
 }
 
@@ -236,7 +248,7 @@ section#splash {
 }
 
 img#techx {
-  margin-top: 100px;
+  margin-top: 50px;
   width: 100px;
 }
 
@@ -244,6 +256,25 @@ section#blurb {
   background: $magenta;
   min-height: 240px;
   color: $white;
+}
+
+#social {
+  margin-top: 2em;
+  margin-bottom: -2em;
+  a {
+    text-decoration: none;
+    color: $white;
+    text-align: center;
+    margin: 0;
+  }
+  a:hover {
+    color: $gold;
+  }
+  .icon {
+    font-size: 2em;
+    text-align: center;
+    margin: 0 1em;
+  }
 }
 
 section#schedule {
@@ -279,25 +310,71 @@ section#register {
   background: $magenta;
   min-height: 80px;
   color: $white;
+
+  input#interest-form-email {
+    border: none;
+    background-color: $deeppurple;
+    color: $white;
+    width: 60%;
+    padding: 10px 2%;
+  }
+  input#interest-form-submit {
+    border: none;
+    background-color: $gold;
+    color: $deeppurple;
+    padding: 10px 2%;
+    width: 20%;
+    cursor: pointer;
+    top: -1px;
+  }
+  input#interest-form-submit:hover {
+    background-color: $blue;
+    color: $white;
+  }
+  input#interest-form-submit:active {
+    background-color: $deeppurple;
+    color: $white;
+  }
+  fieldset {
+    display: block;
+    border: none;
+  }
+  input {
+    display: inline;
+    position: relative;
+  }
+  label {
+    margin-top: 0.4em;
+  }
+  ::-webkit-input-placeholder { /* WebKit browsers */
+    color: $magenta;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+     color: $magenta;
+     opacity: 1;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+     color: $magenta;
+     opacity: 1;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10+ */
+     color: $magenta;
+  }
+
+  p#appreciation {
+    padding: 1em;
+    background: $transparentwhite;
+    color: $deeppurple;
+    font-style: italic;
+  }
 }
 
-/** Other stuff **/
+/** Final stuff **/
+
 
 section#sponsor {
-  div.splash-container {
-    padding-top: 100px;
-  }
-
-  div.splash-banner {
-    margin-top: 0;
-    h1.title {
-      top: 0;
-      bottom: auto;
-    }
-  }
-  div.splash-text {
-    margin: 5px 0 0 0 !important;
-  }
+  background: $white;
+  color: $deeppurple;
 }
 
 section#footer {

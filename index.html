@@ -67,7 +67,7 @@
         <h1 class="montserrat-bold title">HACKMIT</h1>
       </div>
       <div class="splash-text">
-        <h2 class="montserrat-bold title" contenteditable="true">SEPT.19+20</h1>  
+        <h2 class="montserrat-bold title">SEPT.19+20</h1>  
       </div>
       </div>
       </div>
@@ -93,6 +93,17 @@
       HackMIT is MIT’s largest hackathon. Over a 24-hour period from September 19 to 20, over 1,000 hackers from around the world will gather on MIT’s campus to experiment and innovate on software and hardware projects. This weekend is your weekend to dust off your old ideas or try something completely new. Imagine the craziest projects possible, and work on the hack of your dreams!
     </p>
     </div>
+    <div class="ten wide column" id="social">
+    <a href="mailto:team@hackmit.org" class="social">
+      <i class="ui icon mail"></i>
+    </a>
+    <a href="https://twitter.com/hackmit" class="social">
+      <i class="ui icon twitter"></i>
+    </a>
+    <a href="https://www.facebook.com/HackMIT" class="social">
+      <i class="ui icon facebook"></i>
+    </a>
+    </div>
   </section>
 
   <div class="divider magentabg deeppurple"></div>
@@ -103,7 +114,7 @@
     </div>
     <div class="ten wide column">
     <p class="lato">
-      HackMIT will take place on Saturday to Sunday, September 19 – 20, 2015. Check back soon for a detailed schedule.
+      HackMIT will take place on Saturday to Sunday, September 19 – 20, 2015. <br/>Check back soon for a detailed schedule.
     </p>
     </div>
   </section>
@@ -224,17 +235,19 @@
       <h2>register</h2>
     </div>
     <div class="ten wide column">
-      <p class="lato">
-        For sponsorship opportunities, please get in touch with a HackMIT Organizer at <a href="mailto:sponsor@hackmit.org">sponsor@hackmit.org</a>.
-      </p>
-      <div class="interest">
+      <div class="interest lato">
         <form id="interest-form" onsubmit="">
-          <label for="email">Enter your email below and we'll let you know when registration opens!</label><br />
-          <input type="text" placeholder="Email" name="email" id="interest-form-email" />
+          <fieldset id="input">
+            <input type="text" placeholder="Your Email" name="email" id="interest-form-email" class="lato" />
+            <input type="submit" id="interest-form-submit" value="submit" />
+          </fieldset>
+          <label id="hi" for="email">Enter your email above and we'll let you know when registration opens!</label>
           <div class="thankyou hidden">Thanks for the email! We'll send you an email when registration opens.</div>
         </form>
       </div>
-      <p class="lato">HackMIT is student-run and is made possible by the goodwill of our sponsors, the MIT administration, and the MIT community.</p>
+      <br/>
+      <br/>
+      <p id="appreciation" class="lato">HackMIT is student-run and is made possible by the goodwill of our sponsors, the MIT administration, and the MIT community.</p>
       <a href="https://techx.mit.edu"><img id="techx" src="/assets/images/techx-logo.svg" alt="Powered by MIT TechX"/></a>
     </div>
 
@@ -242,8 +255,13 @@
 
   <div class="divider magentabg yellow"></div>
 
-  <section id="sponsor">
-    <h2 class="montserrat-bold title" contenteditable="true">sponsors</h1>  
+  <section id="sponsor" class="lato ui page grid center aligned padded stackable">
+    <div class="ten wide column">
+      <h2 class="montserrat-bold title">sponsors</h2>
+    </div> 
+    <div class="ten wide column">
+      <p class="lato">We have some great sponsors lined up for you.<br/>Check back soon for logos.</p>
+    </div>       
   </div>
 
   <section id="footer" class="lato">

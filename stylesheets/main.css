@@ -74,14 +74,22 @@ section h2 {
   letter-spacing: 5px;
   line-height: 1.3em;
   margin: 0; }
-section p {
+section p,
+section label,
+section input {
   font-size: 1.1em;
   line-height: 1.5em;
-  margin: 0; }
+  margin: 0 auto;
+  display: block; }
 section .row {
   margin-top: 0; }
 section img {
   max-width: 100%; }
+section input {
+  padding: 10px 2%;
+  width: 80%; }
+section input:focus {
+  outline: 0; }
 
 section.ui.page.grid.padded {
   padding-top: 5%;
@@ -172,13 +180,28 @@ section#splash {
       border-bottom: 3px solid #4c82cc; }
 
 img#techx {
-  margin-top: 100px;
+  margin-top: 50px;
   width: 100px; }
 
 section#blurb {
   background: #e76482;
   min-height: 240px;
   color: #fafafa; }
+
+#social {
+  margin-top: 2em;
+  margin-bottom: -2em; }
+  #social a {
+    text-decoration: none;
+    color: #fafafa;
+    text-align: center;
+    margin: 0; }
+  #social a:hover {
+    color: #ffe552; }
+  #social .icon {
+    font-size: 2em;
+    text-align: center;
+    margin: 0 1em; }
 
 section#schedule {
   background: #473899;
@@ -206,17 +229,58 @@ section#register {
   background: #e76482;
   min-height: 80px;
   color: #fafafa; }
+  section#register input#interest-form-email {
+    border: none;
+    background-color: #473899;
+    color: #fafafa;
+    width: 60%;
+    padding: 10px 2%; }
+  section#register input#interest-form-submit {
+    border: none;
+    background-color: #ffe552;
+    color: #473899;
+    padding: 10px 2%;
+    width: 20%;
+    cursor: pointer;
+    top: -1px; }
+  section#register input#interest-form-submit:hover {
+    background-color: #4c82cc;
+    color: #fafafa; }
+  section#register input#interest-form-submit:active {
+    background-color: #473899;
+    color: #fafafa; }
+  section#register fieldset {
+    display: block;
+    border: none; }
+  section#register input {
+    display: inline;
+    position: relative; }
+  section#register label {
+    margin-top: 0.4em; }
+  section#register ::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #e76482; }
+  section#register :-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #e76482;
+    opacity: 1; }
+  section#register ::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #e76482;
+    opacity: 1; }
+  section#register :-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #e76482; }
+  section#register p#appreciation {
+    padding: 1em;
+    background: rgba(250, 250, 250, 0.5);
+    color: #473899;
+    font-style: italic; }
 
-/** Other stuff **/
-section#sponsor div.splash-container {
-  padding-top: 100px; }
-section#sponsor div.splash-banner {
-  margin-top: 0; }
-  section#sponsor div.splash-banner h1.title {
-    top: 0;
-    bottom: auto; }
-section#sponsor div.splash-text {
-  margin: 5px 0 0 0 !important; }
+/** Final stuff **/
+section#sponsor {
+  background: #fafafa;
+  color: #473899; }
 
 section#footer {
   width: 100%;
