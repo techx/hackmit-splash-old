@@ -232,7 +232,8 @@ section#faq {
 section#register {
   background: #e76482;
   min-height: 80px;
-  color: #fafafa; }
+  color: #fafafa;
+  padding-bottom: 5%; }
   section#register input#interest-form-email {
     border: none;
     background-color: #473899;
