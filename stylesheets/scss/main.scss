@@ -57,7 +57,7 @@ a {
 div.divider {
   height: 3.3em;
   background-image: url("/assets/images/hack-logo-tile-purple.svg");
-  background-position: center;
+  background-position: -5px;
   background-repeat: repeat-x;
   background-color: $magenta;
   background-size: auto 3em;
@@ -441,7 +441,7 @@ section#footer {
     padding-bottom: 20%;
   }
   div.divider {
-    height: 24px;
+    height: 22px;
     background-size: auto 18px;
   }
   section {
