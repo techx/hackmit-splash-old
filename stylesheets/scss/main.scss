@@ -176,6 +176,8 @@ section#splash {
       }
       img.logo {
         position: absolute;
+        // fallback
+        width: 10%;
         width: 13vw;
         height: 13vw;
         margin: auto;
@@ -274,6 +276,11 @@ section#blurb {
     font-size: 2em;
     text-align: center;
     margin: 0 1em;
+  }
+
+  .icon:hover {
+    text-shadow: 0 0 3px deeppurple;
+    cursor: pointer;
   }
 }
 
@@ -375,27 +382,24 @@ section#register {
 section#sponsor {
   background: $white;
   color: $deeppurple;
-}
 
-section#footer {
-  width: 100%;
-  padding: 40px 0;
-  height: 40px;
-  text-align: center;
-  margin-top: -60px;
-  color: $deeppurple;
+  #footersplash {
+    max-width: 300px;
 
-  a.social {
-    text-decoration: none;
-    margin: 0 8px;
-    color: $deeppurple;
+    width: 60%;
+    margin: 30px auto 0 auto;
+  }
 
-    .icon:hover {
-      text-shadow: 0 0 3px deeppurple;
-      cursor: pointer;
-    }
+  img.logo {
+      position: absolute;
+      width: 60%;
+      height: 60%;
+      max-width: 100px;
+      margin: auto;
+      top: 0; left: 2%; bottom: 0; right: 0;
   }
 }
+
 
 /* Responsive */
 

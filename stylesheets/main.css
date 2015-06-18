@@ -122,6 +122,7 @@ section#splash {
         max-width: 100%; }
       section#splash div.splash-container div.splash-banner img.logo {
         position: absolute;
+        width: 10%;
         width: 13vw;
         height: 13vw;
         margin: auto;
@@ -202,6 +203,9 @@ section#blurb {
     font-size: 2em;
     text-align: center;
     margin: 0 1em; }
+  #social .icon:hover {
+    text-shadow: 0 0 3px deeppurple;
+    cursor: pointer; }
 
 section#schedule {
   background: #473899;
@@ -281,21 +285,20 @@ section#register {
 section#sponsor {
   background: #fafafa;
   color: #473899; }
-
-section#footer {
-  width: 100%;
-  padding: 40px 0;
-  height: 40px;
-  text-align: center;
-  margin-top: -60px;
-  color: #473899; }
-  section#footer a.social {
-    text-decoration: none;
-    margin: 0 8px;
-    color: #473899; }
-    section#footer a.social .icon:hover {
-      text-shadow: 0 0 3px deeppurple;
-      cursor: pointer; }
+  section#sponsor #footersplash {
+    max-width: 300px;
+    width: 60%;
+    margin: 30px auto 0 auto; }
+  section#sponsor img.logo {
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    max-width: 100px;
+    margin: auto;
+    top: 0;
+    left: 2%;
+    bottom: 0;
+    right: 0; }
 
 /* Responsive */
 @media only screen and (max-width: 786px) {
