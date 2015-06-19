@@ -252,6 +252,10 @@ section#splash {
       color: $red;
     }
 
+    .item.important:hover {
+      color: $deeppurple;
+    }
+
     .item:hover {
       background: $magenta;
       border-bottom: 3px solid $blue
