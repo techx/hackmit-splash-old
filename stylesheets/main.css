@@ -39,23 +39,28 @@ a {
  */
 div.divider {
   height: 3.3em;
-  background-image: url("/assets/images/hack-logo-tile-purple.svg");
+  background-image: url("/assets/images/hack-logo-tile-purple.png");
+  background-image: linear-gradient(transparent, transparent), url("/assets/images/hack-logo-tile-purple.svg");
   background-position: -5px;
   background-repeat: repeat-x;
   background-color: #e76482;
   background-size: auto 3em; }
 
 .divider.deeppurple {
-  background-image: url("/assets/images/hack-logo-tile-purple.svg"); }
+  background-image: url("/assets/images/hack-logo-tile-purple.png");
+  background-image: linear-gradient(transparent, transparent), url("/assets/images/hack-logo-tile-purple.svg"); }
 
 .divider.blue {
-  background-image: url("/assets/images/hack-logo-tile-blue.svg"); }
+  background-image: url("/assets/images/hack-logo-tile-blue.png");
+  background-image: linear-gradient(transparent, transparent), url("/assets/images/hack-logo-tile-blue.svg"); }
 
 .divider.magenta {
-  background-image: url("/assets/images/hack-logo-tile-magenta.svg"); }
+  background-image: url("/assets/images/hack-logo-tile-magenta.png");
+  background-image: linear-gradient(transparent, transparent), url("/assets/images/hack-logo-tile-magenta.svg"); }
 
 .divider.yellow {
-  background-image: url("/assets/images/hack-logo-tile-yellow.svg"); }
+  background-image: url("/assets/images/hack-logo-tile-yellow.png");
+  background-image: linear-gradient(transparent, transparent), url("/assets/images/hack-logo-tile-yellow.svg"); }
 
 .divider.deeppurplebg {
   background-color: #473899; }
@@ -197,8 +202,6 @@ section#splash {
   z-index: 5; }
 
 img#techx {
-  color: #473899;
-  margin-top: 50px;
   width: 100px; }
 
 section#blurb {
