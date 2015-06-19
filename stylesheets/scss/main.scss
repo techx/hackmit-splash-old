@@ -410,17 +410,23 @@ section#sponsor {
   html,body {
     font-size: 1em;
   }
-  #navbar .menu .item {
-    width: 7em;
-    padding-left: 0.4em;
-    padding-right: 0.4em;
+  #navbar {
+    position: relative;
+    .menu .item {
+      width: 7em;
+      padding-left: 0.4em;
+      padding-right: 0.4em;
+    }
   }
   section#splash {
-    display: relative;
+    display: block;
+    height: auto;
+
     div.splash-container {
-      display: relative;
-      // add space to account for nav bar
-      padding-bottom: 7em;
+      display: block;
+      height: auto;
+      // add space to unaccount for now relative nav bar
+      padding-bottom: 0;
       .splash-centerer {
         top: 0;
         transform: none;
@@ -459,8 +465,19 @@ section#sponsor {
   }
   section#splash {
     div.splash-container {
-      // add space to account for nav bar
-      padding-bottom: 10em;
+      // undo space to account for relative nav bar
+      padding-bottom: 0em;
+      display: block;
+      div.splash-banner {
+        h1.title {
+          font-size: 1.5em;
+        }
+      }
+    }
+    div.splash-text {
+      h2.title {
+        font-size: 1.5em;
+      }
     }
   }
 }
