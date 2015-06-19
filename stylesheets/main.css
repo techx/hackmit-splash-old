@@ -313,7 +313,7 @@ section#register {
     display: inline;
     position: relative; }
   section#register label {
-    margin-top: 1.2em; }
+    margin-bottom: 1.2em; }
   section#register ::-webkit-input-placeholder {
     /* WebKit browsers */
     color: #ffe552; }
