@@ -246,6 +246,7 @@ section#register {
     background-color: #ffe552;
     color: #473899;
     padding: 10px 2%;
+    min-width: 80px;
     width: 15%;
     margin-left: 5px;
     cursor: pointer;
