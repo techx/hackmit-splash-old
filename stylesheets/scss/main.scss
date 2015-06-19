@@ -252,11 +252,8 @@ section#splash {
       color: $red;
     }
 
-    .item.important:hover {
-      color: $deeppurple;
-    }
-
     .item:hover {
+      color: white;
       background: $magenta;
       border-bottom: 3px solid $blue
     }
@@ -271,6 +268,7 @@ section#splash {
 }
 
 img#techx {
+  color: $deeppurple;
   margin-top: 50px;
   width: 100px;
 }

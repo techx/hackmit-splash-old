@@ -185,9 +185,8 @@ section#splash {
       font-weight: bold; }
     #navbar .menu .item.important {
       color: #f1645d; }
-    #navbar .menu .item.important:hover {
-      color: #473899; }
     #navbar .menu .item:hover {
+      color: white;
       background: #e76482;
       border-bottom: 3px solid #4c82cc; }
 
@@ -198,6 +197,7 @@ section#splash {
   z-index: 5; }
 
 img#techx {
+  color: #473899;
   margin-top: 50px;
   width: 100px; }
 
