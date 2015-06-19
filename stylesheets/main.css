@@ -333,6 +333,8 @@ section#register {
     background: rgba(250, 250, 250, 0.5);
     color: #473899;
     font-style: italic; }
+  section#register .thankyou {
+    margin-bottom: 87px; }
 
 /** Final stuff **/
 section#sponsor {
