@@ -141,6 +141,7 @@ section#splash {
   // workaround to simulate min-height: 100%
   // see http://stackoverflow.com/questions/8468066/child-inside-parent-with-min-height-100-not-inheriting-height
   display: table;
+  table-layout: fixed;
   height: inherit;
   width: 100%; // there's a one pixel width bug here
 
