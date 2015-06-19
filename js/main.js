@@ -53,12 +53,49 @@ $(document).ready(function() {
     })
 
   var resizeTimeout;
+  var resizeNavbarTimeout;
   $(window).on('resize', function() {
     clearTimeout(resizeTimeout);
+    clearTimeout(resizeNavbarTimeout);
     resizeTimeout = setTimeout(hideAnswers(), 200);
-  })
+    resizeNavbarTimeout = setTimeout(recalculateNavbarPosition(), 500);
+  });
 
+  /* Following Nav Bar */
+  var scrollTimeout;
+  $(window).on('scroll', function() {
+    if ($(window).width() >= 786) {
+      clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(checkAndMoveNavbarPosition(), 400);
+    }
+  });
+
+  /* move the nav bar as appropriate */
+  var isFixed = false;
+  var navbarHeight;
+  var deltaLocation;
+  recalculateNavbarPosition();
+  function checkAndMoveNavbarPosition() {
+    if (!isFixed && $(window).scrollTop() > deltaLocation) {
+      $('#navbar').stop(true).hide();
+      $('#navbar').addClass('fixed');
+      isFixed = true;
+      $('#navbar').fadeIn(800);
+    }
+    else if (isFixed && $(window).scrollTop() < deltaLocation) {
+      $('#navbar').stop(true).css("display", "none");
+      $('#navbar').removeClass('fixed');
+      isFixed = false;
+      $('#navbar').fadeIn(800);
+    }
+  }
+
+  function recalculateNavbarPosition() {
+    navbarHeight = $('#navbar').outerHeight();
+    deltaLocation = $('#splash').outerHeight() + 200 - navbarHeight;
+  }
 });
+
 
 //run on window load and resize
 function hideAnswers() {

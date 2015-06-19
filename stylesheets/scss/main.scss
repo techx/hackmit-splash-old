@@ -253,6 +253,13 @@ section#splash {
   }
 }
 
+#navbar.fixed {
+  position: fixed;
+  top: 0;
+  bottom: auto;
+  z-index: 5;
+}
+
 img#techx {
   margin-top: 50px;
   width: 100px;
@@ -469,8 +476,13 @@ section#sponsor {
     height: 30px;
     background-size: auto 26px;
   }
+
   .question {
     cursor: pointer;
+  }
+
+  #navbar.fixed {
+    position: relative;
   }
 }
 

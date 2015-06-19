@@ -184,6 +184,12 @@ section#splash {
       background: #e76482;
       border-bottom: 3px solid #4c82cc; }
 
+#navbar.fixed {
+  position: fixed;
+  top: 0;
+  bottom: auto;
+  z-index: 5; }
+
 img#techx {
   margin-top: 50px;
   width: 100px; }
@@ -361,7 +367,10 @@ section#sponsor {
     background-size: auto 26px; }
 
   .question {
-    cursor: pointer; } }
+    cursor: pointer; }
+
+  #navbar.fixed {
+    position: relative; } }
 @media only screen and (max-width: 480px) {
   section h2 {
     font-size: 2em; } }
@@ -391,3 +400,5 @@ section#sponsor {
       font-size: 1.5em; }
   section#splash div.splash-text h2.title {
     font-size: 1.5em; } }
+
+/*# sourceMappingURL=main.css.map */
