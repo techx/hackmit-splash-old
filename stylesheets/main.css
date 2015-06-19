@@ -97,6 +97,7 @@ section.ui.page.grid.padded {
 
 section#splash {
   display: table;
+  table-layout: fixed;
   height: inherit;
   width: 100%; }
   section#splash div.splash-container {
@@ -232,8 +233,7 @@ section#faq {
 section#register {
   background: #e76482;
   min-height: 80px;
-  color: #fafafa;
-  padding-bottom: 5%; }
+  color: #fafafa; }
   section#register input#interest-form-email {
     border: none;
     background-color: #473899;
@@ -264,7 +264,7 @@ section#register {
     margin-top: 0.4em; }
   section#register ::-webkit-input-placeholder {
     /* WebKit browsers */
-    color: #ffe552; }
+    color: #e76482; }
   section#register :-moz-placeholder {
     /* Mozilla Firefox 4 to 18 */
     color: #e76482;
