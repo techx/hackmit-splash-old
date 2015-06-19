@@ -269,16 +269,35 @@ section#blurb {
   background: $magenta;
   min-height: 240px;
   color: $white;
+
+  .button {
+    display: inline-block;
+    margin: 15px auto 0px auto;
+    background-color: $gold;
+    padding: 0.8em 3em;
+    color: red;
+    font-weight: bold;
+    font-family: $montserrat;
+    text-transform: uppercase;
+    font-size: 1em;
+    text-align: center;
+    border: 0;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: $blue;
+    color: $white;
+  }
 }
 
 #social {
-  margin-top: 2em;
-  margin-bottom: -2em;
   a {
     text-decoration: none;
     color: $deeppurple;
     text-align: center;
     margin: 0;
+    padding-left: 5px;
   }
   a:hover {
     color: $gold;
@@ -286,12 +305,26 @@ section#blurb {
   .icon {
     font-size: 2em;
     text-align: center;
-    margin: 0 1em;
+    margin: 0 0.2em;
   }
 
   .icon:hover {
-    text-shadow: 0 0 3px deeppurple;
+    text-shadow: 0 0 3px $deeppurple;
     cursor: pointer;
+  }
+
+  span {
+    color: $gold;
+    top: -2px;
+  }
+
+  a.social {
+    color: $gold;
+    text-align: center;
+    text-decoration: underline;
+  }
+  a.social:hover {
+    color: $deeppurple;
   }
 }
 

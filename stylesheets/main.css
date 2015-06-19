@@ -198,24 +198,47 @@ section#blurb {
   background: #e76482;
   min-height: 240px;
   color: #fafafa; }
-
-#social {
-  margin-top: 2em;
-  margin-bottom: -2em; }
-  #social a {
-    text-decoration: none;
-    color: #473899;
+  section#blurb .button {
+    display: inline-block;
+    margin: 15px auto 0px auto;
+    background-color: #ffe552;
+    padding: 0.8em 3em;
+    color: red;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-size: 1em;
     text-align: center;
-    margin: 0; }
-  #social a:hover {
-    color: #ffe552; }
-  #social .icon {
-    font-size: 2em;
-    text-align: center;
-    margin: 0 1em; }
-  #social .icon:hover {
-    text-shadow: 0 0 3px deeppurple;
+    border: 0;
     cursor: pointer; }
+  section#blurb .button:hover {
+    background-color: #4c82cc;
+    color: #fafafa; }
+
+#social a {
+  text-decoration: none;
+  color: #473899;
+  text-align: center;
+  margin: 0;
+  padding-left: 5px; }
+#social a:hover {
+  color: #ffe552; }
+#social .icon {
+  font-size: 2em;
+  text-align: center;
+  margin: 0 0.2em; }
+#social .icon:hover {
+  text-shadow: 0 0 3px #473899;
+  cursor: pointer; }
+#social span {
+  color: #ffe552;
+  top: -2px; }
+#social a.social {
+  color: #ffe552;
+  text-align: center;
+  text-decoration: underline; }
+#social a.social:hover {
+  color: #473899; }
 
 section#schedule {
   background: #473899;
