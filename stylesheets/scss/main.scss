@@ -247,7 +247,7 @@ section#splash {
     }
 
     .item.important {
-      color: red;
+      color: $red;
     }
 
     .item:hover {
@@ -279,7 +279,7 @@ section#blurb {
     margin: 15px auto 0px auto;
     background-color: $gold;
     padding: 0.8em 3em;
-    color: red;
+    color: $red;
     font-weight: bold;
     font-family: $montserrat;
     text-transform: uppercase;
@@ -389,7 +389,7 @@ section#register {
     font-family: $montserrat;
     text-transform: uppercase;
     background-color: $gold;
-    color: red;
+    color: $red;
     padding: 10px 2%;
     min-width: 80px;
     width: 15%;

@@ -4,23 +4,14 @@ $(document).ready(function() {
 
   $('#main')
     .transition('fade in', 1500);
-
-  $('#navbar')
-    .transition('fade in', 1500);
     
   var $bodytag = $('html, body');
   var $tags = $('#goto-splash, #goto-blurb, #goto-schedule, #goto-faq, #goto-register, #goto-sponsor');
   $tags.click(function(e) {
     var elementName = e.target.id.substr(5);
-    if (elementName === 'blurb') {
-      $bodytag.animate({
-        scrollTop: $('#'+elementName).offset().top - 45
-      }, 800);
-    } else {
-      $bodytag.animate({
-        scrollTop: $('#'+elementName).offset().top
-      }, 800);
-    }
+    $bodytag.animate({
+      scrollTop: $('#'+elementName).offset().top - 45
+    }, 800);
   });
 
   hideAnswers();

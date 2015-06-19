@@ -182,7 +182,7 @@ section#splash {
       color: #473899;
       font-weight: bold; }
     #navbar .menu .item.important {
-      color: red; }
+      color: #f1645d; }
     #navbar .menu .item:hover {
       background: #e76482;
       border-bottom: 3px solid #4c82cc; }
@@ -206,7 +206,7 @@ section#blurb {
     margin: 15px auto 0px auto;
     background-color: #ffe552;
     padding: 0.8em 3em;
-    color: red;
+    color: #f1645d;
     font-weight: bold;
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
@@ -287,7 +287,7 @@ section#register {
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     background-color: #ffe552;
-    color: red;
+    color: #f1645d;
     padding: 10px 2%;
     min-width: 80px;
     width: 15%;
