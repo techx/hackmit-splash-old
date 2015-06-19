@@ -118,7 +118,8 @@ section#splash {
       top: 50%;
       -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
-      transform: translateY(-50%); }
+      transform: translateY(-50%);
+      text-align: center; }
     section#splash div.splash-container div.splash-banner {
       width: 37.5%;
       margin: 0 auto; }
@@ -214,6 +215,8 @@ section#blurb {
   section#blurb .button:hover {
     background-color: #4c82cc;
     color: #fafafa; }
+  section#blurb .ui.page.grid.padded {
+    padding-bottom: 5%; }
 
 #social a {
   text-decoration: none;
@@ -278,8 +281,11 @@ section#register {
     font-weight: 400; }
   section#register input#interest-form-submit {
     border: none;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
     background-color: #ffe552;
-    color: #473899;
+    color: red;
     padding: 10px 2%;
     min-width: 80px;
     width: 15%;
@@ -382,7 +388,8 @@ section#sponsor {
         top: 0;
         transform: none;
         -webkit-transform: none;
-        -ms-transform: none; }
+        -ms-transform: none;
+        text-align: center; }
       section#splash div.splash-container div.splash-banner {
         width: 100%; }
 
