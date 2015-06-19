@@ -363,6 +363,12 @@ section#faq {
     text-align: center;
     margin-bottom: 0;
   }
+  h2.large {
+    display: block;
+  }
+  h2.mobile {
+    display: none;
+  }
   .question {
     color:$gold;
     font-size: 1.5em;
@@ -498,6 +504,17 @@ section#sponsor {
 
 /* Responsive */
 
+@media only screen and (max-width: 1000px) {
+  section#faq {
+    h2.large {
+      display: none;
+    }
+    h2.mobile {
+      display: block;
+    }
+  }
+}
+
 @media only screen and (max-width: 786px) {
   html,body {
     font-size: 1em;
@@ -608,6 +625,7 @@ section#sponsor {
       width: 30%;
     }
   }
+
 
   section h2 {
     font-size: 3em;

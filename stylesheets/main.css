@@ -266,6 +266,10 @@ section#faq {
     color: #fafafa;
     text-align: center;
     margin-bottom: 0; }
+  section#faq h2.large {
+    display: block; }
+  section#faq h2.mobile {
+    display: none; }
   section#faq .question {
     color: #ffe552;
     font-size: 1.5em; }
@@ -375,6 +379,11 @@ section#sponsor {
   margin: 0; }
 
 /* Responsive */
+@media only screen and (max-width: 1000px) {
+  section#faq h2.large {
+    display: none; }
+  section#faq h2.mobile {
+    display: block; } }
 @media only screen and (max-width: 786px) {
   html, body {
     font-size: 1em; }
