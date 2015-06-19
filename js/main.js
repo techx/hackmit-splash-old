@@ -5,23 +5,14 @@ $(document).ready(function() {
 
   $('#navbar')
     .transition('fade in', 1500);
-
-  $('#goto-home').click(function() {
-    $('html, body').animate({
-      scrollTop: $('#splash').offset().top
-    }, 1000);
-  });
-
-  $('#goto-about').click(function() {
-    $('html, body').animate({
-      scrollTop: $('#blurb').offset().top
-    }, 1000);
-  });
-
-  $('#goto-faq').click(function() {
-    $('html, body').animate({
-      scrollTop: $('#faq').offset().top
-    }, 1000);
+    
+  var $bodytag = $('html, body');
+  var $tags = $('#goto-splash, #goto-blurb, #goto-schedule, #goto-faq, #goto-register, #goto-sponsor')
+  $tags.click(function(e) {
+    var elementName = e.target.id.substr(5);
+    $bodytag.animate({
+      scrollTop: $("#"+elementName).offset().top
+    }, 800);
   });
 
   $("#interest-form").on('submit', function(){
