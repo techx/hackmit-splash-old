@@ -39,28 +39,23 @@ a {
  */
 div.divider {
   height: 3.3em;
-  background-image: url("/assets/images/hack-logo-tile-purple.png");
-  background-image: linear-gradient(transparent, transparent), url("/assets/images/hack-logo-tile-purple.svg");
+  background-image: url("/assets/images/hack-logo-tile-purple.svg");
   background-position: -5px;
   background-repeat: repeat-x;
   background-color: #e76482;
   background-size: auto 3em; }
 
 .divider.deeppurple {
-  background-image: url("/assets/images/hack-logo-tile-purple.png");
-  background-image: linear-gradient(transparent, transparent), url("/assets/images/hack-logo-tile-purple.svg"); }
+  background-image: url("/assets/images/hack-logo-tile-purple.svg"); }
 
 .divider.blue {
-  background-image: url("/assets/images/hack-logo-tile-blue.png");
-  background-image: linear-gradient(transparent, transparent), url("/assets/images/hack-logo-tile-blue.svg"); }
+  background-image: url("/assets/images/hack-logo-tile-blue.svg"); }
 
 .divider.magenta {
-  background-image: url("/assets/images/hack-logo-tile-magenta.png");
-  background-image: linear-gradient(transparent, transparent), url("/assets/images/hack-logo-tile-magenta.svg"); }
+  background-image: url("/assets/images/hack-logo-tile-magenta.svg"); }
 
 .divider.yellow {
-  background-image: url("/assets/images/hack-logo-tile-yellow.png");
-  background-image: linear-gradient(transparent, transparent), url("/assets/images/hack-logo-tile-yellow.svg"); }
+  background-image: url("/assets/images/hack-logo-tile-yellow.svg"); }
 
 .divider.deeppurplebg {
   background-color: #473899; }
@@ -337,7 +332,8 @@ section#register {
     color: #473899;
     font-style: italic; }
   section#register .thankyou {
-    margin-bottom: 87px; }
+    margin-top: 20px;
+    margin-bottom: 67px; }
 
 /** Final stuff **/
 section#sponsor {
@@ -413,6 +409,9 @@ section#sponsor {
       section#splash div.splash-container div.splash-text .title {
         font-size: 5em; }
 
+  section#register .thankyou {
+    margin-bottom: 114px; }
+
   section.ui.page.grid.padded {
     padding-top: 10%;
     padding-bottom: 10%; }
@@ -445,7 +444,7 @@ section#sponsor {
     width: 30%; }
 
   section h2 {
-    font-size: 2em; } }
+    font-size: 3em; } }
 @media only screen and (max-width: 320px) {
   section#splash div.splash-container div.splash-banner .title {
     font-size: 2.5em !important; }

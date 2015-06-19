@@ -56,8 +56,7 @@ a {
 
 div.divider {
   height: 3.3em;
-  background-image: url("/assets/images/hack-logo-tile-purple.png");
-  background-image: linear-gradient(transparent, transparent), url("/assets/images/hack-logo-tile-purple.svg");
+  background-image: url("/assets/images/hack-logo-tile-purple.svg");
   background-position: -5px;
   background-repeat: repeat-x;
   background-color: $magenta;
@@ -65,23 +64,19 @@ div.divider {
 }
 
 .divider.deeppurple {
-  background-image: url("/assets/images/hack-logo-tile-purple.png");
-  background-image: linear-gradient(transparent, transparent), url("/assets/images/hack-logo-tile-purple.svg");
+  background-image: url("/assets/images/hack-logo-tile-purple.svg");
 }
 
 .divider.blue {
-  background-image: url("/assets/images/hack-logo-tile-blue.png");
-  background-image: linear-gradient(transparent, transparent), url("/assets/images/hack-logo-tile-blue.svg");
+  background-image: url("/assets/images/hack-logo-tile-blue.svg");
 }
 
 .divider.magenta {
-  background-image: url("/assets/images/hack-logo-tile-magenta.png");
-  background-image: linear-gradient(transparent, transparent), url("/assets/images/hack-logo-tile-magenta.svg");
+  background-image: url("/assets/images/hack-logo-tile-magenta.svg");
 }
 
 .divider.yellow {
-  background-image: url("/assets/images/hack-logo-tile-yellow.png");
-  background-image: linear-gradient(transparent, transparent), url("/assets/images/hack-logo-tile-yellow.svg");
+  background-image: url("/assets/images/hack-logo-tile-yellow.svg");
 }
 
 .divider.deeppurplebg {
@@ -448,7 +443,8 @@ section#register {
   }
 
   .thankyou {
-    margin-bottom: 87px;
+    margin-top: 20px;
+    margin-bottom: 67px;
   }
 }
 
@@ -552,6 +548,12 @@ section#sponsor {
       }
     }
   }
+
+  section#register {
+    .thankyou {
+      margin-bottom: 114px;
+    }
+  }
   section.ui.page.grid.padded {
     padding-top: 10%;
     padding-bottom: 10%;
@@ -608,7 +610,7 @@ section#sponsor {
   }
 
   section h2 {
-    font-size: 2em;
+    font-size: 3em;
   }
 }
 

@@ -37,8 +37,8 @@ $(document).ready(function() {
           email: email
         }
       });
-      $(this).find('label, input').transition('fade out', 100, function() {
-        $('.thankyou').transition('fade in', 100);
+      $(this).find('label, input').transition('fade out', 500, function() {
+        $('.thankyou').transition('fade in', 500);
       });
       
     } else {
