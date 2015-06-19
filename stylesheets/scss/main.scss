@@ -380,6 +380,8 @@ section#register {
     margin-left: 5px;
     cursor: pointer;
     top: -1px;
+    /* disable strange appearance on mobile */
+    -webkit-appearance: none;
   }
   input#interest-form-submit:hover {
     background-color: $blue;

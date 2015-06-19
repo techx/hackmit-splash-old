@@ -282,7 +282,9 @@ section#register {
     width: 15%;
     margin-left: 5px;
     cursor: pointer;
-    top: -1px; }
+    top: -1px;
+    /* disable strange appearance on mobile */
+    -webkit-appearance: none; }
   section#register input#interest-form-submit:hover {
     background-color: #4c82cc;
     color: #fafafa; }
