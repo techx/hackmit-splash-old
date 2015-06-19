@@ -124,8 +124,7 @@ section#splash {
       transform: translateY(-50%);
       text-align: center; }
     section#splash div.splash-container div.splash-banner {
-      max-height: 50%;
-      max-width: 37.5%;
+      width: 37.5%;
       margin: 0 auto; }
       section#splash div.splash-container div.splash-banner img {
         max-width: 100%;

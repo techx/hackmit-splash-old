@@ -169,7 +169,6 @@ section#splash {
     }
     .splash-centerer { 
       width: 100%;
-      // height: 100%;
       top: 50%;
       -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
@@ -178,8 +177,7 @@ section#splash {
     }
 
     div.splash-banner {
-      max-height: 50%;
-      max-width: 37.5%;
+      width: 37.5%;
       margin: 0 auto;
 
       img {
@@ -513,7 +511,7 @@ section#sponsor {
 
     div.splash-container {
       display: block;
-      height: auto;
+      height: auto; 
       // add space to unaccount for now relative nav bar
       padding-bottom: 0;
 
