@@ -589,6 +589,18 @@ section#sponsor {
       }
     }
   }
+  section#register {
+    input#interest-form-email {
+      width: 50%;
+      padding: 10px 2%;
+      font-weight: 400;
+    }
+    input#interest-form-submit {
+      padding: 10px 10px;
+      min-width: 80px;
+      width: 30%;
+    }
+  }
 
   section h2 {
     font-size: 2em;
