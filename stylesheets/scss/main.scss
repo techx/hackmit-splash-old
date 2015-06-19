@@ -525,6 +525,21 @@ section#sponsor {
 
       div.splash-banner {
         width: 100%;
+
+        img.logo {
+          width: 50vw;
+          height: 50vw;
+        } 
+
+        .title {
+          font-size: 3em!important;
+        }
+      }
+
+      div.splash-text {
+        .title {
+          font-size: 2em;
+        }
       }
     }
   }

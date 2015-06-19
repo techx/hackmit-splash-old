@@ -398,6 +398,13 @@ section#sponsor {
         text-align: center; }
       section#splash div.splash-container div.splash-banner {
         width: 100%; }
+        section#splash div.splash-container div.splash-banner img.logo {
+          width: 50vw;
+          height: 50vw; }
+        section#splash div.splash-container div.splash-banner .title {
+          font-size: 3em !important; }
+      section#splash div.splash-container div.splash-text .title {
+        font-size: 2em; }
 
   section.ui.page.grid.padded {
     padding-top: 10%;
