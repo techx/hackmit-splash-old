@@ -121,10 +121,12 @@ section#splash {
       transform: translateY(-50%);
       text-align: center; }
     section#splash div.splash-container div.splash-banner {
-      width: 37.5%;
+      max-height: 50%;
+      max-width: 37.5%;
       margin: 0 auto; }
       section#splash div.splash-container div.splash-banner img {
-        max-width: 100%; }
+        max-width: 100%;
+        max-height: 100%; }
       section#splash div.splash-container div.splash-banner img.logo {
         position: absolute;
         width: 10%;
@@ -332,10 +334,12 @@ section#register {
 section#sponsor {
   background: #fafafa;
   color: #473899; }
+  section#sponsor a, section#sponsor a:visited {
+    color: #473899; }
   section#sponsor #footersplash {
     max-width: 300px;
     width: 60%;
-    margin: 30px auto 0 auto; }
+    margin: 7% auto 0 auto; }
   section#sponsor img.logo {
     position: absolute;
     width: 60%;
