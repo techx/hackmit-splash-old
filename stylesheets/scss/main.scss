@@ -588,6 +588,12 @@ section#sponsor {
   #navbar.fixed {
     position: relative;
   }
+
+  section#sponsor {
+    #footersplash {
+      margin: 20% auto 0 auto;
+    }
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -626,7 +632,6 @@ section#sponsor {
       width: 30%;
     }
   }
-
 
   section h2 {
     font-size: 3em;
