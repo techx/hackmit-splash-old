@@ -69,6 +69,9 @@ div.divider {
 .divider.yellowbg {
   background-color: #ffe552; }
 
+.divider.whitebg {
+  background-color: white; }
+
 section h2 {
   font-size: 3em;
   letter-spacing: 5px;
