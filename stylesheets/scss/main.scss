@@ -403,6 +403,14 @@ section#sponsor {
   }
 }
 
+/* hiding faq */
+.answer-hidden {
+    display: none;
+  }
+.question-hidden {
+    margin: 0;
+  }
+
 
 /* Responsive */
 
@@ -442,6 +450,17 @@ section#sponsor {
   }
 }
 
+@media only screen and (max-width: 480px) {
+  section {
+    h2 {
+      font-size: 2em;
+    }
+  }
+  .question {
+    cursor: pointer;
+  }
+}
+
 @media only screen and (max-width : 320px) {
   section.ui.page.grid.padded {
     padding-top: 20%;
@@ -453,8 +472,11 @@ section#sponsor {
   }
   section {
     h2 {
-      font-size: 2em;
+      font-size: 1.5em;
       line-height: 1.4em;
+    }
+    p {
+      font-size: 0.8em;
     }
   }
   section#splash {

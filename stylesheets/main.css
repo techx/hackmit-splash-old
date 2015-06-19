@@ -303,6 +303,13 @@ section#sponsor {
     bottom: 0;
     right: 0; }
 
+/* hiding faq */
+.answer-hidden {
+  display: none; }
+
+.question-hidden {
+  margin: 0; }
+
 /* Responsive */
 @media only screen and (max-width: 786px) {
   html, body {
@@ -333,6 +340,12 @@ section#sponsor {
   div.divider {
     height: 30px;
     background-size: auto 26px; } }
+@media only screen and (max-width: 480px) {
+  section h2 {
+    font-size: 2em; }
+
+  .question {
+    cursor: pointer; } }
 @media only screen and (max-width: 320px) {
   section.ui.page.grid.padded {
     padding-top: 20%;
@@ -343,8 +356,10 @@ section#sponsor {
     background-size: auto 18px; }
 
   section h2 {
-    font-size: 2em;
+    font-size: 1.5em;
     line-height: 1.4em; }
+  section p {
+    font-size: 0.8em; }
 
   section#splash div.splash-container {
     padding-bottom: 10em; } }
