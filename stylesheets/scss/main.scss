@@ -56,7 +56,7 @@ a {
 
 div.divider {
   height: 3.3em;
-  background-image: url("/assets/images/hack-logo-tile-purple.svg");
+  background-image: url("../assets/images/hack-logo-tile-purple.svg");
   background-position: -5px;
   background-repeat: repeat-x;
   background-color: $magenta;
@@ -64,19 +64,19 @@ div.divider {
 }
 
 .divider.deeppurple {
-  background-image: url("/assets/images/hack-logo-tile-purple.svg");
+  background-image: url("../assets/images/hack-logo-tile-purple.svg");
 }
 
 .divider.blue {
-  background-image: url("/assets/images/hack-logo-tile-blue.svg");
+  background-image: url("../assets/images/hack-logo-tile-blue.svg");
 }
 
 .divider.magenta {
-  background-image: url("/assets/images/hack-logo-tile-magenta.svg");
+  background-image: url("../assets/images/hack-logo-tile-magenta.svg");
 }
 
 .divider.yellow {
-  background-image: url("/assets/images/hack-logo-tile-yellow.svg");
+  background-image: url("../assets/images/hack-logo-tile-yellow.svg");
 }
 
 .divider.deeppurplebg {
