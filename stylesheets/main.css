@@ -433,7 +433,10 @@ section#sponsor {
     cursor: pointer; }
 
   #navbar.fixed {
-    position: relative; } }
+    position: relative; }
+
+  section#sponsor #footersplash {
+    margin: 20% auto 0 auto; } }
 @media only screen and (max-width: 480px) {
   section#splash div.splash-container div.splash-banner img.logo {
     width: 50vw;
@@ -485,3 +488,5 @@ section#sponsor {
       font-size: 1.5em; }
   section#splash div.splash-text h2.title {
     font-size: 1.5em; } }
+
+/*# sourceMappingURL=main.css.map */
