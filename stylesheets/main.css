@@ -315,16 +315,20 @@ section#sponsor {
   html, body {
     font-size: 1em; }
 
-  #navbar .menu .item {
-    width: 7em;
-    padding-left: 0.4em;
-    padding-right: 0.4em; }
+  #navbar {
+    position: relative; }
+    #navbar .menu .item {
+      width: 7em;
+      padding-left: 0.4em;
+      padding-right: 0.4em; }
 
   section#splash {
-    display: relative; }
+    display: block;
+    height: auto; }
     section#splash div.splash-container {
-      display: relative;
-      padding-bottom: 7em; }
+      display: block;
+      height: auto;
+      padding-bottom: 0; }
       section#splash div.splash-container .splash-centerer {
         top: 0;
         transform: none;
@@ -362,4 +366,11 @@ section#sponsor {
     font-size: 0.8em; }
 
   section#splash div.splash-container {
-    padding-bottom: 10em; } }
+    padding-bottom: 0em;
+    display: block; }
+    section#splash div.splash-container div.splash-banner h1.title {
+      font-size: 1.5em; }
+  section#splash div.splash-text h2.title {
+    font-size: 1.5em; } }
+
+/*# sourceMappingURL=main.css.map */
