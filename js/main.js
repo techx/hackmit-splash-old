@@ -45,9 +45,7 @@ $(document).ready(function() {
       if ($(window).width() <= 480) {
         $question = $(this);
         $answer = $question.next();
-        $answer.slideToggle(500, function () {
-          $answer.toggleClass('answer-hidden');
-        });
+        $answer.slideToggle(500);
       }
     })
 
@@ -62,11 +60,11 @@ $(document).ready(function() {
 //run on window load and resize
 function hideAnswers() {
   if ($(window).width() <= 480) {
-    $('.answer').addClass('answer-hidden');
+    $('.answer').css('display','none');
     $('.question').addClass('question-hidden');
   }
   else {
-    $('.answer').removeClass('answer-hidden');
+    $('.answer').css('display','block');
     $('.question').removeClass('question-hidden');
   }
 }
