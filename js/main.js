@@ -50,7 +50,7 @@ $(document).ready(function() {
       if ($(window).width() <= breakWidth) {
         $question = $(this);
         $answer = $question.next();
-        $answer.slideToggle(500);
+        $answer.slideToggle(200);
         $question.children().toggleClass('angle-rotated');
       }
     })
