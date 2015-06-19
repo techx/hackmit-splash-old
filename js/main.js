@@ -9,12 +9,18 @@ $(document).ready(function() {
     .transition('fade in', 1500);
     
   var $bodytag = $('html, body');
-  var $tags = $('#goto-splash, #goto-navbar, #goto-schedule, #goto-faq, #goto-register, #goto-sponsor');
+  var $tags = $('#goto-splash, #goto-blurb, #goto-schedule, #goto-faq, #goto-register, #goto-sponsor');
   $tags.click(function(e) {
     var elementName = e.target.id.substr(5);
-    $bodytag.animate({
-      scrollTop: $('#'+elementName).offset().top
-    }, 800);
+    if (elementName === 'blurb') {
+      $bodytag.animate({
+        scrollTop: $('#'+elementName).offset().top - 45
+      }, 800);
+    } else {
+      $bodytag.animate({
+        scrollTop: $('#'+elementName).offset().top
+      }, 800);
+    }
   });
 
   hideAnswers();
@@ -80,19 +86,19 @@ $(document).ready(function() {
       $('#navbar').stop(true).hide();
       $('#navbar').addClass('fixed');
       isFixed = true;
-      $('#navbar').fadeIn(800);
+      $('#navbar').show();
     }
     else if (isFixed && $(window).scrollTop() < deltaLocation) {
       $('#navbar').stop(true).css("display", "none");
       $('#navbar').removeClass('fixed');
       isFixed = false;
-      $('#navbar').fadeIn(800);
+      $('#navbar').show();
     }
   }
 
   function recalculateNavbarPosition() {
     navbarHeight = $('#navbar').outerHeight();
-    deltaLocation = $('#splash').outerHeight() + 200 - navbarHeight;
+    deltaLocation = $('#splash').outerHeight() - navbarHeight;
   }
 });
 
