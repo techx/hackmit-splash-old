@@ -9,9 +9,15 @@ $(document).ready(function() {
   var $tags = $('#goto-splash, #goto-blurb, #goto-schedule, #goto-faq, #goto-register, #goto-sponsor');
   $tags.click(function(e) {
     var elementName = e.target.id.substr(5);
-    $bodytag.animate({
-      scrollTop: $('#'+elementName).offset().top - 45
-    }, 800);
+    if (screen.width < breakWidth) {
+      $bodytag.animate({
+        scrollTop: $('#'+elementName).offset().top
+      }, 800);
+    } else {
+      $bodytag.animate({
+        scrollTop: $('#'+elementName).offset().top - 45
+      }, 800);
+    }
   });
 
   hideAnswers();
