@@ -91,6 +91,9 @@ section input {
 section input:focus {
   outline: 0; }
 
+section.ui.page.grid {
+  min-width: 0; }
+
 section.ui.page.grid.padded {
   padding-top: 5%;
   padding-bottom: 7%; }
@@ -371,11 +374,15 @@ section#sponsor {
     height: 22px;
     background-size: auto 18px; }
 
+  section input {
+    margin: 2px auto; }
+
   section h2 {
     font-size: 1.5em;
-    line-height: 1.4em; }
-  section p {
-    font-size: 0.8em; }
+    line-height: 1.2em; }
+
+  section#faq .question {
+    font-size: 1.3em; }
 
   section#splash div.splash-container {
     padding-bottom: 0em;
