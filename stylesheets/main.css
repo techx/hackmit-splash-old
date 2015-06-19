@@ -404,9 +404,9 @@ section#sponsor {
           width: 25vw;
           height: 25vw; }
         section#splash div.splash-container div.splash-banner .title {
-          font-size: 3em !important; }
+          font-size: 5em !important; }
       section#splash div.splash-container div.splash-text .title {
-        font-size: 2em; }
+        font-size: 5em; }
 
   section.ui.page.grid.padded {
     padding-top: 10%;
@@ -425,10 +425,19 @@ section#sponsor {
   section#splash div.splash-container div.splash-banner img.logo {
     width: 50vw;
     height: 50vw; }
+  section#splash div.splash-container div.splash-banner .title {
+    font-size: 2.8em !important; }
+  section#splash div.splash-container div.splash-text .title {
+    font-size: 2.8em; }
 
   section h2 {
     font-size: 2em; } }
 @media only screen and (max-width: 320px) {
+  section#splash div.splash-container div.splash-banner .title {
+    font-size: 2.5em !important; }
+  section#splash div.splash-container div.splash-text .title {
+    font-size: 2.5em; }
+
   section.ui.page.grid.padded {
     padding-top: 20%;
     padding-bottom: 20%; }
