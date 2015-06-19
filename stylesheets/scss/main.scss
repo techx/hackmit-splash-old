@@ -305,7 +305,7 @@ section#blurb {
   .icon {
     font-size: 2em;
     text-align: center;
-    margin: 0 0.2em;
+    margin: 0.8em 1em;
   }
 
   .icon:hover {
@@ -319,11 +319,16 @@ section#blurb {
   }
 
   a.social {
+    color: $deeppurple;
+    text-decoration: none;    
+  }
+
+  a.socialtext {
     color: $gold;
     text-align: center;
     text-decoration: underline;
   }
-  a.social:hover {
+  a.socialtext:hover {
     color: $deeppurple;
   }
 }

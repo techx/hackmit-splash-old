@@ -226,7 +226,7 @@ section#blurb {
 #social .icon {
   font-size: 2em;
   text-align: center;
-  margin: 0 0.2em; }
+  margin: 0.8em 1em; }
 #social .icon:hover {
   text-shadow: 0 0 3px #473899;
   cursor: pointer; }
@@ -234,10 +234,13 @@ section#blurb {
   color: #ffe552;
   top: -2px; }
 #social a.social {
+  color: #473899;
+  text-decoration: none; }
+#social a.socialtext {
   color: #ffe552;
   text-align: center;
   text-decoration: underline; }
-#social a.social:hover {
+#social a.socialtext:hover {
   color: #473899; }
 
 section#schedule {
