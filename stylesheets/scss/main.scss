@@ -527,8 +527,8 @@ section#sponsor {
         width: 100%;
 
         img.logo {
-          width: 50vw;
-          height: 50vw;
+          width: 25vw;
+          height: 25vw;
         } 
 
         .title {
@@ -562,6 +562,20 @@ section#sponsor {
 }
 
 @media only screen and (max-width: 480px) {
+  section#splash {
+
+    div.splash-container {
+
+      div.splash-banner {
+
+        img.logo {
+          width: 50vw;
+          height: 50vw;
+        }
+      }
+    }
+  }
+
   section h2 {
     font-size: 2em;
   }

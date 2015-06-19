@@ -399,8 +399,8 @@ section#sponsor {
       section#splash div.splash-container div.splash-banner {
         width: 100%; }
         section#splash div.splash-container div.splash-banner img.logo {
-          width: 50vw;
-          height: 50vw; }
+          width: 25vw;
+          height: 25vw; }
         section#splash div.splash-container div.splash-banner .title {
           font-size: 3em !important; }
       section#splash div.splash-container div.splash-text .title {
@@ -420,6 +420,10 @@ section#sponsor {
   #navbar.fixed {
     position: relative; } }
 @media only screen and (max-width: 480px) {
+  section#splash div.splash-container div.splash-banner img.logo {
+    width: 50vw;
+    height: 50vw; }
+
   section h2 {
     font-size: 2em; } }
 @media only screen and (max-width: 320px) {
