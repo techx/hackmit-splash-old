@@ -404,6 +404,17 @@ section#sponsor {
 }
 
 /* hiding faq */
+.angle {
+  display: none;
+  -ms-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.angle-rotated {
+  -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
 .answer-hidden {
     display: none;
   }
@@ -454,6 +465,9 @@ section#sponsor {
     height: 30px;
     background-size: auto 26px;
   }
+  .question {
+    cursor: pointer;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -461,9 +475,6 @@ section#sponsor {
     h2 {
       font-size: 2em;
     }
-  }
-  .question {
-    cursor: pointer;
   }
 }
 

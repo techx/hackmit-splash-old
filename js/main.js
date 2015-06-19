@@ -1,3 +1,5 @@
+var breakWidth = 768;
+
 $(document).ready(function() {
 
   $('#main')
@@ -42,10 +44,11 @@ $(document).ready(function() {
 
   //code for hiding answers
   $('.question').on('click', function() {
-      if ($(window).width() <= 480) {
+      if ($(window).width() <= breakWidth) {
         $question = $(this);
         $answer = $question.next();
         $answer.slideToggle(500);
+        $question.children().toggleClass('angle-rotated');
       }
     })
 
@@ -59,12 +62,15 @@ $(document).ready(function() {
 
 //run on window load and resize
 function hideAnswers() {
-  if ($(window).width() <= 480) {
+  if ($(window).width() <= breakWidth) {
     $('.answer').css('display','none');
     $('.question').addClass('question-hidden');
+    $('.angle').css('display', 'inline-block');
   }
   else {
     $('.answer').css('display','block');
     $('.question').removeClass('question-hidden');
+    $('.angle').css('display', 'none');
+    $('.angle').removeClass('angle-rotated');
   }
 }
