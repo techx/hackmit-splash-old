@@ -63,7 +63,7 @@ $(document).ready(function() {
     clearTimeout(resizeTimeout);
     clearTimeout(resizeNavbarTimeout);
     resizeTimeout = setTimeout(hideAnswers(), 200);
-    resizeNavbarTimeout = setTimeout(recalculateNavbarPosition(), 200);
+    resizeNavbarTimeout = setTimeout(recalculateNavbarPosition(), 500);
   });
 
   /* Following Nav Bar */
@@ -71,7 +71,7 @@ $(document).ready(function() {
   $(window).on('scroll', function() {
     if ($(window).width() >= 786) {
       clearTimeout(scrollTimeout);
-      scrollTimeout = setTimeout(checkAndMoveNavbarPosition(), 000);
+      scrollTimeout = setTimeout(checkAndMoveNavbarPosition(), 500);
     }
   });
 
