@@ -239,13 +239,15 @@ section#register {
     background-color: #473899;
     color: #fafafa;
     width: 60%;
-    padding: 10px 2%; }
+    padding: 10px 2%;
+    font-weight: 400; }
   section#register input#interest-form-submit {
     border: none;
     background-color: #ffe552;
     color: #473899;
     padding: 10px 2%;
-    width: 20%;
+    width: 15%;
+    margin-left: 5px;
     cursor: pointer;
     top: -1px; }
   section#register input#interest-form-submit:hover {
@@ -261,21 +263,21 @@ section#register {
     display: inline;
     position: relative; }
   section#register label {
-    margin-top: 0.4em; }
+    margin-top: 1.2em; }
   section#register ::-webkit-input-placeholder {
     /* WebKit browsers */
-    color: #e76482; }
+    color: #ffe552; }
   section#register :-moz-placeholder {
     /* Mozilla Firefox 4 to 18 */
-    color: #e76482;
+    color: #ffe552;
     opacity: 1; }
   section#register ::-moz-placeholder {
     /* Mozilla Firefox 19+ */
-    color: #e76482;
+    color: #ffe552;
     opacity: 1; }
   section#register :-ms-input-placeholder {
     /* Internet Explorer 10+ */
-    color: #e76482; }
+    color: #ffe552; }
   section#register p#appreciation {
     padding: 1em;
     background: rgba(250, 250, 250, 0.5);
