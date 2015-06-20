@@ -4,7 +4,7 @@ $(document).ready(function() {
 
   $('#main')
     .transition('fade in', 1500);
-    
+
   var $bodytag = $('html, body');
   var $tags = $('#goto-splash, #goto-blurb, #goto-schedule, #goto-faq, #goto-register, #goto-sponsor');
   $tags.click(function(e) {
@@ -32,7 +32,7 @@ $(document).ready(function() {
       emailTag.val('');
       $.ajax({
         dataType: 'jsonp',
-        url: 'http://getsimpleform.com/messages/ajax?form_api_token=fe4ccc4ce76bde458f7fbdaf077b89ca',
+        url: window.location.protocol + '//getsimpleform.com/messages/ajax?form_api_token=fe4ccc4ce76bde458f7fbdaf077b89ca',
         data: {
           email: email
         }
@@ -40,7 +40,7 @@ $(document).ready(function() {
       $(this).find('label, input').transition('fade out', 500, function() {
         $('.thankyou').transition('fade in', 500);
       });
-      
+
     } else {
       // :(
     }
