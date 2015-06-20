@@ -1,56 +1,320 @@
 <!DOCTYPE html>
 <html>
+<!--
+    888888888888888888888
+  s 88 ooooooooooooooo 88     s 888888888888888888888888888888888888888
+  S 88 888888888888888 88    SS 888888888888888888888888888888888888888
+ SS 88 888888888888888 88   SSS 8888                         = ==+ 8888
+ SS 88 ooooooooooooooo 88  sSSS 8888           o8888888o         | 8888
+sSS 88 888888888888888 88 SSSSS 8888         o88888888888o         8888
+SSS 88 888888888888888 88 SSSSS 8888        8888 88888 8888      | 8888
+SSS 88 ooooooooooooooo 88 SSSSS 8888       o888   888   888o       8888
+SSS 88 888888888888888 88 SSSSS 8888       8888   888   8888       8888
+SSS 88 888888888888888 88 SSSSS 8888       8888   888   8888       8888
+SSS 88 oooooooooo      88 SSSSS 8888       8888o o888o o8888       8888
+SSS 88 8888888888 .::. 88 SSSSS 8888       988 8o88888o8 88P       8888
+SSS 88 oooooooooo :::: 88 SSSSS 8888        8oo 9888889 oo8        8888
+SSS 88 8888888888  `'  88 SSSSS 8888         988o     o88P         8888
+SSS 88ooooooooooooooooo88  SSSS 8888           98888888P           8888
+SSS 888888888888888888888__SSSS 8888                               8888_____
+SSS |   *  *  *   )8c8888  SSSS 888888888888888888888888888888888888888
+SSS 888888888888888888888.  SSS 888888888888888888888888888888888888888
+SSS 888888888888888888888 \_ SSsssss oooooooooooooooooooooooooooo ssss
+SSS 888888888888888888888  \\   __SS 88+=8+=88============8=8==88 S
+SSS 888888888888888888888=. \\  \  S 8888888888888888888888888888
+SSS 888888888888888888888  \\\  \\       `.__________.'      ` .
+SSS 88O8O8O8O8O8O8O8O8O88  \\.   \\______________________________`_.
+SSS 88 el cheapo 8O8O8O88 \\  '.  \|________________________________|
+ SS 88O8O8O8O8o8O8O8O8O88  \\   '=.___
+  S 888888888888888888888 /~          ~~~~~=====~~~~===.__
+ .===================================================.    ~==.
+ \ \______\ __________________________________________\=======^.===========.
+ :'  _   _ _ _ _  _ _ _ _  _ _ _ _   _ _ _           `\        \
+ ::\ ,\_\,\_\_\_\_\\_\_\_\_\\_\_\_\_\,\_\_\_\           \      o '8o 8o .
+ |::\  =_=_=_=_=_=_=_=_=_=_=_=_=_=___  =_=_=_   _ _ _ _  \      8o 88 88 \
+ |_::\ ,\_\_\_\_\_\_\_\_\_\_\_\_\_\___\,\_\_\_\,\_\_\_\_\ \      88       \
+    `:\ ,\__\_\_\_\_\_\_\_\_\_\_\_\_\  \,\_\_\_\,\_\_\_\ \ \      88       .
+     `:\ ,\__\_\_\_\_\_\_\_\_\_\_\_\____\    _   ,\_\_\_\_\ \      88o    .|
+       :\ ,\____\_\_\_\_\_\_\_\_\_\_\____\  ,\_\ _,\_\_\_\ \ \      'ooooo'
+        :\ ,\__\\__\_______________\__\\__\,\_\_\_\,\___\_\_\ \
+         `\  ==  == =============== ==  ==   = = =   === = =   )____________
+           `=================================================='
+
+you're quite the l33t hacker looking at this page's source
+-->
 <head lang="en">
   <title>HACKMIT 2015</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
 
-  <link rel="icon" type="image/png" href="/assets/img/hack-logo-favicon.png">
-  <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-  <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-  <link href='//fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
-  <link href='/assets/css/main.css' rel='stylesheet' type='text/css'>
+  <link rel="icon" type="image/png" href="assets/images/hack-logo-favicon.png">
+  <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=Lato:300" rel="stylesheet" type="text/css">
+  <link href="stylesheets/main.css" rel="stylesheet" type="text/css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="/js/main.js"></script>
+
+  <!-- Include Semantic-UI -->
+  <link href="bower_components/semantic-ui/build/packaged/css/semantic.min.css" rel="stylesheet" type="text/css">
+  <script src="bower_components/semantic-ui/build/packaged/javascript/semantic.min.js"></script>
 
   <!-- for Facebook -->
   <meta property="og:title" content="HackMIT 2015"/>
   <meta property="og:type" content="website"/>
-  <meta property="og:image" content="/assets/images/hack-logo-fb.png"/>
-  <meta property="og:url" content="http://hackmit.org"/>
-  <meta property="og:description" content="Coming Soon - Sept 19-20, MIT."/>
+  <meta property="og:image" content="https://hackmit.org/assets/images/hack-logo-fb.png"/>
+  <meta property="og:image:width" content="470"/>
+  <meta property="og:image:height" content="250"/>
+  <meta property="og:url" content="https://hackmit.org"/>
+  <meta property="og:description" content="Coming Soon. Sept 19 - 20, MIT."/>
 
   <!-- for Twitter -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@hackmit">
   <meta name="twitter:title" content="HackMIT 2015">
-  <meta name="twitter:description" content="Coming Soon - Sept 19-20, MIT.">
-  <meta name="twitter:image:src" content="/assets/img/hack-logo-fb.png">
+  <meta name="twitter:description" content="Coming Soon. Sept 19 - 20, MIT.">
+  <meta name="twitter:image" content="https://hackmit.org/assets/images/hack-logo-twitter.png">
+  <meta name="twitter:image:width" content="512"/>
+  <meta name="twitter:image:height" content="512"/>
 
-  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no' />
-
-  <script src="/assets/js/main.js"></script>
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-63828172-1', 'auto');ga('send', 'pageview');
+  </script>
 </head>
-</body>
-  <div class="bg">
-  </div>
-  <div class="content">
-    <img src="/assets/img/hack-logo-white.svg"
-         onerror="this.onerror=null; this.src='/assets/img/hack-logo-white.png'" class="logo">
-    <div class="title">
-      HACKMIT 2015
+
+<body>
+  <a name="splash"></a>
+  <section id="splash">
+    <div class="splash-container">
+      <div class="splash-relative">
+      <div class="splash-centerer">
+      <div class="splash-banner">
+        <img src="assets/images/hack-bg-square-3.jpg"/>
+        <img class="logo" src="assets/images/hack-logo.svg"
+           onerror="this.onerror=null; this.src='assets/images/hack-logo-white.png'"/>
+        <h1 class="montserrat-bold title">HACKMIT</h1>
+      </div>
+      <div class="splash-text">
+        <h2 class="montserrat-bold title">SEPT.19&amp;20</h1>  
+      </div>
+      </div>
+      </div>
     </div>
-    <div class="tagline">
-      Coming Soon.
+    <div id="navbar" class="ui">
+      <div class="ui menu borderless inverted">
+        <a id="goto-splash" class="item">HackMIT</a>
+        <a id="goto-blurb" class="item">What</a>
+        <a id="goto-schedule" class="item">Schedule</a>
+        <a id="goto-faq" class="item">FAQ</a>
+        <a id="goto-register" class="item important">Register</a>
+        <a id="goto-sponsor" class="item">Sponsors</a>
+        </div>
     </div>
-    <div class="information">
-      Sept 19 - 20, 2015, MIT Campus
+  </section>
+
+  <a name="blurb"></a>
+  <section id="blurb" class="lato ui page grid center aligned padded stackable">
+    <div class="montserrat-bold title ten wide column">
+      <h2>WHAT IS HACKMIT?</h2>
     </div>
-    <div class="description">
-      Open to all undergraduates from all universities.
+    <div class="ten wide column">
+    <p class="lato">
+      HackMIT is MIT’s largest hackathon. Over a 24-hour period from September 19 to 20, 1,000 hackers from around the world will gather on MIT’s campus to experiment and innovate on software and hardware projects. This is your weekend to dust off old ideas or try something completely new. Imagine the craziest projects possible, and work on the hack of your dreams!
+    </p>
     </div>
-    <div class="sponsorship">
-      For sponsorship inquiries, please email <a href="mailto:sponsor@hackmit.org">sponsor@hackmit.org</a>.
+    <div class="ten wide column" id="social">
+    <br/>
+    <a id="goto-register" class="button">Register Now</a><br/>
     </div>
-    <a href="http://techx.mit.edu">
-      <img src="/assets/img/techx-logo.png" class="techx">
+  </section>
+
+  <div class="divider magentabg deeppurple"></div>
+
+  <a name="schedule"></a>
+  <section id="schedule" class="lato ui page grid center aligned padded stackable">
+    <div class="montserrat-bold title ten wide column">
+      <h2>Schedule</h2>
+    </div>
+    <div class="ten wide column">
+    <p class="lato">
+      HackMIT will take place on Saturday to Sunday, September 19 – 20, 2015. <br/>Check-in will be approximately from 8 am to 10 am on Saturday, and our closing ceremony should end around 2 pm on Sunday.
+      <br>
+      <br>
+      Check back later for a detailed schedule!
+    </p>
+    </div>
+  </section>
+
+  <div class="divider deeppurplebg magenta"></div>
+
+  <a name="faq"></a>
+  <section id="faq" class="lato ui page grid center aligned padded stackable">
+      <div class="montserrat-bold title ten wide column">
+        <h2 class="mobile">FAQ</h2>
+        <h2 class="large">Frequently Asked Questions</h2>
+      </div>
+      <div class="row">
+        <div class="five wide column">
+          <h4 class="question">
+            Can I attend?<i class="angle down icon"></i>
+          </h4>
+          <p class="answer">
+            Of course, as long as you’re an undergraduate at any college in the world! Non-MIT students must be at least 18 years old. Unfortunately, high school and graduate students can’t attend (MIT M.Eng. students are eligible, however).
+          </p>
+        </div>
+        <div class="five wide column">
+          <h4 class="question">
+            How does registration work?<i class="angle down icon"></i>
+          </h4>
+          <p class="answer">
+            Registration will open on July 1st at 11:59pm EDT and close on July 30th at 11:59 pm EDT! Until then please sign up for our mailing list below! Admissions is based on a randomized team lottery, and if your team is accepted, you’ll have ten days to confirm your attendance. 
+          </p>
+        </div>
+        <div class="five wide column">
+          <h4 class="question">
+            Does this cost money?<i class="angle down icon"></i>
+          </h4>
+          <p class="answer">
+            Nope! Admission is free and includes food, drinks, overnight hosting, and lots of swag!
+          </p>
+        </div>
+        <div class="five wide column">
+          <h4 class="question">
+            What will I eat?<i class="angle down icon"></i>
+          </h4>
+          <p class="answer">
+            We’ll provide food for all meals from Saturday’s breakfast to Sunday’s brunch. If you have dietary restrictions, we’ll try our best to accommodate them.
+          </p>
+        </div>
+        <div class="five wide column">
+          <h4 class="question">
+            Where will I sleep?<i class="angle down icon"></i>
+          </h4>
+          <p class="answer">
+            Hacking all night is fun, but you should also get some rest! MIT students have generously offered their rooms as places to sleep and shower.
+          </p>
+        </div>
+        <div class="five wide column">
+          <h4 class="question">
+            How do I get there?<i class="angle down icon"></i>
+          </h4>
+          <p class="answer">
+            If you’re travelling more than 30 miles to MIT, we’ll reimburse your travel provided that you upload your travel receipts before the event on our confirmation portal. We will also send free buses to select schools—we’ll be releasing the full list after registration closes.
+          </p>
+        </div>
+        <div class="five wide column">
+          <h4 class="question">
+            What should I bring?<i class="angle down icon"></i>
+          </h4>
+          <p class="answer">
+            Bring a valid student ID for admission and a laptop for hacking. We’ll be providing pretty much everything else—air mattresses, toiletries, stickers, snacks, and more! If you'd like, you can bring a blanket, pillow, and towel. To borrow hardware during the hackathon, you’ll need a government-issued photo ID.
+          </p>
+        </div>
+        <div class="five wide column">
+          <h4 class="question">
+            How do teams work?<i class="angle down icon"></i>
+          </h4>
+          <p class="answer">
+            Teams are at most 4 people, and you can designate teammates when you register. You can also register individually without specified teammates. We’ll run the lottery by teams, so either your whole team will receive admission or none of your team will receive admission.
+          </p>
+        </div>
+        <div class="five wide column">
+          <h4 class="question">
+            What if I don’t have a team?<i class="angle down icon"></i>
+          </h4>
+          <p class="answer">
+            If you don’t have a team now, don’t stress! We’ll have team formation and ideation events geared towards helping you find people to work with.
+          </p>
+        </div>
+        <div class="five wide column">
+          <h4 class="question">
+            What if I’m an MIT student?<i class="angle down icon"></i>
+          </h4>
+          <p class="answer">
+            MIT students that register by July 30th and confirm by August 20th will be guaranteed admission. If you don’t confirm your attendance by August 20th, we’ll be taking walk-ins on a first-come, first-serve basis.
+          </p>
+        </div>
+        <div class="five wide column">
+          <h4 class="question">
+            What about hardware hacks?<i class="angle down icon"></i>
+          </h4>
+          <p class="answer">
+            We’ll provide some hardware such as Arduinos, Pebbles, Raspberry Pis and more! You are more than welcome to bring your own hardware and basic tools to work with. A full list of hardware will be released as we get closer to the event.
+          </p>
+        </div>
+        <div class="five wide column">
+          <h4 class="question">
+            What if this FAQ didn’t answer my questions?<i class="angle down icon"></i>
+          </h4>
+          <p class="answer">
+            Please email us at <a href="mailto:team@hackmit.org">team@hackmit.org</a> if you have any concerns at all! We’re friendly, and we’d love to help you out!
+          </p>
+        </div>
+    </div>
+  </section>
+
+  <div class="divider magentabg yellow"></div>
+
+  <a name="register"></a>
+  <section id="register" class="lato ui page grid center aligned padded stackable">
+    <div class="montserrat-bold title ten wide column">
+      <h2>register</h2>
+    </div>
+    <div class="ten wide column">
+      <div class="interest lato">
+        <form id="interest-form" onsubmit="">
+          <label id="hi" for="email">Join us at HackMIT to experiment and innovate with software and hardware. <br/>Enter your email below and we'll let you know when registration opens!</label>
+          <fieldset id="input">
+            <input type="text" placeholder="Your Email" name="email" id="interest-form-email" class="lato" />
+            <input type="submit" id="interest-form-submit" value="SUBMIT" />
+          </fieldset>
+          <div class="thankyou hidden">Thanks for signing up! We'll send you an email when registration opens.</div>
+        </form>
+      </div>
+    </div>
+
+  </section>
+
+  <div class="divider whitebg blue"></div>
+
+  <a name="sponsor"></a>
+  <section id="sponsor" class="lato ui page grid center aligned padded stackable">
+    <div class="ten wide column">
+      <h2 class="montserrat-bold title">sponsors</h2>
+    </div> 
+    <div class="ten wide column">
+      <p class="lato">
+        We have some great sponsors lined up for you.
+        <br/>
+        Check back soon for logos.
+        <br/>
+        <br/>
+        Interested in becoming a sponsor? Email us at <a href="mailto:sponsor@hackmit.org">sponsor@hackmit.org</a>.
+      </p>
+    </div>
+    <div id="footersplash">
+      <img src="assets/images/hack-bg-square.jpg" alt="Footer image" />
+      <img class="logo" src="assets/images/hack-logo-white.png"/>
+    </div>
+
+  <div class="ten wide column" id="social">
+    <a href="mailto:team@hackmit.org" class="social">
+      <i class="ui icon mail"></i>
+    </a>
+    <a href="https://twitter.com/hackmit" class="social">
+      <i class="ui icon twitter"></i>
+    </a>
+    <a href="https://www.facebook.com/HackMIT" class="social">
+      <i class="ui icon facebook"></i>
     </a>
   </div>
+  <div class="techx">
+    <a href="http://techx.mit.edu"><img id="techx" src="assets/images/techx-logo.svg" alt="Powered by MIT TechX" onerror="this.onerror=null; this.src='assets/images/techx-logo.png'"/></a>
+  </div>
+  </section>
+
 </body>
 </html>
