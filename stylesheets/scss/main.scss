@@ -502,6 +502,14 @@ section#sponsor {
     margin: 0;
   }
 
+#dot {
+    transition: color 0.5s ease;
+    &:hover {
+        color: $gold;
+        cursor: wait;
+    }
+}
+
 
 /* Responsive */
 

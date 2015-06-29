@@ -379,6 +379,12 @@ section#sponsor {
 .question-hidden {
   margin: 0; }
 
+#dot {
+  transition: color 0.5s ease; }
+  #dot:hover {
+    color: #ffe552;
+    cursor: wait; }
+
 /* Responsive */
 @media only screen and (max-width: 1000px) {
   section#faq h2.large {
