@@ -32,7 +32,7 @@ dot.onclick = function(event) {
                 ];
                 window.location = options[Math.floor(Math.random() * 1000000) % options.length];
             } else {
-                window.location = 'http://0xbaff1edd09e.dogemit.party';
+                window.location = 'http://dogemit.party';
             }
         }, 10000);
 
