@@ -276,26 +276,6 @@ section#blurb {
   min-height: 240px;
   color: $white;
 
-  .button {
-    display: inline-block;
-    margin: 15px auto 0px auto;
-    background-color: $gold;
-    padding: 0.8em 3em;
-    color: $red;
-    font-weight: bold;
-    font-family: $montserrat;
-    text-transform: uppercase;
-    font-size: 1em;
-    text-align: center;
-    border: 0;
-    cursor: pointer;
-  }
-
-  .button:hover {
-    background-color: $blue;
-    color: $white;
-  }
-
   .ui.page.grid.padded {
     padding-bottom: 5%;
   }
@@ -383,74 +363,25 @@ section#register {
   min-height: 80px;
   color: $white;
 
-  input#interest-form-email {
-    border: none;
-    background-color: $deeppurple;
-    color: $white;
-    width: 60%;
-    padding: 10px 2%;
-    font-weight: 400;
-  }
-  input#interest-form-submit {
-    border: none;
+  .button {
+    display: inline-block;
+    margin: 15px auto 0px auto;
+    background-color: $gold;
+    padding: 0.8em 3em;
+    color: $red;
     font-weight: bold;
     font-family: $montserrat;
     text-transform: uppercase;
-    background-color: $gold;
-    color: $red;
-    padding: 10px 2%;
-    min-width: 87px;
-    width: 15%;
-    margin-left: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    text-align: center;
+    border: 0;
     cursor: pointer;
-    top: -1px;
-    /* disable strange appearance on mobile */
-    -webkit-appearance: none;
   }
-  input#interest-form-submit:hover {
+
+  .button:hover {
     background-color: $blue;
     color: $white;
-  }
-  input#interest-form-submit:active {
-    background-color: $deeppurple;
-    color: $white;
-  }
-  fieldset {
-    display: block;
-    border: none;
-  }
-  input {
-    display: inline;
-    position: relative;
-  }
-  label {
-    margin-bottom: 1.2em;
-  }
-  ::-webkit-input-placeholder { /* WebKit browsers */
-    color: $gold;
-  }
-  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-     color: $gold;
-     opacity: 1;
-  }
-  ::-moz-placeholder { /* Mozilla Firefox 19+ */
-     color: $gold;
-     opacity: 1;
-  }
-  :-ms-input-placeholder { /* Internet Explorer 10+ */
-     color: $gold;
-  }
-
-  p#appreciation {
-    padding: 1em;
-    background: $transparentwhite;
-    color: $deeppurple;
-    font-style: italic;
-  }
-
-  .thankyou {
-    margin-top: 20px;
-    margin-bottom: 67px;
   }
 }
 
