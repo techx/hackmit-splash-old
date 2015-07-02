@@ -203,22 +203,6 @@ section#blurb {
   background: #e76482;
   min-height: 240px;
   color: #fafafa; }
-  section#blurb .button {
-    display: inline-block;
-    margin: 15px auto 0px auto;
-    background-color: #ffe552;
-    padding: 0.8em 3em;
-    color: #f1645d;
-    font-weight: bold;
-    font-family: "Montserrat", sans-serif;
-    text-transform: uppercase;
-    font-size: 1em;
-    text-align: center;
-    border: 0;
-    cursor: pointer; }
-  section#blurb .button:hover {
-    background-color: #4c82cc;
-    color: #fafafa; }
   section#blurb .ui.page.grid.padded {
     padding-bottom: 5%; }
 
@@ -280,64 +264,23 @@ section#register {
   background: #e76482;
   min-height: 80px;
   color: #fafafa; }
-  section#register input#interest-form-email {
-    border: none;
-    background-color: #473899;
-    color: #fafafa;
-    width: 60%;
-    padding: 10px 2%;
-    font-weight: 400; }
-  section#register input#interest-form-submit {
-    border: none;
+  section#register .button {
+    display: inline-block;
+    margin: 15px auto 0px auto;
+    background-color: #ffe552;
+    padding: 0.8em 3em;
+    color: #f1645d;
     font-weight: bold;
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
-    background-color: #ffe552;
-    color: #f1645d;
-    padding: 10px 2%;
-    min-width: 87px;
-    width: 15%;
-    margin-left: 5px;
-    cursor: pointer;
-    top: -1px;
-    /* disable strange appearance on mobile */
-    -webkit-appearance: none; }
-  section#register input#interest-form-submit:hover {
+    text-decoration: none;
+    font-size: 1em;
+    text-align: center;
+    border: 0;
+    cursor: pointer; }
+  section#register .button:hover {
     background-color: #4c82cc;
     color: #fafafa; }
-  section#register input#interest-form-submit:active {
-    background-color: #473899;
-    color: #fafafa; }
-  section#register fieldset {
-    display: block;
-    border: none; }
-  section#register input {
-    display: inline;
-    position: relative; }
-  section#register label {
-    margin-bottom: 1.2em; }
-  section#register ::-webkit-input-placeholder {
-    /* WebKit browsers */
-    color: #ffe552; }
-  section#register :-moz-placeholder {
-    /* Mozilla Firefox 4 to 18 */
-    color: #ffe552;
-    opacity: 1; }
-  section#register ::-moz-placeholder {
-    /* Mozilla Firefox 19+ */
-    color: #ffe552;
-    opacity: 1; }
-  section#register :-ms-input-placeholder {
-    /* Internet Explorer 10+ */
-    color: #ffe552; }
-  section#register p#appreciation {
-    padding: 1em;
-    background: rgba(250, 250, 250, 0.5);
-    color: #473899;
-    font-style: italic; }
-  section#register .thankyou {
-    margin-top: 20px;
-    margin-bottom: 67px; }
 
 /** Final stuff **/
 section#sponsor {
@@ -378,6 +321,12 @@ section#sponsor {
 
 .question-hidden {
   margin: 0; }
+
+#dot {
+  transition: color 0.5s ease; }
+  #dot:hover {
+    color: #ffe552;
+    cursor: pointer; }
 
 /* Responsive */
 @media only screen and (max-width: 1000px) {
@@ -489,3 +438,5 @@ section#sponsor {
       font-size: 1.5em; }
   section#splash div.splash-text h2.title {
     font-size: 1.5em; } }
+
+/*# sourceMappingURL=main.css.map */

@@ -57,6 +57,7 @@ you're quite the l33t hacker looking at this page's source
   <!-- Include Semantic-UI -->
   <link href="bower_components/semantic-ui/build/packaged/css/semantic.min.css" rel="stylesheet" type="text/css">
   <script src="bower_components/semantic-ui/build/packaged/javascript/semantic.min.js"></script>
+  <script src="bower_components/shibe/build/packaged/javascript/shibe.js"></script>
 
   <!-- for Facebook -->
   <meta property="og:title" content="HackMIT 2015"/>
@@ -98,7 +99,7 @@ you're quite the l33t hacker looking at this page's source
         <h1 class="montserrat-bold title">HACKMIT</h1>
       </div>
       <div class="splash-text">
-        <h2 class="montserrat-bold title">SEPT.19&amp;20</h1>
+          <h2 class="montserrat-bold title">SEPT<span id="dot">.</span>19&amp;20</h2>
       </div>
       </div>
       </div>
@@ -109,7 +110,7 @@ you're quite the l33t hacker looking at this page's source
         <a id="goto-blurb" class="item">What</a>
         <a id="goto-schedule" class="item">Schedule</a>
         <a id="goto-faq" class="item">FAQ</a>
-        <a id="goto-register" class="item important">Register</a>
+        <a class="item important" href="https://my.hackmit.org">Register</a>
         <a id="goto-sponsor" class="item">Sponsors</a>
         </div>
     </div>
@@ -124,10 +125,6 @@ you're quite the l33t hacker looking at this page's source
     <p class="lato">
       HackMIT is MIT’s largest hackathon. Over a 24-hour period from September 19 to 20, 1,000 hackers from around the world will gather on MIT’s campus to experiment and innovate on software and hardware projects. This is your weekend to dust off old ideas or try something completely new. Imagine the craziest projects possible, and work on the hack of your dreams!
     </p>
-    </div>
-    <div class="ten wide column" id="social">
-    <br/>
-    <a id="goto-register" class="button">Register Now</a><br/>
     </div>
   </section>
 
@@ -215,10 +212,18 @@ you're quite the l33t hacker looking at this page's source
         </div>
         <div class="five wide column">
           <h4 class="question">
+            Do people actually read FAQs?<i class="angle down icon"></i>
+          </h4>
+          <p class="answer">
+            We don't know. Want to help us answer this question? Send us an email at faq-readers at mit dot edu. Feel free to write about whatever in your email. If you can't think of anything, talk about your favorite food. One lucky person who emails us may win a prize. Also, please don't tell anyone about this, or the experiment won't work :(
+          </p>
+        </div>
+        <div class="five wide column">
+          <h4 class="question">
             How do teams work?<i class="angle down icon"></i>
           </h4>
           <p class="answer">
-            Teams are at most 4 people, and you can designate teammates when you register. You can also register individually without specified teammates. We’ll run the lottery by teams, so either your whole team will receive admission or none of your team will receive admission.
+            Teams are at most 4 people, and you can designate teammates when you register. You can also register individually without specified teammates. We’ll run the lottery by teams, so either your whole team will receive admission or none of your team will receive admission if selected in the lottery. Having MIT students on your team does not guarantee admission unless your entire team is made up of MIT students.
           </p>
         </div>
         <div class="five wide column">
@@ -234,7 +239,15 @@ you're quite the l33t hacker looking at this page's source
             What if I’m an MIT student?<i class="angle down icon"></i>
           </h4>
           <p class="answer">
-            MIT students that register by July 30th and confirm by August 20th will be guaranteed admission. If you don’t confirm your attendance by August 20th, we’ll be taking walk-ins on a first-come, first-serve basis.
+            MIT students that register by July 30th and confirm by August 10th will be guaranteed admission. If you don’t confirm your attendance by August 10th, we’ll be taking walk-ins on a first-come, first-serve basis.
+          </p>
+        </div>
+        <div class="five wide column">
+          <h4 class="question">
+            Did you pad this FAQ so you get a perfect grid?<i class="angle down icon"></i>
+          </h4>
+          <p class="answer">
+            Yes. And it was worth it. Doesn't it look so pretty this way?
           </p>
         </div>
         <div class="five wide column">
@@ -243,6 +256,14 @@ you're quite the l33t hacker looking at this page's source
           </h4>
           <p class="answer">
             We’ll provide some hardware such as Arduinos, Pebbles, Raspberry Pis and more! You are more than welcome to bring your own hardware and basic tools to work with. A full list of hardware will be released as we get closer to the event.
+          </p>
+        </div>
+        <div class="five wide column">
+          <h4 class="question">
+            Is there a puzzle?<i class="angle down icon"></i>
+          </h4>
+          <p class="answer">
+            Yes. And being quick enough to solve the puzzle guarantees admission for you and your team.
           </p>
         </div>
         <div class="five wide column">
@@ -265,15 +286,10 @@ you're quite the l33t hacker looking at this page's source
     </div>
     <div class="ten wide column">
       <div class="interest lato">
-        <form id="interest-form" onsubmit="">
-          <label id="hi" for="email">Join us at HackMIT to experiment and innovate with software and hardware. <br/>Enter your email below and we'll let you know when registration opens!</label>
-          <fieldset id="input">
-            <input type="text" placeholder="Your Email" name="email" id="interest-form-email" class="lato" />
-            <input type="submit" id="interest-form-submit" value="SUBMIT" />
-          </fieldset>
-          <div class="thankyou hidden">Thanks for signing up! We'll send you an email when registration opens.</div>
-        </form>
+        <p>Join us at HackMIT to experiment and innovate with software and hardware.</p>
+        <p>What are you waiting for?</p>
       </div>
+      <a class="button" href="https://my.hackmit.org">Register Now</a><br/>
     </div>
 
   </section>
