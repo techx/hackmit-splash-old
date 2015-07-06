@@ -284,15 +284,48 @@ section#register {
 
 /** Final stuff **/
 section#sponsor {
-  background: #fafafa;
+  background: white;
   color: #473899; }
+  section#sponsor p {
+    margin-bottom: 5%; }
+  section#sponsor #sponsor-email {
+    color: #473899;
+    text-decoration: underline; }
+  section#sponsor .tier {
+    padding: 0 5%; }
+    section#sponsor .tier .title {
+      font-family: "Montserrat", sans-serif;
+      font-size: 2.5em;
+      margin-top: 2em;
+      display: none; }
   section#sponsor a, section#sponsor a:visited {
-    color: #473899; }
-  section#sponsor #footersplash {
+    text-decoration: none; }
+  section#sponsor img {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 16px; }
+  section#sponsor .platinum img {
+    width: 28%; }
+  section#sponsor .gold img {
+    width: 30%; }
+  section#sponsor .silver img {
+    width: 20%; }
+  section#sponsor .bronze {
+    padding: 2% 5%; }
+  section#sponsor .bronze img {
+    width: 12%; }
+
+#footer {
+  background: white;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 10%; }
+  #footer #footersplash {
     max-width: 300px;
     width: 60%;
-    margin: 7% auto 0 auto; }
-  section#sponsor img.logo {
+    margin: 0 auto; }
+  #footer img.logo {
     position: absolute;
     width: 60%;
     height: 60%;
@@ -333,7 +366,23 @@ section#sponsor {
   section#faq h2.large {
     display: none; }
   section#faq h2.mobile {
-    display: block; } }
+    display: block; }
+
+  section#sponsor {
+    padding-left: 0;
+    padding-right: 0; }
+    section#sponsor .tier .title {
+      display: block; }
+    section#sponsor img {
+      margin: 2em; }
+    section#sponsor .platinum img {
+      width: 60%; }
+    section#sponsor .gold img {
+      width: 50%; }
+    section#sponsor .silver img {
+      width: 35%; }
+    section#sponsor .bronze img {
+      width: 20%; } }
 @media only screen and (max-width: 786px) {
   html, body {
     font-size: 1em; }
@@ -385,8 +434,22 @@ section#sponsor {
   #navbar.fixed {
     position: relative; }
 
-  section#sponsor #footersplash {
-    margin: 20% auto 0 auto; } }
+  section#sponsor {
+    padding-left: 0;
+    padding-right: 0; }
+    section#sponsor .tier .title {
+      display: block;
+      margin-top: .5em; }
+    section#sponsor img {
+      margin: 1.5em 2em; }
+    section#sponsor .platinum img {
+      width: 40%; }
+    section#sponsor .gold img {
+      width: 35%; }
+    section#sponsor .silver img {
+      width: 25%; }
+    section#sponsor .bronze img {
+      width: 15%; } }
 @media only screen and (max-width: 480px) {
   section#splash div.splash-container div.splash-banner img.logo {
     width: 50vw;
@@ -406,7 +469,24 @@ section#sponsor {
     width: 30%; }
 
   section h2 {
-    font-size: 3em; } }
+    font-size: 3em; }
+
+  section#sponsor {
+    padding-left: 0;
+    padding-right: 0; }
+    section#sponsor .tier .title {
+      display: block;
+      margin-top: 1em; }
+    section#sponsor img {
+      margin: 1em 2em; }
+    section#sponsor .platinum img {
+      width: 75%; }
+    section#sponsor .gold img {
+      width: 60%; }
+    section#sponsor .silver img {
+      width: 45%; }
+    section#sponsor .bronze img {
+      width: 25%; } }
 @media only screen and (max-width: 320px) {
   section#splash div.splash-container div.splash-banner .title {
     font-size: 2.5em !important; }
@@ -437,6 +517,21 @@ section#sponsor {
     section#splash div.splash-container div.splash-banner h1.title {
       font-size: 1.5em; }
   section#splash div.splash-text h2.title {
-    font-size: 1.5em; } }
+    font-size: 1.5em; }
 
-/*# sourceMappingURL=main.css.map */
+  section#sponsor {
+    padding-left: 0;
+    padding-right: 0; }
+    section#sponsor .tier .title {
+      display: block;
+      margin-top: 1em; }
+    section#sponsor img {
+      margin: 1em; }
+    section#sponsor .platinum img {
+      width: 75%; }
+    section#sponsor .gold img {
+      width: 60%; }
+    section#sponsor .silver img {
+      width: 45%; }
+    section#sponsor .bronze img {
+      width: 25%; } }
