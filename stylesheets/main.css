@@ -366,23 +366,7 @@ section#sponsor {
   section#faq h2.large {
     display: none; }
   section#faq h2.mobile {
-    display: block; }
-
-  section#sponsor {
-    padding-left: 0;
-    padding-right: 0; }
-    section#sponsor .tier .title {
-      display: block; }
-    section#sponsor img {
-      margin: 2em; }
-    section#sponsor .platinum img {
-      width: 60%; }
-    section#sponsor .gold img {
-      width: 50%; }
-    section#sponsor .silver img {
-      width: 35%; }
-    section#sponsor .bronze img {
-      width: 20%; } }
+    display: block; } }
 @media only screen and (max-width: 786px) {
   html, body {
     font-size: 1em; }
@@ -505,7 +489,7 @@ section#sponsor {
     margin: 2px auto; }
 
   section h2 {
-    font-size: 1.5em;
+    font-size: 2em;
     line-height: 1.2em; }
 
   section#faq .question {
@@ -523,6 +507,7 @@ section#sponsor {
     padding-left: 0;
     padding-right: 0; }
     section#sponsor .tier .title {
+      font-size: 1.5em;
       display: block;
       margin-top: 1em; }
     section#sponsor img {
@@ -534,4 +519,9 @@ section#sponsor {
     section#sponsor .silver img {
       width: 45%; }
     section#sponsor .bronze img {
-      width: 25%; } }
+      width: 30%; }
+
+  section#footer .icon {
+    width: 20px; } }
+
+/*# sourceMappingURL=main.css.map */
