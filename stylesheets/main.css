@@ -293,11 +293,6 @@ section#sponsor {
     text-decoration: underline; }
   section#sponsor .tier {
     padding: 0 5%; }
-    section#sponsor .tier .title {
-      font-family: "Montserrat", sans-serif;
-      font-size: 2.5em;
-      margin-top: 2em;
-      display: none; }
   section#sponsor a, section#sponsor a:visited {
     text-decoration: none; }
   section#sponsor img {
@@ -306,9 +301,9 @@ section#sponsor {
     vertical-align: middle;
     margin: 16px; }
   section#sponsor .platinum img {
-    width: 28%; }
-  section#sponsor .gold img {
     width: 30%; }
+  section#sponsor .gold img {
+    width: 32%; }
   section#sponsor .silver img {
     width: 20%; }
   section#sponsor .bronze {
@@ -421,15 +416,12 @@ section#sponsor {
   section#sponsor {
     padding-left: 0;
     padding-right: 0; }
-    section#sponsor .tier .title {
-      display: block;
-      margin-top: .5em; }
     section#sponsor img {
       margin: 1.5em 2em; }
     section#sponsor .platinum img {
       width: 40%; }
     section#sponsor .gold img {
-      width: 35%; }
+      width: 37%; }
     section#sponsor .silver img {
       width: 25%; }
     section#sponsor .bronze img {
@@ -458,15 +450,12 @@ section#sponsor {
   section#sponsor {
     padding-left: 0;
     padding-right: 0; }
-    section#sponsor .tier .title {
-      display: block;
-      margin-top: 1em; }
     section#sponsor img {
       margin: 1em 2em; }
     section#sponsor .platinum img {
       width: 75%; }
     section#sponsor .gold img {
-      width: 60%; }
+      width: 65%; }
     section#sponsor .silver img {
       width: 45%; }
     section#sponsor .bronze img {
@@ -506,16 +495,12 @@ section#sponsor {
   section#sponsor {
     padding-left: 0;
     padding-right: 0; }
-    section#sponsor .tier .title {
-      font-size: 1.5em;
-      display: block;
-      margin-top: 1em; }
     section#sponsor img {
       margin: 1em; }
     section#sponsor .platinum img {
       width: 75%; }
     section#sponsor .gold img {
-      width: 60%; }
+      width: 65%; }
     section#sponsor .silver img {
       width: 45%; }
     section#sponsor .bronze img {

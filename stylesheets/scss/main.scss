@@ -403,13 +403,6 @@ section#sponsor {
 
   .tier {
     padding: 0 5%;
-
-    .title {
-      font-family: $montserrat;
-      font-size: 2.5em;
-      margin-top: 2em;
-      display: none;
-    }
   }
 
   a, a:visited {
@@ -424,11 +417,11 @@ section#sponsor {
   }
 
   .platinum img{
-    width: 28%;
+    width: 30%;
   }
 
   .gold img {
-    width: 30%;
+    width: 32%;
   }
 
   .silver img {
@@ -585,11 +578,6 @@ section#sponsor {
   section#sponsor {
     padding-left: 0;
     padding-right: 0;
-   
-    .tier .title {
-      display: block;
-      margin-top: .5em;
-    }
 
     img {
       margin: 1.5em 2em;
@@ -600,7 +588,7 @@ section#sponsor {
     }
 
     .gold img {
-      width: 35%;
+      width: 37%;
     }
 
     .silver img {
@@ -657,11 +645,6 @@ section#sponsor {
   section#sponsor {
     padding-left: 0;
     padding-right: 0;
-   
-    .tier .title {
-      display: block;
-      margin-top: 1em;
-    }
 
     img {
       margin: 1em 2em;
@@ -672,7 +655,7 @@ section#sponsor {
     }
 
     .gold img {
-      width: 60%;
+      width: 65%;
     }
 
     .silver img {
@@ -743,12 +726,6 @@ section#sponsor {
   section#sponsor {
     padding-left: 0;
     padding-right: 0;
-   
-    .tier .title {
-      font-size: 1.5em;
-      display: block;
-      margin-top: 1em;
-    }
 
     img {
       margin: 1em;
@@ -759,7 +736,7 @@ section#sponsor {
     }
 
     .gold img {
-      width: 60%;
+      width: 65%;
     }
 
     .silver img {
