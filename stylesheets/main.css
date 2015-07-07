@@ -324,8 +324,8 @@ section#sponsor {
     position: absolute;
     width: 60%;
     height: 60%;
-    max-width: 100px;
-    max-height: 104px;
+    max-width: 130px;
+    max-height: 134px;
     margin: auto;
     top: 0;
     left: 2%;
@@ -508,3 +508,5 @@ section#sponsor {
 
   section#footer .icon {
     width: 20px; } }
+
+/*# sourceMappingURL=main.css.map */
