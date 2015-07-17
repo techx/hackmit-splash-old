@@ -417,7 +417,9 @@ section#sponsor {
   }
 
   .platinum img{
-    width: 40%;
+    max-height: 180px;
+    max-width: 40%;
+    height: auto;
   }
     #aqr{
       width: 200px;
@@ -429,7 +431,7 @@ section#sponsor {
   }
 
   .silver img {
-    width: 19%;
+    width: 17%;
   }
 
   .bronze {

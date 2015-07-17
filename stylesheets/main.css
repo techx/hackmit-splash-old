@@ -301,14 +301,16 @@ section#sponsor {
     vertical-align: middle;
     margin: 16px; }
   section#sponsor .platinum img {
-    width: 40%; }
+    max-height: 180px;
+    max-width: 40%;
+    height: auto; }
   section#sponsor #aqr {
     width: 200px;
     height:auto; }
   section#sponsor .gold img {
     width: 28%; }
   section#sponsor .silver img {
-    width: 19%; }
+    width: 17%; }
   section#sponsor .bronze {
     padding: 2% 5%; }
   section#sponsor .bronze img {
