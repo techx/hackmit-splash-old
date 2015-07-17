@@ -420,7 +420,9 @@ section#sponsor {
     width: 40%;
   }
     #aqr{
-      width:26%;
+      max-width: 185px;
+      max-height: 40%;
+      height: auto;
     }
 
   .gold img {
