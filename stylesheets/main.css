@@ -303,9 +303,8 @@ section#sponsor {
   section#sponsor .platinum img {
     width: 40%; }
   section#sponsor #aqr {
-    max-width: 185px;
-    max-height: 40%;
-    height: auto; }
+    width: 200px;
+    height:auto; }
   section#sponsor .gold img {
     width: 28%; }
   section#sponsor .silver img {
