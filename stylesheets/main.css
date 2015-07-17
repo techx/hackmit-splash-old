@@ -302,10 +302,12 @@ section#sponsor {
     margin: 16px; }
   section#sponsor .platinum img {
     width: 40%; }
+  section#sponsor #aqr {
+    width: 26%; }
   section#sponsor .gold img {
     width: 28%; }
   section#sponsor .silver img {
-    width: 17%; }
+    width: 19%; }
   section#sponsor .bronze {
     padding: 2% 5%; }
   section#sponsor .bronze img {
@@ -508,5 +510,3 @@ section#sponsor {
 
   section#footer .icon {
     width: 20px; } }
-
-/*# sourceMappingURL=main.css.map */
