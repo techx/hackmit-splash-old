@@ -301,9 +301,7 @@ section#sponsor {
     vertical-align: middle;
     margin: 16px; }
   section#sponsor .platinum img {
-    max-height: 180px;
-    max-width: 40%;
-    height: auto; }
+    width: 40%; }
   section#sponsor #aqr {
     width: 200px;
     height:auto; }
