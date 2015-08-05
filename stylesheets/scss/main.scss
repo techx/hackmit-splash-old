@@ -49,7 +49,7 @@ a {
   color:$gold;
 }
 
-/* Ben's stuff 
+/* Ben's stuff
  * temporarily
  */
 
@@ -193,7 +193,7 @@ section#splash {
       height: 100%;
       position: relative;
     }
-    .splash-centerer { 
+    .splash-centerer {
       width: 100%;
       top: 50%;
       -webkit-transform: translateY(-50%);
@@ -359,7 +359,7 @@ section#blurb {
 
   a.social {
     color: $deeppurple;
-    text-decoration: none;    
+    text-decoration: none;
   }
 
   a.socialtext {
@@ -378,7 +378,7 @@ section#schedule {
   color: $white;
 }
 
-section#faq {  
+section#faq {
   background: $blue;
   .column {
     text-align: left;
@@ -449,7 +449,7 @@ section#sponsor {
     width: 44%;
   }
     #aqr{
-      width: 220px;
+      width: 300px;
       height:auto;
     }
 
@@ -553,7 +553,7 @@ section#sponsor {
 
     div.splash-container {
       display: block;
-      height: auto; 
+      height: auto;
       // add space to unaccount for now relative nav bar
       padding-bottom: 0;
 
@@ -571,7 +571,7 @@ section#sponsor {
         img.logo {
           width: 25vw;
           height: 25vw;
-        } 
+        }
 
         .title {
           font-size: 5em!important;
@@ -719,7 +719,7 @@ section#sponsor {
       }
     }
   }
-  
+
   section.ui.page.grid.padded {
     padding-top: 20%;
     padding-bottom: 20%;

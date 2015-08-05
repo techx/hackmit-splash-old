@@ -34,7 +34,7 @@ html, body {
 a {
   color: #ffe552; }
 
-/* Ben's stuff 
+/* Ben's stuff
  * temporarily
  */
 div.divider {
@@ -226,8 +226,7 @@ section#splash {
   #infobar p {
     color: #fafafa;
     font-size: 1.2em;
-    padding: 0.4em;
-    padding-bottom: 0.5em;
+    padding: 16px;
     margin: 0; }
 
 img#techx {
@@ -320,7 +319,7 @@ section#sponsor {
   section#sponsor .platinum img {
     width: 44%; }
   section#sponsor #aqr {
-    width: 220px;
+    width: 300px;
     height: auto; }
   section#sponsor .gold img {
     width: 27.5%; }
@@ -528,5 +527,3 @@ section#sponsor {
 
   section#footer .icon {
     width: 20px; } }
-
-/*# sourceMappingURL=main.css.map */
