@@ -117,6 +117,10 @@ section {
     display: block;
   }
 
+  p {
+    margin-bottom: 1em;
+  }
+
   .row {
     margin-top: 0;
   }
@@ -132,6 +136,28 @@ section {
 
   input:focus {
     outline: 0;
+  }
+
+  .button {
+    display: inline-block;
+    margin: 15px auto 0px auto;
+    background-color: $gold;
+    padding: 0.8em 3em;
+    color: $red;
+    font-weight: bold;
+    font-family: $montserrat;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1em;
+    text-align: center;
+    border: 0;
+    cursor: pointer;
+  }
+
+
+  .button:hover {
+    background-color: $blue;
+    color: $white;
   }
 }
 
@@ -227,6 +253,8 @@ section#splash {
   }
 }
 
+
+
 #navbar {
   position: absolute;
   bottom: 0;
@@ -246,10 +274,19 @@ section#splash {
       border-bottom: 4px solid transparent;
       color: $deeppurple;
       font-weight: bold;
+
+      &.wide {
+        width: 9em;
+      }
     }
 
     .item.important {
-      color: $red;
+      color: $white;
+      background-color: $magenta;
+
+      &:hover {
+        background-color: $deeppurple;
+      }
     }
 
     .item:hover {
@@ -265,6 +302,19 @@ section#splash {
   top: 0;
   bottom: auto;
   z-index: 5;
+}
+
+#infobar {
+  background-color: $blue;
+  text-align: center;
+
+  p {
+    color: $white;
+    font-size: 1.2em;
+    padding: 0.4em;
+    padding-bottom: 0.5em;
+    margin: 0;
+  }
 }
 
 img#techx {
@@ -363,26 +413,6 @@ section#register {
   min-height: 80px;
   color: $white;
 
-  .button {
-    display: inline-block;
-    margin: 15px auto 0px auto;
-    background-color: $gold;
-    padding: 0.8em 3em;
-    color: $red;
-    font-weight: bold;
-    font-family: $montserrat;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 1em;
-    text-align: center;
-    border: 0;
-    cursor: pointer;
-  }
-
-  .button:hover {
-    background-color: $blue;
-    color: $white;
-  }
 }
 
 /** Final stuff **/

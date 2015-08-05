@@ -84,6 +84,8 @@ section input {
   line-height: 1.5em;
   margin: 0 auto;
   display: block; }
+section p {
+  margin-bottom: 1em; }
 section .row {
   margin-top: 0; }
 section img {
@@ -93,6 +95,23 @@ section input {
   width: 80%; }
 section input:focus {
   outline: 0; }
+section .button {
+  display: inline-block;
+  margin: 15px auto 0px auto;
+  background-color: #ffe552;
+  padding: 0.8em 3em;
+  color: #f1645d;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1em;
+  text-align: center;
+  border: 0;
+  cursor: pointer; }
+section .button:hover {
+  background-color: #4c82cc;
+  color: #fafafa; }
 
 section.ui.page.grid {
   min-width: 0; }
@@ -183,8 +202,13 @@ section#splash {
       border-bottom: 4px solid transparent;
       color: #473899;
       font-weight: bold; }
+      #navbar .menu .item.wide {
+        width: 9em; }
     #navbar .menu .item.important {
-      color: #f1645d; }
+      color: #fafafa;
+      background-color: #e76482; }
+      #navbar .menu .item.important:hover {
+        background-color: #473899; }
     #navbar .menu .item:hover {
       color: white;
       background: #e76482;
@@ -195,6 +219,16 @@ section#splash {
   top: 0;
   bottom: auto;
   z-index: 5; }
+
+#infobar {
+  background-color: #4c82cc;
+  text-align: center; }
+  #infobar p {
+    color: #fafafa;
+    font-size: 1.2em;
+    padding: 0.4em;
+    padding-bottom: 0.5em;
+    margin: 0; }
 
 img#techx {
   width: 100px; }
@@ -264,23 +298,6 @@ section#register {
   background: #e76482;
   min-height: 80px;
   color: #fafafa; }
-  section#register .button {
-    display: inline-block;
-    margin: 15px auto 0px auto;
-    background-color: #ffe552;
-    padding: 0.8em 3em;
-    color: #f1645d;
-    font-weight: bold;
-    font-family: "Montserrat", sans-serif;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 1em;
-    text-align: center;
-    border: 0;
-    cursor: pointer; }
-  section#register .button:hover {
-    background-color: #4c82cc;
-    color: #fafafa; }
 
 /** Final stuff **/
 section#sponsor {
@@ -304,7 +321,7 @@ section#sponsor {
     width: 44%; }
   section#sponsor #aqr {
     width: 220px;
-    height:auto; }
+    height: auto; }
   section#sponsor .gold img {
     width: 28%; }
   section#sponsor .silver img {
@@ -511,3 +528,5 @@ section#sponsor {
 
   section#footer .icon {
     width: 20px; } }
+
+/*# sourceMappingURL=main.css.map */
