@@ -302,6 +302,8 @@ section#register {
 section#sponsor {
   background: white;
   color: #473899; }
+  section#sponsor img {
+    padding: 5px 10px; }
   section#sponsor p {
     margin-bottom: 5%; }
   section#sponsor #sponsor-email {
