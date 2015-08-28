@@ -271,6 +271,8 @@ section#schedule {
   background: #473899;
   min-height: 80px;
   color: #fafafa; }
+  section#schedule .schedule.grid {
+    margin-top: 20px; }
 
 section#faq {
   background: #4c82cc; }
