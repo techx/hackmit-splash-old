@@ -376,6 +376,9 @@ section#schedule {
   background: $deeppurple;
   min-height: 80px;
   color: $white;
+  .schedule.grid {
+    margin-top: 20px;
+  }
 }
 
 section#faq {
