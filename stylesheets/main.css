@@ -221,7 +221,7 @@ section#splash {
   z-index: 5; }
 
 #infobar {
-  background-color: #4c82cc;
+  background-color: #473899;
   text-align: center; }
   #infobar p {
     color: #fafafa;
@@ -531,3 +531,5 @@ section#sponsor {
 
   section#footer .icon {
     width: 20px; } }
+
+/*# sourceMappingURL=main.css.map */

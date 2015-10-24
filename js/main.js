@@ -6,7 +6,7 @@ $(document).ready(function() {
     .transition('fade in', 1500);
 
   var $bodytag = $('html, body');
-  var $tags = $('#goto-splash, #goto-blurb, #goto-schedule, #goto-faq, #goto-register, #goto-sponsor');
+  var $tags = $('#goto-splash, #goto-blurb, #goto-faq, #goto-register, #goto-sponsor');
   $tags.click(function(e) {
     var elementName = e.target.id.substr(5);
     if ($(window).width() <= breakWidth) {
