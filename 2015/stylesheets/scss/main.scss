@@ -1,0 +1,796 @@
+@import '_constants';
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: $white;
+  font-size: 0.85em;
+
+  section {
+    width: 100%;
+    position: relative;
+  }
+
+  div {
+    position: relative;
+  }
+}
+
+/*
+ * shared classes
+ */
+
+// TODO fix fonts on firefox
+.montserrat, .montserrat-bold {
+  font-family: $montserrat;
+}
+
+.montserrat-bold {
+  font-weight: 700;
+}
+
+.lato {
+  font-family: $lato;
+  font-weight: 600;
+}
+
+.hidden {
+  display: none;
+}
+
+.title {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+a {
+  color:$gold;
+}
+
+/* Ben's stuff
+ * temporarily
+ */
+
+
+div.divider {
+  height: 3.3em;
+  background-image: url("../assets/images/hack-logo-tile-purple.svg");
+  background-position: -5px;
+  background-repeat: repeat-x;
+  background-color: $magenta;
+  background-size: auto 3em;
+}
+
+.divider.deeppurple {
+  background-image: url("../assets/images/hack-logo-tile-purple.svg");
+}
+
+.divider.blue {
+  background-image: url("../assets/images/hack-logo-tile-blue.svg");
+}
+
+.divider.magenta {
+  background-image: url("../assets/images/hack-logo-tile-magenta.svg");
+}
+
+.divider.yellow {
+  background-image: url("../assets/images/hack-logo-tile-yellow.svg");
+}
+
+.divider.deeppurplebg {
+  background-color: $deeppurple;
+}
+
+.divider.bluebg {
+  background-color: $blue;
+}
+
+.divider.magentabg {
+  background-color: $magenta;
+}
+
+.divider.yellowbg {
+  background-color: $gold;
+}
+
+.divider.whitebg {
+  background-color: white;
+}
+
+
+section {
+  h2 {
+    font-size: 3.5em;
+    letter-spacing: 5px;
+    line-height: 1.3em;
+    margin:0;
+  }
+
+  p,
+  label,
+  input {
+    font-size: 1.1em;
+    line-height: 1.5em;
+    margin: 0 auto;
+    display: block;
+  }
+
+  p {
+    margin-bottom: 1em;
+  }
+
+  .row {
+    margin-top: 0;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  input {
+    padding: 10px 2%;
+    width: 80%;
+  }
+
+  input:focus {
+    outline: 0;
+  }
+
+  .button {
+    display: inline-block;
+    margin: 15px auto 0px auto;
+    background-color: $gold;
+    padding: 0.8em 3em;
+    color: $red;
+    font-weight: bold;
+    font-family: $montserrat;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1em;
+    text-align: center;
+    border: 0;
+    cursor: pointer;
+  }
+
+
+  .button:hover {
+    background-color: $blue;
+    color: $white;
+  }
+}
+
+section.ui.page.grid {
+  min-width: 0;
+}
+section.ui.page.grid.padded {
+  padding-top: 5%;
+  padding-bottom: 7%;
+}
+
+
+section#splash {
+  // workaround to simulate min-height: 100%
+  // see http://stackoverflow.com/questions/8468066/child-inside-parent-with-min-height-100-not-inheriting-height
+  display: table;
+  table-layout: fixed;
+  height: inherit;
+  width: 100%; // there's a one pixel width bug here
+
+  div.splash-container {
+    font-size: 1em;
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    // add space to account for nav bar
+    padding-bottom: 3.5em;
+
+    // VERTICAL CENTERING. These two classes
+    // exist solely to vertically center in a display:table-cell
+    .splash-relative {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+    .splash-centerer {
+      width: 100%;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      text-align: center;
+    }
+
+    div.splash-banner {
+      width: 37.5%;
+      margin: 0 auto;
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+      img.logo {
+        position: absolute;
+        // fallback
+        width: 10%;
+        width: 13vw;
+        height: 13vw;
+        margin: auto;
+        top: 0; left: 0; bottom: 0; right: 0;
+      }
+      h1.title {
+        position: absolute;
+        margin: 0;
+        left: 0; right: 0;
+        bottom: 2px;
+        letter-spacing: 8px;
+        line-height: 1.2em;
+        font-size: 3em;  // fallback
+        font-size: 5.5vw;
+        padding-left: 5px;
+        color: $white;
+      }
+    }
+  }
+
+  div.splash-text {
+    margin: 0 0 5px 0 !important;
+    padding: 0 !important;
+
+    h2.title {
+      line-height: 1.1em;
+      font-size: 3em; // fallback
+      font-size: 5.5vw;
+      margin: 0;
+      letter-spacing: 8px;
+      padding-left: 5px;
+      color: $deeppurple;
+    }
+    h2.title:focus {
+      outline: 0px solid transparent;
+    }
+  }
+}
+
+
+
+#navbar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  .menu {
+    background-color: $gold;
+    font-family: $montserrat;
+    text-transform: uppercase;
+    font-size: 1em;
+    text-align: center;
+    border: 0;
+
+    .item {
+      width: 8em;
+      padding-top: 1.2em;
+      border-bottom: 4px solid transparent;
+      color: $deeppurple;
+      font-weight: bold;
+
+      &.wide {
+        width: 9em;
+      }
+    }
+
+    .item.important {
+      color: $white;
+      background-color: $magenta;
+
+      &:hover {
+        background-color: $deeppurple;
+      }
+    }
+
+    .item:hover {
+      color: white;
+      background: $magenta;
+      border-bottom: 3px solid $blue
+    }
+  }
+}
+
+#navbar.fixed {
+  position: fixed;
+  top: 0;
+  bottom: auto;
+  z-index: 5;
+}
+
+#infobar {
+  background-color: $deeppurple;
+  text-align: center;
+
+  p {
+    color: $white;
+    font-size: 1.2em;
+    padding: 16px;
+    margin: 0;
+  }
+}
+
+img#techx {
+  width: 100px;
+}
+
+section#blurb {
+  background: $magenta;
+  min-height: 240px;
+  color: $white;
+
+  .ui.page.grid.padded {
+    padding-bottom: 5%;
+  }
+}
+
+#social {
+  a {
+    text-decoration: none;
+    color: $deeppurple;
+    text-align: center;
+    margin: 0;
+    padding-left: 5px;
+  }
+  a:hover {
+    color: $gold;
+  }
+  .icon {
+    font-size: 2em;
+    text-align: center;
+    margin: 0.8em 1em;
+  }
+
+  .icon:hover {
+    text-shadow: 0 0 3px $deeppurple;
+    cursor: pointer;
+  }
+
+  span {
+    color: $gold;
+    top: -2px;
+  }
+
+  a.social {
+    color: $deeppurple;
+    text-decoration: none;
+  }
+
+  a.socialtext {
+    color: $gold;
+    text-align: center;
+    text-decoration: underline;
+  }
+  a.socialtext:hover {
+    color: $deeppurple;
+  }
+}
+
+section#schedule {
+  background: $deeppurple;
+  min-height: 80px;
+  color: $white;
+  .schedule.grid {
+    margin-top: 20px;
+  }
+}
+
+section#faq {
+  background: $blue;
+  .column {
+    text-align: left;
+    margin-bottom: 1.5em;
+  }
+  .row {
+    margin: 0 auto;
+  }
+  h2 {
+    color:$white;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  h2.large {
+    display: block;
+  }
+  h2.mobile {
+    display: none;
+  }
+  .question {
+    color:$gold;
+    font-size: 1.5em;
+  }
+  p.answer {
+    color:$white;
+  }
+}
+
+section#register {
+  background: $magenta;
+  min-height: 80px;
+  color: $white;
+
+}
+
+/** Final stuff **/
+
+
+section#sponsor {
+  background: white;
+  color: $deeppurple;
+
+  img {
+    padding: 10px 10px;
+  }
+
+  p {
+    margin-bottom: 5%;
+  }
+
+  #sponsor-email {
+    color: $deeppurple;
+    text-decoration: underline;
+  }
+
+  .tier {
+    padding: 0 5%;
+  }
+
+  a, a:visited {
+    text-decoration: none;
+  }
+
+  img {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 16px;
+  }
+
+  .platinum img{
+    width: 44%;
+  }
+    #aqr{
+      width: 225px;
+      height:auto;
+    }
+
+  .gold img {
+    width: 27.5%;
+  }
+
+  .silver img {
+    width: 18.5%;
+  }
+
+  .bronze {
+    padding: 2% 5%;
+  }
+
+  .bronze img {
+    width: 14%;
+  }
+}
+
+#footer {
+  background: white;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 10%;
+
+  #footersplash {
+    max-width: 300px;
+
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  img.logo {
+      position: absolute;
+      width: 60%;
+      height: 60%;
+      max-width: 130px;
+      max-height: 134px;
+      margin: auto;
+      top: 0; left: 2%; bottom: 0; right: 0;
+  }
+}
+
+/* hiding faq */
+.angle {
+  display: none;
+  -ms-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.angle-rotated {
+  -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+.answer-hidden {
+    display: none;
+  }
+.question-hidden {
+    margin: 0;
+  }
+
+#dot {
+    transition: color 0.5s ease;
+    &:hover {
+        color: $gold;
+        cursor: pointer;
+    }
+}
+
+
+/* Responsive */
+
+@media only screen and (max-width: 1000px) {
+  section#faq {
+    h2.large {
+      display: none;
+    }
+    h2.mobile {
+      display: block;
+    }
+  }
+}
+
+@media only screen and (max-width: 786px) {
+  html,body {
+    font-size: 1em;
+  }
+  #navbar {
+    position: relative;
+    .menu .item {
+      width: 7em;
+      padding-left: 0.4em;
+      padding-right: 0.4em;
+    }
+  }
+  section#splash {
+    display: block;
+    height: auto;
+
+    div.splash-container {
+      display: block;
+      height: auto;
+      // add space to unaccount for now relative nav bar
+      padding-bottom: 0;
+
+      .splash-centerer {
+        top: 0;
+        transform: none;
+        -webkit-transform: none;
+        -ms-transform: none;
+        text-align: center;
+      }
+
+      div.splash-banner {
+        width: 100%;
+
+        img.logo {
+          width: 25vw;
+          height: 25vw;
+        }
+
+        .title {
+          font-size: 5em!important;
+        }
+      }
+
+      div.splash-text {
+        .title {
+          font-size: 5em;
+        }
+      }
+    }
+  }
+
+  section#register {
+    .thankyou {
+      margin-bottom: 114px;
+    }
+  }
+  section.ui.page.grid.padded {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  div.divider {
+    height: 30px;
+    background-size: auto 26px;
+  }
+
+  .question {
+    cursor: pointer;
+  }
+
+  #navbar.fixed {
+    position: relative;
+  }
+
+  section#sponsor {
+    padding-left: 0;
+    padding-right: 0;
+
+    img {
+      margin: 1.5em 2em;
+    }
+
+    .platinum img{
+      width: 50%;
+    }
+
+    .gold img {
+      width: 37%;
+    }
+
+    .silver img {
+      width: 25%;
+    }
+
+    .bronze img {
+      width: 15%;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  section#splash {
+
+    div.splash-container {
+
+      div.splash-banner {
+
+        img.logo {
+          width: 50vw;
+          height: 50vw;
+        }
+
+        .title {
+          font-size: 2.8em!important;
+        }
+      }
+
+      div.splash-text {
+        .title {
+          font-size: 2.8em;
+        }
+      }
+    }
+  }
+  section#register {
+    input#interest-form-email {
+      width: 50%;
+      padding: 10px 2%;
+      font-weight: 400;
+    }
+    input#interest-form-submit {
+      padding: 10px 10px;
+      min-width: 80px;
+      width: 30%;
+    }
+  }
+
+  section h2 {
+    font-size: 3em;
+  }
+
+  section#sponsor {
+    padding-left: 0;
+    padding-right: 0;
+
+    img {
+      margin: 1em 2em;
+    }
+
+    .platinum img{
+      width: 75%;
+    }
+
+    .gold img {
+      width: 65%;
+    }
+
+    .silver img {
+      width: 45%;
+    }
+
+    .bronze img {
+      width: 25%;
+    }
+  }
+}
+
+@media only screen and (max-width : 320px) {
+  section#splash {
+
+    div.splash-container {
+
+      div.splash-banner {
+        .title {
+          font-size: 2.5em!important;
+        }
+      }
+
+      div.splash-text {
+        .title {
+          font-size: 2.5em;
+        }
+      }
+    }
+  }
+
+  section.ui.page.grid.padded {
+    padding-top: 20%;
+    padding-bottom: 20%;
+  }
+  div.divider {
+    height: 22px;
+    background-size: auto 18px;
+  }
+  section input {
+    margin: 2px auto;
+  }
+  section h2 {
+    font-size: 2em;
+    line-height: 1.2em;
+  }
+  section#faq .question {
+    font-size: 1.3em;
+  }
+  section#splash {
+    div.splash-container {
+      // undo space to account for relative nav bar
+      padding-bottom: 0em;
+      display: block;
+      div.splash-banner {
+        h1.title {
+          font-size: 1.5em;
+        }
+      }
+    }
+    div.splash-text {
+      h2.title {
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  section#sponsor {
+    padding-left: 0;
+    padding-right: 0;
+
+    img {
+      margin: 1em;
+    }
+
+    .platinum img{
+      width: 75%;
+    }
+
+    .gold img {
+      width: 65%;
+    }
+
+    .silver img {
+      width: 45%;
+    }
+
+    .bronze img {
+      width: 30%;
+    }
+  }
+
+  section#footer {
+    .icon {
+      width: 20px;
+    }
+  }
+}
