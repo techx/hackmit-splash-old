@@ -2,6 +2,11 @@ var breakWidth = 768;
 
 $(document).ready(function() {
 
+  var today = new Date();
+  if (today.getDate() == 1 && today.getMonth() == 3) {
+    $('body').addClass('foolsday');
+  }
+
   $('#main')
     .transition('fade in', 1500);
 

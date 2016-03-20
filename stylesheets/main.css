@@ -5,6 +5,8 @@ html, body {
   margin: 0;
   background-color: #fafafa;
   font-size: 0.85em; }
+  html.foolsday *, body.foolsday * {
+    font-family: "Comic Sans MS" !important; }
   html section, body section {
     width: 100%;
     position: relative; }

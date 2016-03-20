@@ -8,6 +8,10 @@ html, body {
   background-color: $white;
   font-size: 0.85em;
 
+  &.foolsday *{
+    font-family: "Comic Sans MS" !important;
+  }
+
   section {
     width: 100%;
     position: relative;
