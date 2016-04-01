@@ -6,7 +6,7 @@ html, body {
   background-color: #fafafa;
   font-size: 0.85em; }
   html.foolsday *, body.foolsday * {
-    font-family: "Comic Sans MS" !important; }
+    font-family: "Comic Sans MS", cursive, sans-serif !important; }
   html section, body section {
     width: 100%;
     position: relative; }
