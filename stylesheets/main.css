@@ -34,46 +34,11 @@ html, body {
   text-align: center; }
 
 a {
-  color: #ffe552; }
+  color: #ffe86b; }
 
 /* Ben's stuff
  * temporarily
  */
-div.divider {
-  height: 3.3em;
-  background-image: url("../assets/images/hack-logo-tile-purple.svg");
-  background-position: -5px;
-  background-repeat: repeat-x;
-  background-color: #e76482;
-  background-size: auto 3em; }
-
-.divider.deeppurple {
-  background-image: url("../assets/images/hack-logo-tile-purple.svg"); }
-
-.divider.blue {
-  background-image: url("../assets/images/hack-logo-tile-blue.svg"); }
-
-.divider.magenta {
-  background-image: url("../assets/images/hack-logo-tile-magenta.svg"); }
-
-.divider.yellow {
-  background-image: url("../assets/images/hack-logo-tile-yellow.svg"); }
-
-.divider.deeppurplebg {
-  background-color: #473899; }
-
-.divider.bluebg {
-  background-color: #4c82cc; }
-
-.divider.magentabg {
-  background-color: #e76482; }
-
-.divider.yellowbg {
-  background-color: #ffe552; }
-
-.divider.whitebg {
-  background-color: white; }
-
 section h2 {
   font-size: 3.5em;
   letter-spacing: 5px;
@@ -100,7 +65,7 @@ section input:focus {
 section .button {
   display: inline-block;
   margin: 15px auto 0px auto;
-  background-color: #ffe552;
+  background-color: #ffe86b;
   padding: 0.8em 3em;
   color: #f1645d;
   font-weight: bold;
@@ -112,7 +77,7 @@ section .button {
   border: 0;
   cursor: pointer; }
 section .button:hover {
-  background-color: #4c82cc;
+  background-color: #4ecdc4;
   color: #fafafa; }
 
 section.ui.page.grid {
@@ -161,17 +126,19 @@ section#splash {
         bottom: 0;
         right: 0; }
       section#splash div.splash-container div.splash-banner h1.title {
-        position: absolute;
         margin: 0;
-        left: 0;
-        right: 0;
-        bottom: 2px;
         letter-spacing: 8px;
         line-height: 1.2em;
         font-size: 3em;
         font-size: 5.5vw;
         padding-left: 5px;
-        color: #fafafa; }
+        color: #0b3b4b; }
+      section#splash div.splash-container div.splash-banner h2.subtitle {
+        margin: 0;
+        line-height: 1.2em;
+        font-size: 1em;
+        font-size: 1vw;
+        color: #0b3b4b; }
   section#splash div.splash-text {
     margin: 0 0 5px 0 !important;
     padding: 0 !important; }
@@ -182,7 +149,7 @@ section#splash {
       margin: 0;
       letter-spacing: 8px;
       padding-left: 5px;
-      color: #473899; }
+      color: #c9d41b; }
     section#splash div.splash-text h2.title:focus {
       outline: 0px solid transparent; }
 
@@ -192,7 +159,7 @@ section#splash {
   left: 0;
   width: 100%; }
   #navbar .menu {
-    background-color: #ffe552;
+    background-color: #0b3b4b;
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     font-size: 1em;
@@ -202,19 +169,19 @@ section#splash {
       width: 8em;
       padding-top: 1.2em;
       border-bottom: 4px solid transparent;
-      color: #473899;
+      color: #fafafa;
       font-weight: bold; }
       #navbar .menu .item.wide {
         width: 9em; }
     #navbar .menu .item.important {
       color: #fafafa;
-      background-color: #e76482; }
+      background-color: #0b3b4b; }
       #navbar .menu .item.important:hover {
-        background-color: #473899; }
+        background-color: #0b3b4b; }
     #navbar .menu .item:hover {
       color: white;
-      background: #e76482;
-      border-bottom: 3px solid #4c82cc; }
+      background: #0b3b4b;
+      border-bottom: 3px solid #4ecdc4; }
 
 #navbar.fixed {
   position: fixed;
@@ -223,7 +190,7 @@ section#splash {
   z-index: 5; }
 
 #infobar {
-  background-color: #473899;
+  background-color: #c9d41b;
   text-align: center; }
   #infobar p {
     color: #fafafa;
@@ -234,50 +201,41 @@ section#splash {
 img#techx {
   width: 100px; }
 
-section#blurb {
-  background: #e76482;
+section#about {
+  background: #fc5454;
   min-height: 240px;
   color: #fafafa; }
-  section#blurb .ui.page.grid.padded {
+  section#about .ui.page.grid.padded {
     padding-bottom: 5%; }
 
 #social a {
   text-decoration: none;
-  color: #473899;
+  color: #0b3b4b;
   text-align: center;
   margin: 0;
   padding-left: 5px; }
 #social a:hover {
-  color: #ffe552; }
+  color: #0b3b4b; }
 #social .icon {
   font-size: 2em;
   text-align: center;
   margin: 0.8em 1em; }
 #social .icon:hover {
-  text-shadow: 0 0 3px #473899;
+  text-shadow: 0 0 3px #4ecdc4;
   cursor: pointer; }
-#social span {
-  color: #ffe552;
-  top: -2px; }
 #social a.social {
-  color: #473899;
+  color: #0b3b4b;
   text-decoration: none; }
-#social a.socialtext {
-  color: #ffe552;
-  text-align: center;
-  text-decoration: underline; }
-#social a.socialtext:hover {
-  color: #473899; }
 
 section#schedule {
-  background: #473899;
+  background: #c9d41b;
   min-height: 80px;
   color: #fafafa; }
   section#schedule .schedule.grid {
     margin-top: 20px; }
 
 section#faq {
-  background: #4c82cc; }
+  background: #4ecdc4; }
   section#faq .column {
     text-align: left;
     margin-bottom: 1.5em; }
@@ -292,26 +250,33 @@ section#faq {
   section#faq h2.mobile {
     display: none; }
   section#faq .question {
-    color: #ffe552;
+    color: #ffe86b;
     font-size: 1.5em; }
   section#faq p.answer {
     color: #fafafa; }
 
+section#reg-now {
+  background: #ffe86b;
+  min-height: 240px;
+  color: #fafafa; }
+  section#reg-now .ui.page.grid.padded {
+    padding-bottom: 5%; }
+
 section#register {
-  background: #e76482;
+  background: #fc5454;
   min-height: 80px;
   color: #fafafa; }
 
 /** Final stuff **/
 section#sponsor {
   background: white;
-  color: #473899; }
+  color: #c9d41b; }
   section#sponsor img {
     padding: 10px 10px; }
   section#sponsor p {
     margin-bottom: 5%; }
   section#sponsor #sponsor-email {
-    color: #473899;
+    color: #c9d41b;
     text-decoration: underline; }
   section#sponsor .tier {
     padding: 0 5%; }
@@ -339,12 +304,14 @@ section#sponsor {
 #footer {
   background: white;
   text-align: center;
-  padding-top: 5%;
-  padding-bottom: 10%; }
+  padding-top: 5%; }
   #footer #footersplash {
     max-width: 300px;
     width: 60%;
     margin: 0 auto; }
+    #footer #footersplash h2 {
+      color: #0b3b4b;
+      text-transform: uppercase; }
   #footer img.logo {
     position: absolute;
     width: 60%;
@@ -356,6 +323,22 @@ section#sponsor {
     left: 2%;
     bottom: 0;
     right: 0; }
+  #footer #color-bars {
+    padding-top: 2em; }
+    #footer #color-bars div {
+      width: 20%;
+      float: left;
+      height: 3em; }
+    #footer #color-bars #color-bar1 {
+      background-color: #fc5454; }
+    #footer #color-bars #color-bar2 {
+      background-color: #4ecdc4; }
+    #footer #color-bars #color-bar3 {
+      background-color: #ffe86b; }
+    #footer #color-bars #color-bar4 {
+      background-color: #c9d41b; }
+    #footer #color-bars #color-bar5 {
+      background-color: #ffbc29; }
 
 /* hiding faq */
 .angle {
@@ -378,7 +361,7 @@ section#sponsor {
 #dot {
   transition: color 0.5s ease; }
   #dot:hover {
-    color: #ffe552;
+    color: #ffe86b;
     cursor: pointer; }
 
 /* Responsive */
@@ -427,10 +410,6 @@ section#sponsor {
   section.ui.page.grid.padded {
     padding-top: 10%;
     padding-bottom: 10%; }
-
-  div.divider {
-    height: 30px;
-    background-size: auto 26px; }
 
   .question {
     cursor: pointer; }
@@ -495,10 +474,6 @@ section#sponsor {
     padding-top: 20%;
     padding-bottom: 20%; }
 
-  div.divider {
-    height: 22px;
-    background-size: auto 18px; }
-
   section input {
     margin: 2px auto; }
 
@@ -533,5 +508,3 @@ section#sponsor {
 
   section#footer .icon {
     width: 20px; } }
-
-/*# sourceMappingURL=main.css.map */
