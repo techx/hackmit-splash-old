@@ -240,7 +240,9 @@ section#faq {
     text-align: left;
     margin-bottom: 1.5em; }
   section#faq .row {
-    margin: 0 auto; }
+    margin: 0 auto;
+    border-radius: 4px;
+    background-color: #66d4cc; }
   section#faq h2 {
     color: white;
     text-align: center;
@@ -250,10 +252,10 @@ section#faq {
   section#faq h2.mobile {
     display: none; }
   section#faq .question {
-    color: #ffe86b;
+    color: #0b3b4b;
     font-size: 1.5em; }
   section#faq p.answer {
-    color: white; }
+    color: #0b3b4b; }
 
 section#reg-now {
   background: #ffe86b;
@@ -264,7 +266,7 @@ section#reg-now {
     padding-bottom: 5%; }
   section#reg-now .reg-now-form-cont {
     padding: 2em 0;
-    border-radius: 3px;
+    border-radius: 4px;
     background-color: #c9d41b; }
     section#reg-now .reg-now-form-cont .reg-now-form {
       margin-top: 2em; }
