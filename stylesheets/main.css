@@ -168,15 +168,18 @@ section#splash {
       font-weight: bold; }
       #navbar .menu .item.wide {
         width: 9em; }
-    #navbar .menu .item.important {
+    #navbar .menu #goto-about.item:hover {
       color: white;
-      background-color: #0b3b4b; }
-      #navbar .menu .item.important:hover {
-        background-color: #0b3b4b; }
-    #navbar .menu .item:hover {
+      background: #0b3b4b;
+      border-bottom: 3px solid #fc5454; }
+    #navbar .menu #goto-faq.item:hover {
       color: white;
       background: #0b3b4b;
       border-bottom: 3px solid #4ecdc4; }
+    #navbar .menu #goto-reg-now.item:hover {
+      color: white;
+      background: #0b3b4b;
+      border-bottom: 3px solid #ffe86b; }
 
 #navbar.fixed {
   position: fixed;

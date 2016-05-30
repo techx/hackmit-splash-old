@@ -242,19 +242,20 @@ section#splash {
       }
     }
 
-    .item.important {
+    #goto-about.item:hover {
       color: $white;
-      background-color: $black;
-
-      &:hover {
-        background-color: $black;
-      }
+      background: $black;
+      border-bottom: 3px solid $pink;
     }
-
-    .item:hover {
-      color: white;
+    #goto-faq.item:hover {
+      color: $white;
       background: $black;
       border-bottom: 3px solid $turquoise;
+    }
+    #goto-reg-now.item:hover {
+      color: $white;
+      background: $black;
+      border-bottom: 3px solid $yellow;
     }
   }
 }
