@@ -53,6 +53,7 @@ you're quite the l33t hacker looking at this page's source
 
   <link href="stylesheets/main.css" rel="stylesheet" type="text/css">
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
   <script src="js/main.js"></script>
 
   <!-- Include Semantic-UI -->
@@ -247,14 +248,14 @@ you're quite the l33t hacker looking at this page's source
     <div class="reg-now-form-cont montserrat-bold title ten wide column">
       <h2 class="black-shadow">Register now!</h2>
 
-			<div class="reg-now-form">
+			<form class="reg-now-form"
+		  	action="https://getsimpleform.com/messages?form_api_token=67b21f62f9123c880b43293589f772d8"
+		  	method="post">
 				<div class="ui input">
-					<input type="text" placeholder="your_email@school.edu">
+					<input type="text" name="email" placeholder="your_email@school.edu">
 				</div>
-				<button class="ui button">
-					Submit
-				</button>
-			</div>
+				<input type="submit" class="ui button" value="Submit">
+			</form>
 
     </div>
   </section>

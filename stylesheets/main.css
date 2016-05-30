@@ -280,16 +280,12 @@ section#reg-now {
       margin-top: 2em; }
       section#reg-now .reg-now-form-cont .reg-now-form .ui.button {
         background-color: #0b3b4b;
-        color: white; }
+        color: white;
+        width: auto; }
       section#reg-now .reg-now-form-cont .reg-now-form .ui.button:hover {
         background-color: #0e4c61; }
       section#reg-now .reg-now-form-cont .reg-now-form .ui.button:active {
         background-color: #082a35; }
-
-section#register {
-  background: #fc5454;
-  min-height: 80px;
-  color: white; }
 
 /** Final stuff **/
 section#sponsor {
@@ -423,9 +419,6 @@ section#sponsor {
         section#splash div.splash-container div.splash-banner h2.subtitle.date {
           margin-bottom: 0; }
 
-  section#register .thankyou {
-    margin-bottom: 114px; }
-
   section.ui.page.grid.padded {
     padding-top: 10%;
     padding-bottom: 10%; }
@@ -462,15 +455,6 @@ section#sponsor {
       display: block; }
   section#splash div.splash-container div.splash-text .title {
     font-size: 2.8em; }
-
-  section#register input#interest-form-email {
-    width: 50%;
-    padding: 10px 2%;
-    font-weight: 400; }
-  section#register input#interest-form-submit {
-    padding: 10px 10px;
-    min-width: 80px;
-    width: 30%; }
 
   section h2 {
     font-size: 3em; }

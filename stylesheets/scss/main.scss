@@ -397,6 +397,7 @@ section#reg-now {
 			.ui.button {
 				background-color: $black;
 				color: $white;
+				width: auto;
 			}
 			.ui.button:hover {
 				background-color: lighten($black, 5%);
@@ -406,13 +407,6 @@ section#reg-now {
 			}
 		}
 	}
-}
-
-section#register {
-  background: $pink;
-  min-height: 80px;
-  color: $white;
-
 }
 
 /** Final stuff **/
@@ -611,11 +605,6 @@ section#sponsor {
     }
   }
 
-  section#register {
-    .thankyou {
-      margin-bottom: 114px;
-    }
-  }
   section.ui.page.grid.padded {
     padding-top: 10%;
     padding-bottom: 10%;
@@ -686,18 +675,6 @@ section#sponsor {
           font-size: 2.8em;
         }
       }
-    }
-  }
-  section#register {
-    input#interest-form-email {
-      width: 50%;
-      padding: 10px 2%;
-      font-weight: 400;
-    }
-    input#interest-form-submit {
-      padding: 10px 10px;
-      min-width: 80px;
-      width: 30%;
     }
   }
 
