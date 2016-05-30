@@ -46,7 +46,6 @@ html, body {
 
 .title {
   text-transform: uppercase;
-  text-align: center;
 }
 
 a {
@@ -135,6 +134,8 @@ section#splash {
   table-layout: fixed;
   height: inherit;
   width: 100%; // there's a one pixel width bug here
+	background: url(../assets/images/paper.png) no-repeat center center;
+	background-size: cover;
 
   div.splash-container {
     font-size: 1em;
@@ -144,55 +145,52 @@ section#splash {
     // add space to account for nav bar
     padding-bottom: 3.5em;
 
-    // VERTICAL CENTERING. These two classes
-    // exist solely to vertically center in a display:table-cell
-    .splash-relative {
-      width: 100%;
-      height: 100%;
-      position: relative;
-    }
-    .splash-centerer {
-      width: 100%;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-      text-align: center;
-    }
-
     div.splash-banner {
-      width: 37.5%;
-      margin: 0 auto;
+      width: 100%;
+      margin: 0 auto 0 auto;
+
+			.splash-logo-unit-cont {
+				z-index: 3;
+				transform: rotate(-20deg);
+			}
+
+			.splash-col {
+				float: left; 
+				width: 50%;
+			}
+
+			.splash-img {
+				float: right;
+				height: 40%;
+			}
+
+			.splash-title-cont {
+				margin-top: 50%;
+				width: 50%;
+				white-space: nowrap;
+      }
 
       img {
-        max-width: 100%;
-        max-height: 100%;
+        max-width: 1000%;
+        max-height: 1000%;
       }
-      img.logo {
-        position: absolute;
-        // fallback
-        width: 10%;
-        width: 13vw;
-        height: 13vw;
-        margin: auto;
-        top: 0; left: 0; bottom: 0; right: 0;
-      }
+
       h1.title {
         margin: 0;
         letter-spacing: 8px;
         line-height: 1.2em;
         font-size: 3em;  // fallback
         font-size: 5.5vw;
-        padding-left: 5px;
         color: $black;
       }
 
       h2.subtitle {
         margin: 0;
         line-height: 1.2em;
-        font-size: 1em;  // fallback
-        font-size: 1vw;
+        letter-spacing: 0;
+        font-size: 1.4em;
         color: $black;
+				margin-bottom: 1em;
       }
     }
   }
@@ -207,7 +205,6 @@ section#splash {
       font-size: 5.5vw;
       margin: 0;
       letter-spacing: 8px;
-      padding-left: 5px;
       color: $green;
     }
     h2.title:focus {
@@ -285,6 +282,7 @@ section#about{
   background: $pink;
   min-height: 240px;
   color: $white;
+	z-index: 4;
 
   .ui.page.grid.padded {
     padding-bottom: 5%;
@@ -330,6 +328,8 @@ section#schedule {
 
 section#faq {
   background: $turquoise;
+	z-index: 4;
+
   .column {
     text-align: left;
     margin-bottom: 1.5em;
@@ -361,6 +361,7 @@ section#reg-now {
   background: $yellow;
   min-height: 240px;
   color: $white;
+	z-index: 4;
 
   .ui.page.grid.padded {
     padding-bottom: 5%;
@@ -435,9 +436,10 @@ section#sponsor {
 }
 
 #footer {
-  background: white;
+  background: $offwhite;
   text-align: center;
   padding-top: 5%;
+	z-index: 4;
 
   #footersplash {
     max-width: 300px;
@@ -464,16 +466,16 @@ section#sponsor {
   #color-bars {
 		padding-top: 2em;
 
-  	div {
-  		width: 20%;
-  		float: left;
-  		height: 3em;
-  	}
-  	#color-bar1 { background-color: $pink; }
-  	#color-bar2 { background-color: $turquoise; }
-  	#color-bar3 { background-color: $yellow; }
-  	#color-bar4 { background-color: $green; }
-  	#color-bar5 { background-color: $orange; }
+		div {
+			width: 20%;
+			float: left;
+			height: 3em;
+		}
+		#color-bar1 { background-color: $pink; }
+		#color-bar2 { background-color: $turquoise; }
+		#color-bar3 { background-color: $yellow; }
+		#color-bar4 { background-color: $green; }
+		#color-bar5 { background-color: $orange; }
   }
 }
 
@@ -760,6 +762,11 @@ section#sponsor {
   section#footer {
     .icon {
       width: 20px;
+    }
+    #color-bars {
+			div {
+        height: 1.5em;
+      }
     }
   }
 }

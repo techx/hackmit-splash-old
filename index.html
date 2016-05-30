@@ -47,7 +47,7 @@ you're quite the l33t hacker looking at this page's source
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
 
-  <link rel="icon" type="image/png" href="assets/images/favicon-color.png">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
   <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Lato:300" rel="stylesheet" type="text/css">
   <link href="stylesheets/main.css" rel="stylesheet" type="text/css">
@@ -89,21 +89,29 @@ you're quite the l33t hacker looking at this page's source
   <meta name="google-site-verification" content="GRiYiTY6_LQlUk3hFTEStWfv6EQkk59YwnTU-xJaqPw" />
 </head>
 
-<body>
+<body style="overflow-x: hidden">
   <a name="splash"></a>
   <section id="splash">
     <div class="splash-container">
-      <div class="splash-relative">
-      <div class="splash-centerer">
       <div class="splash-banner">
-        <img src="assets/images/logo-color.svg"/>
-        <h1 class="montserrat-bold title">HACKMIT</h1>
-        <h2 class="montserrat-bold subtitle">September 17-18 // 2016</h2>
-      </div>
-      </div>
+
+				<!-- bundles the image with the text and rotates it -->
+	      <div class="splash-logo-unit-cont">
+	      	<div class="splash-col">
+        	  <img class="splash-img" src="assets/images/logo-inner-shadow.svg"/>
+	      	</div>
+	      	
+	      	<div class="splash-col">
+	      	  <div class="splash-title-cont">
+              <h1 class="montserrat-bold title">HACKMIT</h1>
+              <h2 class="montserrat subtitle">SEPTEMBER 17-18 // 2016</h2>
+	      	  </div>
+	      	</div>
+
+	      </div>
       </div>
     </div>
-    <div id="navbar" class="ui">
+    <div id="navbar" class="ui" style="z-index: 101">
       <div class="ui menu borderless inverted">
         <a id="goto-about" class="item">About</a>
         <a id="goto-faq" class="item">FAQ</a>

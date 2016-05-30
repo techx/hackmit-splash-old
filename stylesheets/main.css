@@ -3,7 +3,7 @@ html, body {
   width: 100%;
   padding: 0;
   margin: 0;
-  background-color: #fafafa;
+  background-color: white;
   font-size: 0.85em; }
   html.foolsday *, body.foolsday * {
     font-family: "Comic Sans MS", cursive, sans-serif !important; }
@@ -30,8 +30,7 @@ html, body {
   display: none; }
 
 .title {
-  text-transform: uppercase;
-  text-align: center; }
+  text-transform: uppercase; }
 
 a {
   color: #ffe86b; }
@@ -78,7 +77,7 @@ section .button {
   cursor: pointer; }
 section .button:hover {
   background-color: #4ecdc4;
-  color: #fafafa; }
+  color: white; }
 
 section.ui.page.grid {
   min-width: 0; }
@@ -91,54 +90,48 @@ section#splash {
   display: table;
   table-layout: fixed;
   height: inherit;
-  width: 100%; }
+  width: 100%;
+  background: url(../assets/images/paper.png) no-repeat center center;
+  background-size: cover; }
   section#splash div.splash-container {
     font-size: 1em;
     display: table-cell;
     width: 100%;
     height: 100%;
     padding-bottom: 3.5em; }
-    section#splash div.splash-container .splash-relative {
-      width: 100%;
-      height: 100%;
-      position: relative; }
-    section#splash div.splash-container .splash-centerer {
-      width: 100%;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-      text-align: center; }
     section#splash div.splash-container div.splash-banner {
-      width: 37.5%;
-      margin: 0 auto; }
+      width: 100%;
+      margin: 0 auto 0 auto; }
+      section#splash div.splash-container div.splash-banner .splash-logo-unit-cont {
+        z-index: 3;
+        transform: rotate(-20deg); }
+      section#splash div.splash-container div.splash-banner .splash-col {
+        float: left;
+        width: 50%; }
+      section#splash div.splash-container div.splash-banner .splash-img {
+        float: right;
+        height: 40%; }
+      section#splash div.splash-container div.splash-banner .splash-title-cont {
+        margin-top: 50%;
+        width: 50%;
+        white-space: nowrap; }
       section#splash div.splash-container div.splash-banner img {
-        max-width: 100%;
-        max-height: 100%; }
-      section#splash div.splash-container div.splash-banner img.logo {
-        position: absolute;
-        width: 10%;
-        width: 13vw;
-        height: 13vw;
-        margin: auto;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0; }
+        max-width: 1000%;
+        max-height: 1000%; }
       section#splash div.splash-container div.splash-banner h1.title {
         margin: 0;
         letter-spacing: 8px;
         line-height: 1.2em;
         font-size: 3em;
         font-size: 5.5vw;
-        padding-left: 5px;
         color: #0b3b4b; }
       section#splash div.splash-container div.splash-banner h2.subtitle {
         margin: 0;
         line-height: 1.2em;
-        font-size: 1em;
-        font-size: 1vw;
-        color: #0b3b4b; }
+        letter-spacing: 0;
+        font-size: 1.4em;
+        color: #0b3b4b;
+        margin-bottom: 1em; }
   section#splash div.splash-text {
     margin: 0 0 5px 0 !important;
     padding: 0 !important; }
@@ -148,7 +141,6 @@ section#splash {
       font-size: 5.5vw;
       margin: 0;
       letter-spacing: 8px;
-      padding-left: 5px;
       color: #c9d41b; }
     section#splash div.splash-text h2.title:focus {
       outline: 0px solid transparent; }
@@ -169,12 +161,12 @@ section#splash {
       width: 8em;
       padding-top: 1.2em;
       border-bottom: 4px solid transparent;
-      color: #fafafa;
+      color: white;
       font-weight: bold; }
       #navbar .menu .item.wide {
         width: 9em; }
     #navbar .menu .item.important {
-      color: #fafafa;
+      color: white;
       background-color: #0b3b4b; }
       #navbar .menu .item.important:hover {
         background-color: #0b3b4b; }
@@ -193,7 +185,7 @@ section#splash {
   background-color: #c9d41b;
   text-align: center; }
   #infobar p {
-    color: #fafafa;
+    color: white;
     font-size: 1.2em;
     padding: 16px;
     margin: 0; }
@@ -204,7 +196,8 @@ img#techx {
 section#about {
   background: #fc5454;
   min-height: 240px;
-  color: #fafafa; }
+  color: white;
+  z-index: 4; }
   section#about .ui.page.grid.padded {
     padding-bottom: 5%; }
 
@@ -230,19 +223,20 @@ section#about {
 section#schedule {
   background: #c9d41b;
   min-height: 80px;
-  color: #fafafa; }
+  color: white; }
   section#schedule .schedule.grid {
     margin-top: 20px; }
 
 section#faq {
-  background: #4ecdc4; }
+  background: #4ecdc4;
+  z-index: 4; }
   section#faq .column {
     text-align: left;
     margin-bottom: 1.5em; }
   section#faq .row {
     margin: 0 auto; }
   section#faq h2 {
-    color: #fafafa;
+    color: white;
     text-align: center;
     margin-bottom: 0; }
   section#faq h2.large {
@@ -253,19 +247,20 @@ section#faq {
     color: #ffe86b;
     font-size: 1.5em; }
   section#faq p.answer {
-    color: #fafafa; }
+    color: white; }
 
 section#reg-now {
   background: #ffe86b;
   min-height: 240px;
-  color: #fafafa; }
+  color: white;
+  z-index: 4; }
   section#reg-now .ui.page.grid.padded {
     padding-bottom: 5%; }
 
 section#register {
   background: #fc5454;
   min-height: 80px;
-  color: #fafafa; }
+  color: white; }
 
 /** Final stuff **/
 section#sponsor {
@@ -302,9 +297,10 @@ section#sponsor {
     width: 14%; }
 
 #footer {
-  background: white;
+  background: #fffefa;
   text-align: center;
-  padding-top: 5%; }
+  padding-top: 5%;
+  z-index: 4; }
   #footer #footersplash {
     max-width: 300px;
     width: 60%;
@@ -507,4 +503,6 @@ section#sponsor {
       width: 30%; }
 
   section#footer .icon {
-    width: 20px; } }
+    width: 20px; }
+  section#footer #color-bars div {
+    height: 1.5em; } }
