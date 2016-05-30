@@ -366,6 +366,27 @@ section#reg-now {
   .ui.page.grid.padded {
     padding-bottom: 5%;
   }
+
+	.reg-now-form-cont {
+		padding: 2em 0;
+		border-radius: 3px;
+		background-color: $green;
+
+		.reg-now-form {
+			margin-top: 2em;
+
+			.ui.button {
+				background-color: $black;
+				color: $white;
+			}
+			.ui.button:hover {
+				background-color: lighten($black, 5%);
+			}
+			.ui.button:active {
+				background-color: darken($black, 5%);
+			}
+		}
+	}
 }
 
 section#register {

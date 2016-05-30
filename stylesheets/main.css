@@ -256,6 +256,19 @@ section#reg-now {
   z-index: 4; }
   section#reg-now .ui.page.grid.padded {
     padding-bottom: 5%; }
+  section#reg-now .reg-now-form-cont {
+    padding: 2em 0;
+    border-radius: 3px;
+    background-color: #c9d41b; }
+    section#reg-now .reg-now-form-cont .reg-now-form {
+      margin-top: 2em; }
+      section#reg-now .reg-now-form-cont .reg-now-form .ui.button {
+        background-color: #0b3b4b;
+        color: white; }
+      section#reg-now .reg-now-form-cont .reg-now-form .ui.button:hover {
+        background-color: #0e4c61; }
+      section#reg-now .reg-now-form-cont .reg-now-form .ui.button:active {
+        background-color: #082a35; }
 
 section#register {
   background: #fc5454;
