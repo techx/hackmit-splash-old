@@ -248,11 +248,16 @@ you're quite the l33t hacker looking at this page's source
     <div class="reg-now-form-cont montserrat-bold title ten wide column">
       <h2 class="black-shadow">Register now!</h2>
 
-			<form class="reg-now-form"
-		  	action="https://getsimpleform.com/messages?form_api_token=67b21f62f9123c880b43293589f772d8"
-		  	method="post">
+      <div class="thankyou hidden">
+        Thanks for signing up! We'll send you an email when registration opens.
+      </div>
+
+      <form class="reg-now-form" onsubmit="">
 				<div class="ui input">
-					<input type="text" name="email" placeholder="your_email@school.edu">
+					<input
+            id="reg-now-form-email"
+            type="text" name="email"
+            placeholder="your_email@school.edu">
 				</div>
 				<input type="submit" class="ui button" value="Submit">
 			</form>

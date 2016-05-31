@@ -27,23 +27,27 @@ $(document).ready(function() {
 
   hideAnswers();
 
-  $('#interest-form').on('submit', function(){
+  $('form').on('submit', function(e){
+    e.preventDefault();
+
     var is_valid_email = function(email) { return (/^.+@.+\..+$/).test(email); };
     // ^^ Yes, this is easy to break. If you're reading this you're probably smart enough to find a way around it
     // but there are a thousand other ways to do malicious things so its not worth our time to stop you :)
-    var emailTag = $('#interest-form-email');
+    var emailTag = $('#reg-now-form-email');
     var email = emailTag.val();
+    console.log(email);
     if (is_valid_email(email)) {
       emailTag.val('');
       $.ajax({
         dataType: 'jsonp',
-        url: window.location.protocol + '//getsimpleform.com/messages/ajax?form_api_token=fe4ccc4ce76bde458f7fbdaf077b89ca',
+        url: window.location.protocol + '//getsimpleform.com/messages/ajax?form_api_token=2933d4eed6567f30071904ed66a75ff9',
         data: {
           email: email
         }
       });
-      $(this).find('label, input').transition('fade out', 500, function() {
-        $('.thankyou').transition('fade in', 500);
+
+      $('form').animate({height: 'hide'}, 500, function() {
+        $('.thankyou').animate({height: 'show'}, 500);
       });
 
     } else {
