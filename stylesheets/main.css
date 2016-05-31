@@ -200,11 +200,11 @@ section#splash {
   z-index: 5; }
 
 #infobar {
-  background-color: #c9d41b;
+  background-color: #ffbc29;
   text-align: center; }
   #infobar p {
-    color: #ffffff;
-    font-size: 1.2em;
+    color: #0b3b4b;
+    font-size: 1.4em;
     padding: 16px;
     margin: 0; }
 
