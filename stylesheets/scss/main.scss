@@ -365,6 +365,7 @@ section#faq {
     margin: 0 auto;
 		border-radius: 4px;
 		background-color: lighten($turquoise, 9%);
+    padding-bottom: 1rem;
   }
   h2 {
     color:$white;
@@ -397,7 +398,7 @@ section#reg-now {
   }
 
 	.reg-now-form-cont {
-		padding: 2em 2em;
+		padding: 2em 2em !important;
 		border-radius: 4px;
 		background-color: $green;
 
@@ -549,6 +550,11 @@ section#sponsor {
 /* Responsive */
 
 @media only screen and (max-width: 1000px) {
+  section#about {
+    h2 {
+      font-size: 3em;
+    }
+  }
   section#faq {
     h2.large {
       display: none;
@@ -559,7 +565,7 @@ section#sponsor {
   }
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 767px) {
   html,body {
     font-size: 1em;
   }
@@ -702,8 +708,14 @@ section#sponsor {
     }
   }
 
+  #navbar {
+    .menu .item {
+      width: 6em;
+    }
+  }
+
   section h2 {
-    font-size: 3em;
+    font-size: 2.5em;
   }
 
   section#sponsor {

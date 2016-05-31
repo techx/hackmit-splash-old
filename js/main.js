@@ -1,4 +1,4 @@
-var breakWidth = 768;
+var breakWidth = 767;
 
 $(document).ready(function() {
 
