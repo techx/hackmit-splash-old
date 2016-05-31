@@ -51,7 +51,8 @@ section h2 {
   font-size: 3.5em;
   letter-spacing: 5px;
   line-height: 1.3em;
-  margin: 0; }
+  margin: 0;
+  color: #ffffff; }
 section p,
 section label,
 section input {
@@ -199,11 +200,11 @@ section#splash {
   bottom: auto;
   z-index: 5; }
 
-#infobar {
+section#sponsors {
   background-color: #ffbc29;
   text-align: center; }
-  #infobar p {
-    color: #0b3b4b;
+  section#sponsors p {
+    color: #ffffff;
     font-size: 1.4em;
     padding: 16px;
     margin: 0; }
