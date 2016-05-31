@@ -134,7 +134,7 @@ section.ui.page.grid {
 }
 section.ui.page.grid.padded {
   padding-top: 5%;
-  padding-bottom: 7%;
+  padding-bottom: 5%;
 }
 
 
@@ -387,6 +387,7 @@ section#faq {
   }
   p.answer {
     color: $black;
+    font-size: 1.2em;
   }
 }
 

@@ -93,7 +93,7 @@ section.ui.page.grid {
 
 section.ui.page.grid.padded {
   padding-top: 5%;
-  padding-bottom: 7%; }
+  padding-bottom: 5%; }
 
 section#splash {
   display: table;
@@ -273,7 +273,8 @@ section#faq {
     color: #0b3b4b;
     font-size: 1.5em; }
   section#faq p.answer {
-    color: #0b3b4b; }
+    color: #0b3b4b;
+    font-size: 1.2em; }
 
 section#reg-now {
   background: #ffe86b;
