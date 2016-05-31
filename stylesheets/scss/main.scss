@@ -234,6 +234,7 @@ section#splash {
   bottom: 0;
   left: 0;
   width: 100%;
+  z-index: 101;
   .menu {
     background-color: $black;
     font-family: $montserrat;
@@ -567,9 +568,10 @@ section#sponsor {
       div.splash-banner {
         width: 100%;
 				margin-top: 2em;
+				margin-top: 5.5vh;
 
 				.splash-logo-unit-cont {
-					transform: rotate(-15deg);
+					transform: rotate(0deg);
 					text-align: center;
 				}
 
@@ -591,15 +593,18 @@ section#sponsor {
 				}
 
         h1.title {
-          letter-spacing: 8px;
-          line-height: 1.2em;
+          letter-spacing: 8px; // fallback
+          letter-spacing: 1vh;
           font-size: 3em;  // fallback
+          font-size: 8vh;
         }
   
         h2.subtitle {
           line-height: 1.2em;
+          line-height: 3.2vh;
           letter-spacing: 0;
           font-size: 1.4em;
+          font-size: 3.7vh;
 
 					&.date {
 						margin-bottom: 0;
@@ -656,10 +661,16 @@ section#sponsor {
       div.splash-banner {
 				margin-top: 0;
 
-				.splash-logo-unit-cont {
-					transform: rotate(-12deg);
-				}
-	
+        .splash-logo-unit-cont {
+          transform: rotate(0deg);
+          margin-top: 10vw;
+        }
+
+        .splash-img {
+          transform: rotate(0deg);
+          width: 90vw;
+        }
+
         .title {
           font-size: 2.8em!important;
         }
@@ -718,6 +729,17 @@ section#sponsor {
     div.splash-container {
 
       div.splash-banner {
+        .splash-logo-unit-cont {
+          transform: rotate(0deg);
+          margin-top: 0;
+        }
+
+        .splash-img {
+          transform: rotate(0deg);
+          width: auto;
+          height: auto;
+        }
+
         .title {
           font-size: 2.5em!important;
         }

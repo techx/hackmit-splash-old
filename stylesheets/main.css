@@ -160,7 +160,8 @@ section#splash {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%; }
+  width: 100%;
+  z-index: 101; }
   #navbar .menu {
     background-color: #0b3b4b;
     font-family: "Montserrat", sans-serif;
@@ -395,9 +396,10 @@ section#sponsor {
     display: block; }
     section#splash div.splash-container div.splash-banner {
       width: 100%;
-      margin-top: 2em; }
+      margin-top: 2em;
+      margin-top: 5.5vh; }
       section#splash div.splash-container div.splash-banner .splash-logo-unit-cont {
-        transform: rotate(-15deg);
+        transform: rotate(0deg);
         text-align: center; }
       section#splash div.splash-container div.splash-banner .splash-img {
         height: 60vh;
@@ -412,12 +414,15 @@ section#sponsor {
         width: 100%; }
       section#splash div.splash-container div.splash-banner h1.title {
         letter-spacing: 8px;
-        line-height: 1.2em;
-        font-size: 3em; }
+        letter-spacing: 1vh;
+        font-size: 3em;
+        font-size: 8vh; }
       section#splash div.splash-container div.splash-banner h2.subtitle {
         line-height: 1.2em;
+        line-height: 3.2vh;
         letter-spacing: 0;
-        font-size: 1.4em; }
+        font-size: 1.4em;
+        font-size: 3.7vh; }
         section#splash div.splash-container div.splash-banner h2.subtitle.date {
           margin-bottom: 0; }
 
@@ -448,7 +453,11 @@ section#sponsor {
   section#splash div.splash-container div.splash-banner {
     margin-top: 0; }
     section#splash div.splash-container div.splash-banner .splash-logo-unit-cont {
-      transform: rotate(-12deg); }
+      transform: rotate(0deg);
+      margin-top: 10vw; }
+    section#splash div.splash-container div.splash-banner .splash-img {
+      transform: rotate(0deg);
+      width: 90vw; }
     section#splash div.splash-container div.splash-banner .title {
       font-size: 2.8em !important; }
     section#splash div.splash-container div.splash-banner h2.subtitle.large {
@@ -475,6 +484,13 @@ section#sponsor {
     section#sponsor .bronze img {
       width: 25%; } }
 @media only screen and (max-width: 320px) {
+  section#splash div.splash-container div.splash-banner .splash-logo-unit-cont {
+    transform: rotate(0deg);
+    margin-top: 0; }
+  section#splash div.splash-container div.splash-banner .splash-img {
+    transform: rotate(0deg);
+    width: auto;
+    height: auto; }
   section#splash div.splash-container div.splash-banner .title {
     font-size: 2.5em !important; }
   section#splash div.splash-container div.splash-text .title {
