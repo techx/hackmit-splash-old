@@ -36,7 +36,10 @@ body {
   text-transform: uppercase; }
 
 a {
-  color: #ffe86b; }
+  color: #fc5454; }
+
+a:hover {
+  color: #fc3b3b; }
 
 .black-shadow {
   text-shadow: -2px 2px 0px #0b3b4b; }

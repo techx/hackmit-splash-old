@@ -53,7 +53,10 @@ body {
 }
 
 a {
-  color: $yellow;
+  color: $pink;
+}
+a:hover {
+  color: darken($pink, 5%);
 }
 
 .black-shadow {
