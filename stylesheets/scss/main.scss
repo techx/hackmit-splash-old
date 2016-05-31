@@ -394,8 +394,12 @@ section#faq {
 section#reg-now {
   background: $yellow;
   min-height: 240px;
-  color: $white;
+  color: $black;
 	z-index: 4;
+
+  h2 {
+    color: white;
+  }
 
   .ui.page.grid.padded {
     padding-bottom: 5%;

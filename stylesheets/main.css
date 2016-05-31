@@ -279,8 +279,10 @@ section#faq {
 section#reg-now {
   background: #ffe86b;
   min-height: 240px;
-  color: #ffffff;
+  color: #0b3b4b;
   z-index: 4; }
+  section#reg-now h2 {
+    color: white; }
   section#reg-now .ui.page.grid.padded {
     padding-bottom: 5%; }
   section#reg-now .reg-now-form-cont {
