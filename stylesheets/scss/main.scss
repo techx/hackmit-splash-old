@@ -22,6 +22,10 @@ html, body {
   }
 }
 
+body {
+	overflow-x: hidden;
+}
+
 /*
  * shared classes
  */
@@ -46,62 +50,22 @@ html, body {
 
 .title {
   text-transform: uppercase;
-  text-align: center;
 }
 
 a {
-  color:$gold;
+  color: $pink;
+}
+a:hover {
+  color: darken($pink, 5%);
+}
+
+.black-shadow {
+	text-shadow: -2px 2px 0px $black;
 }
 
 /* Ben's stuff
  * temporarily
  */
-
-
-div.divider {
-  height: 3.3em;
-  background-image: url("../assets/images/hack-logo-tile-purple.svg");
-  background-position: -5px;
-  background-repeat: repeat-x;
-  background-color: $magenta;
-  background-size: auto 3em;
-}
-
-.divider.deeppurple {
-  background-image: url("../assets/images/hack-logo-tile-purple.svg");
-}
-
-.divider.blue {
-  background-image: url("../assets/images/hack-logo-tile-blue.svg");
-}
-
-.divider.magenta {
-  background-image: url("../assets/images/hack-logo-tile-magenta.svg");
-}
-
-.divider.yellow {
-  background-image: url("../assets/images/hack-logo-tile-yellow.svg");
-}
-
-.divider.deeppurplebg {
-  background-color: $deeppurple;
-}
-
-.divider.bluebg {
-  background-color: $blue;
-}
-
-.divider.magentabg {
-  background-color: $magenta;
-}
-
-.divider.yellowbg {
-  background-color: $gold;
-}
-
-.divider.whitebg {
-  background-color: white;
-}
 
 
 section {
@@ -145,7 +109,7 @@ section {
   .button {
     display: inline-block;
     margin: 15px auto 0px auto;
-    background-color: $gold;
+    background-color: $yellow;
     padding: 0.8em 3em;
     color: $red;
     font-weight: bold;
@@ -160,7 +124,7 @@ section {
 
 
   .button:hover {
-    background-color: $blue;
+    background-color: $turquoise;
     color: $white;
   }
 }
@@ -170,7 +134,7 @@ section.ui.page.grid {
 }
 section.ui.page.grid.padded {
   padding-top: 5%;
-  padding-bottom: 7%;
+  padding-bottom: 5%;
 }
 
 
@@ -181,59 +145,71 @@ section#splash {
   table-layout: fixed;
   height: inherit;
   width: 100%; // there's a one pixel width bug here
+	background: url(../assets/images/paper.jpg) no-repeat center center;
+	background-size: cover;
 
   div.splash-container {
     font-size: 1em;
     display: table-cell;
     width: 100%;
     height: 100%;
+		overflow: hidden;
     // add space to account for nav bar
     padding-bottom: 3.5em;
 
-    // VERTICAL CENTERING. These two classes
-    // exist solely to vertically center in a display:table-cell
-    .splash-relative {
-      width: 100%;
-      height: 100%;
-      position: relative;
-    }
-    .splash-centerer {
-      width: 100%;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-      text-align: center;
-    }
-
     div.splash-banner {
-      width: 37.5%;
-      margin: 0 auto;
+      width: 100%;
+      margin: 0 auto 0 auto;
+
+			.splash-logo-unit-cont {
+				z-index: 3;
+				transform: rotate(-20deg);
+			}
+
+			.splash-col {
+				float: left; 
+				width: 50%;
+			}
+
+			.splash-img {
+				float: right;
+				height: 90vh;
+			}
+
+			.splash-title-cont {
+				margin-top: 50vh;
+				width: 50%;
+				white-space: nowrap;
+      }
 
       img {
-        max-width: 100%;
-        max-height: 100%;
+        max-width: 1000%;
+        max-height: 1000%;
       }
-      img.logo {
-        position: absolute;
-        // fallback
-        width: 10%;
-        width: 13vw;
-        height: 13vw;
-        margin: auto;
-        top: 0; left: 0; bottom: 0; right: 0;
-      }
+
       h1.title {
-        position: absolute;
         margin: 0;
-        left: 0; right: 0;
-        bottom: 2px;
         letter-spacing: 8px;
         line-height: 1.2em;
         font-size: 3em;  // fallback
         font-size: 5.5vw;
-        padding-left: 5px;
-        color: $white;
+        color: $black;
+      }
+
+      h2.subtitle {
+        margin: 0;
+        line-height: 1.2em;
+        letter-spacing: 0;
+        font-size: 1.4em;
+        color: $black;
+				margin-bottom: 1em;
+
+				&.large {
+					display: block;
+				}
+				&.mobile {
+					display: none;
+				}
       }
     }
   }
@@ -248,8 +224,7 @@ section#splash {
       font-size: 5.5vw;
       margin: 0;
       letter-spacing: 8px;
-      padding-left: 5px;
-      color: $deeppurple;
+      color: $green;
     }
     h2.title:focus {
       outline: 0px solid transparent;
@@ -257,15 +232,14 @@ section#splash {
   }
 }
 
-
-
 #navbar {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
+  z-index: 101;
   .menu {
-    background-color: $gold;
+    background-color: $black;
     font-family: $montserrat;
     text-transform: uppercase;
     font-size: 1em;
@@ -276,7 +250,7 @@ section#splash {
       width: 8em;
       padding-top: 1.2em;
       border-bottom: 4px solid transparent;
-      color: $deeppurple;
+      color: $white;
       font-weight: bold;
 
       &.wide {
@@ -284,19 +258,20 @@ section#splash {
       }
     }
 
-    .item.important {
+    #goto-about.item:hover {
       color: $white;
-      background-color: $magenta;
-
-      &:hover {
-        background-color: $deeppurple;
-      }
+      background: $black;
+      border-bottom: 3px solid $pink;
     }
-
-    .item:hover {
-      color: white;
-      background: $magenta;
-      border-bottom: 3px solid $blue
+    #goto-faq.item:hover {
+      color: $white;
+      background: $black;
+      border-bottom: 3px solid $turquoise;
+    }
+    #goto-reg-now.item:hover {
+      color: $white;
+      background: $black;
+      border-bottom: 3px solid $yellow;
     }
   }
 }
@@ -309,12 +284,12 @@ section#splash {
 }
 
 #infobar {
-  background-color: $deeppurple;
+  background-color: $orange;
   text-align: center;
 
   p {
-    color: $white;
-    font-size: 1.2em;
+    color: $black;
+    font-size: 1.4em;
     padding: 16px;
     margin: 0;
   }
@@ -324,26 +299,36 @@ img#techx {
   width: 100px;
 }
 
-section#blurb {
-  background: $magenta;
+section#about{
+  background: $pink;
   min-height: 240px;
   color: $white;
+	z-index: 4;
 
   .ui.page.grid.padded {
     padding-bottom: 5%;
+  }
+
+  h2 {
+    text-align: left;
+  }
+
+  p.lato {
+    text-align: left;
+    font-size: 1.2em;
   }
 }
 
 #social {
   a {
     text-decoration: none;
-    color: $deeppurple;
+    color: $black;
     text-align: center;
     margin: 0;
     padding-left: 5px;
   }
   a:hover {
-    color: $gold;
+    color: $black;
   }
   .icon {
     font-size: 2em;
@@ -352,32 +337,18 @@ section#blurb {
   }
 
   .icon:hover {
-    text-shadow: 0 0 3px $deeppurple;
+    text-shadow: 0 0 3px $turquoise;
     cursor: pointer;
   }
 
-  span {
-    color: $gold;
-    top: -2px;
-  }
-
   a.social {
-    color: $deeppurple;
+    color: $black;
     text-decoration: none;
-  }
-
-  a.socialtext {
-    color: $gold;
-    text-align: center;
-    text-decoration: underline;
-  }
-  a.socialtext:hover {
-    color: $deeppurple;
   }
 }
 
 section#schedule {
-  background: $deeppurple;
+  background: $green;
   min-height: 80px;
   color: $white;
   .schedule.grid {
@@ -386,18 +357,23 @@ section#schedule {
 }
 
 section#faq {
-  background: $blue;
+  background: $turquoise;
+	z-index: 4;
+
   .column {
     text-align: left;
     margin-bottom: 1.5em;
   }
   .row {
     margin: 0 auto;
+		border-radius: 4px;
+		background-color: lighten($turquoise, 9%);
+    padding-bottom: 1rem;
   }
   h2 {
     color:$white;
-    text-align: center;
-    margin-bottom: 0;
+    text-align: left;
+    margin-bottom: 1em;
   }
   h2.large {
     display: block;
@@ -406,19 +382,54 @@ section#faq {
     display: none;
   }
   .question {
-    color:$gold;
+    color: $black;
     font-size: 1.5em;
   }
   p.answer {
-    color:$white;
+    color: $black;
+    font-size: 1.2em;
   }
 }
 
-section#register {
-  background: $magenta;
-  min-height: 80px;
-  color: $white;
+section#reg-now {
+  background: $yellow;
+  min-height: 240px;
+  color: $black;
+	z-index: 4;
 
+  h2 {
+    color: white;
+  }
+
+  .ui.page.grid.padded {
+    padding-bottom: 5%;
+  }
+
+	.reg-now-form-cont {
+		padding: 2em 2em !important;
+		border-radius: 4px;
+		background-color: $green;
+
+    .thankyou {
+      margin-top: 1em;
+    }
+
+		.reg-now-form {
+			margin-top: 2em;
+
+			.ui.button {
+				background-color: $black;
+				color: $white;
+				width: auto;
+			}
+			.ui.button:hover {
+				background-color: lighten($black, 5%);
+			}
+			.ui.button:active {
+				background-color: darken($black, 5%);
+			}
+		}
+	}
 }
 
 /** Final stuff **/
@@ -426,7 +437,7 @@ section#register {
 
 section#sponsor {
   background: white;
-  color: $deeppurple;
+  color: $green;
 
   img {
     padding: 10px 10px;
@@ -437,7 +448,7 @@ section#sponsor {
   }
 
   #sponsor-email {
-    color: $deeppurple;
+    color: $green;
     text-decoration: underline;
   }
 
@@ -482,28 +493,39 @@ section#sponsor {
 }
 
 #footer {
-  background: white;
+  background: $offwhite;
   text-align: center;
   padding-top: 5%;
-  padding-bottom: 10%;
+	z-index: 4;
 
   #footersplash {
     max-width: 300px;
 
     width: 60%;
     margin: 0 auto;
+
+    h2 {
+      color: $black;
+      text-transform: uppercase;
+    }
   }
 
-  img.logo {
-      position: absolute;
-      width: 60%;
-      height: 60%;
-      max-width: 130px;
-      max-height: 134px;
-      margin: auto;
-      top: 0; left: 2%; bottom: 0; right: 0;
+  #color-bars {
+		padding-top: 2em;
+
+		div {
+			width: 20%;
+			float: left;
+			height: 3em;
+		}
+		#color-bar1 { background-color: $pink; }
+		#color-bar2 { background-color: $turquoise; }
+		#color-bar3 { background-color: $yellow; }
+		#color-bar4 { background-color: $green; }
+		#color-bar5 { background-color: $orange; }
   }
 }
+
 
 /* hiding faq */
 .angle {
@@ -527,7 +549,7 @@ section#sponsor {
 #dot {
     transition: color 0.5s ease;
     &:hover {
-        color: $gold;
+        color: $yellow;
         cursor: pointer;
     }
 }
@@ -536,6 +558,11 @@ section#sponsor {
 /* Responsive */
 
 @media only screen and (max-width: 1000px) {
+  section#about {
+    h2 {
+      font-size: 3em;
+    }
+  }
   section#faq {
     h2.large {
       display: none;
@@ -546,12 +573,11 @@ section#sponsor {
   }
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 767px) {
   html,body {
     font-size: 1em;
   }
   #navbar {
-    position: relative;
     .menu .item {
       width: 7em;
       padding-left: 0.4em;
@@ -559,56 +585,61 @@ section#sponsor {
     }
   }
   section#splash {
-    display: block;
-    height: auto;
-
     div.splash-container {
-      display: block;
-      height: auto;
-      // add space to unaccount for now relative nav bar
-      padding-bottom: 0;
-
-      .splash-centerer {
-        top: 0;
-        transform: none;
-        -webkit-transform: none;
-        -ms-transform: none;
-        text-align: center;
-      }
+			display: block;
 
       div.splash-banner {
         width: 100%;
+				margin-top: 2em;
+				margin-top: 5.5vh;
 
-        img.logo {
-          width: 25vw;
-          height: 25vw;
-        }
+				.splash-logo-unit-cont {
+					transform: rotate(0deg);
+					text-align: center;
+				}
 
-        .title {
-          font-size: 5em!important;
-        }
-      }
+  			.splash-img {
+  				height: 60vh;
+					float: none;
+  			}
 
-      div.splash-text {
-        .title {
-          font-size: 5em;
+				.splash-col {
+					float: none;
+					width: 100%;
+					display: block;
+					text-align: center;
+				}
+
+				.splash-title-cont {
+					margin-top: 0;
+					width: 100%;
+				}
+
+        h1.title {
+          letter-spacing: 8px; // fallback
+          letter-spacing: 1vh;
+          font-size: 3em;  // fallback
+          font-size: 8vh;
         }
-      }
+  
+        h2.subtitle {
+          line-height: 1.2em;
+          line-height: 3.2vh;
+          letter-spacing: 0;
+          font-size: 1.4em;
+          font-size: 3.7vh;
+
+					&.date {
+						margin-bottom: 0;
+					}
+        }
+      } 
     }
   }
 
-  section#register {
-    .thankyou {
-      margin-bottom: 114px;
-    }
-  }
   section.ui.page.grid.padded {
     padding-top: 10%;
     padding-bottom: 10%;
-  }
-  div.divider {
-    height: 30px;
-    background-size: auto 26px;
   }
 
   .question {
@@ -651,15 +682,30 @@ section#sponsor {
     div.splash-container {
 
       div.splash-banner {
+				margin-top: 0;
 
-        img.logo {
-          width: 50vw;
-          height: 50vw;
+        .splash-logo-unit-cont {
+          transform: rotate(0deg);
+          margin-top: 10vw;
+        }
+
+        .splash-img {
+          transform: rotate(0deg);
+          width: 90vw;
         }
 
         .title {
           font-size: 2.8em!important;
         }
+
+				h2.subtitle {
+				  &.large {
+				  	display: none;
+				  }
+				  &.mobile {
+				  	display: block;
+				  }
+				}
       }
 
       div.splash-text {
@@ -669,21 +715,15 @@ section#sponsor {
       }
     }
   }
-  section#register {
-    input#interest-form-email {
-      width: 50%;
-      padding: 10px 2%;
-      font-weight: 400;
-    }
-    input#interest-form-submit {
-      padding: 10px 10px;
-      min-width: 80px;
-      width: 30%;
+
+  #navbar {
+    .menu .item {
+      width: 6em;
     }
   }
 
   section h2 {
-    font-size: 3em;
+    font-size: 2.5em;
   }
 
   section#sponsor {
@@ -718,6 +758,17 @@ section#sponsor {
     div.splash-container {
 
       div.splash-banner {
+        .splash-logo-unit-cont {
+          transform: rotate(0deg);
+          margin-top: 0;
+        }
+
+        .splash-img {
+          transform: rotate(0deg);
+          width: auto;
+          height: auto;
+        }
+
         .title {
           font-size: 2.5em!important;
         }
@@ -734,10 +785,6 @@ section#sponsor {
   section.ui.page.grid.padded {
     padding-top: 20%;
     padding-bottom: 20%;
-  }
-  div.divider {
-    height: 22px;
-    background-size: auto 18px;
   }
   section input {
     margin: 2px auto;
@@ -795,6 +842,11 @@ section#sponsor {
   section#footer {
     .icon {
       width: 20px;
+    }
+    #color-bars {
+			div {
+        height: 1.5em;
+      }
     }
   }
 }

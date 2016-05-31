@@ -43,24 +43,25 @@ SSS 88 el cheapo 8O8O8O88 \\  '.  \|________________________________|
 you're quite the l33t hacker looking at this page's source
 -->
 <head lang="en">
-  <title>HACKMIT 2015</title>
+  <title>HACKMIT 2016</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
 
-  <link rel="icon" type="image/png" href="assets/images/hack-logo-favicon.png">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
   <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Lato:300" rel="stylesheet" type="text/css">
+
   <link href="stylesheets/main.css" rel="stylesheet" type="text/css">
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
   <script src="js/main.js"></script>
 
   <!-- Include Semantic-UI -->
   <link href="bower_components/semantic-ui/build/packaged/css/semantic.min.css" rel="stylesheet" type="text/css">
   <script src="bower_components/semantic-ui/build/packaged/javascript/semantic.min.js"></script>
-  <script src="bower_components/shibe/build/packaged/javascript/shibe.js"></script>
 
   <!-- for Facebook -->
-  <meta property="og:title" content="HackMIT 2015"/>
+  <meta property="og:title" content="HackMIT 2016"/>
   <meta property="og:type" content="website"/>
   <meta property="og:image" content="https://hackmit.org/assets/images/hack-logo-fb.png"/>
   <meta property="og:image:width" content="470"/>
@@ -72,7 +73,7 @@ you're quite the l33t hacker looking at this page's source
   <!-- for Twitter -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@hackmit">
-  <meta name="twitter:title" content="HackMIT 2015">
+  <meta name="twitter:title" content="HackMIT 2016">
   <meta name="twitter:description" content="Hack, build, and innovate at MIT's largest hackathon. Sept 19 - 20.">
   <meta name="twitter:image" content="https://hackmit.org/assets/images/hack-logo-twitter.jpg">
   <meta name="twitter:image:width" content="512"/>
@@ -94,368 +95,213 @@ you're quite the l33t hacker looking at this page's source
   <a name="splash"></a>
   <section id="splash">
     <div class="splash-container">
-      <div class="splash-relative">
-      <div class="splash-centerer">
+
       <div class="splash-banner">
-        <img src="assets/images/hack-bg-square-3.jpg"/>
-        <img class="logo" src="assets/images/hack-logo.svg"
-           onerror="this.onerror=null; this.src='assets/images/hack-logo-white.png'"/>
-        <h1 class="montserrat-bold title">HACKMIT</h1>
+
+				<!-- bundles the image with the text and rotates it -->
+	      <div class="splash-logo-unit-cont">
+	      	<div class="splash-col">
+        	  <img class="splash-img" src="assets/images/logo-inner-shadow.svg"/>
+	      	</div>
+	      	
+	      	<div class="splash-col">
+	      	  <div class="splash-title-cont">
+              <h1 class="montserrat-bold title">HACKMIT</h1>
+              <h2 class="large montserrat subtitle">SEPTEMBER 17-18 // 2016</h2>
+              <h2 class="mobile montserrat subtitle date">SEPTEMBER 17-18</h2>
+              <h2 class="mobile montserrat subtitle year">2016</h2>
+	      	  </div>
+	      	</div>
+	      </div>
       </div>
-      </div>
-      </div>
+
     </div>
     <div id="navbar" class="ui">
       <div class="ui menu borderless inverted">
-        <a class="item important wide" href="https://my.hackmit.org">Dashboard</a>
-        <a id="goto-blurb" class="item">What</a>
+        <a id="goto-about" class="item">About</a>
         <a id="goto-faq" class="item">FAQ</a>
-        <a id="goto-sponsor" class="item">Sponsors</a>
+        <a id="goto-reg-now" class="item">Register</a>
       </div>
+    </div>
+  </section>
+
+  <a name="about"></a>
+  <section id="about" class="lato ui page grid center aligned padded stackable">
+    <div class="montserrat-bold title six wide column">
+      <h2 class="mobile black-shadow">WHAT IS HACKMIT?</h2>
+    </div>
+    <div class="ten wide column">
+      <p class="lato">
+        HackMIT is MIT’s headline hackathon, with over 1000 undergraduate attendees from around the globe. Over a 24-hour period from September 17th to 18th, hackers collaborate and experiment on software and hardware projects. This is the weekend to meet other enthusiastic hackers, push your boundaries, and realize the projects of your dreams! 
+      </p>
     </div>
   </section>
 
   <section id="infobar" class="lato ui page grid center aligned stackable">
     <div class="ten wide column">
       <p class="lato">
-        HackMIT 2015 is over! Thanks so much for hacking, mentoring, sponsoring, volunteering, or otherwise making it great.
-        Want to relive the event? Check out
-        <a href="https://www.facebook.com/HackMIT/photos_stream" target="_blank">these photos</a> and read these <a href="https://medium.com/hackmit-stories" target="_blank">behind the scenes blog posts</a>.
-        See you next year!
-      </p>
-      <p class="lato">
-        HackMIT 2016 will be held Sept. 17 to 18. If you're interested in sponsoring HackMIT 2016, email us at <a href="mailto:sponsor@hackmit.org">sponsor@hackmit.org</a>!
+        <b>Interested in sponsoring? Email us at <a href="mailto:sponsor@hackmit.org">sponsor@hackmit.org</a>! We'd love to have you.</b>
       </p>
     </div>
   </section>
-  <a name="blurb"></a>
-  <section id="blurb" class="lato ui page grid center aligned padded stackable">
-    <div class="montserrat-bold title ten wide column">
-      <h2>WHAT IS HACKMIT?</h2>
-    </div>
-    <div class="ten wide column">
-    <p class="lato">
-      HackMIT is MIT’s largest hackathon. Over a 24-hour period in early fall, 1,000 hackers from around the world gather on MIT’s campus to experiment and innovate on software and hardware projects. This is your weekend to dust off old ideas or try something completely new. Imagine the craziest projects possible, and work on the hack of your dreams!
-    </p>
-    </div>
-  </section>
-
-  <div class="divider magentabg deeppurple"></div>
 
   <a name="faq"></a>
-  <section id="faq" class="lato ui page grid center aligned padded stackable">
-      <div class="montserrat-bold title ten wide column">
-        <h2 class="mobile">FAQ</h2>
-        <h2 class="large">Frequently Asked Questions</h2>
+  <section id="faq" class="montserrat ui page three column grid left aligned padded stackable">
+      <div class="montserrat-bold title twelve wide column">
+        <h2 class="mobile black-shadow">FAQ</h2>
+        <h2 class="large black-shadow">Frequently Asked Questions</h2>
       </div>
-      <div class="row">
-        <div class="five wide column">
+      <div class="centered row">
+        <div class="column">
           <h4 class="question">
             Can I attend?<i class="angle down icon"></i>
           </h4>
-          <p class="answer">
-            Of course, as long as you’re an undergraduate at any college in the world! Non-MIT college undergraduate students must be at least 18 years old. Unfortunately, high school and graduate students can’t attend (MIT M.Eng. students are eligible, however).
+          <p class="answer lato">
+            IF (you are an MIT undergraduate) OR (you are an MIT M.Eng student) OR ((you are a college undergraduate) AND (you are at least 18 years old)) RETURN “Yes!”
           </p>
         </div>
-        <div class="five wide column">
+        <div class="column">
+          <h4 class="question">
+            How does registration work?<i class="angle down icon"></i>
+          </h4>
+          <p class="answer lato">
+            Registration will be opening on July 1st and closing on July 30th at 11:59 pm EST! Admissions is based on a randomized lottery and will be done in two waves. If you’re accepted, you’ll have a week to confirm your attendance. 
+          </p>
+        </div>
+        <div class="column">
           <h4 class="question">
             Does this cost money?<i class="angle down icon"></i>
           </h4>
-          <p class="answer">
-            Nope! Admission is free and includes food, drinks, overnight hosting, and lots of swag!
+          <p class="answer lato">
+            Nope! Admission is free and includes meals, drinks, snacks, overnight hosting, workshops, swag, and a memorable experience (if we do say so ourselves)!
           </p>
         </div>
-        <div class="five wide column">
+        <div class="column">
           <h4 class="question">
             What will I eat?<i class="angle down icon"></i>
           </h4>
-          <p class="answer">
-            We’ll provide food for all meals from Saturday’s breakfast to Sunday’s brunch. If you have dietary restrictions, we’ll try our best to accommodate them.
+          <p class="answer lato">
+            We’ll provide food for all meals from Saturday’s breakfast to Sunday’s lunch. If you have dietary restrictions, we’ll try our best to accommodate them. Of course, we’ll also have an abundance of snacks throughout the hacking period.
           </p>
         </div>
-        <div class="five wide column">
+        <div class="column">
           <h4 class="question">
             Where will I sleep?<i class="angle down icon"></i>
           </h4>
-          <p class="answer">
-            Hacking all night is fun, but you should also get some rest! MIT students have generously offered their rooms as places to sleep and shower. If you'd like an MIT student host, please let us know in the confirmation form!
+          <p class="answer lato">
+            Hacking all night is fun, but you can also get some rest when you need it! If you’d like, we can match you with an MIT student who will provide places to sleep and shower. 😴😴😴
           </p>
         </div>
-        <div class="five wide column">
-          <h4 class="question">
-            What should I bring?<i class="angle down icon"></i>
-          </h4>
-          <p class="answer">
-            Bring a valid student ID for admission and a laptop for hacking. We’ll be providing pretty much everything else—air mattresses, toiletries, stickers, snacks, and more! If you'd like, you can bring a blanket, pillow, and towel. To borrow hardware during the hackathon, you’ll need a government-issued photo ID.
-          </p>
-        </div>
-        <div class="five wide column">
+        <div class="column">
           <h4 class="question">
             How do I get there?<i class="angle down icon"></i>
           </h4>
-          <p class="answer">
-            If you’re traveling more than 30 miles to MIT, we’ll partially reimburse your travel provided that you upload your travel receipts before the event on our confirmation portal. Students within Massachusetts receive up to $100 in reimbursement, students within North America receive up to $200, and other international students receive up to $500. Please note, these numbers are caps, and we will only reimburse the <strong>least expensive route</strong>. We will also send free buses to select schools—see the <a href="https://my.hackmit.org">confirmation portal</a> for more details!
+          <p class="answer lato">
+            If you’re travelling more than 30 miles to MIT, we’ll reimburse your travel, as long as you upload your travel receipts upon confirming your attendance. We reimburse up to $200 for travel within the U.S. and from Canada and Mexico and up to $500 for other international travel. Also, we’ll be sending free buses to select schools—keep your eyes peeled on this FAQ answer for more details!
           </p>
         </div>
-        <div class="five wide column">
+        <div class="column">
+          <h4 class="question">
+            What should I bring?<i class="angle down icon"></i>
+          </h4>
+          <p class="answer lato">
+            Bring a valid student ID for admission and a laptop for hacking. We’ll provide pretty much everything else—air mattresses, toiletries, stickers, snacks, sponsor swag, and more! If you like to be comfy, you can bring a blanket, pillow, and towel. To borrow hardware during the hackathon, you’ll need a government-issued photo ID.
+          </p>
+        </div>
+        <div class="column">
           <h4 class="question">
             How do teams work?<i class="angle down icon"></i>
           </h4>
-          <p class="answer">
-            Teams are at most 4 people. You could have designated teammates when you registered, or you could have also registered individually. We ran the lottery by teams, so either your whole team received admission or none of your team received admission (except for automatically admitted MIT students).
+          <p class="answer lato">
+            Teams are at most 4 people. You can select teammates when you register, or you can register individually without specified teammates. We’ll run the lottery by teams, so rest assured you’ll be able to hack with your friends if that’s what you prefer!
           </p>
         </div>
-        <div class="five wide column">
+        <div class="column">
           <h4 class="question">
             What if I don’t have a team?<i class="angle down icon"></i>
           </h4>
-          <p class="answer">
-            If you don’t have a team now, don’t stress! We’ll have team formation and ideation events geared towards helping you find people to work with.
+          <p class="answer lato">
+            If you don’t have a team now, that’s okay! We’ll have team formation and ideation events geared towards helping you find people to work with. 
           </p>
         </div>
-        <div class="five wide column">
+        <div class="column">
           <h4 class="question">
             What if I’m an MIT student?<i class="angle down icon"></i>
           </h4>
-          <p class="answer">
-            MIT students that register by July 30th and confirm by August 12th will be guaranteed admission. If you don’t confirm your attendance by August 12th, we’ll be taking walk-ins on a first-come, first-serve basis.
+          <p class="answer lato">
+            If you register by July 30th and confirm by August 15th, you will be guaranteed a spot at HackMIT. Otherwise, you can try for walk-in admission the day of the event.
           </p>
         </div>
-        <div class="five wide column">
+        <div class="column">
           <h4 class="question">
-            Since I'm traveling from far away, can I get an increase in reimbursement?<i class="angle down icon"></i>
+            Do people actually read FAQs?<i class="angle down icon"></i>
           </h4>
-          <p class="answer">
-            Unfortunately, we cannot increase reimbursement caps out of fairness to our hackers. Sorry about that! If the cost of coming to MIT is prohibitive, we recommend you check out other hackathons closer to you!
+          <p class="answer lato">
+            We don't know. Want to help us answer this question? Send us an email at faq-readers at mit dot edu. Feel free to write about whatever. If you emailed us last year, let us know how your year since then has been going! We didn’t deliver on the prize last time, but perhaps we will this year ;) Again, don’t tell anyone about this—we’re trying our best for a controlled experiment.
           </p>
         </div>
-        <div class="five wide column">
+        <div class="column">
           <h4 class="question">
             What about hardware hacks?<i class="angle down icon"></i>
           </h4>
-          <p class="answer">
-            We’ll provide some hardware such as Arduinos, Pebbles, Raspberry Pis and more! You are more than welcome to bring your own hardware and basic tools to work with. A full list of hardware will be released as we get closer to the event.
+          <p class="answer lato">
+            We’ll provide some hardware such as Arduinos, Pebbles, Myos—the usual hacker essentials and more. Let us know what you’d like to hack on in our registration form.
           </p>
         </div>
-        <div class="five wide column">
+        <div class="column">
+          <h4 class="question">
+            Where’s the schedule?<i class="angle down icon"></i>
+          </h4>
+          <p class="answer lato">
+            We’ll release a more detailed schedule after July. For now, know that we’re planning for check-in to start early Saturday morning and for closing ceremony to end late Sunday afternoon.
+          </p>
+        </div>
+        <div class="column">
+          <h4 class="question">
+            Will there be an admissions puzzle again?<i class="angle down icon"></i>
+          </h4>
+          <p class="answer lato">
+            Maybe! In the meantime, you can entertain yourself with past <a href="https://medium.com/hackmit-stories/such-confuse-hackmit-puzzle-guide-2015-1-4-49dc960f0321" target="_blank">puzzle</a> <a href="https://medium.com/@kt_seagull/joining-the-fancycat-club-hackmit-14-puzzle-guide-6f4ebef5b69" target="_blank">solutions</a>.
+          </p>
+        </div>
+        <div class="column">
           <h4 class="question">
             What if this FAQ didn’t answer my questions?<i class="angle down icon"></i>
           </h4>
-          <p class="answer">
-            Please email us at <a href="mailto:team@hackmit.org">team@hackmit.org</a> if you have any concerns at all! We’re friendly, and we’d love to help you out!
+          <p class="answer lato">
+            Please email us at <a href="mailto:team@hackmit.org">team@hackmit.org</a> if you’re in any way confused or concerned!  We’d love to help you out :)
           </p>
         </div>
     </div>
   </section>
 
-  <div class="divider whitebg blue"></div>
+  <a name="reg-now"></a>
+  <section id="reg-now" class="lato ui page grid center aligned padded stackable">
+    <div class="reg-now-form-cont montserrat-bold ten wide column">
+      <h2 class="black-shadow title">Register soon!</h2>
 
-  <a name="sponsor"></a>
-  <section id="sponsor" class="lato ui page grid center aligned padded stackable">
-    <div class="ten wide column">
-      <h2 class="montserrat-bold title">sponsors</h2>
-    </div>
-    <div class="sixteen wide column">
-      <p class="lato">
-        Interested in becoming a sponsor? Email us at <a id="sponsor-email" href="mailto:sponsor@hackmit.org">sponsor@hackmit.org</a>.
-      </p>
-
-      <div class="platinum tier">
-
-        <a href="http://amadeus.com/" target="_blank">
-          <img src="assets/images/logos/platinum/Amadeus-logo.png">
-        </a>
-        <a href="http://aqr.com/" target="_blank">
-          <img id="aqr" src="assets/images/logos/platinum/AQRCapitalManagement-logo.png">
-        </a>
-        <a href="https://google.com/careers/students" target="_blank">
-          <img src="assets/images/logos/platinum/Google-logo.png">
-        </a>
-        <a href="https://microsoft.com/university" target="_blank">
-          <img src="assets/images/logos/platinum/Microsoft-logo.png">
-        </a>
-        <a href="https://patreon.com" target="_blank">
-          <img src="assets/images/logos/platinum/Patreon-logo.png">
-        </a>
-
+      <div class="thankyou hidden">
+        Thanks for signing up! We'll send you an email when registration opens.
       </div>
 
-      <div class="gold tier">
-
-        <a href="https://akamai.com" target="_blank">
-          <img src="assets/images/logos/gold/Akamai-logo.png">
-        </a>
-        <a href="https://bloomberg.com/rd" target="_blank">
-          <img src="assets/images/logos/gold/Bloomberg-logo.png">
-        </a>
-        <a href="https://campus.capitalone.com" target="_blank">
-          <img src="assets/images/logos/gold/CapitalOne-logo.png">
-        </a>
-        <a href="http://clarifai.com" target="_blank">
-          <img src="assets/images/logos/gold/Clarifai-logo.jpg">
-        </a>
-        <a href="https://concur.com" target="_blank">
-          <img src="assets/images/logos/gold/Concur-logo.png">
-        </a>
-        <a href="https://directv.com" target="_blank">
-          <img id="directv" src="assets/images/logos/gold/DIRECTV-logo.png">
-        </a>
-        <a href="https://facebook.com" target="_blank">
-          <img src="assets/images/logos/gold/Facebook-logo.png">
-        </a>
-        <a href="https://business.nasdaq.com" target="_blank">
-          <img src="assets/images/logos/gold/Nasdaq-logo.png">
-        </a>
-        <a href="https://www.nielsen.com/" target="_blank">
-          <img src="assets/images/logos/gold/Nielsen-logo.png">
-        </a>
-        <a href="http://nutanix.com" target="_blank">
-          <img src="assets/images/logos/gold/Nutanix-logo.png">
-        </a>
-        <a href="http://statestreet.com" target="_blank">
-          <img src="assets/images/logos/gold/StateStreet-logo.jpg">
-        </a>
-        <a href="http://synaptics.com" target="_blank">
-          <img src="assets/images/logos/gold/Synaptics-logo.jpg">
-        </a>
-        <a href="https://twosigma.com" target="_blank">
-          <img src="assets/images/logos/gold/TwoSigma-logo.png">
-        </a>
-        <a href="https://uber.com/jobs" target="_blank">
-          <img src="assets/images/logos/gold/Uber-logo.png">
-        </a>
-
-      </div>
-
-      <div class="silver tier">
-
-        <a href="https://a16z.com" target="_blank">
-          <img src="assets/images/logos/silver/a16z-logo.png">
-        </a>
-        <a href="http://celect.net/" target="_blank">
-          <img src="assets/images/logos/silver/Celect-logo.png">
-        </a>
-        <a href="http://disneytechjobs.com" target="_blank">
-          <img src="assets/images/logos/silver/Disney-logo.png">
-        </a>
-        <a href="http://www.fiscalnote.com/" target="_blank">
-          <img src="assets/images/logos/silver/FiscalNote-logo.png">
-        </a>
-        <a href="http://www.hudson-trading.com" target="_blank">
-          <img src="assets/images/logos/silver/HudsonRiverTrading-logo.jpg">
-        </a>
-        <a href="//product.hubspot.com/" target="_blank">
-          <img src="assets/images/logos/silver/Hubspot-logo.png">
-        </a>
-        <a href="http://kcg.com/" target="_blank">
-          <img src="assets/images/logos/silver/KCG-logo.png">
-        </a>
-        <a href="https://meteor.com" target="_blank">
-          <img src="assets/images/logos/silver/Meteor-logo.png">
-        </a>
-        <a href="http://www.monster.com/about" target="_blank">
-          <img src="assets/images/logos/silver/Monster-logo.jpg">
-        </a>
-        <a href="http://www.gotinder.com/" target="_blank">
-          <img src="assets/images/logos/silver/Tinder-logo.png">
-        </a>
-      </div>
-
-      <div class="bronze tier">
-        <a href="http://www.1517fund.com" target="_blank">
-          <img src="assets/images/logos/bronze/1517-logo.png">
-        </a>
-        <a href="http://accenture.com/careers" target="_blank">
-          <img src="assets/images/logos/bronze/Accenture-logo.jpg">
-        </a>
-        <a href="http://www.getcruise.com/" target="_blank">
-          <img src="assets/images/logos/bronze/Cruise-logo.png">
-        </a>
-        <a href="https://datto.com" target="_blank">
-          <img src="assets/images/logos/bronze/Datto-logo.png">
-        </a>
-        <a href="https://fitbit.com" target="_blank">
-          <img src="assets/images/logos/bronze/Fitbit-logo.jpg">
-        </a>
-        <a href="http://www.ge.com/" target="_blank">
-          <img src="assets/images/logos/bronze/GeneralElectric-logo.png">
-        </a>
-        <a href="https://godaddy.com" target="_blank">
-          <img src="assets/images/logos/bronze/GoDaddy-logo.png">
-        </a>
-        <a href="https://www.janestreet.com/" target="_blank">
-          <img src="assets/images/logos/bronze/JaneStreet-logo.png">
-        </a>
-        <a href="https://kayak.com" target="_blank">
-          <img src="assets/images/logos/bronze/Kayak-logo.jpg">
-        </a>
-        <a href="https://kensho.com/" target="_blank">
-          <img src="assets/images/logos/bronze/Kensho-logo.png">
-        </a>
-        <a href="http://kpcbfellows.com/" target="_blank">
-          <img src="assets/images/logos/bronze/KPCB-logo.png">
-        </a>
-        <a href="http://levantpower.com/" target="_blank">
-          <img src="assets/images/logos/bronze/LevantPower-logo.png">
-        </a>
-        <a href="http://postmates.com/developer" target="_blank">
-          <img src="assets/images/logos/bronze/Postmates-logo.png">
-        </a>
-        <a href="https://progress.com/" target="_blank">
-          <img src="assets/images/logos/bronze/Progress-logo.png">
-        </a>
-        <a href="http://roughdraft.vc" target="_blank">
-          <img src="assets/images/logos/bronze/RoughDraftVentures-logo.jpg">
-        </a>
-        <a href="https://siacoin.com" target="_blank">
-          <img src="assets/images/logos/bronze/NebulousLabs-logo.png">
-        </a>
-        <a href="https://squareup.com" target="_blank">
-          <img src="assets/images/logos/bronze/Square-logo.jpg">
-        </a>
-        <a href="http://tripadvisor.com" target="_blank">
-          <img src="assets/images/logos/bronze/TripAdvisor-logo.png">
-        </a>
-
-        <br>
-      <!-- Other Logos: Same size as Bronze, just in its own section-->
-        <a href="https://aws.amazon.com/activate/" target="_blank">
-          <img src="assets/images/logos/other/AmazonWebServices-logo.png">
-        </a>
-        <a href="http://fomuicecream.com" target="_blank">
-          <img src="assets/images/logos/other/FoMu-logo.jpg">
-        </a>
-        <a href="https://giphy.com" target="_blank">
-          <img src="assets/images/logos/other/Giphy-logo.png">
-        </a>
-        <a href="https://oculus.com" target="_blank">
-          <img src="assets/images/logos/other/Oculus-logo.jpg">
-        </a>
-        <a href="https://parse.com" target="_blank">
-          <img src="assets/images/logos/other/Parse-logo.png">
-        </a>
-        <a href="https://particle.io" target="_blank">
-          <img src="assets/images/logos/other/Particle-logo.png">
-        </a>
-        <a href="http://presto.watch" target="_blank">
-          <img src="assets/images/logos/other/Presto-logo.png">
-        </a>
-        <a href="https://thalmic.com/myo/" target="_blank">
-          <img src="assets/images/logos/other/ThalmicLabs-logo.png">
-        </a>
-        <a href="http://wafflecabin.com" target="_blank">
-          <img src="assets/images/logos/other/WaffleCabin-logo.png">
-        </a>
-      </div>
+      <form class="reg-now-form" onsubmit="">
+        <p class="lato">Sign up to be reminded when registration opens on June 1st. We got you.</p>
+				<div class="ui input">
+					<input
+            id="reg-now-form-email"
+            type="text" name="email"
+            placeholder="your_email@school.edu">
+				</div>
+				<input type="submit" class="ui button" value="Submit">
+			</form>
 
     </div>
   </section>
 
   <section id="footer">
   <div id="footersplash">
-    <img src="assets/images/hack-bg-square.jpg" alt="Footer image" />
-    <img class="logo" src="assets/images/hack-logo.svg"
-         onerror="this.onerror=null; this.src='assets/images/hack-logo-white.png'"/>
+    <img src="assets/images/logo-outline.svg" alt="Footer image" />
+    <h2 class="montserrat">Hackmit</h2>
   </div>
 
   <div class="ten wide column" id="social">
@@ -469,9 +315,15 @@ you're quite the l33t hacker looking at this page's source
       <i class="ui icon facebook"></i>
     </a>
   </div>
-  <div class="techx">
-    <a href="http://techx.mit.edu"><img id="techx" src="assets/images/techx-logo.svg" alt="Powered by MIT TechX" onerror="this.onerror=null; this.src='assets/images/techx-logo.png'"/></a>
-  </div>
+
+	<div id="color-bars">
+		<div id="color-bar1">&nbsp;</div>
+		<div id="color-bar2">&nbsp;</div>
+		<div id="color-bar3">&nbsp;</div>
+		<div id="color-bar4">&nbsp;</div>
+		<div id="color-bar5">&nbsp;</div>
+	</div>
+
   </section>
 
 </body>
