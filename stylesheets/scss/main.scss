@@ -305,6 +305,15 @@ section#about{
   .ui.page.grid.padded {
     padding-bottom: 5%;
   }
+
+  h2 {
+    text-align: left;
+  }
+
+  p.lato {
+    text-align: left;
+    font-size: 1.2em;
+  }
 }
 
 #social {
@@ -355,12 +364,12 @@ section#faq {
   .row {
     margin: 0 auto;
 		border-radius: 4px;
-		background-color: lighten($turquoise, 6%);
+		background-color: lighten($turquoise, 9%);
   }
   h2 {
     color:$white;
-    text-align: center;
-    margin-bottom: 0;
+    text-align: left;
+    margin-bottom: 1em;
   }
   h2.large {
     display: block;
