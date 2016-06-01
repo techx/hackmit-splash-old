@@ -625,7 +625,6 @@ section#sponsor {
           letter-spacing: 1vh;
           font-size: 3em;  // fallback
           font-size: 8vh;
-          margin-top: 2em;
         }
   
         h2.subtitle {
@@ -697,16 +696,17 @@ section#sponsor {
 
         .splash-logo-unit-cont {
           transform: rotate(0deg);
-          margin-top: 10vw;
+          margin-top: 5em;
         }
 
         .splash-img {
           transform: rotate(0deg);
-          width: 90vw;
+          height: 300px;
         }
 
         .title {
           font-size: 2.8em!important;
+          margin-top: 0;
         }
 
 				h2.subtitle {
@@ -779,7 +779,7 @@ section#sponsor {
       div.splash-banner {
         .splash-logo-unit-cont {
           transform: rotate(0deg);
-          margin-top: 0;
+          margin-top: 2em;
         }
 
         .splash-img {
