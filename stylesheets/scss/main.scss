@@ -287,6 +287,8 @@ section#splash {
 section#sponsors {
   background-color: $orange;
   text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
 
   p {
     color: $white;
@@ -621,6 +623,7 @@ section#sponsor {
           letter-spacing: 1vh;
           font-size: 3em;  // fallback
           font-size: 8vh;
+          margin-top: 2em;
         }
   
         h2.subtitle {
@@ -641,6 +644,11 @@ section#sponsor {
   section.ui.page.grid.padded {
     padding-top: 10%;
     padding-bottom: 10%;
+  }
+
+  section#reg-now {
+    min-height: 0;
+    background: $green;
   }
 
   .question {
@@ -725,6 +733,14 @@ section#sponsor {
 
   section h2 {
     font-size: 2.5em;
+  }
+
+  section#faq {
+    background-color: lighten($turquoise, 9%);
+
+    h2 {
+      margin-bottom: 0;
+    }
   }
 
   section#sponsor {
