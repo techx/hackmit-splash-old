@@ -3,7 +3,7 @@ html, body {
   width: 100%;
   padding: 0;
   margin: 0;
-  background-color: white;
+  background-color: #ffffff;
   font-size: 0.85em; }
   html.foolsday *, body.foolsday * {
     font-family: "Comic Sans MS", cursive, sans-serif !important; }
@@ -52,7 +52,7 @@ section h2 {
   letter-spacing: 5px;
   line-height: 1.3em;
   margin: 0;
-  color: white; }
+  color: #ffffff; }
 section p,
 section label,
 section input {
@@ -87,7 +87,7 @@ section .button {
   cursor: pointer; }
 section .button:hover {
   background-color: #4ecdc4;
-  color: white; }
+  color: #ffffff; }
 
 section.ui.page.grid {
   min-width: 0; }
@@ -178,20 +178,20 @@ section#splash {
       width: 8em;
       padding-top: 1.2em;
       border-bottom: 4px solid transparent;
-      color: white;
+      color: #ffffff;
       font-weight: bold; }
       #navbar .menu .item.wide {
         width: 9em; }
     #navbar .menu #goto-about.item:hover {
-      color: white;
+      color: #ffffff;
       background: #0b3b4b;
       border-bottom: 3px solid #fc5454; }
     #navbar .menu #goto-faq.item:hover {
-      color: white;
+      color: #ffffff;
       background: #0b3b4b;
       border-bottom: 3px solid #4ecdc4; }
     #navbar .menu #goto-reg-now.item:hover {
-      color: white;
+      color: #ffffff;
       background: #0b3b4b;
       border-bottom: 3px solid #ffe86b; }
 
@@ -207,7 +207,7 @@ section#sponsors {
   padding-top: 40px;
   padding-bottom: 40px; }
   section#sponsors p {
-    color: white;
+    color: #ffffff;
     font-size: 1.4em;
     padding: 16px;
     margin: 0; }
@@ -218,7 +218,7 @@ img#techx {
 section#about {
   background: #fc5454;
   min-height: 240px;
-  color: white;
+  color: #ffffff;
   z-index: 4; }
   section#about .ui.page.grid.padded {
     padding-bottom: 5%; }
@@ -250,7 +250,7 @@ section#about {
 section#schedule {
   background: #c9d41b;
   min-height: 80px;
-  color: white; }
+  color: #ffffff; }
   section#schedule .schedule.grid {
     margin-top: 20px; }
 
@@ -266,7 +266,7 @@ section#faq {
     background-color: #72d7d0;
     padding-bottom: 1rem; }
   section#faq h2 {
-    color: white;
+    color: #ffffff;
     text-align: left;
     margin-bottom: 1em; }
   section#faq h2.large {
@@ -299,7 +299,7 @@ section#reg-now {
       margin-top: 2em; }
       section#reg-now .reg-now-form-cont .reg-now-form .ui.button {
         background-color: #0b3b4b;
-        color: white;
+        color: #ffffff;
         width: auto; }
       section#reg-now .reg-now-form-cont .reg-now-form .ui.button:hover {
         background-color: #0e4c61; }
@@ -477,7 +477,7 @@ section#sponsor {
     margin-top: 0; }
     section#splash div.splash-container div.splash-banner .splash-logo-unit-cont {
       transform: rotate(0deg);
-      margin-top: 5em; }
+      margin-top: 3.5em; }
     section#splash div.splash-container div.splash-banner .splash-img {
       transform: rotate(0deg);
       height: 300px; }
@@ -568,3 +568,5 @@ section#sponsor {
     width: 20px; }
   section#footer #color-bars div {
     height: 1.5em; } }
+
+/*# sourceMappingURL=main.css.map */
