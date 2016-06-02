@@ -5,7 +5,7 @@ html, body {
   margin: 0;
   background-color: #ffffff;
   font-size: 0.85em; }
-  html.foolsday *, body.foolsday * {
+  html.foolsday *:not(.icon), body.foolsday *:not(.icon) {
     font-family: "Comic Sans MS", cursive, sans-serif !important; }
   html section, body section {
     width: 100%;

@@ -8,7 +8,7 @@ html, body {
   background-color: $white;
   font-size: 0.85em;
 
-  &.foolsday *{
+  &.foolsday *:not(.icon){
     font-family: "Comic Sans MS", cursive, sans-serif !important;
   }
 
