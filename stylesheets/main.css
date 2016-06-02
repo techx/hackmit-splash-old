@@ -484,10 +484,13 @@ section#sponsor {
     section#splash div.splash-container div.splash-banner .title {
       font-size: 2.8em !important;
       margin-top: 0; }
-    section#splash div.splash-container div.splash-banner h2.subtitle.large {
-      display: none; }
-    section#splash div.splash-container div.splash-banner h2.subtitle.mobile {
-      display: block; }
+    section#splash div.splash-container div.splash-banner h2.subtitle {
+      line-height: 1.2em;
+      font-size: 1.4em; }
+      section#splash div.splash-container div.splash-banner h2.subtitle.large {
+        display: none; }
+      section#splash div.splash-container div.splash-banner h2.subtitle.mobile {
+        display: block; }
   section#splash div.splash-container div.splash-text .title {
     font-size: 2.8em; }
 
