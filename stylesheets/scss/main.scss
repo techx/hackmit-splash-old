@@ -772,6 +772,14 @@ section#sponsor {
       width: 25%;
     }
   }
+
+  section#footer {
+    #color-bars {
+			div {
+        height: 32px;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 320px) {
@@ -867,7 +875,7 @@ section#sponsor {
     }
     #color-bars {
 			div {
-        height: 1.5em;
+        height: 24px;
       }
     }
   }

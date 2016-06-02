@@ -517,7 +517,10 @@ section#sponsor {
     section#sponsor .silver img {
       width: 45%; }
     section#sponsor .bronze img {
-      width: 25%; } }
+      width: 25%; }
+
+  section#footer #color-bars div {
+    height: 32px; } }
 @media only screen and (max-width: 320px) {
   section#splash div.splash-container div.splash-banner .splash-logo-unit-cont {
     transform: rotate(0deg);
@@ -570,4 +573,4 @@ section#sponsor {
   section#footer .icon {
     width: 20px; }
   section#footer #color-bars div {
-    height: 1.5em; } }
+    height: 24px; } }
