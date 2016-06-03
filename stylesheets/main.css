@@ -247,6 +247,9 @@ section#about {
   color: #0b3b4b;
   text-decoration: none; }
 
+#license p {
+  font-size: 0.5em; }
+
 section#schedule {
   background: #c9d41b;
   min-height: 80px;
