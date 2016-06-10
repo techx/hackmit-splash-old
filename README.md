@@ -15,3 +15,8 @@ Dev
 ---
 
 Make sure to compile your scss appropriately. Something like `sass --watch /some/path/hackmit-splash/stylesheets/scss:/some/path/hackmit-splash/stylesheets` suffices.
+
+License
+-------
+
+Copyright (c) 2016 HackMIT. Released under CC BY-SA. See the [license](LICENSE.md) for details.
