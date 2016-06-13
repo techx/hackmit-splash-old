@@ -164,7 +164,9 @@ section#splash {
 
 			.splash-logo-unit-cont {
 				z-index: 3;
-				transform: rotate(-20deg);
+				-webkit-transform: rotate(-20deg); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+            -ms-transform: rotate(-20deg); /* IE 9 */
+                transform: rotate(-20deg);
 			}
 
 			.splash-col {
@@ -596,15 +598,16 @@ section#sponsor {
       div.splash-banner {
         width: 100%;
 				margin-top: 2em;
-				margin-top: 5.5vh;
 
 				.splash-logo-unit-cont {
-					transform: rotate(0deg);
+					-webkit-transform: rotate(0deg); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+              -ms-transform: rotate(0deg); /* IE 9 */
+                  transform: rotate(0deg);
 					text-align: center;
 				}
 
   			.splash-img {
-  				height: 60vh;
+  				height: 25em;
 					float: none;
   			}
 
@@ -695,12 +698,16 @@ section#sponsor {
 				margin-top: 0;
 
         .splash-logo-unit-cont {
-          transform: rotate(0deg);
+					-webkit-transform: rotate(0deg); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+              -ms-transform: rotate(0deg); /* IE 9 */
+                  transform: rotate(0deg);
           margin-top: 5em;
         }
 
         .splash-img {
-          transform: rotate(0deg);
+					-webkit-transform: rotate(0deg); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+              -ms-transform: rotate(0deg); /* IE 9 */
+                  transform: rotate(0deg);
           height: 300px;
         }
 
@@ -789,12 +796,16 @@ section#sponsor {
 
       div.splash-banner {
         .splash-logo-unit-cont {
-          transform: rotate(0deg);
+					-webkit-transform: rotate(0deg); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+      				-ms-transform: rotate(0deg); /* IE 9 */
+          				transform: rotate(0deg);
           margin-top: 2em;
         }
 
         .splash-img {
-          transform: rotate(0deg);
+					-webkit-transform: rotate(0deg); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+      				-ms-transform: rotate(0deg); /* IE 9 */
+          				transform: rotate(0deg);
           width: auto;
           height: auto;
         }

@@ -115,6 +115,10 @@ section#splash {
       margin: 0 auto 0 auto; }
       section#splash div.splash-container div.splash-banner .splash-logo-unit-cont {
         z-index: 3;
+        -webkit-transform: rotate(-20deg);
+        /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+        -ms-transform: rotate(-20deg);
+        /* IE 9 */
         transform: rotate(-20deg); }
       section#splash div.splash-container div.splash-banner .splash-col {
         float: left;
@@ -415,13 +419,16 @@ section#sponsor {
     display: block; }
     section#splash div.splash-container div.splash-banner {
       width: 100%;
-      margin-top: 2em;
-      margin-top: 5.5vh; }
+      margin-top: 2em; }
       section#splash div.splash-container div.splash-banner .splash-logo-unit-cont {
+        -webkit-transform: rotate(0deg);
+        /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+        -ms-transform: rotate(0deg);
+        /* IE 9 */
         transform: rotate(0deg);
         text-align: center; }
       section#splash div.splash-container div.splash-banner .splash-img {
-        height: 60vh;
+        height: 25em;
         float: none; }
       section#splash div.splash-container div.splash-banner .splash-col {
         float: none;
@@ -476,9 +483,17 @@ section#sponsor {
   section#splash div.splash-container div.splash-banner {
     margin-top: 0; }
     section#splash div.splash-container div.splash-banner .splash-logo-unit-cont {
+      -webkit-transform: rotate(0deg);
+      /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+      -ms-transform: rotate(0deg);
+      /* IE 9 */
       transform: rotate(0deg);
       margin-top: 5em; }
     section#splash div.splash-container div.splash-banner .splash-img {
+      -webkit-transform: rotate(0deg);
+      /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+      -ms-transform: rotate(0deg);
+      /* IE 9 */
       transform: rotate(0deg);
       height: 300px; }
     section#splash div.splash-container div.splash-banner .title {
@@ -523,9 +538,17 @@ section#sponsor {
     height: 32px; } }
 @media only screen and (max-width: 320px) {
   section#splash div.splash-container div.splash-banner .splash-logo-unit-cont {
+    -webkit-transform: rotate(0deg);
+    /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+    -ms-transform: rotate(0deg);
+    /* IE 9 */
     transform: rotate(0deg);
     margin-top: 2em; }
   section#splash div.splash-container div.splash-banner .splash-img {
+    -webkit-transform: rotate(0deg);
+    /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+    -ms-transform: rotate(0deg);
+    /* IE 9 */
     transform: rotate(0deg);
     width: auto;
     height: auto; }
