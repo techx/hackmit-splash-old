@@ -5,7 +5,7 @@ html, body {
   margin: 0;
   background-color: white;
   font-size: 0.85em; }
-  html.foolsday *, body.foolsday * {
+  html.foolsday *:not(.icon), body.foolsday *:not(.icon) {
     font-family: "Comic Sans MS", cursive, sans-serif !important; }
   html section, body section {
     width: 100%;
@@ -250,6 +250,9 @@ section#about {
 #social a.social {
   color: #0b3b4b;
   text-decoration: none; }
+
+#license {
+  font-size: 0.5em; }
 
 section#schedule {
   background: #c9d41b;
