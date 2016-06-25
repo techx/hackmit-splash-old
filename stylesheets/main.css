@@ -376,6 +376,17 @@ section#sponsor {
     #footer #color-bars #color-bar5 {
       background-color: #ffbc29; }
 
+.custom-icon {
+  position: relative;
+  top: 4px;
+  width: 83%;
+}
+
+.custom-icon:hover {
+  -webkit-filter: drop-shadow(0 0 3px #4ecdc4);
+  filter: drop-shadow(0 0 3px #4ecdc4);
+}
+
 /* hiding faq */
 .angle {
   display: none;
