@@ -250,7 +250,7 @@ section#about {
 #social .icon {
   font-size: 2em;
   text-align: center;
-  margin: 0.8em 1em; }
+  margin: 0.8em 0.6em; }
 #social .icon:hover {
   text-shadow: 0 0 3px #4ecdc4;
   cursor: pointer; }
