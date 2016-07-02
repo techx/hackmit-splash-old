@@ -8,7 +8,7 @@ html, body {
   background-color: $white;
   font-size: 0.85em;
 
-  &.foolsday *{
+  &.foolsday *:not(.icon){
     font-family: "Comic Sans MS", cursive, sans-serif !important;
   }
 
@@ -164,7 +164,9 @@ section#splash {
 
 			.splash-logo-unit-cont {
 				z-index: 3;
-				transform: rotate(-20deg);
+				-webkit-transform: rotate(-20deg); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+            -ms-transform: rotate(-20deg); /* IE 9 */
+                transform: rotate(-20deg);
 			}
 
 			.splash-col {
@@ -246,6 +248,8 @@ section#splash {
     font-size: 1em;
     text-align: center;
     border: 0;
+    border-radius: 0;
+
 
     .item {
       width: 8em;
@@ -291,6 +295,8 @@ section#splash {
 section#sponsors {
   background-color: $orange;
   text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
 
   p {
     color: $white;
@@ -350,6 +356,10 @@ section#about{
     color: $black;
     text-decoration: none;
   }
+}
+
+#license {
+  font-size: 0.5em;
 }
 
 section#schedule {
@@ -596,15 +606,16 @@ section#sponsor {
       div.splash-banner {
         width: 100%;
 				margin-top: 2em;
-				margin-top: 5.5vh;
 
 				.splash-logo-unit-cont {
-					transform: rotate(0deg);
+					-webkit-transform: rotate(0deg); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+              -ms-transform: rotate(0deg); /* IE 9 */
+                  transform: rotate(0deg);
 					text-align: center;
 				}
 
   			.splash-img {
-  				height: 60vh;
+  				height: 25em;
 					float: none;
   			}
 
@@ -645,6 +656,11 @@ section#sponsor {
   section.ui.page.grid.padded {
     padding-top: 10%;
     padding-bottom: 10%;
+  }
+
+  section#reg-now {
+    min-height: 0;
+    background: $green;
   }
 
   .question {
@@ -690,20 +706,28 @@ section#sponsor {
 				margin-top: 0;
 
         .splash-logo-unit-cont {
-          transform: rotate(0deg);
-          margin-top: 10vw;
+					-webkit-transform: rotate(0deg); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+              -ms-transform: rotate(0deg); /* IE 9 */
+                  transform: rotate(0deg);
+          margin-top: 5em;
         }
 
         .splash-img {
-          transform: rotate(0deg);
-          width: 90vw;
+					-webkit-transform: rotate(0deg); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+              -ms-transform: rotate(0deg); /* IE 9 */
+                  transform: rotate(0deg);
+          height: 300px;
         }
 
         .title {
           font-size: 2.8em!important;
+          margin-top: 0;
         }
 
 				h2.subtitle {
+          line-height: 1.2em;
+          font-size: 1.4em;
+
 				  &.large {
 				  	display: none;
 				  }
@@ -731,6 +755,14 @@ section#sponsor {
     font-size: 2.5em;
   }
 
+  section#faq {
+    background-color: lighten($turquoise, 9%);
+
+    h2 {
+      margin-bottom: 0;
+    }
+  }
+
   section#sponsor {
     padding-left: 0;
     padding-right: 0;
@@ -755,6 +787,14 @@ section#sponsor {
       width: 25%;
     }
   }
+
+  section#footer {
+    #color-bars {
+			div {
+        height: 32px;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 320px) {
@@ -764,12 +804,16 @@ section#sponsor {
 
       div.splash-banner {
         .splash-logo-unit-cont {
-          transform: rotate(0deg);
-          margin-top: 0;
+					-webkit-transform: rotate(0deg); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+      				-ms-transform: rotate(0deg); /* IE 9 */
+          				transform: rotate(0deg);
+          margin-top: 2em;
         }
 
         .splash-img {
-          transform: rotate(0deg);
+					-webkit-transform: rotate(0deg); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+      				-ms-transform: rotate(0deg); /* IE 9 */
+          				transform: rotate(0deg);
           width: auto;
           height: auto;
         }
@@ -850,7 +894,7 @@ section#sponsor {
     }
     #color-bars {
 			div {
-        height: 1.5em;
+        height: 24px;
       }
     }
   }

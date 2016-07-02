@@ -5,7 +5,7 @@ html, body {
   margin: 0;
   background-color: #ffffff;
   font-size: 0.85em; }
-  html.foolsday *, body.foolsday * {
+  html.foolsday *:not(.icon), body.foolsday *:not(.icon) {
     font-family: "Comic Sans MS", cursive, sans-serif !important; }
   html section, body section {
     width: 100%;
@@ -115,6 +115,10 @@ section#splash {
       margin: 0 auto 0 auto; }
       section#splash div.splash-container div.splash-banner .splash-logo-unit-cont {
         z-index: 3;
+        -webkit-transform: rotate(-20deg);
+        /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+        -ms-transform: rotate(-20deg);
+        /* IE 9 */
         transform: rotate(-20deg); }
       section#splash div.splash-container div.splash-banner .splash-col {
         float: left;
@@ -172,7 +176,8 @@ section#splash {
     text-transform: uppercase;
     font-size: 1em;
     text-align: center;
-    border: 0; }
+    border: 0;
+    border-radius: 0; }
     #navbar .menu .item {
       width: 8em;
       padding-top: 1.2em;
@@ -205,7 +210,9 @@ section#splash {
 
 section#sponsors {
   background-color: #ffbc29;
-  text-align: center; }
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px; }
   section#sponsors p {
     color: #ffffff;
     font-size: 1.4em;
@@ -246,6 +253,9 @@ section#about {
 #social a.social {
   color: #0b3b4b;
   text-decoration: none; }
+
+#license {
+  font-size: 0.5em; }
 
 section#schedule {
   background: #c9d41b;
@@ -415,13 +425,16 @@ section#sponsor {
     display: block; }
     section#splash div.splash-container div.splash-banner {
       width: 100%;
-      margin-top: 2em;
-      margin-top: 5.5vh; }
+      margin-top: 2em; }
       section#splash div.splash-container div.splash-banner .splash-logo-unit-cont {
+        -webkit-transform: rotate(0deg);
+        /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+        -ms-transform: rotate(0deg);
+        /* IE 9 */
         transform: rotate(0deg);
         text-align: center; }
       section#splash div.splash-container div.splash-banner .splash-img {
-        height: 60vh;
+        height: 25em;
         float: none; }
       section#splash div.splash-container div.splash-banner .splash-col {
         float: none;
@@ -449,6 +462,10 @@ section#sponsor {
     padding-top: 10%;
     padding-bottom: 10%; }
 
+  section#reg-now {
+    min-height: 0;
+    background: #c9d41b; }
+
   .question {
     cursor: pointer; }
 
@@ -472,17 +489,29 @@ section#sponsor {
   section#splash div.splash-container div.splash-banner {
     margin-top: 0; }
     section#splash div.splash-container div.splash-banner .splash-logo-unit-cont {
+      -webkit-transform: rotate(0deg);
+      /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+      -ms-transform: rotate(0deg);
+      /* IE 9 */
       transform: rotate(0deg);
-      margin-top: 10vw; }
+      margin-top: 5em; }
     section#splash div.splash-container div.splash-banner .splash-img {
+      -webkit-transform: rotate(0deg);
+      /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+      -ms-transform: rotate(0deg);
+      /* IE 9 */
       transform: rotate(0deg);
-      width: 90vw; }
+      height: 300px; }
     section#splash div.splash-container div.splash-banner .title {
-      font-size: 2.8em !important; }
-    section#splash div.splash-container div.splash-banner h2.subtitle.large {
-      display: none; }
-    section#splash div.splash-container div.splash-banner h2.subtitle.mobile {
-      display: block; }
+      font-size: 2.8em !important;
+      margin-top: 0; }
+    section#splash div.splash-container div.splash-banner h2.subtitle {
+      line-height: 1.2em;
+      font-size: 1.4em; }
+      section#splash div.splash-container div.splash-banner h2.subtitle.large {
+        display: none; }
+      section#splash div.splash-container div.splash-banner h2.subtitle.mobile {
+        display: block; }
   section#splash div.splash-container div.splash-text .title {
     font-size: 2.8em; }
 
@@ -491,6 +520,11 @@ section#sponsor {
 
   section h2 {
     font-size: 2.5em; }
+
+  section#faq {
+    background-color: #72d7d0; }
+    section#faq h2 {
+      margin-bottom: 0; }
 
   section#sponsor {
     padding-left: 0;
@@ -504,12 +538,23 @@ section#sponsor {
     section#sponsor .silver img {
       width: 45%; }
     section#sponsor .bronze img {
-      width: 25%; } }
+      width: 25%; }
+
+  section#footer #color-bars div {
+    height: 32px; } }
 @media only screen and (max-width: 320px) {
   section#splash div.splash-container div.splash-banner .splash-logo-unit-cont {
+    -webkit-transform: rotate(0deg);
+    /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+    -ms-transform: rotate(0deg);
+    /* IE 9 */
     transform: rotate(0deg);
-    margin-top: 0; }
+    margin-top: 2em; }
   section#splash div.splash-container div.splash-banner .splash-img {
+    -webkit-transform: rotate(0deg);
+    /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+    -ms-transform: rotate(0deg);
+    /* IE 9 */
     transform: rotate(0deg);
     width: auto;
     height: auto; }
@@ -557,6 +602,6 @@ section#sponsor {
   section#footer .icon {
     width: 20px; }
   section#footer #color-bars div {
-    height: 1.5em; } }
+    height: 24px; } }
 
 /*# sourceMappingURL=main.css.map */
