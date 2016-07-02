@@ -190,10 +190,12 @@ section#splash {
       color: #ffffff;
       background: #0b3b4b;
       border-bottom: 3px solid #4ecdc4; }
-    #navbar .menu #goto-reg-now.item:hover {
+    #navbar .menu #click-reg-now.item {
+      margin: 4px; }
+    #navbar .menu #click-reg-now.item:hover {
       color: #ffffff;
-      background: #0b3b4b;
-      border-bottom: 3px solid #ffe86b; }
+      background: #3d626e;
+      border-radius: 3px; }
 
 #navbar.fixed {
   position: fixed;
@@ -291,8 +293,8 @@ section#reg-now {
     padding: 2em 2em !important;
     border-radius: 4px;
     background-color: #c9d41b; }
-    section#reg-now .reg-now-form-cont .thankyou {
-      margin-top: 1em; }
+    section#reg-now .reg-now-form-cont .reg-blurb {
+      padding: 20px 40px; }
     section#reg-now .reg-now-form-cont .reg-now-form {
       margin-top: 2em; }
       section#reg-now .reg-now-form-cont .reg-now-form .ui.button {

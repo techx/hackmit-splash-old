@@ -270,10 +270,13 @@ section#splash {
       background: $black;
       border-bottom: 3px solid $turquoise;
     }
-    #goto-reg-now.item:hover {
+    #click-reg-now.item {
+      margin: 4px;
+    }
+    #click-reg-now.item:hover {
       color: $white;
-      background: $black;
-      border-bottom: 3px solid $yellow;
+      background: #3d626e;
+      border-radius: 3px;
     }
   }
 }
@@ -412,8 +415,8 @@ section#reg-now {
 		border-radius: 4px;
 		background-color: $green;
 
-    .thankyou {
-      margin-top: 1em;
+    .reg-blurb {
+      padding: 20px 40px;
     }
 
 		.reg-now-form {
