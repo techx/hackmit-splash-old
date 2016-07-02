@@ -27,7 +27,7 @@ body {
 
 .lato {
   font-family: "Lato", sans-serif;
-  font-weight: 600; }
+  font-weight: 300; }
 
 .hidden {
   display: none; }
@@ -175,16 +175,17 @@ section#splash {
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     font-size: 1em;
-    text-align: center;
     border: 0;
-    border-radius: 0; }
+    border-radius: 0;
+    justify-content: center; }
     #navbar .menu .item {
       width: 8em;
       padding-top: 1.2em;
       border-bottom: 4px solid transparent;
       border-radius: 0;
       color: #ffffff;
-      font-weight: bold; }
+      font-weight: bold;
+      justify-content: center; }
       #navbar .menu .item.wide {
         width: 9em; }
     #navbar .menu #goto-about.item:hover {
