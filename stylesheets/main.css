@@ -29,6 +29,9 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 300; }
 
+.lato b {
+  font-weight: 400; }
+
 .hidden {
   display: none; }
 
