@@ -172,6 +172,7 @@ section#splash {
 			.splash-col {
 				float: left; 
 				width: 50%;
+        height: 90vh;
 			}
 
 			.splash-img {
@@ -190,6 +191,14 @@ section#splash {
         max-height: 1000%;
       }
 
+      .unselectable {
+          -moz-user-select: -moz-none;
+          -khtml-user-select: none;
+          -webkit-user-select: none;
+          -o-user-select: none;
+          user-select: none;
+      }      
+
       h1.title {
         margin: 0;
         letter-spacing: 8px;
@@ -197,6 +206,38 @@ section#splash {
         font-size: 3em;  // fallback
         font-size: 5.5vw;
         color: $black;
+      }
+
+      h1.drag-target-H{
+        margin: 0;
+        position: absolute;
+        top: -50px;
+        left: 100px;
+        color:#fc5454;
+      }
+
+      h1.drag-target-A{
+        margin: 0;
+        position: absolute;
+        top: -80px;
+        left: 50px;
+        color:#4ecdc4;
+      }
+
+      h1.drag-target-C{
+        margin: 0;
+        position: absolute;
+        top: -50px;
+        left: 10px;
+        color:#c9d41b;
+      }
+
+      h1.drag-target-K{
+        margin: 0;
+        position: absolute;
+        top: -100px;
+        left: 20px;
+        color:#ffe86b;
       }
 
       h2.subtitle {

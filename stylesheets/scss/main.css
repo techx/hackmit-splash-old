@@ -171,6 +171,8 @@ section#splash {
         top: -100px;
         left: 20px;
         color: #ffe86b; }
+      section#splash div.splash-container div.splash-banner h1.K {
+        color: yellow; }
       section#splash div.splash-container div.splash-banner h2.subtitle {
         margin: 0;
         line-height: 1.2em;
