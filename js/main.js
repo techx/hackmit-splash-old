@@ -4,6 +4,7 @@ var dragA = false;
 var dragC = false;
 var dragK = false;
 var firstClick = false;
+var complete = false;
 var COMPLETION_LENIENCY = 2;
 var startX;
 var startY;
@@ -195,46 +196,49 @@ function clearDrag(){
   }
   console.log([hComplete, aComplete, cComplete, kComplete]);
   if(hComplete && aComplete && cComplete && kComplete) {
+    complete = true;
     deleteLetters();
   }
 }
 
 function onDrag(event){
-  var currentX = event.pageX;
-  var currentY = event.pageY;
-  var changeX = startX - currentX;
-  var changeY = startY - currentY;
-  if (dragH) {
-    var top = parseInt($('.drag-target-H').css('top'));
-    $('.drag-target-H').css('top', top-changeY+'px');
-    var left = parseInt($('.drag-target-H').css('left'));
-    $('.drag-target-H').css('left', left-changeX+'px');
-    startX = currentX;
-    startY = currentY;
-  }
-  else if (dragA) {
-    var top = parseInt($('.drag-target-A').css('top'));
-    $('.drag-target-A').css('top', top-changeY+'px');
-    var left = parseInt($('.drag-target-A').css('left'));
-    $('.drag-target-A').css('left', left-changeX+'px');
-    startX = currentX;
-    startY = currentY;
-  }
-  else if (dragC) {
-    var top = parseInt($('.drag-target-C').css('top'));
-    $('.drag-target-C').css('top', top-changeY+'px');
-    var left = parseInt($('.drag-target-C').css('left'));
-    $('.drag-target-C').css('left', left-changeX+'px');
-    startX = currentX;
-    startY = currentY;
-  }
-  else if (dragK) {
-    var top = parseInt($('.drag-target-K').css('top'));
-    $('.drag-target-K').css('top', top-changeY+'px');
-    var left = parseInt($('.drag-target-K').css('left'));
-    $('.drag-target-K').css('left', left-changeX+'px');
-    startX = currentX;
-    startY = currentY;
+  if(!complete) {
+    var currentX = event.pageX;
+    var currentY = event.pageY;
+    var changeX = startX - currentX;
+    var changeY = startY - currentY;
+    if (dragH) {
+      var top = parseInt($('.drag-target-H').css('top'));
+      $('.drag-target-H').css('top', top-changeY+'px');
+      var left = parseInt($('.drag-target-H').css('left'));
+      $('.drag-target-H').css('left', left-changeX+'px');
+      startX = currentX;
+      startY = currentY;
+    }
+    else if (dragA) {
+      var top = parseInt($('.drag-target-A').css('top'));
+      $('.drag-target-A').css('top', top-changeY+'px');
+      var left = parseInt($('.drag-target-A').css('left'));
+      $('.drag-target-A').css('left', left-changeX+'px');
+      startX = currentX;
+      startY = currentY;
+    }
+    else if (dragC) {
+      var top = parseInt($('.drag-target-C').css('top'));
+      $('.drag-target-C').css('top', top-changeY+'px');
+      var left = parseInt($('.drag-target-C').css('left'));
+      $('.drag-target-C').css('left', left-changeX+'px');
+      startX = currentX;
+      startY = currentY;
+    }
+    else if (dragK) {
+      var top = parseInt($('.drag-target-K').css('top'));
+      $('.drag-target-K').css('top', top-changeY+'px');
+      var left = parseInt($('.drag-target-K').css('left'));
+      $('.drag-target-K').css('left', left-changeX+'px');
+      startX = currentX;
+      startY = currentY;
+    }
   }
 }
 
@@ -261,9 +265,25 @@ function resizeLetters() {
 }
 
 function deleteLetters() {
-  $('.drag-target-H').css('display', 'none');
-  $('.drag-target-A').css('display', 'none');
-  $('.drag-target-C').css('display', 'none');
-  $('.drag-target-K').css('display', 'none');
-  alert('gj');
+  $('.drag-target-H').addClass('animated infinite flash');
+  $('.drag-target-A').addClass('animated infinite bounceOut');
+  $('.drag-target-C').addClass('animated fadeOut');
+  $('.splash-title.C').text('X');
+  $('.drag-target-K').addClass('animated infinite flipOutX');
+  $('.splash-title.end').text('CD');
+  $('.splash-img').attr('pointer-events', 'auto');
+  $('.splash-img').attr('draggable', 'false');
+  var text = '.com';
+  dragImage = createGhostImage(text);
+  $('.splash-img').addEventListener('dragstart', function(event) {
+    event.dataTransfer.setDragImage()
+  });
+}
+
+function createGhostImage(text) {
+  var newImage = $('<div> </div>');
+  newImage.text(text);
+  $('.body').append(newImage);
+  newImage.css('z-index', -1);
+  return newImage.get(0);
 }
