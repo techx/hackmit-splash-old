@@ -152,24 +152,40 @@ section#splash {
         position: absolute;
         top: -50px;
         left: 100px;
+        letter-spacing: 8px;
+        line-height: 1.2em;
+        font-size: 3em;
+        font-size: 5.5vw;
         color: #fc5454; }
       section#splash div.splash-container div.splash-banner h1.drag-target-A {
         margin: 0;
         position: absolute;
         top: -80px;
         left: 50px;
+        letter-spacing: 8px;
+        line-height: 1.2em;
+        font-size: 3em;
+        font-size: 5.5vw;
         color: #4ecdc4; }
       section#splash div.splash-container div.splash-banner h1.drag-target-C {
         margin: 0;
         position: absolute;
         top: -50px;
         left: 10px;
+        letter-spacing: 8px;
+        line-height: 1.2em;
+        font-size: 3em;
+        font-size: 5.5vw;
         color: #c9d41b; }
       section#splash div.splash-container div.splash-banner h1.drag-target-K {
         margin: 0;
         position: absolute;
         top: -100px;
         left: 20px;
+        letter-spacing: 8px;
+        line-height: 1.2em;
+        font-size: 3em;
+        font-size: 5.5vw;
         color: #ffe86b; }
       section#splash div.splash-container div.splash-banner h2.subtitle {
         margin: 0;
@@ -480,6 +496,14 @@ section#sponsor {
         letter-spacing: 1vh;
         font-size: 3em;
         font-size: 8vh; }
+      section#splash div.splash-container div.splash-banner h1.drag-target-H {
+        display: none; }
+      section#splash div.splash-container div.splash-banner h1.drag-target-A {
+        display: none; }
+      section#splash div.splash-container div.splash-banner h1.drag-target-C {
+        display: none; }
+      section#splash div.splash-container div.splash-banner h1.drag-target-K {
+        display: none; }
       section#splash div.splash-container div.splash-banner h2.subtitle {
         line-height: 1.2em;
         line-height: 3.2vh;

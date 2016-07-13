@@ -213,6 +213,10 @@ section#splash {
         position: absolute;
         top: -50px;
         left: 100px;
+        letter-spacing: 8px;
+        line-height: 1.2em;
+        font-size: 3em;  // fallback
+        font-size: 5.5vw;
         color:#fc5454;
       }
 
@@ -221,6 +225,10 @@ section#splash {
         position: absolute;
         top: -80px;
         left: 50px;
+        letter-spacing: 8px;
+        line-height: 1.2em;
+        font-size: 3em;  // fallback
+        font-size: 5.5vw;
         color:#4ecdc4;
       }
 
@@ -229,6 +237,10 @@ section#splash {
         position: absolute;
         top: -50px;
         left: 10px;
+        letter-spacing: 8px;
+        line-height: 1.2em;
+        font-size: 3em;  // fallback
+        font-size: 5.5vw;
         color:#c9d41b;
       }
 
@@ -237,6 +249,10 @@ section#splash {
         position: absolute;
         top: -100px;
         left: 20px;
+        letter-spacing: 8px;
+        line-height: 1.2em;
+        font-size: 3em;  // fallback
+        font-size: 5.5vw;
         color:#ffe86b;
       }
 
@@ -678,7 +694,23 @@ section#sponsor {
           font-size: 3em;  // fallback
           font-size: 8vh;
         }
-  
+
+        h1.drag-target-H {
+          display: none;
+        }
+
+        h1.drag-target-A {
+          display: none;
+        }
+
+        h1.drag-target-C {
+          display: none;
+        }
+
+        h1.drag-target-K {
+          display: none;
+        }  
+
         h2.subtitle {
           line-height: 1.2em;
           line-height: 3.2vh;
