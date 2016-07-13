@@ -116,6 +116,11 @@ $(document).ready(function() {
   }
 
   $('.splash-img').attr('draggable', 'false'); 
+
+  var svgDim = parseInt($('.splash-img').css('height'));
+  $('.drag-target-H').css('top', svgDim/4+'px');
+  $('.drag-target-H').css('left', svgDim/10+'px');
+
 });
 
 //run on window load and resize
