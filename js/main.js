@@ -1,4 +1,10 @@
 var breakWidth = 767;
+var dragH = false;
+var dragA = false;
+var dragC = false;
+var dragK = false;
+var startX; 
+var startY;
 
 $(document).ready(function() {
 
@@ -108,8 +114,9 @@ $(document).ready(function() {
     navbarHeight = $('#navbar').outerHeight();
     deltaLocation = $('#splash').outerHeight() - navbarHeight;
   }
-});
 
+  $('.splash-img').attr('draggable', 'false'); 
+});
 
 //run on window load and resize
 function hideAnswers() {
@@ -123,5 +130,69 @@ function hideAnswers() {
     $('.question').removeClass('question-hidden');
     $('.angle').css('display', 'none');
     $('.angle').removeClass('angle-rotated');
+  }
+}
+
+function letterClicked(event, letter){
+  startX = event.pageX;
+  startY = event.pageY; 
+  switch (letter){
+    case "H":
+      dragH = true;
+      break;
+    case "A":
+      dragA = true;
+      break;
+    case "C":
+      dragC = true;
+      break;
+    case "K":
+      dragK = true;
+  }
+}
+
+function clearDrag(){
+  dragH = false;
+  dragA = false;
+  dragC = false;
+  dragK = false;
+}
+
+function onDrag(event){
+  var currentX = event.pageX;
+  var currentY = event.pageY;
+  var changeX = startX - currentX;
+  var changeY = startY - currentY;
+  if (dragH) { 
+    var top = parseInt($('.drag-target-H').css('top'));
+    $('.drag-target-H').css('top', top-changeY+'px');
+    var left = parseInt($('.drag-target-H').css('left'));
+    $('.drag-target-H').css('left', left-changeX+'px');
+    startX = currentX;
+    startY = currentY;
+  }
+  else if (dragA) {
+    var top = parseInt($('.drag-target-A').css('top'));
+    $('.drag-target-A').css('top', top-changeY+'px');
+    var left = parseInt($('.drag-target-A').css('left'));
+    $('.drag-target-A').css('left', left-changeX+'px');
+    startX = currentX;
+    startY = currentY;
+  }
+  else if (dragC) {
+    var top = parseInt($('.drag-target-C').css('top'));
+    $('.drag-target-C').css('top', top-changeY+'px');
+    var left = parseInt($('.drag-target-C').css('left'));
+    $('.drag-target-C').css('left', left-changeX+'px');
+    startX = currentX;
+    startY = currentY;
+  }
+  else if (dragK) {
+    var top = parseInt($('.drag-target-K').css('top'));
+    $('.drag-target-K').css('top', top-changeY+'px');
+    var left = parseInt($('.drag-target-K').css('left'));
+    $('.drag-target-K').css('left', left-changeX+'px');
+    startX = currentX;
+    startY = currentY;
   }
 }
