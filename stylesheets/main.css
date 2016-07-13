@@ -150,8 +150,8 @@ section#splash {
       section#splash div.splash-container div.splash-banner h1.drag-target-H {
         margin: 0;
         position: absolute;
-        top: -50px;
-        left: 100px;
+        top: 0px;
+        left: 0px;
         letter-spacing: 8px;
         line-height: 1.2em;
         font-size: 3em;
@@ -160,8 +160,8 @@ section#splash {
       section#splash div.splash-container div.splash-banner h1.drag-target-A {
         margin: 0;
         position: absolute;
-        top: -80px;
-        left: 50px;
+        top: 0px;
+        left: 0px;
         letter-spacing: 8px;
         line-height: 1.2em;
         font-size: 3em;
@@ -170,8 +170,8 @@ section#splash {
       section#splash div.splash-container div.splash-banner h1.drag-target-C {
         margin: 0;
         position: absolute;
-        top: -50px;
-        left: 10px;
+        top: 0px;
+        left: 0px;
         letter-spacing: 8px;
         line-height: 1.2em;
         font-size: 3em;
@@ -180,8 +180,8 @@ section#splash {
       section#splash div.splash-container div.splash-banner h1.drag-target-K {
         margin: 0;
         position: absolute;
-        top: -100px;
-        left: 20px;
+        top: 0px;
+        left: 0px;
         letter-spacing: 8px;
         line-height: 1.2em;
         font-size: 3em;
