@@ -3,6 +3,7 @@ var dragH = false;
 var dragA = false;
 var dragC = false;
 var dragK = false;
+var firstClick = false;
 var startX; 
 var startY;
 
@@ -117,10 +118,7 @@ $(document).ready(function() {
 
   $('.splash-img').attr('draggable', 'false'); 
 
-  var svgDim = parseInt($('.splash-img').css('height'));
-  var svgOffset = $('.splash-img').offset();
-  $('.drag-target-H').css('top', -svgOffset.top+svgDim/4+'px');
-  $('.drag-target-H').css('left', -svgOffset.left+svgDim/4+'px');
+  addResizeListener();
 });
 
 //run on window load and resize
@@ -141,6 +139,12 @@ function hideAnswers() {
 function letterClicked(event, letter){
   startX = event.pageX;
   startY = event.pageY; 
+  if (!firstClick) {
+    $('.drag-target-H').css('visibility', 'visible');
+    $('.drag-target-A').css('visibility', 'visible');
+    $('.drag-target-C').css('visibility', 'visible');
+    $('.drag-target-K').css('visibility', 'visible');
+  }
   switch (letter){
     case "H":
       dragH = true;
@@ -200,4 +204,26 @@ function onDrag(event){
     startX = currentX;
     startY = currentY;
   }
+}
+
+function addResizeListener() {
+  window.onload = function() {
+    resizeLetters(); //initial call
+  };
+  window.addEventListener('resize', function() {
+    resizeLetters();
+  });
+}
+
+function resizeLetters() {
+  var svgDim = parseInt($('.splash-img').css('height'));
+  var svgPosition = $('.splash-img').position();
+  $('.drag-target-H').css('top', svgPosition.top +svgDim/4+'px');
+  $('.drag-target-H').css('left', svgPosition.left+svgDim/4+'px');
+  $('.drag-target-A').css('top', svgPosition.top +svgDim/4+'px');
+  $('.drag-target-A').css('left', svgPosition.left+2.5*svgDim/4+'px');
+  $('.drag-target-C').css('top', svgPosition.top +2.5*svgDim/4+'px');
+  $('.drag-target-C').css('left', svgPosition.left+svgDim/4+'px');
+  $('.drag-target-K').css('top', svgPosition.top +2.5*svgDim/4+'px');
+  $('.drag-target-K').css('left', svgPosition.left+2.5*svgDim/4+'px');
 }
