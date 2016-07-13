@@ -121,7 +121,6 @@ $(document).ready(function() {
   var svgOffset = $('.splash-img').offset();
   $('.drag-target-H').css('top', -svgOffset.top+svgDim/4+'px');
   $('.drag-target-H').css('left', -svgOffset.left+svgDim/4+'px');
-
 });
 
 //run on window load and resize
