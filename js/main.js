@@ -196,7 +196,7 @@ function clearDrag(){
   if (Math.abs(kTopOffset-K_COMPLETE_OFFSET[0])<COMPLETION_LENIENCY && Math.abs(kLeftOffset-K_COMPLETE_OFFSET[1])<COMPLETION_LENIENCY) {
     kComplete = true;
   } 
-
+  console.log([hComplete, aComplete, cComplete, kComplete]);
   if(hComplete && aComplete && cComplete && kComplete) {
     deleteLetters();
   }
@@ -264,5 +264,9 @@ function resizeLetters() {
 }
 
 function deleteLetters() {
-  
+  $('.drag-target-H').css('display', 'none');
+  $('.drag-target-A').css('display', 'none');
+  $('.drag-target-C').css('display', 'none');
+  $('.drag-target-K').css('display', 'none');
+  alert('gj');
 }
