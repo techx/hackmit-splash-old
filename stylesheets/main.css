@@ -157,7 +157,8 @@ section#splash {
         font-size: 3em;
         font-size: 5.5vw;
         visibility: hidden;
-        color: #fc5454; }
+        color: #fc5454;
+        z-index: 1; }
       section#splash div.splash-container div.splash-banner h1.drag-target-A {
         margin: 0;
         position: absolute;
@@ -168,7 +169,8 @@ section#splash {
         font-size: 3em;
         font-size: 5.5vw;
         visibility: hidden;
-        color: #4ecdc4; }
+        color: #4ecdc4;
+        z-index: 1; }
       section#splash div.splash-container div.splash-banner h1.drag-target-C {
         margin: 0;
         position: absolute;
@@ -179,7 +181,8 @@ section#splash {
         font-size: 3em;
         font-size: 5.5vw;
         visibility: hidden;
-        color: #c9d41b; }
+        color: #c9d41b;
+        z-index: 1; }
       section#splash div.splash-container div.splash-banner h1.drag-target-K {
         margin: 0;
         position: absolute;
@@ -190,7 +193,8 @@ section#splash {
         font-size: 3em;
         font-size: 5.5vw;
         visibility: hidden;
-        color: #ffe86b; }
+        color: #ffe86b;
+        z-index: 1; }
       section#splash div.splash-container div.splash-banner h2.subtitle {
         margin: 0;
         line-height: 1.2em;

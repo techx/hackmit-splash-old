@@ -4,6 +4,7 @@ var dragA = false;
 var dragC = false;
 var dragK = false;
 var firstClick = false;
+var COMPLETION_LENIENCY = 2;
 var startX; 
 var startY;
 
@@ -165,6 +166,40 @@ function clearDrag(){
   dragA = false;
   dragC = false;
   dragK = false;
+  var hComplete = false;
+  var aComplete = false;
+  var cComplete = false;
+  var kComplete = false;
+
+  hTopOffset = $('.drag-target-H').offset().top-parseInt($('.splash-title').css('height'))-$('.splash-title').offset().top;
+  hLeftOffset = $('.drag-target-H').offset().left-$('.splash-title').offset().left;
+  var H_COMPLETE_OFFSET = [2.0455, -.2988];
+  if (Math.abs(hTopOffset-H_COMPLETE_OFFSET[0])<COMPLETION_LENIENCY && Math.abs(hLeftOffset-H_COMPLETE_OFFSET[1])<COMPLETION_LENIENCY) {
+    hComplete = true;
+  } 
+
+  aTopOffset = $('.drag-target-A').offset().top-parseInt($('.splash-title').css('height'))-$('.splash-title').offset().top;
+  aLeftOffset = $('.drag-target-A').offset().left-$('.splash-title').offset().left;
+  var A_COMPLETE_OFFSET = [-15.077, 47.625];
+  if (Math.abs(aTopOffset-A_COMPLETE_OFFSET[0])<COMPLETION_LENIENCY && Math.abs(aLeftOffset-A_COMPLETE_OFFSET[1])<COMPLETION_LENIENCY) {
+    aComplete = true;
+  } 
+  cTopOffset = $('.drag-target-C').offset().top-parseInt($('.splash-title').css('height'))-$('.splash-title').offset().top;
+  cLeftOffset = $('.drag-target-C').offset().left-$('.splash-title').offset().left;
+  var C_COMPLETE_OFFSET = [-31.590, 93.670];
+  if (Math.abs(cTopOffset-C_COMPLETE_OFFSET[0])<COMPLETION_LENIENCY && Math.abs(cLeftOffset-C_COMPLETE_OFFSET[1])<COMPLETION_LENIENCY) {
+    cComplete = true;
+  } 
+  kTopOffset = $('.drag-target-K').offset().top-parseInt($('.splash-title').css('height'))-$('.splash-title').offset().top;
+  kLeftOffset = $('.drag-target-K').offset().left-$('.splash-title').offset().left;
+  var K_COMPLETE_OFFSET = [-47.591, 138.776];
+  if (Math.abs(kTopOffset-K_COMPLETE_OFFSET[0])<COMPLETION_LENIENCY && Math.abs(kLeftOffset-K_COMPLETE_OFFSET[1])<COMPLETION_LENIENCY) {
+    kComplete = true;
+  } 
+
+  if(hComplete && aComplete && cComplete && kComplete) {
+    deleteLetters();
+  }
 }
 
 function onDrag(event){
@@ -226,4 +261,8 @@ function resizeLetters() {
   $('.drag-target-C').css('left', svgPosition.left+svgDim/4+'px');
   $('.drag-target-K').css('top', svgPosition.top +2.5*svgDim/4+'px');
   $('.drag-target-K').css('left', svgPosition.left+2.5*svgDim/4+'px');
+}
+
+function deleteLetters() {
+  
 }
