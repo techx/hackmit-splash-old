@@ -5,7 +5,7 @@ var dragC = false;
 var dragK = false;
 var firstClick = false;
 var COMPLETION_LENIENCY = 2;
-var startX; 
+var startX;
 var startY;
 
 $(document).ready(function() {
@@ -117,7 +117,7 @@ $(document).ready(function() {
     deltaLocation = $('#splash').outerHeight() - navbarHeight;
   }
 
-  $('.splash-img').attr('draggable', 'false'); 
+  $('.splash-img').attr('draggable', 'false');
 
   addResizeListener();
 });
@@ -139,7 +139,7 @@ function hideAnswers() {
 
 function letterClicked(event, letter){
   startX = event.pageX;
-  startY = event.pageY; 
+  startY = event.pageY;
   if (!firstClick) {
     $('.drag-target-H').css('visibility', 'visible');
     $('.drag-target-A').css('visibility', 'visible');
@@ -171,31 +171,28 @@ function clearDrag(){
   var cComplete = false;
   var kComplete = false;
 
-  hTopOffset = $('.drag-target-H').offset().top-parseInt($('.splash-title').css('height'))-$('.splash-title').offset().top;
-  hLeftOffset = $('.drag-target-H').offset().left-$('.splash-title').offset().left;
-  var H_COMPLETE_OFFSET = [2.0455, -.2988];
-  if (Math.abs(hTopOffset-H_COMPLETE_OFFSET[0])<COMPLETION_LENIENCY && Math.abs(hLeftOffset-H_COMPLETE_OFFSET[1])<COMPLETION_LENIENCY) {
+  hTopOffset = $('.drag-target-H').offset().top-$('.splash-title.H').offset().top;
+  hLeftOffset = $('.drag-target-H').offset().left-$('.splash-title.H').offset().left;
+  var COMPLETE_OFFSET = [.8, .8];
+  if (Math.abs(hTopOffset-COMPLETE_OFFSET[0])<COMPLETION_LENIENCY && Math.abs(hLeftOffset-COMPLETE_OFFSET[1])<COMPLETION_LENIENCY) {
     hComplete = true;
-  } 
+  }
 
-  aTopOffset = $('.drag-target-A').offset().top-parseInt($('.splash-title').css('height'))-$('.splash-title').offset().top;
-  aLeftOffset = $('.drag-target-A').offset().left-$('.splash-title').offset().left;
-  var A_COMPLETE_OFFSET = [-15.077, 47.625];
-  if (Math.abs(aTopOffset-A_COMPLETE_OFFSET[0])<COMPLETION_LENIENCY && Math.abs(aLeftOffset-A_COMPLETE_OFFSET[1])<COMPLETION_LENIENCY) {
+  aTopOffset = $('.drag-target-A').offset().top-$('.splash-title.A').offset().top;
+  aLeftOffset = $('.drag-target-A').offset().left-$('.splash-title.A').offset().left;
+  if (Math.abs(aTopOffset-COMPLETE_OFFSET[0])<COMPLETION_LENIENCY && Math.abs(aLeftOffset-COMPLETE_OFFSET[1])<COMPLETION_LENIENCY) {
     aComplete = true;
-  } 
-  cTopOffset = $('.drag-target-C').offset().top-parseInt($('.splash-title').css('height'))-$('.splash-title').offset().top;
-  cLeftOffset = $('.drag-target-C').offset().left-$('.splash-title').offset().left;
-  var C_COMPLETE_OFFSET = [-31.590, 93.670];
-  if (Math.abs(cTopOffset-C_COMPLETE_OFFSET[0])<COMPLETION_LENIENCY && Math.abs(cLeftOffset-C_COMPLETE_OFFSET[1])<COMPLETION_LENIENCY) {
+  }
+  cTopOffset = $('.drag-target-C').offset().top-$('.splash-title.C').offset().top;
+  cLeftOffset = $('.drag-target-C').offset().left-$('.splash-title.C').offset().left;
+  if (Math.abs(cTopOffset-COMPLETE_OFFSET[0])<COMPLETION_LENIENCY && Math.abs(cLeftOffset-COMPLETE_OFFSET[1])<COMPLETION_LENIENCY) {
     cComplete = true;
-  } 
-  kTopOffset = $('.drag-target-K').offset().top-parseInt($('.splash-title').css('height'))-$('.splash-title').offset().top;
-  kLeftOffset = $('.drag-target-K').offset().left-$('.splash-title').offset().left;
-  var K_COMPLETE_OFFSET = [-47.591, 138.776];
-  if (Math.abs(kTopOffset-K_COMPLETE_OFFSET[0])<COMPLETION_LENIENCY && Math.abs(kLeftOffset-K_COMPLETE_OFFSET[1])<COMPLETION_LENIENCY) {
+  }
+  kTopOffset = $('.drag-target-K').offset().top-$('.splash-title.K').offset().top;
+  kLeftOffset = $('.drag-target-K').offset().left-$('.splash-title.K').offset().left;
+  if (Math.abs(kTopOffset-COMPLETE_OFFSET[0])<COMPLETION_LENIENCY && Math.abs(kLeftOffset-COMPLETE_OFFSET[1])<COMPLETION_LENIENCY) {
     kComplete = true;
-  } 
+  }
   console.log([hComplete, aComplete, cComplete, kComplete]);
   if(hComplete && aComplete && cComplete && kComplete) {
     deleteLetters();
@@ -207,7 +204,7 @@ function onDrag(event){
   var currentY = event.pageY;
   var changeX = startX - currentX;
   var changeY = startY - currentY;
-  if (dragH) { 
+  if (dragH) {
     var top = parseInt($('.drag-target-H').css('top'));
     $('.drag-target-H').css('top', top-changeY+'px');
     var left = parseInt($('.drag-target-H').css('left'));
