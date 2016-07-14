@@ -266,10 +266,10 @@ function resizeLetters() {
 
 function deleteLetters() {
   $('.drag-target-H').addClass('animated infinite flash');
-  $('.drag-target-A').addClass('animated infinite bounceOut');
-  $('.drag-target-C').addClass('animated fadeOut');
+  $('.drag-target-A').addClass('animated infinite shake');
+  $('.drag-target-C').addClass('animated infinite bounce');
   $('.splash-title.C').text('X');
-  $('.drag-target-K').addClass('animated infinite flipOutX');
+  $('.drag-target-K').addClass('animated infinite flipInY');
   $('.splash-title.end').text('CD');
   $('.large.subtitle').css('font-family', 'xkcd');
   $('.large.subtitle').text('go.hackmit.org/');
