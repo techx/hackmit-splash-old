@@ -271,13 +271,8 @@ function deleteLetters() {
   $('.splash-title.C').text('X');
   $('.drag-target-K').addClass('animated infinite flipOutX');
   $('.splash-title.end').text('CD');
-  $('.splash-img').attr('pointer-events', 'auto');
-  $('.splash-img').attr('draggable', 'false');
-  var text = '.com';
-  dragImage = createGhostImage(text);
-  $('.splash-img').addEventListener('dragstart', function(event) {
-    event.dataTransfer.setDragImage()
-  });
+  $('.large.subtitle').css('font-family', 'xkcd');
+  $('.large.subtitle').text('go.hackmit.org/');
 }
 
 function createGhostImage(text) {

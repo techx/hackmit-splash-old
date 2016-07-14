@@ -1,5 +1,10 @@
 @import '_constants';
 
+@font-face {
+    font-family: 'xkcdFont';
+    src: url('/assets/xkcd.otf'); /* IE9 Compat Modes */
+}
+
 html, body {
   height: 100%;
   width: 100%;
