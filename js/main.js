@@ -5,7 +5,7 @@ var dragC = false;
 var dragK = false;
 var firstClick = false;
 var complete = false;
-var COMPLETION_LENIENCY = 2;
+var COMPLETION_LENIENCY = 5;
 var startX;
 var startY;
 
