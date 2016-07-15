@@ -77,11 +77,14 @@ $(document).ready(function() {
 
   var resizeTimeout;
   var resizeNavbarTimeout;
+  var resizeLettersTimeout;
   $(window).on('resize', function() {
     clearTimeout(resizeTimeout);
     clearTimeout(resizeNavbarTimeout);
+    clearTimeout(resizeLettersTimeout);
     resizeTimeout = setTimeout(hideAnswers(), 200);
     resizeNavbarTimeout = setTimeout(recalculateNavbarPosition(), 250);
+    resizeLettersTimeout = setTimeout(resizeLetters(), 200);
   });
 
   /* Following Nav Bar */
@@ -119,8 +122,9 @@ $(document).ready(function() {
   }
 
   $('.splash-img').attr('draggable', 'false');
-
-  addResizeListener();
+  window.onload = function(){
+    resizeLetters();
+  };
 });
 
 //run on window load and resize
@@ -241,17 +245,8 @@ function onDrag(event){
   }
 }
 
-function addResizeListener() {
-  window.onload = function() {
-    resizeLetters(); //initial call
-  };
-  window.addEventListener('resize', function() {
-    resizeLetters();
-  });
-}
-
 function resizeLetters() {
-  if(!complete) {
+  if (!complete) {
     var svgDim = parseInt($('.splash-img').css('height'));
     var svgPosition = $('.splash-img').position();
     $('.drag-target-H').css('top', svgPosition.top +.9*svgDim/4+'px');
@@ -262,6 +257,17 @@ function resizeLetters() {
     $('.drag-target-C').css('left', svgPosition.left+svgDim/4+'px');
     $('.drag-target-K').css('top', svgPosition.top +2.5*svgDim/4+'px');
     $('.drag-target-K').css('left', svgPosition.left+2.5*svgDim/4+'px');
+  } else {
+     var hOffset = $('.splash-title.H').offset();
+     var aOffset = $('.splash-title.A').offset();
+     var cOffset = $('.splash-title.C').offset();
+     var kOffset = $('.splash-title.K').offset();
+     $('.drag-target-H').offset({top: hOffset.top, left: hOffset.left});  
+     $('.drag-target-A').offset({top: aOffset.top, left: aOffset.left});  
+     $('.drag-target-C').offset({top: cOffset.top, left: cOffset.left});  
+     $('.drag-target-K').offset({top: kOffset.top, left: kOffset.left});  
+     console.log($('.splash-title.H').offset().top);
+     console.log($('.drag-target-H').offset().top)
   }
 }
 
