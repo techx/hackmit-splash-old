@@ -194,7 +194,6 @@ function clearDrag(){
   if (Math.abs(kTopOffset-COMPLETE_OFFSET[0])<COMPLETION_LENIENCY && Math.abs(kLeftOffset-COMPLETE_OFFSET[1])<COMPLETION_LENIENCY) {
     kComplete = true;
   }
-  console.log([hComplete, aComplete, cComplete, kComplete]);
   if(hComplete && aComplete && cComplete && kComplete) {
     complete = true;
     deleteLetters();
