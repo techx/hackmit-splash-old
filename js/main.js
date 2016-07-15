@@ -272,14 +272,17 @@ function deleteLetters() {
   $('.drag-target-A').addClass('animated infinite shake');
   $('.drag-target-C').addClass('animated infinite bounce');
   var cOffset = $('.splash-title.C').offset();
-  $('.drag-target-C').offset({top: cOffset.top, left: cOffset.left});   
+  $('.drag-target-C').offset({top: cOffset.top, left: cOffset.left});  
   $('.splash-title.C').text('X');
+  $('.splash-title.C').addClass('animated fadeIn');
   var kOffset = $('.splash-title.K').offset();
   $('.drag-target-K').offset({top: kOffset.top, left: kOffset.left});    
   $('.drag-target-K').addClass('animated infinite flipInY');
   $('.splash-title.end').text('CD');
+  $('.splash-title.end').addClass('animated fadeIn');
   $('.large.subtitle').css('font-family', 'xkcd');
   $('.large.subtitle').text('.com');
+  $('.large.subtitle').addClass('animated fadeIn');
 }
 
 function createGhostImage(text) {
