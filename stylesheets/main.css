@@ -1,7 +1,6 @@
 @font-face {
-  font-family: 'xkcdFont';
-  src: url("/assets/xkcd.otf");
-  /* IE9 Compat Modes */ }
+  font-family: 'xkcd';
+  src: url("/assets/xkcd.otf") format("opentype"); }
 html, body {
   height: 100%;
   width: 100%;

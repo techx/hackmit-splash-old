@@ -265,14 +265,22 @@ function resizeLetters() {
 }
 
 function deleteLetters() {
+  var hOffset = $('.splash-title.H').offset();
+  $('.drag-target-H').offset({top: hOffset.top, left: hOffset.left});  
   $('.drag-target-H').addClass('animated infinite flash');
+  var aOffset = $('.splash-title.A').offset();
+  $('.drag-target-A').offset({top: aOffset.top, left: aOffset.left});  
   $('.drag-target-A').addClass('animated infinite shake');
   $('.drag-target-C').addClass('animated infinite bounce');
+  var cOffset = $('.splash-title.C').offset();
+  $('.drag-target-C').offset({top: cOffset.top, left: cOffset.left});   
   $('.splash-title.C').text('X');
+  var kOffset = $('.splash-title.K').offset();
+  $('.drag-target-K').offset({top: kOffset.top, left: kOffset.left});    
   $('.drag-target-K').addClass('animated infinite flipInY');
   $('.splash-title.end').text('CD');
   $('.large.subtitle').css('font-family', 'xkcd');
-  $('.large.subtitle').text('go.hackmit.org/');
+  $('.large.subtitle').text('.com');
 }
 
 function createGhostImage(text) {
