@@ -1,7 +1,7 @@
 @import '_constants';
 
 @font-face {
-    font-family: 'xkcdFont';
+    font-family: 'xkcd';
     src: url('/assets/xkcd.otf'); /* IE9 Compat Modes */
 }
 
@@ -223,7 +223,7 @@ section#splash {
         font-size: 3em;  // fallback
         font-size: 5.5vw;
         visibility: hidden;
-        color:#fc4f4f;
+        color: #fc4f4f;
         z-index: 1;
       }
 
@@ -237,7 +237,7 @@ section#splash {
         font-size: 3em;  // fallback
         font-size: 5.5vw;
         visibility: hidden;
-        color:#4ecdc4;
+        color: #4dcbc3;
         z-index: 1;
       }
 
@@ -251,7 +251,7 @@ section#splash {
         font-size: 3em;  // fallback
         font-size: 5.5vw;
         visibility: hidden;
-        color:#c9d41b;
+        color: #c6d118;
         z-index: 1;
       }
 
@@ -265,7 +265,7 @@ section#splash {
         font-size: 3em;  // fallback
         font-size: 5.5vw;
         visibility: hidden;
-        color:#ffe86b;
+        color:#FCE568;
         z-index: 1;
       }
 

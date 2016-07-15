@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'xkcdFont';
+  font-family: 'xkcd';
   src: url("/assets/xkcd.otf");
   /* IE9 Compat Modes */ }
 html, body {
@@ -161,7 +161,7 @@ section#splash {
         font-size: 3em;
         font-size: 5.5vw;
         visibility: hidden;
-        color: #fc5454;
+        color: #fc4f4f;
         z-index: 1; }
       section#splash div.splash-container div.splash-banner h1.drag-target-A {
         margin: 0;
@@ -173,7 +173,7 @@ section#splash {
         font-size: 3em;
         font-size: 5.5vw;
         visibility: hidden;
-        color: #4ecdc4;
+        color: #4dcbc3;
         z-index: 1; }
       section#splash div.splash-container div.splash-banner h1.drag-target-C {
         margin: 0;
@@ -185,7 +185,7 @@ section#splash {
         font-size: 3em;
         font-size: 5.5vw;
         visibility: hidden;
-        color: #c9d41b;
+        color: #c6d118;
         z-index: 1; }
       section#splash div.splash-container div.splash-banner h1.drag-target-K {
         margin: 0;
@@ -197,7 +197,7 @@ section#splash {
         font-size: 3em;
         font-size: 5.5vw;
         visibility: hidden;
-        color: #ffe86b;
+        color: #FCE568;
         z-index: 1; }
       section#splash div.splash-container div.splash-banner h2.subtitle {
         margin: 0;

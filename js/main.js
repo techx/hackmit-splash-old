@@ -251,16 +251,18 @@ function addResizeListener() {
 }
 
 function resizeLetters() {
-  var svgDim = parseInt($('.splash-img').css('height'));
-  var svgPosition = $('.splash-img').position();
-  $('.drag-target-H').css('top', svgPosition.top +svgDim/4+'px');
-  $('.drag-target-H').css('left', svgPosition.left+svgDim/4+'px');
-  $('.drag-target-A').css('top', svgPosition.top +svgDim/4+'px');
-  $('.drag-target-A').css('left', svgPosition.left+2.5*svgDim/4+'px');
-  $('.drag-target-C').css('top', svgPosition.top +2.5*svgDim/4+'px');
-  $('.drag-target-C').css('left', svgPosition.left+svgDim/4+'px');
-  $('.drag-target-K').css('top', svgPosition.top +2.5*svgDim/4+'px');
-  $('.drag-target-K').css('left', svgPosition.left+2.5*svgDim/4+'px');
+  if(!complete) {
+    var svgDim = parseInt($('.splash-img').css('height'));
+    var svgPosition = $('.splash-img').position();
+    $('.drag-target-H').css('top', svgPosition.top +.9*svgDim/4+'px');
+    $('.drag-target-H').css('left', svgPosition.left+svgDim/4+'px');
+    $('.drag-target-A').css('top', svgPosition.top +svgDim/4+'px');
+    $('.drag-target-A').css('left', svgPosition.left+2.5*svgDim/4+'px');
+    $('.drag-target-C').css('top', svgPosition.top +2.5*svgDim/4+'px');
+    $('.drag-target-C').css('left', svgPosition.left+svgDim/4+'px');
+    $('.drag-target-K').css('top', svgPosition.top +2.5*svgDim/4+'px');
+    $('.drag-target-K').css('left', svgPosition.left+2.5*svgDim/4+'px');
+  }
 }
 
 function deleteLetters() {
