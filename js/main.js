@@ -71,6 +71,7 @@ $(document).ready(function() {
     }
   });
 
+  //code for hack
   var resizeTimeout;
   var resizeNavbarTimeout;
   var resizeLettersTimeout;
@@ -84,7 +85,12 @@ $(document).ready(function() {
     resizeLettersTimeout = setTimeout(resizeLetters(), 200);
   });
 
-  /* Following Nav Bar */
+  $('.splash-img').attr('draggable', 'false');
+    window.onload = function(){
+      resizeLetters();
+    };
+  });
+
   var scrollTimeout;
 
   $(window).on('scroll', function() {
@@ -120,12 +126,6 @@ $(document).ready(function() {
     navbarHeight = $('#navbar').outerHeight();
     deltaLocation = $('#splash').outerHeight() - navbarHeight;
   }
-
-  $('.splash-img').attr('draggable', 'false');
-    window.onload = function(){
-      resizeLetters();
-    };
-  });
 
   //run on window load and resize
   function hideAnswers() {
@@ -163,44 +163,6 @@ $(document).ready(function() {
         break;
       case "K":
         dragK = true;
-    }
-  }
-
-  function clearDrag(){
-    dragH = false;
-    dragA = false;
-    dragC = false;
-    dragK = false;
-    var hComplete = false;
-    var aComplete = false;
-    var cComplete = false;
-    var kComplete = false;
-
-    hTopOffset = $('.drag-target-H').offset().top-$('.splash-title.H').offset().top;
-    hLeftOffset = $('.drag-target-H').offset().left-$('.splash-title.H').offset().left;
-    var COMPLETE_OFFSET = [.8, .8];
-    if (Math.abs(hTopOffset-COMPLETE_OFFSET[0])<COMPLETION_LENIENCY && Math.abs(hLeftOffset-COMPLETE_OFFSET[1])<COMPLETION_LENIENCY) {
-      hComplete = true;
-    }
-
-    aTopOffset = $('.drag-target-A').offset().top-$('.splash-title.A').offset().top;
-    aLeftOffset = $('.drag-target-A').offset().left-$('.splash-title.A').offset().left;
-    if (Math.abs(aTopOffset-COMPLETE_OFFSET[0])<COMPLETION_LENIENCY && Math.abs(aLeftOffset-COMPLETE_OFFSET[1])<COMPLETION_LENIENCY) {
-      aComplete = true;
-    }
-    cTopOffset = $('.drag-target-C').offset().top-$('.splash-title.C').offset().top;
-    cLeftOffset = $('.drag-target-C').offset().left-$('.splash-title.C').offset().left;
-    if (Math.abs(cTopOffset-COMPLETE_OFFSET[0])<COMPLETION_LENIENCY && Math.abs(cLeftOffset-COMPLETE_OFFSET[1])<COMPLETION_LENIENCY) {
-      cComplete = true;
-    }
-    kTopOffset = $('.drag-target-K').offset().top-$('.splash-title.K').offset().top;
-    kLeftOffset = $('.drag-target-K').offset().left-$('.splash-title.K').offset().left;
-    if (Math.abs(kTopOffset-COMPLETE_OFFSET[0])<COMPLETION_LENIENCY && Math.abs(kLeftOffset-COMPLETE_OFFSET[1])<COMPLETION_LENIENCY) {
-      kComplete = true;
-    }
-    if(hComplete && aComplete && cComplete && kComplete) {
-      complete = true;
-      deleteLetters();
     }
   }
 
@@ -242,6 +204,44 @@ $(document).ready(function() {
         startX = currentX;
         startY = currentY;
       }
+    }
+  }
+
+  function clearDrag(){
+    dragH = false;
+    dragA = false;
+    dragC = false;
+    dragK = false;
+    var hComplete = false;
+    var aComplete = false;
+    var cComplete = false;
+    var kComplete = false;
+
+    hTopOffset = $('.drag-target-H').offset().top-$('.splash-title.H').offset().top;
+    hLeftOffset = $('.drag-target-H').offset().left-$('.splash-title.H').offset().left;
+    var COMPLETE_OFFSET = [.8, .8];
+    if (Math.abs(hTopOffset-COMPLETE_OFFSET[0])<COMPLETION_LENIENCY && Math.abs(hLeftOffset-COMPLETE_OFFSET[1])<COMPLETION_LENIENCY) {
+      hComplete = true;
+    }
+
+    aTopOffset = $('.drag-target-A').offset().top-$('.splash-title.A').offset().top;
+    aLeftOffset = $('.drag-target-A').offset().left-$('.splash-title.A').offset().left;
+    if (Math.abs(aTopOffset-COMPLETE_OFFSET[0])<COMPLETION_LENIENCY && Math.abs(aLeftOffset-COMPLETE_OFFSET[1])<COMPLETION_LENIENCY) {
+      aComplete = true;
+    }
+    cTopOffset = $('.drag-target-C').offset().top-$('.splash-title.C').offset().top;
+    cLeftOffset = $('.drag-target-C').offset().left-$('.splash-title.C').offset().left;
+    if (Math.abs(cTopOffset-COMPLETE_OFFSET[0])<COMPLETION_LENIENCY && Math.abs(cLeftOffset-COMPLETE_OFFSET[1])<COMPLETION_LENIENCY) {
+      cComplete = true;
+    }
+    kTopOffset = $('.drag-target-K').offset().top-$('.splash-title.K').offset().top;
+    kLeftOffset = $('.drag-target-K').offset().left-$('.splash-title.K').offset().left;
+    if (Math.abs(kTopOffset-COMPLETE_OFFSET[0])<COMPLETION_LENIENCY && Math.abs(kLeftOffset-COMPLETE_OFFSET[1])<COMPLETION_LENIENCY) {
+      kComplete = true;
+    }
+    if(hComplete && aComplete && cComplete && kComplete) {
+      complete = true;
+      deleteLetters();
     }
   }
 
