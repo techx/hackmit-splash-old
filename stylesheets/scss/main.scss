@@ -6,7 +6,7 @@ html, body {
   padding: 0;
   margin: 0;
   background-color: $white;
-  font-size: 0.85em;
+  font-size: 0.9em;
 
   &.foolsday *:not(.icon){
     font-family: "Comic Sans MS", cursive, sans-serif !important;
@@ -263,6 +263,7 @@ section#splash {
       color: $white;
       font-weight: bold;
       justify-content: center;
+      text-transform: uppercase;
 
       &.wide {
         width: 9em;
@@ -278,6 +279,11 @@ section#splash {
       color: $white;
       background: $black;
       border-bottom: 3px solid $turquoise;
+    }
+    #goto-sponsors.item:hover {
+      color: $white;
+      background: $black;
+      border-bottom: 3px solid $yellow;
     }
     #click-reg-now.item {
       margin: 4px;
@@ -350,6 +356,7 @@ section#about{
     font-size: 2em;
     text-align: center;
     margin: 0.8em 0.6em;
+    opacity: 0.75;
   }
 
   .icon:hover {
