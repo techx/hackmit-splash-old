@@ -11,7 +11,7 @@ html, body {
   padding: 0;
   margin: 0;
   background-color: $white;
-  font-size: 0.85em;
+  font-size: 0.9em;
 
   &.foolsday *:not(.icon){
     font-family: "Comic Sans MS", cursive, sans-serif !important;
@@ -46,7 +46,10 @@ body {
 
 .lato {
   font-family: $lato;
-  font-weight: 600;
+  font-weight: 300;
+}
+.lato b{
+  font-weight: 400;
 }
 
 .hidden {
@@ -311,14 +314,15 @@ section#splash {
   left: 0;
   width: 100%;
   z-index: 101;
+
   .menu {
     background-color: $black;
     font-family: $montserrat;
     text-transform: uppercase;
     font-size: 1em;
-    text-align: center;
     border: 0;
     border-radius: 0;
+    justify-content: center;
 
 
     .item {
@@ -328,6 +332,8 @@ section#splash {
       border-radius: 0;
       color: $white;
       font-weight: bold;
+      justify-content: center;
+      text-transform: uppercase;
 
       &.wide {
         width: 9em;
@@ -343,6 +349,11 @@ section#splash {
       color: $white;
       background: $black;
       border-bottom: 3px solid $turquoise;
+    }
+    #goto-sponsors.item:hover {
+      color: $white;
+      background: $black;
+      border-bottom: 3px solid $yellow;
     }
     #click-reg-now.item {
       margin: 4px;
@@ -414,7 +425,8 @@ section#about{
   .icon {
     font-size: 2em;
     text-align: center;
-    margin: 0.8em 1em;
+    margin: 0.8em 0.6em;
+    opacity: 0.75;
   }
 
   .icon:hover {

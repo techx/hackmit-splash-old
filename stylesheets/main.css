@@ -8,7 +8,7 @@ html, body {
   padding: 0;
   margin: 0;
   background-color: #ffffff;
-  font-size: 0.85em; }
+  font-size: 0.9em; }
   html.foolsday *:not(.icon), body.foolsday *:not(.icon) {
     font-family: "Comic Sans MS", cursive, sans-serif !important; }
   html section, body section {
@@ -31,7 +31,10 @@ body {
 
 .lato {
   font-family: "Lato", sans-serif;
-  font-weight: 600; }
+  font-weight: 300; }
+
+.lato b {
+  font-weight: 400; }
 
 .hidden {
   display: none; }
@@ -234,16 +237,18 @@ section#splash {
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     font-size: 1em;
-    text-align: center;
     border: 0;
-    border-radius: 0; }
+    border-radius: 0;
+    justify-content: center; }
     #navbar .menu .item {
       width: 8em;
       padding-top: 1.2em;
       border-bottom: 4px solid transparent;
       border-radius: 0;
       color: #ffffff;
-      font-weight: bold; }
+      font-weight: bold;
+      justify-content: center;
+      text-transform: uppercase; }
       #navbar .menu .item.wide {
         width: 9em; }
     #navbar .menu #goto-about.item:hover {
@@ -254,6 +259,10 @@ section#splash {
       color: #ffffff;
       background: #0b3b4b;
       border-bottom: 3px solid #4ecdc4; }
+    #navbar .menu #goto-sponsors.item:hover {
+      color: #ffffff;
+      background: #0b3b4b;
+      border-bottom: 3px solid #ffe86b; }
     #navbar .menu #click-reg-now.item {
       margin: 4px; }
     #navbar .menu #click-reg-now.item:hover {
@@ -305,7 +314,8 @@ section#about {
 #social .icon {
   font-size: 2em;
   text-align: center;
-  margin: 0.8em 1em; }
+  margin: 0.8em 0.6em;
+  opacity: 0.75; }
 #social .icon:hover {
   text-shadow: 0 0 3px #4ecdc4;
   cursor: pointer; }
