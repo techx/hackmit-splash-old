@@ -14,17 +14,17 @@
 <g id="color">
 	<g>
 		<polygon class="st0" points="314.6,100 314.6,223.7 283.6,223.7 283.6,100 113.6,100 113.6,471.1 283.6,471.1 283.6,347.4 
-			314.6,347.4 314.6,471.1 484.7,471.1 484.7,100 		" onmousedown="parent.letterClicked(event, 'H')" onmousemove="parent.onDrag(event)" onmouseup="parent.clearDrag()" onmouseleave="parent.clearDrag()"/>
+			314.6,347.4 314.6,471.1 484.7,471.1 484.7,100 		" onmousedown="parent.letterClicked(evt, 'H')" onmousemove="parent.onDrag(evt)" onmouseup="parent.clearDrag()" onmouseleave="parent.clearDrag()"/>
 	</g>
 	<g>
-		<polygon class="st1" points="515.7,471.1 701.2,100 886.7,471.1 		" onmousedown="parent.letterClicked(event, 'A')" onmousemove="parent.onDrag(event)" onmouseup="parent.clearDrag()" onmouseleave="parent.clearDrag()"/>
+		<polygon class="st1" points="515.7,471.1 701.2,100 886.7,471.1 		" onmousedown="parent.letterClicked(evt, 'A')" onmousemove="parent.onDrag(evt)" onmouseup="parent.clearDrag()" onmouseleave="parent.clearDrag()"/>
 	</g>
 	<g>
-		<polygon class="st2" points="515.3,884.5 515.3,513.5 886.4,513.5 778.2,699 886.4,884.5 		" onmousedown="parent.letterClicked(event, 'K')" onmousemove="parent.onDrag(event)" onmouseup="parent.clearDrag()" onmouseleave="parent.clearDrag()"/>
+		<polygon class="st2" points="515.3,884.5 515.3,513.5 886.4,513.5 778.2,699 886.4,884.5 		" onmousedown="parent.letterClicked(evt, 'K')" onmousemove="parent.onDrag(evt)" onmouseup="parent.clearDrag()" onmouseleave="parent.clearDrag()"/>
 	</g>
 	<g>
 		<path class="st3" d="M407.1,699l72.6-114.3c-36.2-52.4-96.8-86.7-165.4-86.7c-111,0-201,89.9-201,201s89.9,201,201,201
-			c68.6,0,129.1-34.3,165.4-86.7L407.1,699z" onmousedown="parent.letterClicked(event, 'C')" onmousemove="parent.onDrag(event)" onmouseup="parent.clearDrag()" onmouseleave="parent.clearDrag()"/>
+			c68.6,0,129.1-34.3,165.4-86.7L407.1,699z" onmousedown="parent.letterClicked(evt, 'C')" onmousemove="parent.onDrag(evt)" onmouseup="parent.clearDrag()" onmouseleave="parent.clearDrag()"/>
 	</g>
 </g>
 <g id="inner_shadow">
