@@ -371,7 +371,7 @@ section#reg-now {
     section#reg-now .reg-now-form-cont .reg-blurb {
       padding: 20px 40px; }
     section#reg-now .reg-now-form-cont .reg-now-form {
-      margin-top: 2em; }
+      margin-top: 0; }
       section#reg-now .reg-now-form-cont .reg-now-form .ui.button {
         background-color: #0b3b4b;
         color: #ffffff;
