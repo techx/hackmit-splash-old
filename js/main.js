@@ -105,9 +105,8 @@ $(document).ready(function() {
   var navbarHeight;
   var deltaLocation;
 
-  recalculateNavbarPosition();
-
   function checkAndMoveNavbarPosition() {
+    recalculateNavbarPosition();
     if (!isFixed && $(window).scrollTop() > deltaLocation) {
       $('#navbar').stop(true).hide();
       $('#navbar').addClass('fixed');
