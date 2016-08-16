@@ -19,7 +19,7 @@ $(document).ready(function() {
   $('#main').transition('fade in', 1500);
 
   var $bodytag = $('html, body');
-  var $tags = $('#goto-about, #goto-faq, #goto-reg-now, #goto-sponsors');
+  var $tags = $('#goto-about, #goto-faq, #goto-reg-now');
 
   $tags.click(function(e) {
     var elementName = e.target.id.substr(5);
