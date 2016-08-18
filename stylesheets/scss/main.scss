@@ -400,20 +400,6 @@ section#speakers {
   }
 }
 
-section#sponsors {
-  background-color: $white;
-  text-align: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
-
-  p {
-    color: $black;
-    font-size: 1.4em;
-    padding: 16px;
-    margin: 0;
-  }
-}
-
 
 img#techx {
   width: 100px;
@@ -558,20 +544,27 @@ section#reg-now {
 	}
 }
 
-/** Final stuff **/
+section#sponsors {
+  background-color: $white;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
 
-
-section#sponsor {
-  background: white;
-  color: $green;
-
-  img {
-    padding: 10px 10px;
+  .sponsors {
+    background-color: $white;
   }
 
-  #sponsor-email {
-    color: $green;
-    text-decoration: underline;
+  p {
+    color: $black;
+    font-size: 1.4em;
+    padding: 16px;
+    margin: 0;
+  }
+
+  img {
+    opacity: 0.75;
+    padding: 1.5em;
+    vertical-align: middle;
   }
 
   .tier {
@@ -582,27 +575,33 @@ section#sponsor {
     text-decoration: none;
   }
 
-  img {
-    width: 100%;
-    display: inline-block;
-    vertical-align: middle;
-    margin: 16px;
+  img:hover {
+    opacity: 1;
   }
 
-  .platinum img{
-    width: 44%;
+  .super-plat img{
+    max-width: 400px;
+    max-height: 150px;
+  }
+
+  .plat img{
+    max-width: 350px;
+    max-height: 200px;
   }
 
   .gold img {
-    width: 27.5%;
+    max-width: 250px;
+    max-height: 125px;
   }
 
   .silver img {
-    width: 18.5%;
+    max-width: 150px;
+    max-height: 100px;
   }
 
   .bronze img {
-    width: 14%;
+    max-width: 125px;
+    max-height: 75px;
   }
 }
 
@@ -787,28 +786,37 @@ section#sponsor {
     position: relative;
   }
 
-  section#sponsor {
+  section#sponsors {
     padding-left: 0;
     padding-right: 0;
 
     img {
-      margin: 1.5em 2em;
+      padding: 1.5em 1em;
     }
 
-    .platinum img{
-      width: 50%;
+    .super-plat img{
+      max-width: 400px;
+      max-height: 150px;
+    }
+
+    .plat img{
+      max-width: 350px;
+      max-height: 200px;
     }
 
     .gold img {
-      width: 37%;
+      max-width: 250px;
+      max-height: 125px;
     }
 
     .silver img {
-      width: 25%;
+      max-width: 150px;
+      max-height: 100px;
     }
 
     .bronze img {
-      width: 15%;
+      max-width: 125px;
+      max-height: 75px;
     }
   }
 }
@@ -879,28 +887,37 @@ section#sponsor {
     }
   }
 
-  section#sponsor {
+  section#sponsors {
     padding-left: 0;
     padding-right: 0;
 
     img {
-      margin: 1em 2em;
+      padding: 0.5em;
     }
 
-    .platinum img{
-      width: 75%;
+    .super-plat img{
+      max-width: 175px;
+      max-height: 100px;
+    }
+
+    .plat img{
+      max-width: 150px;
+      max-height: 100px;
     }
 
     .gold img {
-      width: 65%;
+      max-width: 137.5px;
+      max-height: 75px;
     }
 
     .silver img {
-      width: 45%;
+      max-width: 95px;
+      max-height: 50px;
     }
 
     .bronze img {
-      width: 25%;
+      max-width: 75px;
+      max-height: 37.5px;
     }
   }
 
@@ -976,31 +993,6 @@ section#sponsor {
       h2.title {
         font-size: 1.5em;
       }
-    }
-  }
-
-  section#sponsor {
-    padding-left: 0;
-    padding-right: 0;
-
-    img {
-      margin: 1em;
-    }
-
-    .platinum img{
-      width: 75%;
-    }
-
-    .gold img {
-      width: 65%;
-    }
-
-    .silver img {
-      width: 45%;
-    }
-
-    .bronze img {
-      width: 30%;
     }
   }
 

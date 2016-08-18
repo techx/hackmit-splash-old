@@ -293,17 +293,6 @@ section#speakers {
     padding: 16px;
     margin: 0; }
 
-section#sponsors {
-  background-color: #ffffff;
-  text-align: center;
-  padding-top: 40px;
-  padding-bottom: 40px; }
-  section#sponsors p {
-    color: #0b3b4b;
-    font-size: 1.4em;
-    padding: 16px;
-    margin: 0; }
-
 img#techx {
   width: 100px; }
 
@@ -401,32 +390,43 @@ section#reg-now {
     section#reg-now .reg-now-form-cont .reg-now-form {
       margin-top: 0; }
 
-/** Final stuff **/
-section#sponsor {
-  background: white;
-  color: #c9d41b; }
-  section#sponsor img {
-    padding: 10px 10px; }
-  section#sponsor #sponsor-email {
-    color: #c9d41b;
-    text-decoration: underline; }
-  section#sponsor .tier {
+section#sponsors {
+  background-color: #ffffff;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px; }
+  section#sponsors .sponsors {
+    background-color: #ffffff; }
+  section#sponsors p {
+    color: #0b3b4b;
+    font-size: 1.4em;
+    padding: 16px;
+    margin: 0; }
+  section#sponsors img {
+    opacity: 0.75;
+    padding: 1.5em;
+    vertical-align: middle; }
+  section#sponsors .tier {
     padding: 0 5%; }
-  section#sponsor a, section#sponsor a:visited {
+  section#sponsors a, section#sponsors a:visited {
     text-decoration: none; }
-  section#sponsor img {
-    width: 100%;
-    display: inline-block;
-    vertical-align: middle;
-    margin: 16px; }
-  section#sponsor .platinum img {
-    width: 44%; }
-  section#sponsor .gold img {
-    width: 27.5%; }
-  section#sponsor .silver img {
-    width: 18.5%; }
-  section#sponsor .bronze img {
-    width: 14%; }
+  section#sponsors img:hover {
+    opacity: 1; }
+  section#sponsors .super-plat img {
+    max-width: 400px;
+    max-height: 150px; }
+  section#sponsors .plat img {
+    max-width: 350px;
+    max-height: 200px; }
+  section#sponsors .gold img {
+    max-width: 250px;
+    max-height: 125px; }
+  section#sponsors .silver img {
+    max-width: 150px;
+    max-height: 100px; }
+  section#sponsors .bronze img {
+    max-width: 125px;
+    max-height: 75px; }
 
 #footer {
   background: #fffefa;
@@ -559,19 +559,26 @@ section#sponsor {
   #navbar.fixed {
     position: relative; }
 
-  section#sponsor {
+  section#sponsors {
     padding-left: 0;
     padding-right: 0; }
-    section#sponsor img {
-      margin: 1.5em 2em; }
-    section#sponsor .platinum img {
-      width: 50%; }
-    section#sponsor .gold img {
-      width: 37%; }
-    section#sponsor .silver img {
-      width: 25%; }
-    section#sponsor .bronze img {
-      width: 15%; } }
+    section#sponsors img {
+      padding: 1.5em 1em; }
+    section#sponsors .super-plat img {
+      max-width: 400px;
+      max-height: 150px; }
+    section#sponsors .plat img {
+      max-width: 350px;
+      max-height: 200px; }
+    section#sponsors .gold img {
+      max-width: 250px;
+      max-height: 125px; }
+    section#sponsors .silver img {
+      max-width: 150px;
+      max-height: 100px; }
+    section#sponsors .bronze img {
+      max-width: 125px;
+      max-height: 75px; } }
 @media only screen and (max-width: 480px) {
   section#splash div.splash-container div.splash-banner {
     margin-top: 0; }
@@ -613,19 +620,26 @@ section#sponsor {
     section#faq h2 {
       margin-bottom: 0; }
 
-  section#sponsor {
+  section#sponsors {
     padding-left: 0;
     padding-right: 0; }
-    section#sponsor img {
-      margin: 1em 2em; }
-    section#sponsor .platinum img {
-      width: 75%; }
-    section#sponsor .gold img {
-      width: 65%; }
-    section#sponsor .silver img {
-      width: 45%; }
-    section#sponsor .bronze img {
-      width: 25%; }
+    section#sponsors img {
+      padding: 0.5em; }
+    section#sponsors .super-plat img {
+      max-width: 175px;
+      max-height: 100px; }
+    section#sponsors .plat img {
+      max-width: 150px;
+      max-height: 100px; }
+    section#sponsors .gold img {
+      max-width: 137.5px;
+      max-height: 75px; }
+    section#sponsors .silver img {
+      max-width: 95px;
+      max-height: 50px; }
+    section#sponsors .bronze img {
+      max-width: 75px;
+      max-height: 37.5px; }
 
   section#footer #color-bars div {
     height: 32px; } }
@@ -671,20 +685,6 @@ section#sponsor {
       font-size: 1.5em; }
   section#splash div.splash-text h2.title {
     font-size: 1.5em; }
-
-  section#sponsor {
-    padding-left: 0;
-    padding-right: 0; }
-    section#sponsor img {
-      margin: 1em; }
-    section#sponsor .platinum img {
-      width: 75%; }
-    section#sponsor .gold img {
-      width: 65%; }
-    section#sponsor .silver img {
-      width: 45%; }
-    section#sponsor .bronze img {
-      width: 30%; }
 
   section#footer .icon {
     width: 20px; }

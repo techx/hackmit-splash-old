@@ -16,6 +16,8 @@ Dev
 
 Make sure to compile your scss appropriately. Something like `sass --watch /some/path/hackmit-splash/stylesheets/scss:/some/path/hackmit-splash/stylesheets` suffices.
 
+Here's a good script to convert logo images: `mogrify -trim -resize 500 -transparent white -format png assets/images/logos/*`
+
 License
 -------
 
