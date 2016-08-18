@@ -368,19 +368,52 @@ section#splash {
   z-index: 5;
 }
 
-section#sponsors {
+section#speakers {
   background-color: $orange;
   text-align: center;
   padding-top: 40px;
   padding-bottom: 40px;
 
+  .row {
+    padding: 1.5em 0;
+    background-color: lighten($orange, 9%);
+  }
+
+  .first-bio {
+    border-radius: 4px 4px 0 0;
+  }
+
+  .second-bio {
+    border-radius: 0 0 4px 4px;
+  }
+
+  img {
+    width: 160px;
+    border-radius: 80px;
+  }
+
   p {
-    color: $white;
+    color: $black;
+    font-size: 1.1em;
+    padding: 16px;
+    margin: 0;
+  }
+}
+
+section#sponsors {
+  background-color: $white;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  p {
+    color: $black;
     font-size: 1.4em;
     padding: 16px;
     margin: 0;
   }
 }
+
 
 img#techx {
   width: 100px;
@@ -462,8 +495,8 @@ section#faq {
 		background-color: lighten($turquoise, 9%);
     padding-bottom: 1rem;
   }
+
   h2 {
-    color:$white;
     text-align: left;
     margin-bottom: 1em;
   }
@@ -487,10 +520,22 @@ section#reg-now {
   background: $yellow;
   min-height: 240px;
   color: $black;
-	z-index: 4;
+	z-index: 4; 
 
-  h2 {
-    color: white;
+  p.lato {
+    font-size: 1.3em;
+  }
+
+  .ui.button {
+    background-color: $black;
+    color: $white;
+    width: auto;
+  }
+  .ui.button:hover {
+    background-color: lighten($black, 5%);
+  }
+  .ui.button:active {
+    background-color: darken($black, 5%);
   }
 
   .ui.page.grid.padded {
@@ -498,9 +543,9 @@ section#reg-now {
   }
 
 	.reg-now-form-cont {
+    background-color: $green;
 		padding: 2em 2em !important;
 		border-radius: 4px;
-		background-color: $green;
 
     .reg-blurb {
       padding: 20px 40px;
@@ -509,17 +554,6 @@ section#reg-now {
 		.reg-now-form {
 			margin-top: 0;
 
-			.ui.button {
-				background-color: $black;
-				color: $white;
-				width: auto;
-			}
-			.ui.button:hover {
-				background-color: lighten($black, 5%);
-			}
-			.ui.button:active {
-				background-color: darken($black, 5%);
-			}
 		}
 	}
 }
@@ -533,10 +567,6 @@ section#sponsor {
 
   img {
     padding: 10px 10px;
-  }
-
-  p {
-    margin-bottom: 5%;
   }
 
   #sponsor-email {
@@ -562,10 +592,6 @@ section#sponsor {
   .platinum img{
     width: 44%;
   }
-    #aqr{
-      width: 225px;
-      height:auto;
-    }
 
   .gold img {
     width: 27.5%;
@@ -573,10 +599,6 @@ section#sponsor {
 
   .silver img {
     width: 18.5%;
-  }
-
-  .bronze {
-    padding: 2% 5%;
   }
 
   .bronze img {
