@@ -350,13 +350,10 @@ section#splash {
       background: $black;
       border-bottom: 3px solid $turquoise;
     }
-    #click-reg-now.item {
-      margin: 4px;
-    }
-    #click-reg-now.item:hover {
+    #goto-reg-now.item:hover {
       color: $white;
-      background: #3d626e;
-      border-radius: 3px;
+      background: $black;
+      border-bottom: 3px solid $yellow;
     }
   }
 }
