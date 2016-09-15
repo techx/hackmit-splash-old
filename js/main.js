@@ -144,6 +144,11 @@ $(document).ready(function() {
   function letterClicked(event, letter){
     startX = event.pageX;
     startY = event.pageY;
+
+    if (event.preventDefault) {
+	    event.preventDefault();
+    }
+
     if (!firstClick) {
       $('.drag-target-H').css('visibility', 'visible');
       $('.drag-target-A').css('visibility', 'visible');
