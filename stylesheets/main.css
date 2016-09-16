@@ -275,6 +275,8 @@ section#speakers {
   text-align: center;
   padding-top: 40px;
   padding-bottom: 40px; }
+  section#speakers .speaker-name {
+    font-size: 1.2em; }
   section#speakers .row {
     padding: 1.5em 0;
     background-color: #ffca57; }
