@@ -275,33 +275,21 @@ section#speakers {
   text-align: center;
   padding-top: 40px;
   padding-bottom: 40px; }
+  section#speakers .speaker-name {
+    font-size: 1.2em; }
+  section#speakers .bio-pic {
+    width: 160px;
+    height: 160px;
+    border-radius: 80px; }
   section#speakers .row {
     padding: 1.5em 0;
     background-color: #ffca57; }
-  section#speakers .round-pic {
-    border-radius: 50%;
-    margin: 10px auto; }
-    section#speakers .round-pic img {
-      display: inline;
-      margin: 0 auto; }
-  section#speakers .speaker-name {
-    font-size: 1.2em; }
-  section#speakers .keynote-pic {
-    width: 160px;
-    height: 160px;
-    position: relative;
-    overflow: hidden; }
-    section#speakers .keynote-pic img {
-      min-width: 160px;
-      min-height: 160px; }
-  section#speakers .speaker-pic {
-    width: 120px;
-    height: 120px;
-    position: relative;
-    overflow: hidden; }
-    section#speakers .speaker-pic img {
-      min-width: 120px;
-      min-height: 120px; }
+  section#speakers .first-bio {
+    border-radius: 4px 4px 0 0; }
+  section#speakers .second-bio {
+    border-radius: 0 0 4px 4px; }
+  section#speakers img {
+    width: 160px; }
   section#speakers p {
     color: #0b3b4b;
     font-size: 1.1em;

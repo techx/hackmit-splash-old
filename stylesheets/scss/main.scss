@@ -371,26 +371,44 @@ section#speakers {
   padding-top: 40px;
   padding-bottom: 40px;
 
-  .speaker-name {
-    font-size: 1.2em;
-  }
-
   .row {
     padding: 1.5em 0;
     background-color: lighten($orange, 9%);
   }
 
-  .first-bio {
-    border-radius: 4px 4px 0 0;
+  .round-pic {
+    border-radius: 50%;
+    margin: 10px auto;
+    img {
+      display: inline;
+      margin: 0 auto;
+    }
   }
 
-  .second-bio {
-    border-radius: 0 0 4px 4px;
+  .speaker-name {
+    font-size: 1.2em;
   }
 
-  img {
-    width: 160px;
-    border-radius: 80px;
+  .keynote-pic {
+    width: $keynote-img-dim;
+    height: $keynote-img-dim;
+    position: relative;
+    overflow: hidden;
+    img {
+      min-width: $keynote-img-dim;
+      min-height: $keynote-img-dim;
+    }
+  }
+
+  .speaker-pic {
+    width: $speaker-img-dim;
+    height: $speaker-img-dim;
+    position: relative;
+    overflow: hidden;
+    img {
+      min-width: $speaker-img-dim;
+      min-height: $speaker-img-dim;
+    }
   }
 
   p {
