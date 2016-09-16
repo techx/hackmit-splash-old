@@ -371,6 +371,10 @@ section#speakers {
   padding-top: 40px;
   padding-bottom: 40px;
 
+  .speaker-name {
+    font-size: 1.2em;
+  }
+
   .row {
     padding: 1.5em 0;
     background-color: lighten($orange, 9%);
